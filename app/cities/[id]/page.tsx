@@ -83,7 +83,8 @@ export default async function CityDetailPage({ params }: PageProps) {
                                 <Info className="mr-2 text-primary" /> Overview
                             </h2>
                             <p className="text-muted-foreground leading-relaxed text-lg">
-                                {city.description || `Welcome to ${city.name}. This vibrant city offers a unique blend of culture, history, and natural beauty. Explore its streets, meet the locals, and discover why it's a must-visit destination in Colombia.`}
+                                {/* Use English fallback since API returns Spanish descriptions */}
+                                {`${city.name} is a beautiful city located in the ${city.department ? city.department.name : ''} department of Colombia. With a population of ${city.population?.toLocaleString() || 'many'} residents${city.surface ? ` and covering ${city.surface.toLocaleString()} km²` : ''}, this vibrant destination offers visitors a unique blend of Colombian culture, history, and natural beauty. Explore its streets, meet the welcoming locals, and discover why ${city.name} is a special place to visit.`}
                             </p>
 
                             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">

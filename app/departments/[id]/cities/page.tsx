@@ -3,6 +3,7 @@ import Card from '@/components/Card';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { notFound } from 'next/navigation';
+import { departmentDescriptions } from '@/lib/department-data';
 
 export const metadata = {
     title: 'Cities | Visit Colombia',
@@ -48,6 +49,9 @@ export default async function DepartmentCitiesPage({ params }: PageProps) {
         notFound();
     }
 
+    // Use English description from dictionary, fallback to API description
+    const description = departmentDescriptions[department.name] || department.description;
+
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <Link
@@ -59,7 +63,7 @@ export default async function DepartmentCitiesPage({ params }: PageProps) {
 
             <div className="mb-12">
                 <h1 className="text-4xl font-bold text-foreground mb-4">Cities in {department.name}</h1>
-                <p className="text-xl text-muted-foreground">{department.description}</p>
+                <p className="text-xl text-muted-foreground">{description}</p>
                 <div className="mt-4 flex gap-4 text-sm text-muted-foreground">
                     <span>Population: {department.population.toLocaleString()}</span>
                     <span>•</span>
