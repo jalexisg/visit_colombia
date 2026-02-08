@@ -38,12 +38,33 @@ export interface City {
 export interface NaturalArea {
     id: number;
     areaGroupId: number;
-    categoryId: number;
+    categoryNaturalAreaId: number;
     name: string;
-    description: string;
-    surface: number;
-    category: any;
-    naturalAreas1: any; // API weirdness sometimes
+    departmentId: number;
+    daneCode: number;
+    landArea: number;
+    maritimeArea: number | null;
+    department: Department | null;
+    categoryNaturalArea: {
+        id: number;
+        name: string;
+        description: string;
+        naturalAreas: null;
+    } | null;
+    description?: string; // Enhanced property (not in base API but potentially useful if wrapper adds it)
+    surface?: number; // Enhanced
+}
+
+export interface BlogPost {
+    id: string;
+    title: string;
+    slug: string;
+    excerpt: string;
+    content: string;
+    image: string;
+    author: string;
+    date: string;
+    tags: string[];
 }
 
 export interface TouristicAttraction {

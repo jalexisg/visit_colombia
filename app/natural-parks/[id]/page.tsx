@@ -88,10 +88,10 @@ export default async function NaturalParkDetailPage({ params }: PageProps) {
                             <p className="text-muted-foreground leading-relaxed text-lg">
                                 {park.description || `Explore the wonders of ${park.name}. This natural area is a sanctuary for biodiversity and offers visitors a chance to connect with nature in its purest form.`}
                             </p>
-                            {park.surface > 0 && (
+                            {(park.surface ?? 0) > 0 && (
                                 <div className="mt-6 p-4 bg-muted/50 rounded-lg inline-block">
                                     <span className="block text-sm text-muted-foreground font-medium">Surface Area</span>
-                                    <span className="text-lg font-semibold">{park.surface.toLocaleString()} km²</span>
+                                    <span className="text-lg font-semibold">{(park.surface ?? 0).toLocaleString()} km²</span>
                                 </div>
                             )}
                         </section>
