@@ -53,36 +53,38 @@ export default function HotelWidget({ term }: HotelWidgetProps) {
     const searchUrl = getBookingUrl(term);
 
     return (
-        <div className="w-full bg-white rounded-xl shadow-sm border border-blue-100 p-6 my-8">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                        <div className="p-2 bg-blue-100 rounded-lg text-blue-600">
-                            <BedDouble size={24} />
+        <div className="w-full bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.08)] border border-slate-100 overflow-hidden transition-all hover:shadow-md my-6 group">
+            <div className="p-5">
+                <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-2">
+                            <div className="p-1.5 bg-blue-50/80 rounded-md text-blue-600">
+                                <BedDouble size={18} />
+                            </div>
+                            <h3 className="font-bold text-slate-800 text-lg leading-tight">
+                                Stay in {term}
+                            </h3>
                         </div>
-                        <h3 className="text-xl font-bold text-blue-900">
-                            Stay in {term}
-                        </h3>
+                        <p className="text-sm text-slate-500 leading-relaxed line-clamp-2 mb-3">
+                            Find top-rated hotels and deals. Best price guaranteed.
+                        </p>
                     </div>
-                    <p className="text-slate-600">
-                        Find the best hotel deals and cozy stays in {term}.
-                        Save significantly on your booking.
-                    </p>
                 </div>
+
                 <a
                     href={searchUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full md:w-auto px-6 py-3 bg-[#003580] hover:bg-[#00224f] text-white font-bold rounded-full transition-colors flex items-center justify-center gap-2 shadow-sm"
+                    className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#003580] py-2.5 text-sm font-semibold text-white transition-all hover:bg-[#00224f] active:scale-[0.98]"
                 >
                     Find Deals
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                 </a>
-            </div>
-            <div className="mt-4 text-xs text-slate-400 text-center md:text-left">
-                * Best Price Guarantee via Booking.com
+                <div className="mt-2 text-[10px] text-slate-400 text-center font-medium">
+                    Powered by Booking.com
+                </div>
             </div>
         </div>
     );

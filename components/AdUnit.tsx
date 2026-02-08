@@ -1,4 +1,5 @@
 import HotelWidget from './HotelWidget';
+import ViatorWidget from './ViatorWidget';
 
 interface AdUnitProps {
     type: 'adsense' | 'hotel' | 'tour';
@@ -14,15 +15,12 @@ export default function AdUnit({ type, title }: AdUnitProps) {
             case 'hotel':
                 return <HotelWidget term={title?.replace('Find Hotels in ', '').replace('Hotels near ', '') || 'Colombia'} />;
             case 'tour':
-                return (
-                    <div className="w-full p-6 bg-gradient-to-r from-primary/5 to-accent/5 border border-primary/10 rounded-xl shadow-sm my-6">
-                        <h4 className="font-bold text-lg mb-2 text-foreground">{title || 'Book Tours & Activities'}</h4>
-                        <div className="h-12 bg-primary/10 rounded flex items-center justify-center text-primary-foreground text-sm font-medium border border-primary/20 cursor-pointer hover:bg-primary/20 transition-colors">
-                            Tour Affiliate Widget Placeholder
-                        </div>
-                        <p className="text-xs text-muted-foreground mt-2 text-center">Powered by Viator/GetYourGuide</p>
-                    </div>
-                );
+                const cleanTerm = title
+                    ?.replace('Adventure Tours in ', '')
+                    .replace('Tours in ', '')
+                    .replace('Book Tours & Activities', '')
+                    || 'Colombia';
+                return <ViatorWidget term={cleanTerm} />;
         }
     };
 
