@@ -1,11 +1,20 @@
 import Search from './Search';
 
-export default function Hero() {
+interface HeroProps {
+    backgroundImage?: string;
+}
+
+export default function Hero({ backgroundImage = "https://source.unsplash.com/1600x900/?colombia,landscape" }: HeroProps) {
     return (
         <div className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
-            {/* Background Image Placeholder or Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-700 to-teal-500">
-                {/* Placeholder for actual image: <img src="..." className="w-full h-full object-cover mix-blend-overlay opacity-50" /> */}
+            {/* Background Image */}
+            <div
+                className="absolute inset-0 bg-cover bg-center z-0 transition-transform duration-1000 hover:scale-105"
+                style={{
+                    backgroundImage: `url('${backgroundImage}')`
+                }}
+            >
+                {/* Overlay */}
                 <div className="absolute inset-0 bg-black/30" />
             </div>
 

@@ -24,16 +24,30 @@ export default async function NaturalParksPage() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {parks.map((park) => (
-                    <Card
-                        key={park.id}
-                        title={park.name}
-                        description={park.description || `Explore ${park.name}, a protected natural area with unique biodiversity.`}
-                        href={`/natural-parks/${park.id}`}
-                        buttonText="Explore Park"
-                        image={`https://source.unsplash.com/800x600/?nature,park,colombia,${park.name}`}
-                    />
-                ))}
+                {parks.map((park) => {
+                    const images = [
+                        '/images/landscape-andes.png',
+                        '/images/landscape-amazon.png',
+                        '/images/landscape-guajira.png',
+                        '/images/blog-tayrona.png',
+                        '/images/blog-cano-cristales.png',
+                        '/images/blog-coffee.png',
+                        '/images/hero-home.png'
+                    ];
+                    // Pseudorandom index to avoid repetition patterns
+                    const imageIndex = (Number(park.id) + park.name.length) % images.length;
+
+                    return (
+                        <Card
+                            key={park.id}
+                            title={park.name}
+                            description={park.description || `Explore ${park.name}, a protected natural area with unique biodiversity.`}
+                            href={`/natural-parks/${park.id}`}
+                            buttonText="Explore Park"
+                            image={images[imageIndex]}
+                        />
+                    );
+                })}
             </div>
         </div>
     );

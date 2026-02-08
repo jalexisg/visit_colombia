@@ -23,17 +23,32 @@ export default async function DepartmentsPage() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {sortedDepartments.map((dept) => (
-                    <Card
-                        key={dept.id}
-                        title={dept.name}
-                        description={dept.description || `Explore the department of ${dept.name}, with a population of ${dept.population.toLocaleString()}.`}
-                        href={`/departments/${dept.id}/cities`}
-                        buttonText="Explore Cities"
-                        // Placeholder image based on department name to make it look nicer
-                        image={`https://source.unsplash.com/800x600/?colombia,${dept.name},landscape`}
-                    />
-                ))}
+                {sortedDepartments.map((dept) => {
+                    const images = [
+                        '/images/landscape-andes.png',
+                        '/images/landscape-amazon.png',
+                        '/images/landscape-guajira.png',
+                        '/images/culture-colonial.png',
+                        '/images/city-medellin.png',
+                        '/images/blog-coffee.png',
+                        '/images/blog-tayrona.png',
+                        '/images/blog-cano-cristales.png',
+                        '/images/blog-cartagena.png',
+                        '/images/hero-home.png'
+                    ];
+                    // Use a seeded-like random selection based on ID and name length to distribute images evenly
+                    const imageIndex = (dept.id + dept.name.length) % images.length;
+                    return (
+                        <Card
+                            key={dept.id}
+                            title={dept.name}
+                            description={dept.description || `Explore the department of ${dept.name}, with a population of ${dept.population.toLocaleString()}.`}
+                            href={`/departments/${dept.id}/cities`}
+                            buttonText="Explore Cities"
+                            image={images[imageIndex]}
+                        />
+                    );
+                })}
             </div>
         </div>
     );
