@@ -116,19 +116,7 @@ export default function DepartmentGrid({ departments }: DepartmentGridProps) {
         router.push(`/departments?search=${encodeURIComponent(deptName)}`);
     };
 
-    const images = [
-        getAssetPath('/images/landscape-andes.png'),
-        getAssetPath('/images/landscape-amazon.png'),
-        getAssetPath('/images/landscape-guajira.png'),
-        getAssetPath('/images/culture-colonial.png'),
-        getAssetPath('/images/city-medellin.png'),
-        getAssetPath('/images/blog-coffee.png'),
-        getAssetPath('/images/blog-tayrona.png'),
-        getAssetPath('/images/blog-cano-cristales.png'),
-        getAssetPath('/images/blog-cartagena.png'),
-        getAssetPath('/images/blog-safety.png'),
-        getAssetPath('/images/hero-home.png')
-    ];
+
 
     return (
         <>
@@ -190,7 +178,47 @@ export default function DepartmentGrid({ departments }: DepartmentGridProps) {
                     {searchQuery && <h3 className="text-xl font-semibold mb-4 text-primary">Departments found</h3>}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {filteredDepartments.map((dept) => {
-                            const imageIndex = (dept.id + dept.name.length) % images.length;
+                            // Explicit mapping of department names to images
+                            const normalize = (str: string) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                            const name = normalize(dept.name);
+
+                            let imagePath = '/images/culture-colonial.png'; // Default fallback
+
+                            // Specific mappings
+                            if (name.includes('Amazonas')) imagePath = '/images/dept-amazonas.png';
+                            else if (name.includes('Antioquia')) imagePath = '/images/dept-antioquia.png';
+                            else if (name.includes('Arauca')) imagePath = '/images/landscape-amazon.png';
+                            else if (name.includes('Atlantico')) imagePath = '/images/city-barranquilla.png';
+                            else if (name.includes('Bolivar')) imagePath = '/images/blog-cartagena.png';
+                            else if (name.includes('Boyaca')) imagePath = '/images/dept-boyaca.png';
+                            else if (name.includes('Caldas')) imagePath = '/images/dept-coffee.png';
+                            else if (name.includes('Caqueta')) imagePath = '/images/landscape-amazon.png';
+                            else if (name.includes('Casanare')) imagePath = '/images/landscape-amazon.png';
+                            else if (name.includes('Cauca')) imagePath = '/images/culture-colonial.png';
+                            else if (name.includes('Cesar')) imagePath = '/images/landscape-andes.png';
+                            else if (name.includes('Choco')) imagePath = '/images/park-jungle.png';
+                            else if (name.includes('Cordoba')) imagePath = '/images/park-coast.png';
+                            else if (name.includes('Cundinamarca')) imagePath = '/images/city-bogota.png';
+                            else if (name.includes('Guainia')) imagePath = '/images/landscape-amazon.png';
+                            else if (name.includes('Guaviare')) imagePath = '/images/landscape-amazon.png';
+                            else if (name.includes('Huila')) imagePath = '/images/dept-huila.png';
+                            else if (name.includes('Guajira')) imagePath = '/images/landscape-guajira.png';
+                            else if (name.includes('Magdalena')) imagePath = '/images/park-coast.png';
+                            else if (name.includes('Meta')) imagePath = '/images/landscape-amazon.png';
+                            else if (name.includes('Narino')) imagePath = '/images/park-mountain.png';
+                            else if (name.includes('Norte de Santander')) imagePath = '/images/landscape-andes.png';
+                            else if (name.includes('Putumayo')) imagePath = '/images/park-jungle.png';
+                            else if (name.includes('Quindio')) imagePath = '/images/dept-coffee.png';
+                            else if (name.includes('Risaralda')) imagePath = '/images/dept-coffee.png';
+                            else if (name.includes('San Andres')) imagePath = '/images/city-san-andres.png';
+                            else if (name.includes('Santander') && !name.includes('Norte')) imagePath = '/images/dept-santander.png';
+                            else if (name.includes('Sucre')) imagePath = '/images/park-coast.png';
+                            else if (name.includes('Tolima')) imagePath = '/images/park-mountain.png';
+                            else if (name.includes('Valle')) imagePath = '/images/city-cali.png';
+                            else if (name.includes('Vaupes')) imagePath = '/images/landscape-amazon.png';
+                            else if (name.includes('Vichada')) imagePath = '/images/landscape-amazon.png';
+                            else if (name.includes('Bogota')) imagePath = '/images/city-bogota.png';
+
                             const description = departmentDescriptions[dept.name] || dept.description || `Explore the department of ${dept.name}, with a population of ${dept.population.toLocaleString()}.`;
 
                             return (
@@ -200,7 +228,7 @@ export default function DepartmentGrid({ departments }: DepartmentGridProps) {
                                     description={description}
                                     href={`/departments/${dept.id}/cities`}
                                     buttonText="Explore Cities"
-                                    image={images[imageIndex]}
+                                    image={getAssetPath(imagePath)}
                                 />
                             );
                         })}

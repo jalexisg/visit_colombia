@@ -1,4 +1,5 @@
 import { getBlogPosts } from '@/lib/blog-data';
+import { getAssetPath } from '@/lib/utils';
 import Link from 'next/link';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 import AdUnit from '@/components/AdUnit';
@@ -17,7 +18,7 @@ export default async function BlogPage() {
             <div className="relative py-24 bg-black/60">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="https://source.unsplash.com/1600x900/?notebook,travel,writing"
+                        src={getAssetPath('/images/blog-header.png')}
                         alt="Blog Background"
                         className="w-full h-full object-cover opacity-40"
                     />

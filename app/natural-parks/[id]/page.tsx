@@ -1,4 +1,5 @@
 import { api } from '@/lib/api';
+import { getAssetPath } from '@/lib/utils';
 import AdUnit from '@/components/AdUnit';
 import ViatorWidget from '@/components/ViatorWidget';
 import Link from 'next/link';
@@ -59,7 +60,10 @@ export default async function NaturalParkDetailPage({ params }: PageProps) {
             <div className="relative h-[60vh] min-h-[400px] w-full">
                 <div className="absolute inset-0 bg-black/30 z-10" />
                 <img
-                    src={`https://source.unsplash.com/1600x900/?nature,jungle,colombia,${park.name}`}
+                    src={getAssetPath(id === '66' ? '/images/park-coast.png' : // Tayrona
+                        id === '65' ? '/images/park-mountain.png' : // Los Nevados
+                            id === '67' ? '/images/park-jungle.png' : // Amacayacu (example)
+                                '/images/park-paramo.png')} // Default
                     alt={park.name}
                     className="w-full h-full object-cover"
                 />

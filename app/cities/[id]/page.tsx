@@ -1,4 +1,5 @@
 import { api } from '@/lib/api';
+import { getAssetPath } from '@/lib/utils';
 import AdUnit from '@/components/AdUnit';
 import ViatorWidget from '@/components/ViatorWidget';
 import Link from 'next/link';
@@ -53,7 +54,16 @@ export default async function CityDetailPage({ params }: PageProps) {
             <div className="relative h-[60vh] min-h-[400px] w-full">
                 <div className="absolute inset-0 bg-black/40 z-10" />
                 <img
-                    src={`https://source.unsplash.com/1600x900/?colombia,${city.name}`}
+                    src={getAssetPath(
+                        city.name.toLowerCase().includes('bogot') ? '/images/city-bogota.png' :
+                            city.name.toLowerCase().includes('medell') ? '/images/city-medellin.png' :
+                                city.name.toLowerCase().includes('cali') ? '/images/city-cali.png' :
+                                    city.name.toLowerCase().includes('cartagena') ? '/images/blog-cartagena.png' :
+                                        city.name.toLowerCase().includes('barranquilla') ? '/images/city-barranquilla.png' :
+                                            city.name.toLowerCase().includes('santa marta') ? '/images/city-santa-marta.png' :
+                                                city.name.toLowerCase().includes('san andr') ? '/images/city-san-andres.png' :
+                                                    '/images/culture-colonial.png' // Default fallback
+                    )}
                     alt={city.name}
                     className="w-full h-full object-cover"
                 />
