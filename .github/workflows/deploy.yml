@@ -56,9 +56,18 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Check for custom domain
+        id: check-cname
+        run: |
+          if [ -f "public/CNAME" ]; then
+            echo "use_base_path=false" >> $GITHUB_OUTPUT
+          else
+            echo "use_base_path=true" >> $GITHUB_OUTPUT
+          fi
       - name: Build with Next.js
         env:
-          NEXT_PUBLIC_BASE_PATH: /visit_colombia
+          NEXT_PUBLIC_USE_BASE_PATH: ${{ steps.check-cname.outputs.use_base_path }}
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.check-cname.outputs.use_base_path == 'true' && '/visit_colombia' || '' }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
