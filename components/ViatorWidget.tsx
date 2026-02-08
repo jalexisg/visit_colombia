@@ -10,7 +10,7 @@ export default function ViatorWidget({ term }: ViatorWidgetProps) {
     const partnerId = process.env.NEXT_PUBLIC_VIATOR_PARTNER_ID || 'P00287953';
     // UID is often required for affiliate links tracking in the new Viator Partner program
     const uid = 'U00775200';
-    const searchUrl = `https://www.viator.com/searchResults/all?text=${encodeURIComponent(term)}&pid=${partnerId}&mcid=42383&medium=link&campaign=${encodeURIComponent(term.replace(/\s+/g, '-').toLowerCase())}`;
+    const searchUrl = `https://www.viator.com/searchResults/all?text=${encodeURIComponent(term + ', Colombia')}&pid=${partnerId}&mcid=42383&medium=link&campaign=${encodeURIComponent(term.replace(/\s+/g, '-').toLowerCase())}`;
 
     return (
         <div className="w-full bg-card rounded-xl shadow-sm border p-6 my-8">

@@ -12,7 +12,7 @@ export default function AdUnit({ type, title }: AdUnitProps) {
                 // Auto Ads will handle placement, so we don't render a placeholder
                 return null;
             case 'hotel':
-                return <HotelWidget term={title?.replace('Find Hotels in ', '') || 'Colombia'} />;
+                return <HotelWidget term={title?.replace('Find Hotels in ', '').replace('Hotels near ', '') || 'Colombia'} />;
             case 'tour':
                 return (
                     <div className="w-full p-6 bg-gradient-to-r from-primary/5 to-accent/5 border border-primary/10 rounded-xl shadow-sm my-6">
