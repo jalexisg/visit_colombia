@@ -11,8 +11,46 @@ export default function HotelWidget({ term }: HotelWidgetProps) {
     // The user needs to provide their specific AID (e.g. 1234567)
     const affiliateId = process.env.NEXT_PUBLIC_BOOKING_PARTNER_ID || '0';
 
-    // Booking.com search URL construction
-    const searchUrl = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(term)}&aid=${affiliateId}`;
+    // Helper to generate specific Booking.com landing URLs
+    const getBookingUrl = (term: string) => {
+        const normalizedTerm = term.toLowerCase().trim();
+
+        // Map of specific terms to Booking.com slugs (or gateway cities for parks)
+        const overrides: { [key: string]: string } = {
+            'cartagena de indias': 'cartagena',
+            'cartagena': 'cartagena',
+            'santa marta': 'santa-marta',
+            'villa de leyva': 'villa-de-leiva-co', // Specific Booking.com slug
+            'bogotá': 'bogota',
+            'medellín': 'medellin',
+            'san andrés': 'san-andres',
+            'providencia': 'providencia', // might need check, but default slug often works
+
+            // Parks -> Gateway Cities
+            'tayrona national natural park': 'santa-marta',
+            'tayrona': 'santa-marta',
+            'cocuy national park': 'el-cocuy',
+            'el cocuy': 'el-cocuy',
+            'los nevados national natural park': 'manizales',
+            'rosario islands': 'cartagena',
+            'parque nacional natural tayrona': 'santa-marta',
+            'san agustín': 'san-agustin',
+        };
+
+        // Check for exact override
+        if (overrides[normalizedTerm]) {
+            return `https://www.booking.com/city/co/${overrides[normalizedTerm]}.html?aid=${affiliateId}`;
+        }
+
+        // Remove accents for default slug generation
+        const slug = normalizedTerm
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            .replace(/\s+/g, '-');
+
+        return `https://www.booking.com/city/co/${slug}.html?aid=${affiliateId}`;
+    };
+
+    const searchUrl = getBookingUrl(term);
 
     return (
         <div className="w-full bg-white rounded-xl shadow-sm border border-blue-100 p-6 my-8">
