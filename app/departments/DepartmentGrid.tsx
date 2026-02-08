@@ -158,7 +158,7 @@ export default function DepartmentGrid({ departments }: DepartmentGridProps) {
                                         <h4 className="font-bold text-lg">{match.city.name}</h4>
                                         <p className="text-sm text-muted-foreground mb-2">in {match.department.name}</p>
                                         <p className="text-sm line-clamp-2 mb-3">{match.city.description}</p>
-                                        <a href={`/departments/${match.department.id}/cities`} className="text-primary hover:underline text-sm font-medium">
+                                        <a href={`/cities/${match.city.id}`} className="text-primary hover:underline text-sm font-medium">
                                             View Details &rarr;
                                         </a>
                                     </div>

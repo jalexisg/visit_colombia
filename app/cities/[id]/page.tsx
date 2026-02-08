@@ -1,5 +1,6 @@
 import { api } from '@/lib/api';
 import AdUnit from '@/components/AdUnit';
+import ViatorWidget from '@/components/ViatorWidget';
 import Link from 'next/link';
 import { ArrowLeft, MapPin, Info } from 'lucide-react';
 import { notFound } from 'next/navigation';
@@ -113,6 +114,10 @@ export default async function CityDetailPage({ params }: PageProps) {
                                 <li>Take a nature walk in nearby ecological parks.</li>
                                 <li>Experience the vibrant nightlife and local music scene.</li>
                             </ul>
+
+                            <div className="mt-8">
+                                <ViatorWidget term={city.name} />
+                            </div>
                         </section>
 
                         <section className="bg-card rounded-xl p-8 shadow-sm border border-border">

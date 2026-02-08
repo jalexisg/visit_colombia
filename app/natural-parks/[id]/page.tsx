@@ -1,5 +1,6 @@
 import { api } from '@/lib/api';
 import AdUnit from '@/components/AdUnit';
+import ViatorWidget from '@/components/ViatorWidget';
 import Link from 'next/link';
 import { ArrowLeft, Trees, Binoculars } from 'lucide-react';
 import { notFound } from 'next/navigation';
@@ -120,6 +121,10 @@ export default async function NaturalParkDetailPage({ params }: PageProps) {
                                 <li>Photography</li>
                                 <li>Guided eco-tours</li>
                             </ul>
+
+                            <div className="mt-8">
+                                <ViatorWidget term={park.name} />
+                            </div>
                         </section>
 
                         {/* AdSense Banner */}

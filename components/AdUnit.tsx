@@ -7,12 +7,8 @@ export default function AdUnit({ type, title }: AdUnitProps) {
     const getAdContent = () => {
         switch (type) {
             case 'adsense':
-                return (
-                    <div className="w-full h-32 bg-gray-100 border border-gray-200 flex flex-col items-center justify-center text-gray-500 rounded-lg overflow-hidden my-6">
-                        <span className="text-xs font-semibold uppercase tracking-wider mb-1">Advertisement</span>
-                        <span className="text-sm">Google AdSense Banner Spot</span>
-                    </div>
-                );
+                // Auto Ads will handle placement, so we don't render a placeholder
+                return null;
             case 'hotel':
                 return (
                     <div className="w-full p-6 bg-white border border-secondary/30 rounded-xl shadow-sm my-6">
