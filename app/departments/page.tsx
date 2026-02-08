@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { api } from '@/lib/api';
 import Card from '@/components/Card';
+import { departmentDescriptions } from '@/lib/department-data';
 
 export const metadata = {
     title: 'Departments of Colombia | Visit Colombia',
@@ -34,15 +35,20 @@ export default async function DepartmentsPage() {
                         '/images/blog-tayrona.png',
                         '/images/blog-cano-cristales.png',
                         '/images/blog-cartagena.png',
+                        '/images/blog-safety.png',
                         '/images/hero-home.png'
                     ];
                     // Use a seeded-like random selection based on ID and name length to distribute images evenly
                     const imageIndex = (dept.id + dept.name.length) % images.length;
+
+                    // Use English description if available, otherwise fallback to API description or generic text
+                    const description = departmentDescriptions[dept.name] || dept.description || `Explore the department of ${dept.name}, with a population of ${dept.population.toLocaleString()}.`;
+
                     return (
                         <Card
                             key={dept.id}
                             title={dept.name}
-                            description={dept.description || `Explore the department of ${dept.name}, with a population of ${dept.population.toLocaleString()}.`}
+                            description={description}
                             href={`/departments/${dept.id}/cities`}
                             buttonText="Explore Cities"
                             image={images[imageIndex]}

@@ -9,6 +9,9 @@ async function fetchAPI<T>(endpoint: string, retries = 3, backoff = 300): Promis
     try {
         const res = await fetch(`${API_BASE_URL}${endpoint}`, {
             next: { revalidate: REVALIDATE_TIME },
+            headers: {
+                'Accept-Language': 'en'
+            }
         });
 
         if (!res.ok) {

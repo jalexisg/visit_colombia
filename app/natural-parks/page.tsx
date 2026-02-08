@@ -29,6 +29,7 @@ export default async function NaturalParksPage() {
                         '/images/landscape-andes.png',
                         '/images/landscape-amazon.png',
                         '/images/landscape-guajira.png',
+                        '/images/blog-safety.png',
                         '/images/blog-tayrona.png',
                         '/images/blog-cano-cristales.png',
                         '/images/blog-coffee.png',
