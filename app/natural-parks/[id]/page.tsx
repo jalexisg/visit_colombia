@@ -134,6 +134,7 @@ export default async function NaturalParkDetailPage({ params }: PageProps) {
                     {/* Sidebar / Monetization */}
                     <div className="space-y-6">
                         <div className="sticky top-24">
+                            <AdUnit type="hotel" title={`Hotels near ${park.name}`} />
                             <AdUnit type="tour" title={`Adventure Tours in ${park.name}`} />
 
                             <div className="p-6 bg-blue-50 border border-blue-100 rounded-xl mt-6">
