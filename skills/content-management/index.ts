@@ -1,4 +1,5 @@
 import { BlogPost } from '@/types';
+import { getAssetPath } from '@/lib/utils';
 
 export const blogPosts: BlogPost[] = [
     {
@@ -18,7 +19,7 @@ export const blogPosts: BlogPost[] = [
             <p>On the Pacific coast, Nuquí is the place to go for whale watching (seasonally) and untouched nature.</p>
             <p>Whether you're looking for a luxury resort or a rustic eco-lodge, Colombia's beaches have something for everyone.</p>
         `,
-        image: '/images/blog-tayrona.png',
+        image: getAssetPath('/images/blog-tayrona.png'),
         author: 'Maria Garcia',
         date: '2025-10-15',
         tags: ['Beaches', 'Caribbean', 'Pacific', 'Travel Guide'],
@@ -37,7 +38,7 @@ export const blogPosts: BlogPost[] = [
             <h2>Coffee Farm Tours</h2>
             <p>No visit is complete without a tour of a working coffee farm (finca). Learn about the entire process from bean to cup.</p>
         `,
-        image: '/images/blog-coffee.png',
+        image: getAssetPath('/images/blog-coffee.png'),
         author: 'Juan Perez',
         date: '2025-11-02',
         tags: ['Coffee', 'Culture', 'Mountains', 'Gastronomy'],
@@ -57,7 +58,7 @@ export const blogPosts: BlogPost[] = [
             <p>While English is spoken in major tourist areas, knowing basic Spanish phrases goes a long way and is appreciated by locals.</p>
             <p>Most travelers have a trouble-free experience by using common sense and following local advice.</p>
         `,
-        image: '/images/blog-safety.png',
+        image: getAssetPath('/images/blog-safety.png'),
         author: 'Alex Traveler',
         date: '2025-12-10',
         tags: ['Safety', 'Tips', 'Travel Advice'],
@@ -75,7 +76,7 @@ export const blogPosts: BlogPost[] = [
             <p>Access is typically via a flight to La Macarena from Bogota or Villavicencio. It's a remote destination that requires a guide.</p>
             <p>It is a fragile ecosystem, so strict rules apply to visitors to preserve its beauty.</p>
         `,
-        image: '/images/blog-cano-cristales.png',
+        image: getAssetPath('/images/blog-cano-cristales.png'),
         author: 'Sarah Jenkins',
         date: '2026-01-20',
         tags: ['Nature', 'Adventure', 'Ecotourism'],
