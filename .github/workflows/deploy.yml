@@ -64,6 +64,8 @@ jobs:
           path: ./out
 
   deploy:
+    # Only deploy from main branch
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

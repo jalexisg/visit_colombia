@@ -77,7 +77,7 @@ export default async function DepartmentCitiesPage({ params }: PageProps) {
                         <Card
                             key={city.id}
                             title={city.name}
-                            description={city.description || `Visit ${city.name} in the ${department.name} department.`}
+                            description={`Visit ${city.name} in the ${department.name} department.`}
                             href={`/cities/${city.id}`}
                             buttonText="Learn More"
                             image={`https://source.unsplash.com/800x600/?colombia,${city.name}`}
