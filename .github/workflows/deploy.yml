@@ -68,6 +68,8 @@ jobs:
         env:
           NEXT_PUBLIC_USE_BASE_PATH: ${{ steps.check-cname.outputs.use_base_path }}
           NEXT_PUBLIC_BASE_PATH: ${{ steps.check-cname.outputs.use_base_path == 'true' && '/visit_colombia' || '' }}
+          NEXT_PUBLIC_VIATOR_PARTNER_ID: ${{ secrets.VIATOR_PARTNER_ID }}
+          NEXT_PUBLIC_BOOKING_PARTNER_ID: ${{ secrets.BOOKING_PARTNER_ID }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
