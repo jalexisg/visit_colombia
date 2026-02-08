@@ -39,6 +39,30 @@ export const api = {
     getDepartments: () => fetchAPI<Department[]>('/Department'),
     getDepartment: (id: number) => fetchAPI<Department>(`/Department/${id}`),
 
+    // Enhanced method for search
+    getDepartmentsWithCities: async () => {
+        const [departments, cities] = await Promise.all([
+            fetchAPI<Department[]>('/Department'),
+            fetchAPI<City[]>('/City')
+        ]);
+
+        // Create a map of departmentId -> cities[]
+        const citiesByDept = new Map<number, City[]>();
+        cities.forEach(city => {
+            const deptId = city.departmentId;
+            if (!citiesByDept.has(deptId)) {
+                citiesByDept.set(deptId, []);
+            }
+            citiesByDept.get(deptId)?.push(city);
+        });
+
+        // Attach cities to departments
+        return departments.map(dept => ({
+            ...dept,
+            cities: citiesByDept.get(dept.id) || []
+        }));
+    },
+
     // Cities
     getCities: () => fetchAPI<City[]>('/City'),
     getCity: (id: number) => fetchAPI<City>(`/City/${id}`),
