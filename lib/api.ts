@@ -5,16 +5,30 @@ const API_BASE_URL = 'https://api-colombia.com/api/v1';
 // Cache revalidation time (1 hour)
 const REVALIDATE_TIME = 3600;
 
-async function fetchAPI<T>(endpoint: string): Promise<T> {
-    const res = await fetch(`${API_BASE_URL}${endpoint}`, {
-        next: { revalidate: REVALIDATE_TIME },
-    });
+async function fetchAPI<T>(endpoint: string, retries = 3, backoff = 300): Promise<T> {
+    try {
+        const res = await fetch(`${API_BASE_URL}${endpoint}`, {
+            next: { revalidate: REVALIDATE_TIME },
+        });
 
-    if (!res.ok) {
-        throw new Error(`Failed to fetch data from ${endpoint}`);
+        if (!res.ok) {
+            // If potentially rate limited or server error, throw to catch and retry
+            if (res.status === 429 || res.status >= 500) {
+                throw new Error(`API Error: ${res.status}`);
+            }
+            throw new Error(`Failed to fetch data from ${endpoint}: ${res.status} ${res.statusText}`);
+        }
+
+        return res.json();
+    } catch (error) {
+        if (retries > 0) {
+            // Wait for backoff time
+            await new Promise((resolve) => setTimeout(resolve, backoff));
+            // Retry with exponential backoff
+            return fetchAPI<T>(endpoint, retries - 1, backoff * 2);
+        }
+        throw error;
     }
-
-    return res.json();
 }
 
 export const api = {

@@ -2,6 +2,19 @@ import { api } from '@/lib/api';
 import AdUnit from '@/components/AdUnit';
 import Link from 'next/link';
 import { ArrowLeft, Trees, Binoculars } from 'lucide-react';
+import { notFound } from 'next/navigation';
+
+export async function generateStaticParams() {
+    try {
+        const parks = await api.getNaturalAreas();
+        return parks.map((park) => ({
+            id: park.id.toString(),
+        }));
+    } catch (e) {
+        console.error('Failed to generate static params for parks', e);
+        return [];
+    }
+}
 
 interface PageProps {
     params: {
@@ -11,16 +24,27 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps) {
     const { id } = await Promise.resolve(params);
-    const park = await api.getNaturalArea(parseInt(id));
-    return {
-        title: `${park.name} | Visit Colombia`,
-        description: park.description || `Discover ${park.name}, a natural wonder in Colombia.`,
-    };
+    try {
+        const park = await api.getNaturalArea(parseInt(id));
+        return {
+            title: `${park.name} | Visit Colombia`,
+            description: park.description || `Discover ${park.name}, a natural wonder in Colombia.`,
+        };
+    } catch (e) {
+        return {
+            title: 'Park Not Found',
+        };
+    }
 }
 
 export default async function NaturalParkDetailPage({ params }: PageProps) {
     const { id } = await Promise.resolve(params);
-    const park = await api.getNaturalArea(parseInt(id));
+    let park;
+    try {
+        park = await api.getNaturalArea(parseInt(id));
+    } catch (e) {
+        notFound();
+    }
 
     // Placeholder for species since simple API call might not return it directly without extra calls
     // In a real app, we might fetch species by park ID if endpoint exists.

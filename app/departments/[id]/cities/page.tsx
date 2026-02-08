@@ -2,11 +2,24 @@ import { api } from '@/lib/api';
 import Card from '@/components/Card';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+import { notFound } from 'next/navigation';
 
 export const metadata = {
     title: 'Cities | Visit Colombia',
     description: 'Explore the cities within this department.',
 };
+
+export async function generateStaticParams() {
+    try {
+        const departments = await api.getDepartments();
+        return departments.map((department) => ({
+            id: department.id.toString(),
+        }));
+    } catch (e) {
+        console.error('Failed to generate static params for departments', e);
+        return [];
+    }
+}
 
 interface PageProps {
     params: {
@@ -28,7 +41,12 @@ export default async function DepartmentCitiesPage({ params }: PageProps) {
     const departmentData = api.getDepartment(departmentId);
     const citiesData = api.getCitiesByDepartment(departmentId);
 
-    const [department, cities] = await Promise.all([departmentData, citiesData]);
+    let department, cities;
+    try {
+        [department, cities] = await Promise.all([departmentData, citiesData]);
+    } catch (e) {
+        notFound();
+    }
 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

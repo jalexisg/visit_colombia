@@ -2,6 +2,19 @@ import { api } from '@/lib/api';
 import AdUnit from '@/components/AdUnit';
 import Link from 'next/link';
 import { ArrowLeft, MapPin, Info } from 'lucide-react';
+import { notFound } from 'next/navigation';
+
+export async function generateStaticParams() {
+    try {
+        const cities = await api.getCities();
+        return cities.map((city) => ({
+            id: city.id.toString(),
+        }));
+    } catch (e) {
+        console.error('Failed to generate static params for cities', e);
+        return [];
+    }
+}
 
 interface PageProps {
     params: {
@@ -11,16 +24,27 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps) {
     const { id } = await Promise.resolve(params);
-    const city = await api.getCity(parseInt(id));
-    return {
-        title: `${city.name} | Visit Colombia`,
-        description: city.description || `Discover ${city.name}, a beautiful destination in Colombia.`,
-    };
+    try {
+        const city = await api.getCity(parseInt(id));
+        return {
+            title: `${city.name} | Visit Colombia`,
+            description: city.description || `Discover ${city.name}, a beautiful destination in Colombia.`,
+        };
+    } catch (e) {
+        return {
+            title: 'City Not Found',
+        };
+    }
 }
 
 export default async function CityDetailPage({ params }: PageProps) {
     const { id } = await Promise.resolve(params);
-    const city = await api.getCity(parseInt(id));
+    let city;
+    try {
+        city = await api.getCity(parseInt(id));
+    } catch (e) {
+        notFound();
+    }
 
     return (
         <div className="bg-background min-h-screen pb-12">
