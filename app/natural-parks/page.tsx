@@ -1,5 +1,6 @@
 import { api } from '@/lib/api';
 import Card from '@/components/Card';
+import { getAssetPath } from '@/lib/utils';
 import { Trees } from 'lucide-react';
 
 export const metadata = {
@@ -26,14 +27,14 @@ export default async function NaturalParksPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {parks.map((park) => {
                     const images = [
-                        '/images/landscape-andes.png',
-                        '/images/landscape-amazon.png',
-                        '/images/landscape-guajira.png',
-                        '/images/blog-safety.png',
-                        '/images/blog-tayrona.png',
-                        '/images/blog-cano-cristales.png',
-                        '/images/blog-coffee.png',
-                        '/images/hero-home.png'
+                        getAssetPath('/images/landscape-andes.png'),
+                        getAssetPath('/images/landscape-amazon.png'),
+                        getAssetPath('/images/landscape-guajira.png'),
+                        getAssetPath('/images/blog-safety.png'),
+                        getAssetPath('/images/blog-tayrona.png'),
+                        getAssetPath('/images/blog-cano-cristales.png'),
+                        getAssetPath('/images/blog-coffee.png'),
+                        getAssetPath('/images/hero-home.png')
                     ];
                     // Pseudorandom index to avoid repetition patterns
                     const imageIndex = (Number(park.id) + park.name.length) % images.length;

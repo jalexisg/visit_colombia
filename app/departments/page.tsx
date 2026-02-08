@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { api } from '@/lib/api';
 import Card from '@/components/Card';
 import { departmentDescriptions } from '@/lib/department-data';
+import { getAssetPath } from '@/lib/utils';
 
 export const metadata = {
     title: 'Departments of Colombia | Visit Colombia',
@@ -26,17 +27,17 @@ export default async function DepartmentsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {sortedDepartments.map((dept) => {
                     const images = [
-                        '/images/landscape-andes.png',
-                        '/images/landscape-amazon.png',
-                        '/images/landscape-guajira.png',
-                        '/images/culture-colonial.png',
-                        '/images/city-medellin.png',
-                        '/images/blog-coffee.png',
-                        '/images/blog-tayrona.png',
-                        '/images/blog-cano-cristales.png',
-                        '/images/blog-cartagena.png',
-                        '/images/blog-safety.png',
-                        '/images/hero-home.png'
+                        getAssetPath('/images/landscape-andes.png'),
+                        getAssetPath('/images/landscape-amazon.png'),
+                        getAssetPath('/images/landscape-guajira.png'),
+                        getAssetPath('/images/culture-colonial.png'),
+                        getAssetPath('/images/city-medellin.png'),
+                        getAssetPath('/images/blog-coffee.png'),
+                        getAssetPath('/images/blog-tayrona.png'),
+                        getAssetPath('/images/blog-cano-cristales.png'),
+                        getAssetPath('/images/blog-cartagena.png'),
+                        getAssetPath('/images/blog-safety.png'),
+                        getAssetPath('/images/hero-home.png')
                     ];
                     // Use a seeded-like random selection based on ID and name length to distribute images evenly
                     const imageIndex = (dept.id + dept.name.length) % images.length;

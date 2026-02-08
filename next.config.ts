@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: "/visit_colombia",
   assetPrefix: "/visit_colombia",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: "/visit_colombia",
+  },
   images: {
     unoptimized: true,
   },
