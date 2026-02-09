@@ -14,6 +14,7 @@ export default function Navbar() {
         { href: '/', label: 'Home' },
         { href: '/departments', label: 'Departments', icon: MapPin },
         { href: '/natural-parks', label: 'Natural Parks', icon: Trees },
+        { href: '/map', label: 'Map', icon: MapPin },
         { href: '/blog', label: 'Blog' }, // Placeholder
     ];
 

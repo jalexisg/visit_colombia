@@ -157,6 +157,16 @@ export default async function CityDetailPage({ params }: PageProps) {
                             <p className="text-muted-foreground">
                                 {city.name} is accessible by road from major cities. Use local bus services or rent a car for a scenic drive. Check purely local transport options upon arrival.
                             </p>
+                            <div className="mt-6 w-full h-[300px] rounded-lg overflow-hidden border border-border">
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    loading="lazy"
+                                    allowFullScreen
+                                    src={`https://maps.google.com/maps?q=${encodeURIComponent(city.name + ', Colombia')}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
+                                ></iframe>
+                            </div>
                         </section>
 
                         {/* AdSense Banner */}
@@ -179,6 +189,6 @@ export default async function CityDetailPage({ params }: PageProps) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
