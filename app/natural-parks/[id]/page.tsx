@@ -30,8 +30,9 @@ export async function generateMetadata({ params }: PageProps) {
         const park = await api.getNaturalArea(parseInt(id));
         const image = getAssetPath(id === '66' ? '/images/park-coast.png' : // Tayrona
             id === '65' ? '/images/park-mountain.png' : // Los Nevados
-                id === '67' ? '/images/park-jungle.png' : // Amacayacu (example)
-                    '/images/park-paramo.png'); // Default
+                id === '67' ? '/images/park-jungle.png' : // Amacayacu
+                    ['206', '207', '208', '209'].includes(id) ? '/images/park-rosario.png' : // Islas del Rosario
+                        '/images/park-paramo.png'); // Default
 
         return {
             title: `${park.name} | Visit Colombia`,
@@ -56,9 +57,12 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 import { parkDescriptions } from '@/lib/park-descriptions';
+import { parkWildlife } from '@/lib/park-wildlife';
 
 export default async function NaturalParkDetailPage({ params }: PageProps) {
     const { id } = await Promise.resolve(params);
+    console.log(`Render Park Detail - ID: ${id}`);
+
     let park;
     try {
         park = await api.getNaturalArea(parseInt(id));
@@ -66,11 +70,19 @@ export default async function NaturalParkDetailPage({ params }: PageProps) {
         notFound();
     }
 
+    // Override name for Islas del Rosario to match user expectation
+    if (['206', '207', '208', '209'].includes(id)) {
+        park.name = "Islas del Rosario (Corales del Rosario)";
+    }
+
     const description = parkDescriptions[id] || park.description || `Explore the wonders of ${park.name}. This natural area is a sanctuary for biodiversity and offers visitors a chance to connect with nature in its purest form.`;
 
-    // Placeholder for species since simple API call might not return it directly without extra calls
-    // In a real app, we might fetch species by park ID if endpoint exists.
-    const wildlife = [
+    console.log(`Park Description Lookup for ${id}: ${parkDescriptions[id] ? 'FOUND' : 'NOT FOUND'}`);
+
+
+
+    // Get wildlife from local data or use default fallback if not found
+    const wildlife = parkWildlife[id] || [
         'Spectacled Bear', 'Andean Condor', 'Jaguar', 'Golden Dart Frog', 'Wax Palm'
     ];
 
@@ -82,8 +94,9 @@ export default async function NaturalParkDetailPage({ params }: PageProps) {
                 <img
                     src={getAssetPath(id === '66' ? '/images/park-coast.png' : // Tayrona
                         id === '65' ? '/images/park-mountain.png' : // Los Nevados
-                            id === '67' ? '/images/park-jungle.png' : // Amacayacu (example)
-                                '/images/park-paramo.png')} // Default
+                            id === '67' ? '/images/park-jungle.png' : // Amacayacu
+                                ['206', '207', '208', '209'].includes(id) ? '/images/park-rosario.png' : // Islas del Rosario
+                                    '/images/park-paramo.png')} // Default
                     alt={park.name}
                     className="w-full h-full object-cover"
                 />

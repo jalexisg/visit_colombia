@@ -6,16 +6,9 @@ async function findParks() {
         const res = await fetch(`${API_BASE_URL}/NaturalArea`);
         const areas = await res.json();
 
-        const targets = [
-            'Tayrona', 'Cocuy', 'Amacayacu', 'Nevados', 'Rosario', 'Macarena', 'Iguaque', 'Tuparro'
-        ];
-
-        console.log('Searching for target parks:');
-        targets.forEach(target => {
-            const matches = areas.filter(a => a.name.toLowerCase().includes(target.toLowerCase()));
-            matches.forEach(m => {
-                console.log(`Found: ${m.name} (ID: ${m.id})`);
-            });
+        console.log('Listing ALL Natural Areas:');
+        areas.forEach(area => {
+            console.log(`Park: ${area.name} (ID: ${area.id})`);
         });
 
     } catch (e) {
