@@ -147,6 +147,23 @@ export default async function NaturalParkDetailPage({ params }: PageProps) {
                             </div>
                         </section>
 
+                        <section className="bg-card rounded-xl p-8 shadow-sm border border-border">
+                            <h2 className="text-2xl font-bold mb-4">How to Get There</h2>
+                            <p className="text-muted-foreground mb-4">
+                                Location map for {park.name}.
+                            </p>
+                            <div className="w-full h-[300px] rounded-lg overflow-hidden border border-border">
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    loading="lazy"
+                                    allowFullScreen
+                                    src={`https://maps.google.com/maps?q=${encodeURIComponent(park.name + ', Colombia')}&t=&z=10&ie=UTF8&iwloc=&output=embed`}
+                                ></iframe>
+                            </div>
+                        </section>
+
                         {/* AdSense Banner */}
                         <AdUnit type="adsense" />
                     </div>

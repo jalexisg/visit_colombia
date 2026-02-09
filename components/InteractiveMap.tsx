@@ -54,13 +54,21 @@ export default function InteractiveMap({ attractions }: InteractiveMapProps) {
                     <Popup>
                         <div className="max-w-xs">
                             <h3 className="font-bold text-sm mb-1">{attraction.name}</h3>
-                            <p className="text-xs line-clamp-3">{attraction.description}</p>
+                            <p className="text-xs line-clamp-3 mb-2">{attraction.description}</p>
                             {attraction.images && attraction.images.length > 0 && (
                                 <img
                                     src={attraction.images[0]}
                                     alt={attraction.name}
-                                    className="mt-2 h-20 w-full object-cover rounded"
+                                    className="mt-1 h-20 w-full object-cover rounded mb-2"
                                 />
+                            )}
+                            {attraction.link && (
+                                <a
+                                    href={attraction.link}
+                                    className="block w-full text-center bg-primary text-primary-foreground text-xs py-1.5 rounded hover:bg-primary/90 transition-colors"
+                                >
+                                    View Details
+                                </a>
                             )}
                         </div>
                     </Popup>
