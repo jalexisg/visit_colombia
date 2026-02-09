@@ -55,6 +55,8 @@ export async function generateMetadata({ params }: PageProps) {
     }
 }
 
+import { parkDescriptions } from '@/lib/park-descriptions';
+
 export default async function NaturalParkDetailPage({ params }: PageProps) {
     const { id } = await Promise.resolve(params);
     let park;
@@ -63,6 +65,8 @@ export default async function NaturalParkDetailPage({ params }: PageProps) {
     } catch (e) {
         notFound();
     }
+
+    const description = parkDescriptions[id] || park.description || `Explore the wonders of ${park.name}. This natural area is a sanctuary for biodiversity and offers visitors a chance to connect with nature in its purest form.`;
 
     // Placeholder for species since simple API call might not return it directly without extra calls
     // In a real app, we might fetch species by park ID if endpoint exists.
@@ -107,7 +111,7 @@ export default async function NaturalParkDetailPage({ params }: PageProps) {
                         <section className="bg-card rounded-xl p-8 shadow-sm border border-border">
                             <h2 className="text-2xl font-bold mb-4">About the Park</h2>
                             <p className="text-muted-foreground leading-relaxed text-lg">
-                                {park.description || `Explore the wonders of ${park.name}. This natural area is a sanctuary for biodiversity and offers visitors a chance to connect with nature in its purest form.`}
+                                {description}
                             </p>
                             {(park.surface ?? 0) > 0 && (
                                 <div className="mt-6 p-4 bg-muted/50 rounded-lg inline-block">
