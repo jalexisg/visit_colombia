@@ -29,15 +29,18 @@ export default function Search() {
                 const response = await fetch('https://api-colombia.com/api/v1/City');
                 if (response.ok) {
                     const cities = await response.json();
-                    const matchingCity = cities.find((city: { name: string; id: number }) =>
+                    const matchingCities = cities.filter((city: { name: string; id: number }) =>
                         normalizeText(city.name) === normalizedSearch
                     );
 
-                    if (matchingCity) {
-                        // Found a city! Navigate directly to it
-                        router.push(`/cities/${matchingCity.id}`);
+                    if (matchingCities.length === 1) {
+                        // Found exactly one city! Navigate directly to it
+                        router.push(`/cities/${matchingCities[0].id}`);
                         setIsSearching(false);
                         return;
+                    } else if (matchingCities.length > 1) {
+                        // Found multiple cities with the same name (e.g. Armenia), let the user choose in the results page
+                        // Fall through to the search page redirect below
                     }
                 }
             } catch (error) {

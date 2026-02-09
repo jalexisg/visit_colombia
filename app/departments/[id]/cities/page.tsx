@@ -80,7 +80,37 @@ export default async function DepartmentCitiesPage({ params }: PageProps) {
                             description={`Visit ${city.name} in the ${department.name} department.`}
                             href={`/cities/${city.id}`}
                             buttonText="Learn More"
-                            image={`https://source.unsplash.com/800x600/?colombia,${city.name}`}
+                            image={(function () {
+                                const name = city.name.toLowerCase();
+                                const images: Record<string, string> = {
+                                    'bucaramanga': '/images/city-bucaramanga.png',
+                                    'manizales': '/images/city-manizales.png',
+                                    'pereira': '/images/city-pereira.png',
+                                    'armenia': department.name.includes('Quindio') || department.name.includes('Quindío') ? '/images/city-armenia.png' : '',
+                                    'cúcuta': '/images/city-cucuta.png',
+                                    'cucuta': '/images/city-cucuta.png',
+                                    'ibagué': '/images/city-ibague.png',
+                                    'ibague': '/images/city-ibague.png',
+                                    // 'neiva': '/images/city-neiva.png',
+                                    // 'pasto': '/images/city-pasto.png',
+                                    // 'villavicencio': '/images/city-villavicencio.png',
+                                    // 'popayán': '/images/city-popayan.png',
+                                    // 'popayan': '/images/city-popayan.png',
+                                    'bogotá': '/images/city-bogota.png',
+                                    'bogota': '/images/city-bogota.png',
+                                    'medellín': '/images/city-medellin.png',
+                                    'medellin': '/images/city-medellin.png',
+                                    'cali': '/images/city-cali.png',
+                                    'santiago de cali': '/images/city-cali.png',
+                                    'barranquilla': '/images/city-barranquilla.png',
+                                    'santa marta': '/images/city-santa-marta.png',
+                                    'cartagena': '/images/blog-cartagena.png',
+                                    'cartagena de indias': '/images/blog-cartagena.png',
+                                    'san andrés': '/images/city-san-andres.png',
+                                    'san andres': '/images/city-san-andres.png'
+                                };
+                                return images[name] || `https://source.unsplash.com/800x600/?colombia,${city.name}`;
+                            })()}
                         />
                     ))}
                 </div>
