@@ -36,11 +36,7 @@ export default async function BlogPage() {
                     <div className="absolute inset-0 bg-black/50" />
                 </div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                    <img
-                        src={getAssetPath('/images/logo.png')} // Assuming logo.png exists in public/images/
-                        alt="Visit Colombia Logo"
-                        className="h-20 w-auto mx-auto mb-6 drop-shadow-lg"
-                    />
+
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-md">
                         Travel Journal
                     </h1>
