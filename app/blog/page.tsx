@@ -5,8 +5,19 @@ import { Calendar, User, ArrowRight } from 'lucide-react';
 import AdUnit from '@/components/AdUnit';
 
 export const metadata = {
-    title: 'Blog | Visit Colombia',
-    description: 'Travel tips, guides, and inspiration for your trip to Colombia.',
+    title: 'Travel Journal | Visit Colombia Blog',
+    description: 'Expert guides, travel tips, and inspiring stories for your Colombian adventure. Read about safety, best times to visit, and hidden gems.',
+    openGraph: {
+        title: 'Travel Journal | Visit Colombia Blog',
+        description: 'Expert guides, travel tips, and inspiring stories for your Colombian adventure.',
+        images: ['/images/blog-header.png'],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Travel Journal | Visit Colombia Blog",
+        description: "Expert guides, travel tips, and inspiring stories for your Colombian adventure.",
+        images: ["/images/blog-header.png"],
+    },
 };
 
 export default async function BlogPage() {

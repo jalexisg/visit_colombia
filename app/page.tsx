@@ -4,6 +4,17 @@ import { api } from '@/lib/api';
 import { getAssetPath } from '@/lib/utils';
 import { Coffee, CloudSun, Music, Smile } from 'lucide-react';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Visit Colombia | The Country of Beauty",
+  description: "Plan your extensive trip to Colombia. Discover the Amazon, Andes, Caribbean, and Pacific regions. Your ultimate travel guide.",
+  keywords: ["Colombia Travel", "Visit Colombia", "Bogota", "Cartagena", "Medellin", "Coffee Triangle"],
+  alternates: {
+    canonical: 'https://visit-colombia.com',
+  },
+};
+
 export default async function Home() {
   const featuredCities = await api.getFeaturedDestinations();
 

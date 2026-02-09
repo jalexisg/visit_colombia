@@ -28,9 +28,25 @@ export async function generateMetadata({ params }: PageProps) {
     const { id } = await Promise.resolve(params);
     try {
         const park = await api.getNaturalArea(parseInt(id));
+        const image = getAssetPath(id === '66' ? '/images/park-coast.png' : // Tayrona
+            id === '65' ? '/images/park-mountain.png' : // Los Nevados
+                id === '67' ? '/images/park-jungle.png' : // Amacayacu (example)
+                    '/images/park-paramo.png'); // Default
+
         return {
             title: `${park.name} | Visit Colombia`,
             description: park.description || `Discover ${park.name}, a natural wonder in Colombia.`,
+            openGraph: {
+                title: `${park.name} | Visit Colombia`,
+                description: park.description || `Discover ${park.name}, a natural wonder in Colombia.`,
+                images: [image],
+            },
+            twitter: {
+                card: "summary_large_image",
+                title: `${park.name} | Visit Colombia`,
+                description: park.description || `Discover ${park.name}, a natural wonder in Colombia.`,
+                images: [image],
+            },
         };
     } catch (e) {
         return {

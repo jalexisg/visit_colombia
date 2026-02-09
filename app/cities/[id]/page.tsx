@@ -28,9 +28,31 @@ export async function generateMetadata({ params }: PageProps) {
     const { id } = await Promise.resolve(params);
     try {
         const city = await api.getCity(parseInt(id));
+        const image = getAssetPath(
+            city.name.toLowerCase().includes('bogot') ? '/images/city-bogota.png' :
+                city.name.toLowerCase().includes('medell') ? '/images/city-medellin.png' :
+                    city.name.toLowerCase().includes('cali') ? '/images/city-cali.png' :
+                        city.name.toLowerCase().includes('cartagena') ? '/images/blog-cartagena.png' :
+                            city.name.toLowerCase().includes('barranquilla') ? '/images/city-barranquilla.png' :
+                                city.name.toLowerCase().includes('santa marta') ? '/images/city-santa-marta.png' :
+                                    city.name.toLowerCase().includes('san andr') ? '/images/city-san-andres.png' :
+                                        '/images/culture-colonial.png'
+        );
+
         return {
             title: `${city.name} | Visit Colombia`,
             description: city.description || `Discover ${city.name}, a beautiful destination in Colombia.`,
+            openGraph: {
+                title: `${city.name} | Visit Colombia`,
+                description: city.description || `Discover ${city.name}, a beautiful destination in Colombia.`,
+                images: [image],
+            },
+            twitter: {
+                card: "summary_large_image",
+                title: `${city.name} | Visit Colombia`,
+                description: city.description || `Discover ${city.name}, a beautiful destination in Colombia.`,
+                images: [image],
+            },
         };
     } catch (e) {
         return {

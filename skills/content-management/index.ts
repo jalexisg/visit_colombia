@@ -80,6 +80,63 @@ export const blogPosts: BlogPost[] = [
         author: 'Sarah Jenkins',
         date: '2026-01-20',
         tags: ['Nature', 'Adventure', 'Ecotourism'],
+    },
+    {
+        id: '5',
+        title: 'Best Time to Visit Colombia: A Month-by-Month Guide',
+        slug: 'best-time-to-visit-colombia',
+        excerpt: 'From dry seasons to festivals, find out the perfect time for your Colombian adventure.',
+        content: `
+            <p>Colombia is a year-round destination, but the best time to visit depends on what you want to do. Being near the equator, temperatures are determined by altitude, not seasons.</p>
+            <h2>Dry Seasons (Dec-March & July-Aug)</h2>
+            <p>These are the most popular times to visit, offering sunny days perfect for hiking the Andes or relaxing on Caribbean beaches.</p>
+            <h2>Whale Watching Season (July-Oct)</h2>
+            <p>Visit the Pacific coast to see humpback whales migrating to warmer waters to give birth.</p>
+            <h2>Festival Season</h2>
+            <p>Don't miss the Barranquilla Carnival in February or the Flower Festival in Medellín in August.</p>
+        `,
+        image: getAssetPath('/images/hero-home.png'),
+        author: 'Elena Rodriguez',
+        date: '2026-02-10',
+        tags: ['Travel Tips', 'Weather', 'Festivals'],
+    },
+    {
+        id: '6',
+        title: 'Discovering the Amazon: The Ultimate Ecotourism Adventure',
+        slug: 'amazon-ecotourism-guide',
+        excerpt: 'Immerse yourself in the lungs of the world. A guide to Leticia, Puerto Nariño, and the Amazon river.',
+        content: `
+            <p>The Colombian Amazon offers one of the most accessible and safe ways to experience the world's largest rainforest.</p>
+            <h2>Leticia: The Gateway</h2>
+            <p>Start your journey in Leticia, where Colombia borders Brazil and Peru. It's a vibrant hub of culture and nature.</p>
+            <h2>Puerto Nariño</h2>
+            <p>Known as the "Green Crib of Colombia," this eco-friendly village has no cars and is a model for sustainable living.</p>
+            <h2>Wildlife</h2>
+            <p>Look out for pink river dolphins, sloths, monkeys, and thousands of bird species.</p>
+        `,
+        image: getAssetPath('/images/dept-amazonas.png'),
+        author: 'Mateo Silva',
+        date: '2026-02-15',
+        tags: ['Amazon', 'Wildlife', 'Ecotourism', 'Nature'],
+    },
+    {
+        id: '7',
+        title: 'Charming Colonial Towns You Can’t Miss',
+        slug: 'colonial-towns-colombia',
+        excerpt: 'Step back in time by visiting these beautifully preserved heritage towns filled with history.',
+        content: `
+            <p>Colombia's history is written in the cobblestone streets and white-washed walls of its heritage towns (Pueblos Patrimonio).</p>
+            <h2>Villa de Leyva, Boyacá</h2>
+            <p>Famous for having one of the largest plazas in South America and its fossil museums.</p>
+            <h2>Barichara, Santander</h2>
+            <p>Often cited as the most beautiful town in Colombia, known for its stone architecture and reddish earth streets.</p>
+            <h2>Mompox, Bolívar</h2>
+            <p>A riverside town frozen in time, Mompox played a key role in Colombia's independence and is a UNESCO World Heritage site.</p>
+        `,
+        image: getAssetPath('/images/dept-boyaca.png'),
+        author: 'Isabella Martinez',
+        date: '2026-02-20',
+        tags: ['History', 'Culture', 'Architecture', 'Travel Guide'],
     }
 ];
 

@@ -16,8 +16,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Visit Colombia | Discover the Magic",
-  description: "Explore Colombia's vibrant culture, breathtaking nature, and friendly people. Plan your trip today.",
+  metadataBase: new URL('https://visit-colombia.com'),
+  title: {
+    default: "Visit Colombia | Discover the Magic",
+    template: "%s | Visit Colombia"
+  },
+  description: "Explore Colombia's vibrant culture, breathtaking nature, and friendly people. Plan your trip to the land of coffee, emeralds, and diversity.",
+  keywords: ["Colombia", "Travel", "Tourism", "South America", "Vacation", "Guide", "Coffee Region", "Amazon", "Caribbean"],
+  authors: [{ name: "Visit Colombia Team" }],
+  creator: "Visit Colombia",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://visit-colombia.com",
+    siteName: "Visit Colombia",
+    title: "Visit Colombia | Discover the Magic",
+    description: "Explore Colombia's vibrant culture, breathtaking nature, and friendly people.",
+    images: [
+      {
+        url: "/images/hero-home.png",
+        width: 1200,
+        height: 630,
+        alt: "Visit Colombia Hero Image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Visit Colombia | Discover the Magic",
+    description: "Explore Colombia's vibrant culture, breathtaking nature, and friendly people.",
+    images: ["/images/hero-home.png"],
+    creator: "@visitcolombia",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({

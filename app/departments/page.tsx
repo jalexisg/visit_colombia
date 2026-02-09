@@ -5,7 +5,18 @@ import { Suspense } from 'react';
 
 export const metadata = {
     title: 'Departments of Colombia | Visit Colombia',
-    description: 'Explore the diverse departments of Colombia, from the Caribbean coast to the Amazon rainforest.',
+    description: 'Explore the diverse departments of Colombia, from the Caribbean coast to the Amazon rainforest. Find the best places to visit in each region.',
+    openGraph: {
+        title: 'Departments of Colombia | Visit Colombia',
+        description: 'Explore the diverse departments of Colombia, from the Caribbean coast to the Amazon rainforest.',
+        images: ['/images/landscape-andes.png'],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Departments of Colombia | Visit Colombia",
+        description: "Explore the diverse departments of Colombia, from the Caribbean coast to the Amazon rainforest.",
+        images: ["/images/landscape-andes.png"],
+    },
 };
 
 export default async function DepartmentsPage() {
