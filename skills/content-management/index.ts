@@ -10,13 +10,25 @@ export const blogPosts: BlogPost[] = [
         content: `
             <p>Colombia is the only country in South America with coastlines on both the Pacific Ocean and the Caribbean Sea. This unique geography offers an incredible variety of beaches.</p>
             <h2>1. Playa Blanca, Isla Barú</h2>
-            <p>Famous for its white sand and turquoise waters, Playa Blanca is a must-visit for sun seekers.</p>
+            <p>Famous for its white sand and turquoise waters, Playa Blanca is a must-visit for sun seekers near Cartagena.</p>
             <h2>2. Parque Tayrona</h2>
-            <p>Where the jungle meets the sea. Cabo San Juan is the most iconic beach here.</p>
+            <p>Where the jungle meets the sea. Cabo San Juan is the most iconic beach here, perfect for sleeping in a hammock.</p>
             <h2>3. Palomino</h2>
-            <p>A laid-back beach town perfect for tubing down the river and watching the sunset.</p>
+            <p>A laid-back beach town perfect for tubing down the river and watching the sunset over the Sierra Nevada mountains.</p>
             <h2>4. Nuquí</h2>
-            <p>On the Pacific coast, Nuquí is the place to go for whale watching (seasonally) and untouched nature.</p>
+            <p>On the Pacific coast, Nuquí is the place to go for whale watching (July-October) and untouched nature.</p>
+            <h2>5. Capurganá & Sapzurro</h2>
+            <p>Located on the border with Panama, these car-free villages offer crystal clear Caribbean waters and jungle hikes.</p>
+            <h2>6. Cabo de la Vela</h2>
+            <p>Where the desert meets the sea in La Guajira. Famous for kitesurfing and stunning sunsets from the lighthouse.</p>
+            <h2>7. Johnny Cay, San Andrés</h2>
+            <p>A small coral islet with coconut palms and white sand beaches, just a short boat ride from San Andrés island.</p>
+            <h2>8. Manzanillo Beach, Providencia</h2>
+            <p>A pristine, secluded beach on the relaxed island of Providencia. Perfect for those escaping the crowds.</p>
+            <h2>9. Rincón del Mar, Sucre</h2>
+            <p>A hidden gem with a chilled vibe, calm waters, and the chance to see bioluminescent plankton in the mangroves.</p>
+            <h2>10. Playa Cristal, Tayrona</h2>
+            <p>True to its name, this beach offers some of the clearest waters in the park, perfect for snorkeling.</p>
             <p>Whether you're looking for a luxury resort or a rustic eco-lodge, Colombia's beaches have something for everyone.</p>
         `,
         image: getAssetPath('/images/blog-tayrona.png'),
@@ -92,8 +104,15 @@ export const blogPosts: BlogPost[] = [
             <p>These are the most popular times to visit, offering sunny days perfect for hiking the Andes or relaxing on Caribbean beaches.</p>
             <h2>Whale Watching Season (July-Oct)</h2>
             <p>Visit the Pacific coast to see humpback whales migrating to warmer waters to give birth.</p>
-            <h2>Festival Season</h2>
-            <p>Don't miss the Barranquilla Carnival in February or the Flower Festival in Medellín in August.</p>
+            <h2>Major Festivals & Cultural Events</h2>
+            <p>Colombia is famous for its festivals. Plan your trip around these massive celebrations:</p>
+            <ul>
+                <li><strong>Jan: Blacks and Whites' Carnival (Pasto)</strong> - A UNESCO masterpiece celebrating diversity.</li>
+                <li><strong>Feb: Barranquilla Carnival</strong> - The second largest carnival in the world, full of color and dance.</li>
+                <li><strong>April: Vallenato Legend Festival (Valledupar)</strong> - The most important event for Vallenato music lovers.</li>
+                <li><strong>Aug: Flower Festival (Medellín)</strong> - Detailed flower arrangements (silleteros) parade through the city.</li>
+                <li><strong>Dec: Cali Fair (Feria de Cali)</strong> - The salsa capital of the world comes alive with parties and concerts.</li>
+            </ul>
         `,
         image: getAssetPath('/images/hero-home.png'),
         author: 'Elena Rodriguez',
