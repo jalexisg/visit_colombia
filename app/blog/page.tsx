@@ -31,15 +31,20 @@ export default async function BlogPage() {
                     <img
                         src={getAssetPath('/images/blog-header.png')}
                         alt="Blog Background"
-                        className="w-full h-full object-cover opacity-40"
+                        className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
+                    <div className="absolute inset-0 bg-black/50" />
                 </div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 shadow-sm">
+                    <img
+                        src={getAssetPath('/images/logo.png')} // Assuming logo.png exists in public/images/
+                        alt="Visit Colombia Logo"
+                        className="h-20 w-auto mx-auto mb-6 drop-shadow-lg"
+                    />
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-md">
                         Travel Journal
                     </h1>
-                    <p className="text-xl text-gray-200 max-w-2xl mx-auto shadow-sm">
+                    <p className="text-xl text-white/90 max-w-2xl mx-auto drop-shadow-md font-medium">
                         Stories, guides, and tips to help you plan your perfect Colombian adventure.
                     </p>
                 </div>
