@@ -1,4 +1,4 @@
-# Visit Colombia 🇨🇴
+# Visit Colombia 🇨🇴 [![codecov](https://codecov.io/gh/jalexisg/visit_colombia/graph/badge.svg?token=CODECOV_TOKEN)](https://codecov.io/gh/jalexisg/visit_colombia)
 
 A modern tourism website for Colombia, built with Next.js and Tailwind CSS, consuming the [API Colombia](https://api-colombia.com/).
 
