@@ -36,7 +36,18 @@ export async function generateMetadata({ params }: PageProps) {
                             city.name.toLowerCase().includes('barranquilla') ? '/images/city-barranquilla.png' :
                                 city.name.toLowerCase().includes('santa marta') ? '/images/city-santa-marta.png' :
                                     city.name.toLowerCase().includes('san andr') ? '/images/city-san-andres.png' :
-                                        '/images/culture-colonial.png'
+                                        city.name.toLowerCase().includes('neiva') ? '/images/city_neiva.png' :
+                                            city.name.toLowerCase().includes('pasto') ? '/images/city_pasto.png' :
+                                                city.name.toLowerCase().includes('villavicencio') ? '/images/city_villavicencio.png' :
+                                                    city.name.toLowerCase().includes('popay') ? '/images/city_popayan.png' :
+                                                        city.name.toLowerCase().includes('valledupar') ? '/images/city_valledupar.png' :
+                                                            city.name.toLowerCase().includes('monter') ? '/images/city_monteria.png' :
+                                                                city.name.toLowerCase().includes('tunja') ? '/images/city_tunja.png' :
+                                                                    city.name.toLowerCase().includes('riohacha') ? '/images/city_riohacha.png' :
+                                                                        city.name.toLowerCase().includes('quibd') ? '/images/city_quibdo.png' :
+                                                                            city.name.toLowerCase().includes('leticia') ? '/images/city_leticia.png' :
+                                                                                city.name.toLowerCase().includes('florencia') ? '/images/city_florencia.png' :
+                                                                                    '/images/culture-colonial.png'
         );
 
         return {
@@ -84,7 +95,18 @@ export default async function CityDetailPage({ params }: PageProps) {
                                         city.name.toLowerCase().includes('barranquilla') ? '/images/city-barranquilla.png' :
                                             city.name.toLowerCase().includes('santa marta') ? '/images/city-santa-marta.png' :
                                                 city.name.toLowerCase().includes('san andr') ? '/images/city-san-andres.png' :
-                                                    '/images/culture-colonial.png' // Default fallback
+                                                    city.name.toLowerCase().includes('neiva') ? '/images/city_neiva.png' :
+                                                        city.name.toLowerCase().includes('pasto') ? '/images/city_pasto.png' :
+                                                            city.name.toLowerCase().includes('villavicencio') ? '/images/city_villavicencio.png' :
+                                                                city.name.toLowerCase().includes('popay') ? '/images/city_popayan.png' :
+                                                                    city.name.toLowerCase().includes('valledupar') ? '/images/city_valledupar.png' :
+                                                                        city.name.toLowerCase().includes('monter') ? '/images/city_monteria.png' :
+                                                                            city.name.toLowerCase().includes('tunja') ? '/images/city_tunja.png' :
+                                                                                city.name.toLowerCase().includes('riohacha') ? '/images/city_riohacha.png' :
+                                                                                    city.name.toLowerCase().includes('quibd') ? '/images/city_quibdo.png' :
+                                                                                        city.name.toLowerCase().includes('leticia') ? '/images/city_leticia.png' :
+                                                                                            city.name.toLowerCase().includes('florencia') ? '/images/city_florencia.png' :
+                                                                                                '/images/culture-colonial.png' // Default fallback
                     )}
                     alt={city.name}
                     className="w-full h-full object-cover"
