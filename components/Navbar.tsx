@@ -15,7 +15,9 @@ export default function Navbar() {
         { href: '/departments', label: 'Departments', icon: MapPin },
         { href: '/natural-parks', label: 'Natural Parks', icon: Trees },
         { href: '/map', label: 'Map', icon: MapPin },
-        { href: '/blog', label: 'Blog' }, // Placeholder
+        { href: '/blog', label: 'Blog' },
+        { href: '/about', label: 'About' },
+        { href: '/contact', label: 'Contact' },
     ];
 
     const isActive = (path: string) => pathname === path;
