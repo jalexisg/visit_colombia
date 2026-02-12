@@ -113,6 +113,8 @@ export default async function DepartmentCitiesPage({ params }: PageProps) {
                                     'inirida': '/images/city_inirida.png',
                                     'mitu': '/images/city_mitu.png',
                                     'mitú': '/images/city_mitu.png',
+                                    'puerto nariño': '/images/city_puerto_narino.png',
+                                    'puerto narino': '/images/city_puerto_narino.png',
                                     'puerto carreño': '/images/city_puerto_carreno.png',
                                     'puerto carreno': '/images/city_puerto_carreno.png',
                                     'bogotá': '/images/city-bogota.png',
