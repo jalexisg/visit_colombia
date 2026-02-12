@@ -105,7 +105,16 @@ export default async function DepartmentCitiesPage({ params }: PageProps) {
                                     'quibdo': '/images/city_quibdo.png',
                                     'leticia': '/images/city_leticia.png',
                                     'florencia': '/images/city_florencia.png',
-                                    // 'yopal': '/images/city_yopal.png', // Generation failed, keep commented
+                                    'yopal': '/images/city_yopal.png',
+                                    'arauca': '/images/city_arauca.png',
+                                    'sincelejo': '/images/city_sincelejo.png',
+                                    'mocoa': '/images/city_mocoa.png',
+                                    'inírida': '/images/city_inirida.png',
+                                    'inirida': '/images/city_inirida.png',
+                                    'mitu': '/images/city_mitu.png',
+                                    'mitú': '/images/city_mitu.png',
+                                    'puerto carreño': '/images/city_puerto_carreno.png',
+                                    'puerto carreno': '/images/city_puerto_carreno.png',
                                     'bogotá': '/images/city-bogota.png',
                                     'bogota': '/images/city-bogota.png',
                                     'medellín': '/images/city-medellin.png',
@@ -114,8 +123,8 @@ export default async function DepartmentCitiesPage({ params }: PageProps) {
                                     'santiago de cali': '/images/city-cali.png',
                                     'barranquilla': '/images/city-barranquilla.png',
                                     'santa marta': '/images/city-santa-marta.png',
-                                    'cartagena': '/images/blog-cartagena.png',
-                                    'cartagena de indias': '/images/blog-cartagena.png',
+                                    'cartagena': '/images/city_cartagena.png',
+                                    'cartagena de indias': '/images/city_cartagena.png',
                                     'san andrés': '/images/city-san-andres.png',
                                     'san andres': '/images/city-san-andres.png'
                                 };

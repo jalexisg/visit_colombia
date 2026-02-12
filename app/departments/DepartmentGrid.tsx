@@ -188,8 +188,8 @@ export default function DepartmentGrid({ departments }: DepartmentGridProps) {
                             if (name.includes('Amazonas')) imagePath = '/images/dept-amazonas.png';
                             else if (name.includes('Antioquia')) imagePath = '/images/dept-antioquia.png';
                             else if (name.includes('Arauca')) imagePath = '/images/dept-arauca.png';
-                            else if (name.includes('Atlantico')) imagePath = '/images/city-barranquilla.png';
-                            else if (name.includes('Bolivar')) imagePath = '/images/blog-cartagena.png';
+                            else if (name.includes('Atlantico')) imagePath = '/images/dept-atlantico.png';
+                            else if (name.includes('Bolivar')) imagePath = '/images/dept-bolivar.png';
                             else if (name.includes('Boyaca')) imagePath = '/images/dept-boyaca.png';
                             else if (name.includes('Caldas')) imagePath = '/images/dept-caldas.png';
                             else if (name.includes('Caqueta')) imagePath = '/images/dept-caqueta.png';
@@ -208,9 +208,9 @@ export default function DepartmentGrid({ departments }: DepartmentGridProps) {
                             else if (name.includes('Narino')) imagePath = '/images/dept-narino.png';
                             else if (name.includes('Norte de Santander')) imagePath = '/images/dept-norte-santander.png';
                             else if (name.includes('Putumayo')) imagePath = '/images/dept-putumayo.png';
-                            else if (name.includes('Quindio')) imagePath = '/images/dept-coffee.png';
+                            else if (name.includes('Quindio')) imagePath = '/images/dept-quindio.png';
                             else if (name.includes('Risaralda')) imagePath = '/images/dept-risaralda.png';
-                            else if (name.includes('San Andres')) imagePath = '/images/city-san-andres.png';
+                            else if (name.includes('San Andres')) imagePath = '/images/dept-san-andres.png';
                             else if (name.includes('Santander') && !name.includes('Norte')) imagePath = '/images/dept-santander.png';
                             else if (name.includes('Sucre')) imagePath = '/images/dept-sucre.png';
                             else if (name.includes('Tolima')) imagePath = '/images/dept-tolima.png';
