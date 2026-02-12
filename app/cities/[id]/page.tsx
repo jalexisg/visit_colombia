@@ -1,5 +1,6 @@
 import { api } from '@/lib/api';
 import { getAssetPath } from '@/lib/utils';
+import { getCityImage } from '@/lib/city-data';
 import AdUnit from '@/components/AdUnit';
 import ViatorWidget from '@/components/ViatorWidget';
 import Link from 'next/link';
@@ -28,27 +29,7 @@ export async function generateMetadata({ params }: PageProps) {
     const { id } = await Promise.resolve(params);
     try {
         const city = await api.getCity(parseInt(id));
-        const image = getAssetPath(
-            city.name.toLowerCase().includes('bogot') ? '/images/city-bogota.png' :
-                city.name.toLowerCase().includes('medell') ? '/images/city-medellin.png' :
-                    city.name.toLowerCase().includes('cali') ? '/images/city-cali.png' :
-                        city.name.toLowerCase().includes('cartagena') ? '/images/blog-cartagena.png' :
-                            city.name.toLowerCase().includes('barranquilla') ? '/images/city-barranquilla.png' :
-                                city.name.toLowerCase().includes('santa marta') ? '/images/city-santa-marta.png' :
-                                    city.name.toLowerCase().includes('san andr') ? '/images/city-san-andres.png' :
-                                        city.name.toLowerCase().includes('neiva') ? '/images/city_neiva.png' :
-                                            city.name.toLowerCase().includes('pasto') ? '/images/city_pasto.png' :
-                                                city.name.toLowerCase().includes('villavicencio') ? '/images/city_villavicencio.png' :
-                                                    city.name.toLowerCase().includes('popay') ? '/images/city_popayan.png' :
-                                                        city.name.toLowerCase().includes('valledupar') ? '/images/city_valledupar.png' :
-                                                            city.name.toLowerCase().includes('monter') ? '/images/city_monteria.png' :
-                                                                city.name.toLowerCase().includes('tunja') ? '/images/city_tunja.png' :
-                                                                    city.name.toLowerCase().includes('riohacha') ? '/images/city_riohacha.png' :
-                                                                        city.name.toLowerCase().includes('quibd') ? '/images/city_quibdo.png' :
-                                                                            city.name.toLowerCase().includes('leticia') ? '/images/city_leticia.png' :
-                                                                                city.name.toLowerCase().includes('florencia') ? '/images/city_florencia.png' :
-                                                                                    '/images/culture-colonial.png'
-        );
+        const image = getCityImage(city.name);
 
         return {
             title: `${city.name} | Visit Colombia`,
@@ -87,27 +68,7 @@ export default async function CityDetailPage({ params }: PageProps) {
             <div className="relative h-[60vh] min-h-[400px] w-full">
                 <div className="absolute inset-0 bg-black/40 z-10" />
                 <img
-                    src={getAssetPath(
-                        city.name.toLowerCase().includes('bogot') ? '/images/city-bogota.png' :
-                            city.name.toLowerCase().includes('medell') ? '/images/city-medellin.png' :
-                                city.name.toLowerCase().includes('cali') ? '/images/city-cali.png' :
-                                    city.name.toLowerCase().includes('cartagena') ? '/images/blog-cartagena.png' :
-                                        city.name.toLowerCase().includes('barranquilla') ? '/images/city-barranquilla.png' :
-                                            city.name.toLowerCase().includes('santa marta') ? '/images/city-santa-marta.png' :
-                                                city.name.toLowerCase().includes('san andr') ? '/images/city-san-andres.png' :
-                                                    city.name.toLowerCase().includes('neiva') ? '/images/city_neiva.png' :
-                                                        city.name.toLowerCase().includes('pasto') ? '/images/city_pasto.png' :
-                                                            city.name.toLowerCase().includes('villavicencio') ? '/images/city_villavicencio.png' :
-                                                                city.name.toLowerCase().includes('popay') ? '/images/city_popayan.png' :
-                                                                    city.name.toLowerCase().includes('valledupar') ? '/images/city_valledupar.png' :
-                                                                        city.name.toLowerCase().includes('monter') ? '/images/city_monteria.png' :
-                                                                            city.name.toLowerCase().includes('tunja') ? '/images/city_tunja.png' :
-                                                                                city.name.toLowerCase().includes('riohacha') ? '/images/city_riohacha.png' :
-                                                                                    city.name.toLowerCase().includes('quibd') ? '/images/city_quibdo.png' :
-                                                                                        city.name.toLowerCase().includes('leticia') ? '/images/city_leticia.png' :
-                                                                                            city.name.toLowerCase().includes('florencia') ? '/images/city_florencia.png' :
-                                                                                                '/images/culture-colonial.png' // Default fallback
-                    )}
+                    src={getCityImage(city.name)}
                     alt={city.name}
                     className="w-full h-full object-cover"
                 />
