@@ -1,6 +1,6 @@
 import { api } from '@/lib/api';
 import { getAssetPath } from '@/lib/utils';
-import { getCityImage } from '@/lib/city-data';
+import { getCityImage, getCityOverview } from '@/lib/city-data';
 import AdUnit from '@/components/AdUnit';
 import ViatorWidget from '@/components/ViatorWidget';
 import Link from 'next/link';
@@ -30,19 +30,20 @@ export async function generateMetadata({ params }: PageProps) {
     try {
         const city = await api.getCity(parseInt(id));
         const image = getCityImage(city.name);
+        const description = getCityOverview(city.name, city.description);
 
         return {
             title: `${city.name} | Visit Colombia`,
-            description: city.description || `Discover ${city.name}, a beautiful destination in Colombia.`,
+            description: description,
             openGraph: {
                 title: `${city.name} | Visit Colombia`,
-                description: city.description || `Discover ${city.name}, a beautiful destination in Colombia.`,
+                description: description,
                 images: [image],
             },
             twitter: {
                 card: "summary_large_image",
                 title: `${city.name} | Visit Colombia`,
-                description: city.description || `Discover ${city.name}, a beautiful destination in Colombia.`,
+                description: description,
                 images: [image],
             },
         };
@@ -61,6 +62,8 @@ export default async function CityDetailPage({ params }: PageProps) {
     } catch (e) {
         notFound();
     }
+
+    const overview = getCityOverview(city.name, city.description);
 
     return (
         <div className="bg-background min-h-screen pb-12">
@@ -98,10 +101,13 @@ export default async function CityDetailPage({ params }: PageProps) {
                             <h2 className="text-2xl font-bold mb-4 flex items-center">
                                 <Info className="mr-2 text-primary" /> Overview
                             </h2>
-                            <p className="text-muted-foreground leading-relaxed text-lg">
-                                {/* Use English fallback since API returns Spanish descriptions */}
-                                {`${city.name} is a beautiful city located in the ${city.department ? city.department.name : ''} department of Colombia. With a population of ${city.population?.toLocaleString() || 'many'} residents${city.surface ? ` and covering ${city.surface.toLocaleString()} km²` : ''}, this vibrant destination offers visitors a unique blend of Colombian culture, history, and natural beauty. Explore its streets, meet the welcoming locals, and discover why ${city.name} is a special place to visit.`}
-                            </p>
+                            <div className="prose dark:prose-invert max-w-none text-muted-foreground leading-relaxed text-lg">
+                                {overview.split('\n').map((paragraph, index) => (
+                                    <p key={index} className="mb-4 last:mb-0">
+                                        {paragraph}
+                                    </p>
+                                ))}
+                            </div>
 
                             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {city.population > 0 && (
