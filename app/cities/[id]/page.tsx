@@ -29,8 +29,9 @@ export async function generateMetadata({ params }: PageProps) {
     const { id } = await Promise.resolve(params);
     try {
         const city = await api.getCity(parseInt(id));
-        const image = getCityImage(city.name, city.department?.name);
-        const description = getCityOverview(city.name, city.description, city.department?.name);
+        const department = await api.getDepartment(city.departmentId);
+        const image = getCityImage(city.name, department.name);
+        const description = getCityOverview(city.name, city.description, department.name);
 
         return {
             title: `${city.name} | Visit Colombia`,
@@ -63,7 +64,8 @@ export default async function CityDetailPage({ params }: PageProps) {
         notFound();
     }
 
-    const overview = getCityOverview(city.name, city.description);
+    const department = await api.getDepartment(city.departmentId);
+    const overview = getCityOverview(city.name, city.description, department.name);
 
     return (
         <div className="bg-background min-h-screen pb-12">
