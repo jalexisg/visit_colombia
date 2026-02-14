@@ -28,6 +28,17 @@ export const cityImages: Record<string, string> = {
     'zambrano': '/images/city_zambrano.png',
     'pinillos': '/images/city_pinillos.png',
     'tiquisio': '/images/city_tiquisio.png',
+    'achí': '/images/city_achi.png',
+    'altos del rosario': '/images/city_altos_del_rosario.png',
+    'barranco de loba': '/images/city_barranco_de_loba.png',
+    'cantagallo': '/images/city_cantagallo.png',
+    'hatillo de loba': '/images/city_hatillo_de_loba.png',
+    'montecristo': '/images/city_montecristo.png',
+    'bolivar-morales': '/images/city_morales_bolivar.png',
+    'norosí': '/images/city_norosi.png',
+    'regidor': '/images/city_regidor.png',
+    'río viejo': '/images/city_rio_viejo.png',
+    'bolivar-san jacinto del cauca': '/images/city_san_jacinto_del_cauca.png',
     'santander-bucaramanga': '/images/city_bucaramanga.png',
     'manizales': '/images/city-manizales.png',
     'pereira': '/images/city-pereira.png',
@@ -414,7 +425,18 @@ export const cityOverviews: Record<string, string> = {
     'bolivar-san cristóbal': 'A picturesque town on the Canal del Dique, San Cristóbal is known for its traditional fishing economy and its scenic water landscapes.',
     'zambrano': 'Zambrano is a major river port on the Magdalena, offering stunning sunrise views and serving as a key gateway to the lower Bolívar plains.',
     'pinillos': 'Located where the Magdalena River branches into the Mompós depression, Pinillos is a land of water and history with a unique riverine identity.',
-    'tiquisio': 'Tiquisio is a vibrant town in southern Bolívar, known for its rich mining heritage and its strategic location in the fertile San Jorge river basin.'
+    'tiquisio': 'Tiquisio is a vibrant town in southern Bolívar, known for its rich mining heritage and its strategic location in the fertile San Jorge river basin.',
+    'achí': 'Achí is a picturesque river municipality in the Mojana region, where the Cauca River defines the local culture, fishing traditions, and fertile agricultural life.',
+    'altos del rosario': 'Altos del Rosario is a peaceful town in the heart of Bolívar, known for its traditional colonial architecture and its role as a quiet agricultural center.',
+    'barranco de loba': 'Key to the Loba region, Barranco de Loba is a historic river port on the Magdalena, serving as a vital hub for trade and traditional river transportation.',
+    'cantagallo': 'Cantagallo is the southernmost municipality of Bolívar, where the Magdalena River provides a stunning backdrop for its agricultural and riverfront activities.',
+    'hatillo de loba': 'Hatillo de Loba is an amphibious town deeply connected to the river, known for its resilient spirit and the unique water-based lifestyle of its inhabitants.',
+    'montecristo': 'Montecristo is nestled in the foothills of the Serranía de San Lucas, offering a rugged landscape rich in biodiversity and traditional mining history.',
+    'bolivar-morales': 'Morales is a bustling river port and agricultural center in southern Bolívar, acting as a gateway to the diverse landscapes of the Magdalena valley.',
+    'norosí': 'Norosí is a historic mining town set against the beautiful backdrop of southern Bolívar\'s mountains, known for its hardworking community and natural wealth.',
+    'regidor': 'Regidor is a tranquil town on the banks of the Magdalena River, where time seems to slow down and the local life follows the rhythm of the river.',
+    'río viejo': 'Río Viejo is located where multiple river channels meet, creating a lush and fertile landscape that supports a vibrant fishing and farming community.',
+    'bolivar-san jacinto del cauca': 'San Jacinto del Cauca is a remote and beautiful riverside town, where the Cauca River shapes the lush landscapes and the traditional rural way of life.'
 };
 
 export function getCityOverview(cityName: string, defaultDescription?: string, departmentName?: string): string {
