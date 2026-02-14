@@ -17,6 +17,17 @@ export const cityImages: Record<string, string> = {
     'arjona': '/images/city_arjona.png',
     'maría la baja': '/images/city_maria_la_baja.png',
     'bolivar-villanueva': '/images/city_villanueva_bolivar.png',
+    'bolivar-santa rosa': '/images/city_santa_rosa_bolivar.png',
+    'clemencia': '/images/city_clemencia.png',
+    'bolivar-calamar': '/images/city_calamar_bolivar.png',
+    'san estanislao': '/images/city_san_estanislao.png',
+    'el guamo': '/images/city_el_guamo.png',
+    'bolivar-córdoba': '/images/city_cordoba_bolivar.png',
+    'soplaviento': '/images/city_soplaviento.png',
+    'bolivar-san cristóbal': '/images/city_san_cristobal_bolivar.png',
+    'zambrano': '/images/city_zambrano.png',
+    'pinillos': '/images/city_pinillos.png',
+    'tiquisio': '/images/city_tiquisio.png',
     'santander-bucaramanga': '/images/city_bucaramanga.png',
     'manizales': '/images/city-manizales.png',
     'pereira': '/images/city-pereira.png',
@@ -392,7 +403,18 @@ export const cityOverviews: Record<string, string> = {
     'mahates': 'Mahates is the gateway to San Basilio de Palenque, the first free town in the Americas and a UNESCO Intangible Cultural Heritage site for its unique language and traditions.',
     'arjona': 'Arjona is an agricultural powerhouse famous for its traditional "Bollo Limón" and vibrant celebrations of Caribbean culture.',
     'maría la baja': 'Surrounded by fertile plains and scenic marshlands, María la Baja is a major rice and African palm producer with a rich African-descendant heritage.',
-    'bolivar-villanueva': 'Villanueva is a tranquil town in the lower Bolívar plains, known for its colonial church and being a center for traditional livestock and agricultural trade.'
+    'bolivar-villanueva': 'Villanueva is a tranquil town in the lower Bolívar plains, known for its colonial church and being a center for traditional livestock and agricultural trade.',
+    'bolivar-santa rosa': 'Santa Rosa, known for its warm Caribbean atmosphere and colonial influence, is a peaceful gateway to the northern plains of Bolívar.',
+    'clemencia': 'Clemencia is a charming agricultural town near the Caribbean coast, known for its lush vegetation and traditional rural hospitality.',
+    'bolivar-calamar': 'Strategically located where the Canal del Dique meets the Magdalena River, Calamar is a historic river port with deep ties to Colombian transportation history.',
+    'san estanislao': 'Also known as Arenal, San Estanislao is a vibrant river town with a rich cultural heritage and traditional religious celebrations.',
+    'el guamo': 'Nestled in the Montes de María, El Guamo is an agricultural center known for its diverse crops and its resilient, welcoming community.',
+    'bolivar-córdoba': 'Córdoba is a historic town on the banks of the Magdalena River, celebrated for its colonial church and its importance in regional trade.',
+    'soplaviento': 'Soplaviento sits gracefully along the Canal del Dique, where fishing and river traditions define the local way of life and culture.',
+    'bolivar-san cristóbal': 'A picturesque town on the Canal del Dique, San Cristóbal is known for its traditional fishing economy and its scenic water landscapes.',
+    'zambrano': 'Zambrano is a major river port on the Magdalena, offering stunning sunrise views and serving as a key gateway to the lower Bolívar plains.',
+    'pinillos': 'Located where the Magdalena River branches into the Mompós depression, Pinillos is a land of water and history with a unique riverine identity.',
+    'tiquisio': 'Tiquisio is a vibrant town in southern Bolívar, known for its rich mining heritage and its strategic location in the fertile San Jorge river basin.'
 };
 
 export function getCityOverview(cityName: string, defaultDescription?: string, departmentName?: string): string {
