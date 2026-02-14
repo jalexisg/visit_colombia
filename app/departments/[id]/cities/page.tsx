@@ -81,7 +81,7 @@ export default async function DepartmentCitiesPage({ params }: PageProps) {
                             description={`Visit ${city.name} in the ${department.name} department.`}
                             href={`/cities/${city.id}`}
                             buttonText="Learn More"
-                            image={getCityImage(city.name)}
+                            image={getCityImage(city.name, department.name)}
                         />
                     ))}
                 </div>

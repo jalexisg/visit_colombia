@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: PageProps) {
     const { id } = await Promise.resolve(params);
     try {
         const city = await api.getCity(parseInt(id));
-        const image = getCityImage(city.name);
-        const description = getCityOverview(city.name, city.description);
+        const image = getCityImage(city.name, city.department?.name);
+        const description = getCityOverview(city.name, city.description, city.department?.name);
 
         return {
             title: `${city.name} | Visit Colombia`,
@@ -71,7 +71,7 @@ export default async function CityDetailPage({ params }: PageProps) {
             <div className="relative h-[60vh] min-h-[400px] w-full">
                 <div className="absolute inset-0 bg-black/40 z-10" />
                 <img
-                    src={getCityImage(city.name)}
+                    src={getCityImage(city.name, city.department?.name)}
                     alt={city.name}
                     className="w-full h-full object-cover"
                 />

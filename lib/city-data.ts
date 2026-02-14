@@ -116,6 +116,60 @@ export const cityImages: Record<string, string> = {
     'vélez': '/images/city_velez.png',
     'velez': '/images/city_velez.png',
     'villanueva': '/images/city_villanueva.png',
+    'aratoca': '/images/city_aratoca.png',
+    'barbosa': '/images/city_barbosa.png',
+    'charalá': '/images/city_charala.png',
+    'charala': '/images/city_charala.png',
+    'cimitarra': '/images/city_cimitarra.png',
+    'el carmen de chucurí': '/images/city_el_carmen_de_chucuri.png',
+    'el carmen de chucuri': '/images/city_el_carmen_de_chucuri.png',
+    'los santos': '/images/city_los_santos.png',
+    'oiba': '/images/city_oiba.png',
+    'páramo': '/images/city_paramo.png',
+    'paramo': '/images/city_paramo.png',
+    'puente nacional': '/images/city_puente_nacional.png',
+    'san vicente de chucurí': '/images/city_san_vicente_de_chucuri.png',
+    'san vicente de chucuri': '/images/city_san_vicente_de_chucuri.png',
+    'suaita': '/images/city_suaita.png',
+    'valle de san josé': '/images/city_valle_de_san_jose.png',
+    'valle de san jose': '/images/city_valle_de_san_jose.png',
+    'cepitá': '/images/city_cepita.png',
+    'cepita': '/images/city_cepita.png',
+    'pinchote': '/images/city_pinchote.png',
+    'albania': '/images/city_albania.png',
+    'betulia': '/images/city_betulia.png',
+    'bolívar': '/images/city_bolivar.png',
+    'bolivar': '/images/city_bolivar.png',
+    'capitanejo': '/images/city_capitanejo.png',
+    'cerrito': '/images/city_cerrito.png',
+    'contratación': '/images/city_contratacion.png',
+    'contratacion': '/images/city_contratacion.png',
+    'florián': '/images/city_florian.png',
+    'florian': '/images/city_florian.png',
+    'gambita': '/images/city_gambita.png',
+    'jordán': '/images/city_jordan.png',
+    'jordan': '/images/city_jordan.png',
+    'la belleza': '/images/city_la_belleza.png',
+    'landázuri': '/images/city_landazuri.png',
+    'landazuri': '/images/city_landazuri.png',
+    'lebríja': '/images/city_lebrija.png',
+    'lebrija': '/images/city_lebrija.png',
+    'mogotes': '/images/city_mogotes.png',
+    'puerto wilches': '/images/city_puerto_wilches.png',
+    'santander-san andrés': '/images/city_san_andres_santander.png',
+    'santander-sabana de torres': '/images/city_sabana_torres.png',
+    'santander-rionegro': '/images/city_rionegro_santander.png',
+    'santander-california': '/images/city_california.png',
+    'santander-vetas': '/images/city_vetas.png',
+    'santander-matanza': '/images/city_matanza.png',
+    'santander-suratá': '/images/city_surata.png',
+    'santander-tona': '/images/city_tona.png',
+    'santander-simacota': '/images/city_simacota.png',
+    'santander-sucre': '/images/city_sucre_santander.png',
+    'santander-la paz': '/images/city_la_paz_santander.png',
+    'santander-el playón': '/images/city_el_playon.png',
+    'santander-puerto parra': '/images/city_puerto_parra.png',
+    'santander-aguada': '/images/city_aguada.png',
     'bogotá': '/images/city-bogota.png',
     'bogota': '/images/city-bogota.png',
     'bogot': '/images/city-bogota.png',
@@ -135,11 +189,18 @@ export const cityImages: Record<string, string> = {
     'san andr': '/images/city-san-andres.png'
 };
 
-export function getCityImage(cityName: string): string {
+export function getCityImage(cityName: string, departmentName?: string): string {
     const name = cityName.toLowerCase();
+    const dept = departmentName?.toLowerCase();
+
+    // Check for specific department-city mapping first to handle name collisions
+    if (dept) {
+        const specificKey = `${dept}-${name}`;
+        if (cityImages[specificKey]) return getAssetPath(cityImages[specificKey]);
+    }
 
     for (const [key, value] of Object.entries(cityImages)) {
-        if (name.includes(key) || key.includes(name)) {
+        if (name === key || name.includes(key) || key.includes(name)) {
             return getAssetPath(value);
         }
     }
@@ -182,6 +243,48 @@ export const cityOverviews: Record<string, string> = {
     'málaga': 'The heart of García Rovira province, a colonial town surrounded by dramatic Andean mountain landscapes.',
     'vélez': 'World-famous for its guava paste (bocadillo) and its status as a capital of Colombian folk music.',
     'villanueva': 'A quiet colonial gem perched near the Chicamocha canyon, offering peaceful streets and incredible views.',
+    'aratoca': 'The "Entry to the Chicamocha Canyon," famous for its traditional bread (Pan de Aratoca) and dramatic mountain vistas.',
+    'barbosa': 'The "Golden Gate of Santander," a bustling commercial center and strategic gateway to the department.',
+    'charalá': 'A historic town of immense importance in Colombian independence, known for the heroic Battle of Pienta and its giant Samán trees.',
+    'cimitarra': 'A key agricultural hub in the Magdalena Medio region, surrounded by tropical landscapes and lush countryside.',
+    'el carmen de chucurí': 'A mountain paradise famous for its world-class cacao production and rich tropical biodiversity.',
+    'los santos': 'Perched on a scenic plateau, this town offers stunning canyon views and is known for its high-quality specialty coffee.',
+    'oiba': 'The "Honey City of Colombia," renowned for its red-clay colonial architecture and proximity to lush forests.',
+    'páramo': 'A gateway to nature, home to the spectacular Juan Curí waterfalls and lush subtropical landscapes.',
+    'puente nacional': 'A historic colonial town where important independence movements took place, preserved with beautiful architecture.',
+    'san vicente de chucurí': 'The "Cacao Capital of Colombia," a vibrant town surrounded by lush plantations and the Yariguíes National Park.',
+    'suaita': 'A town of industry and nature, housing the ruins of Colombia\'s first textile factory and the grand Los Caballeros waterfall.',
+    'valle de san josé': 'A charming colonial village world-famous for its traditional chorizos and preserved historical atmosphere.',
+    'cepitá': 'A hidden gem deep within the Chicamocha Canyon, characterized by its arid beauty and colonial tranquility.',
+    'pinchote': 'Birthplace of the heroine Antonia Santos, this peaceful colonial town preserves a rich historical heritage.',
+    'albania': 'A peaceful mountain town with stunning green landscapes and traditional colonial charm.',
+    'betulia': 'Known for its scenic beauty and traditional coffee-growing heritage, surrounded by misty Andean peaks.',
+    'bolívar': 'A historic and resilient town in southern Santander, known for its colonial legacy and mountain vistas.',
+    'capitanejo': 'Perched on the banks of the Chicamocha River, known for its hot climate, goat breeding, and strategic mountain location.',
+    'cerrito': 'An Andean town featuring high-altitude "páramo" landscapes and traditional stone architecture.',
+    'contratación': 'A town with a unique history and heritage architecture, preserved with stories of resilience and community.',
+    'florián': 'Home to the spectacular "Ventanas de Tisquizoque," a majestic waterfall exiting through a massive natural cave.',
+    'gambita': 'Birthplace of musician Luis A. Calvo, a paradise of waterfalls including the grand Manto de la Virgen.',
+    'jordán': 'A well-preserved "ghost town" at the bottom of the Chicamocha Canyon, offering a step back in time with its stone houses.',
+    'la belleza': 'A hidden treasure known for its mystical limestone caves and lush, diverse agricultural landscapes.',
+    'landázuri': 'A tropical paradise in the mountains, famous for its cacao plantations and misty forest trails.',
+    'lebríja': 'The "Pineapple Capital of Colombia," a heights-positioned town known for its agricultural wealth and panoramic views.',
+    'mogotes': 'A historic town near San Gil, renowned for its traditional handicrafts, scenic valleys, and colonial streets.',
+    'puerto wilches': 'A strategic tropical port on the Magdalena River, surrounded by palm plantations and rich river ecosystems.',
+    'santander-san andrés': 'The majestic gateway to García Rovira, featuring a landmark colonial church and a historic center perched atop dramatic Andean slopes.',
+    'santander-sabana de torres': 'A strategic agricultural and industrial hub in the Magdalena Medio, known for its strategic location and tropical abundance.',
+    'santander-rionegro': 'A warm-climate gem known for its cacao tradition, offering a vibrant community atmosphere nestled among lush green hills.',
+    'santander-california': 'A historic high-altitude mining town with colonial architecture clinging to mist-covered peaks in the Soto Norte region.',
+    'santander-vetas': 'One of the highest towns in Colombia, a traditional mining center surrounded by the ethereal beauty of the Santurbán páramo.',
+    'santander-matanza': 'The colorful gateway to Soto Norte, preserving beautiful colonial facades amidst a landscape of lush green mountains.',
+    'santander-suratá': 'An Andean paradise of cold climate and steep slopes, known for its historic mountain charm and misty landscapes.',
+    'santander-tona': 'A serene high-altitude town with deep religious traditions, surrounded by the silence and mist of the Andean peaks.',
+    'santander-simacota': 'Birthplace of the Comuneros movement, this peaceful village preserves historic stone houses and a legacy of Colombian independence.',
+    'santander-sucre': 'A hidden mountain treasure in the Opón region, known for its rugged geography, rich biodiversity, and traditional rural life.',
+    'santander-la paz': 'A peaceful southern destination famous for its traditional stone-paved streets and majestic mountain views.',
+    'santander-el playón': 'A strategic mountain town on the northern highway, surrounded by dense tropical forests and misty green landscapes.',
+    'santander-puerto parra': 'A biodiversity-rich river port in the Magdalena Medio, where the wetlands meet the tropical forest along the railway.',
+    'santander-aguada': 'A tranquil jewel of the Vélez province, known for its peaceful colonial atmosphere and surrounding traditional farms.',
 
     // Antioquia
     'guatapé': 'A vibrant town famous for its incredibly colorful "zócalos" and the massive Peñol Rock offering 360-degree views.',
@@ -204,15 +307,22 @@ export const cityOverviews: Record<string, string> = {
     'el carmen de viboral': 'Famous worldwide for its unique, hand-painted ceramic traditions and artistic streets.'
 };
 
-export function getCityOverview(cityName: string, defaultDescription?: string): string {
+export function getCityOverview(cityName: string, defaultDescription?: string, departmentName?: string): string {
     const name = cityName.toLowerCase();
+    const dept = departmentName?.toLowerCase();
+
+    // Check for specific department-city mapping first to handle name collisions
+    if (dept) {
+        const specificKey = `${dept}-${name}`;
+        if (cityOverviews[specificKey]) return cityOverviews[specificKey];
+    }
 
     // Check for direct matches
     if (cityOverviews[name]) return cityOverviews[name];
 
     // Check for partial matches
     for (const [key, value] of Object.entries(cityOverviews)) {
-        if (name.includes(key) || key.includes(name)) {
+        if (name === key || name.includes(key) || key.includes(name)) {
             return value;
         }
     }
