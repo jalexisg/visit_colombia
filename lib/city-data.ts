@@ -1,6 +1,22 @@
 import { getAssetPath } from './utils';
 
 export const cityImages: Record<string, string> = {
+    'cartagena': '/images/city_cartagena.png',
+    'cartagena de indias': '/images/city_cartagena.png',
+    'mompós': '/images/city_mompos.png',
+    'mompos': '/images/city_mompos.png',
+    'santa cruz de mompós': '/images/city_mompos.png',
+    'san jacinto': '/images/city_san_jacinto.png',
+    'magangué': '/images/city_magangue.png',
+    'magangue': '/images/city_magangue.png',
+    'el carmen de bolívar': '/images/city_el_carmen_bolivar.png',
+    'turbaco': '/images/city_turbaco.png',
+    'san juan nepomuceno': '/images/city_san_juan_nepomuceno.png',
+    'santa rosa del sur': '/images/city_santa_rosa_del_sur.png',
+    'mahates': '/images/city_mahates.png',
+    'arjona': '/images/city_arjona.png',
+    'maría la baja': '/images/city_maria_la_baja.png',
+    'bolivar-villanueva': '/images/city_villanueva_bolivar.png',
     'santander-bucaramanga': '/images/city_bucaramanga.png',
     'manizales': '/images/city-manizales.png',
     'pereira': '/images/city-pereira.png',
@@ -212,8 +228,6 @@ export const cityImages: Record<string, string> = {
     'santiago de cali': '/images/city-cali.png',
     'barranquilla': '/images/city-barranquilla.png',
     'santa marta': '/images/city-santa-marta.png',
-    'cartagena': '/images/city_cartagena.png',
-    'cartagena de indias': '/images/city_cartagena.png',
     'san andrés': '/images/city-san-andres.png',
     'san andres': '/images/city-san-andres.png',
     'san andr': '/images/city-san-andres.png'
@@ -364,7 +378,21 @@ export const cityOverviews: Record<string, string> = {
     'itagüí': 'An industrial city known for its cultural centers and vibrant street murals.',
     'itagui': 'An industrial city known for its cultural centers and vibrant street murals.',
     'la ceja': 'A peaceful valley town famous for its flower exports and its strong cycling culture.',
-    'el carmen de viboral': 'Famous worldwide for its unique, hand-painted ceramic traditions and artistic streets.'
+    'el carmen de viboral': 'Famous worldwide for its unique, hand-painted ceramic traditions and artistic streets.',
+
+    // Bolívar
+    'cartagena': 'Cartagena is a Caribbean port city known for its colonial architecture, colorful streets, and historic fortifications including the San Felipe de Barajas Castle.',
+    'mompós': 'Santa Cruz de Mompós is a UNESCO World Heritage site frozen in time, famous for its colonial architecture and its intricate filigree jewelry.',
+    'san jacinto': 'San Jacinto is a cultural hub in the Montes de María, world-renowned for its artisanal hammocks, traditional Gaita music, and rich indigenous heritage.',
+    'magangué': 'Known as the "City of Rivers," Magangué is a major commercial port at the confluence of the Magdalena, Cauca, and San Jorge rivers.',
+    'el carmen de bolívar': 'Located in the heart of the Montes de María, El Carmen de Bolívar is an agricultural center famous for its cultural resilience and delicious local gastronomy.',
+    'turbaco': 'A scenic retreat near Cartagena, Turbaco is known for its cool climate, botanical gardens, and prehistoric mud volcanoes.',
+    'san juan nepomuceno': 'Home to the Los Colorados Sanctuary, San Juan Nepomuceno offers a unique glimpse into the tropical dry forest and rich local traditions.',
+    'santa rosa del sur': 'Nestled in the high mountains of the Serranía de San Lucas, Santa Rosa del Sur is a vibrant town known for its emerald mines and stunning mountain landscapes.',
+    'mahates': 'Mahates is the gateway to San Basilio de Palenque, the first free town in the Americas and a UNESCO Intangible Cultural Heritage site for its unique language and traditions.',
+    'arjona': 'Arjona is an agricultural powerhouse famous for its traditional "Bollo Limón" and vibrant celebrations of Caribbean culture.',
+    'maría la baja': 'Surrounded by fertile plains and scenic marshlands, María la Baja is a major rice and African palm producer with a rich African-descendant heritage.',
+    'bolivar-villanueva': 'Villanueva is a tranquil town in the lower Bolívar plains, known for its colonial church and being a center for traditional livestock and agricultural trade.'
 };
 
 export function getCityOverview(cityName: string, defaultDescription?: string, departmentName?: string): string {
