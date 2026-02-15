@@ -98,6 +98,8 @@ export const cityImages: Record<string, string> = {
     'pijao': '/images/city_pijao.png',
     'quimbaya': '/images/city_quimbaya.png',
     'salento': '/images/city_salento.png',
+    'leticia': '/images/city_leticia.png',
+    'puerto nariño': '/images/city_puerto_narino.png',
     'calarcá': '/images/city_calarca.png',
     'calarca': '/images/city_calarca.png',
     'génova': '/images/city_genova.png',
@@ -106,7 +108,6 @@ export const cityImages: Record<string, string> = {
     'miriti paraná': '/images/city_miriti_parana.png',
     'mirití parana': '/images/city_miriti_parana.png',
     'miriti parana': '/images/city_miriti_parana.png',
-    'puerto nariño': '/images/city_puerto_narino.png',
     'puerto narino': '/images/city_puerto_narino.png',
     'el encanto': '/images/city_el_encanto.png',
     'la chorrera': '/images/city_la_chorrera.png',
@@ -414,6 +415,11 @@ export function getCityImage(cityName: string, departmentName?: string): string 
 export const cityOverviews: Record<string, string> = {
     // Boyacá
     'villa de leyva': 'Famous for its massive cobblestone plaza and beautifully preserved white colonial buildings.',
+    'salento': 'The colorful gateway to the Cocora Valley, home to the Quindío Wax Palm, the world\'s tallest palm tree. This picturesque town is the heart of the Eje Cafetero, where travelers can visit traditional fincas to observe the manual harvesting and roasting of world-class Colombian coffee.',
+    'leticia': 'The gateway to the Amazon rainforest, Leticia is a unique tri-border town where Colombia, Brazil, and Peru meet. It is a hub for immersive jungle expeditions, nocturnal wildlife spotting, and sustainable travel to vehicle-free towns like Puerto Nariño.',
+    'puerto nariño': 'A pioneer in sustainable tourism, Puerto Nariño is a vehicle-free town on the banks of the Amazon. It offers a peaceful retreat into Ticuna indigenous culture and the immense biodiversity of the rainforest.',
+    'bogotá': 'The Andean political and cultural heart of Colombia, situated at 2,625 meters. Known for its "perpetual spring" and the historic La Candelaria district, it houses the world-class Gold Museum (Museo del Oro) and the Botero Museum. Visitors can ascend Mount Monserrate for panoramic views or explore the affluent northern hubs like Zona T and Usaquén, famous for their high-end dining and nightlife.',
+    'bogota': 'The Andean political and cultural heart of Colombia, situated at 2,625 meters. Known for its "perpetual spring" and the historic La Candelaria district, it houses the world-class Gold Museum (Museo del Oro) and the Botero Museum. Visitors can ascend Mount Monserrate for panoramic views or explore the affluent northern hubs like Zona T and Usaquén, famous for their high-end dining and nightlife.',
     'tunja': 'The capital of Boyacá and the highest capital city in Colombia. It features a rich colonial heritage, historic churches, and was built on the site of the ancient Muisca capital Hunza.',
     'paipa': 'Known for the serene Lake Sochagota and its relaxing medicinal thermal springs.',
     'monguí': 'A "Pueblo Patrimonio" of Colombia, famous for its historic stone bridge and hand-stitched soccer ball industry.',
@@ -432,6 +438,8 @@ export const cityOverviews: Record<string, string> = {
     'moniquirá': 'Known as the "Sweet Capital of Colombia" for its traditional bocadillo production, nestled in a lush green valley with a warm climate.',
     'garagoa': 'A vibrant town in the heart of the Tenza valley, surrounded by emerald mountains and famous for its traditional religious festivals.',
     'guateque': 'The birthplace of Enrique Olaya Herrera, this historic town in the Tenza valley is known for its beautiful colonial plaza and firework traditions.',
+    'medellín': 'The "City of Eternal Spring," celebrated for its radical transformation and innovation. From the iconic Metrocable system to the vibrant street art of Comuna 13, Medellín offers a unique look at Colombian resilience and modern "Paisa" identity. The El Poblado district, specifically Parque Lleras and Provenza, serves as the primary hub for international gastronomy and social life.',
+    'medellin': 'The "City of Eternal Spring," celebrated for its radical transformation and innovation. From the iconic Metrocable system to the vibrant street art of Comuna 13, Medellín offers a unique look at Colombian resilience and modern "Paisa" identity. The El Poblado district, specifically Parque Lleras and Provenza, serves as the primary hub for international gastronomy and social life.',
     'puerto boyacá': 'A major river port on the Magdalena River, offering a tropical atmosphere and acting as a vital link between the Andean highlands and the Caribbean plains.',
     'santa rosa de viterbo': 'A town of profound history and judicial tradition, featuring beautiful colonial architecture and serene highland landscapes.',
     'el cocuy': 'Gateway to the snow-capped Sierra Nevada del Cocuy, this charming colonial town features white-walled houses and emerald-green balconies.',
@@ -648,7 +656,8 @@ export const cityOverviews: Record<string, string> = {
     'el carmen de viboral': 'Famous worldwide for its unique, hand-painted ceramic traditions and artistic streets.',
 
     // Bolívar
-    'cartagena': 'Cartagena is a Caribbean port city known for its colonial architecture, colorful streets, and historic fortifications including the San Felipe de Barajas Castle.',
+    'cartagena': 'A UNESCO World Heritage site and the crown jewel of the Caribbean. The "Walled City" (Centro Histórico) and Getsemaní are living museums of Spanish colonial power, featuring the massive Castillo de San Felipe de Barajas fortress. Modern Cartagena thrives in Bocagrande, a peninsula of high-rise hotels that offers a vibrant contrast to the historic fortifications.',
+    'cartagena de indias': 'A UNESCO World Heritage site and the crown jewel of the Caribbean. The "Walled City" (Centro Histórico) and Getsemaní are living museums of Spanish colonial power, featuring the massive Castillo de San Felipe de Barajas fortress. Modern Cartagena thrives in Bocagrande, a peninsula of high-rise hotels that offers a vibrant contrast to the historic fortifications.',
     'mompós': 'Santa Cruz de Mompós is a UNESCO World Heritage site frozen in time, famous for its colonial architecture and its intricate filigree jewelry.',
     'san jacinto': 'San Jacinto is a cultural hub in the Montes de María, world-renowned for its artisanal hammocks, traditional Gaita music, and rich indigenous heritage.',
     'magangué': 'Known as the "City of Rivers," Magangué is a major commercial port at the confluence of the Magdalena, Cauca, and San Jorge rivers.',

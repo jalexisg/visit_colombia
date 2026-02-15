@@ -91,6 +91,49 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Strategic Insights / Traveler Essentials 2026 */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
+        <div className="bg-card border rounded-2xl p-8 sm:p-12 shadow-sm">
+          <h2 className="text-3xl font-bold text-foreground mb-8">Strategic Traveler Essentials 2026</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                <span className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm">1</span>
+                Administrative Prerequisites
+              </h3>
+              <p className="text-muted-foreground mb-4">
+                The entry process is highly digitalized. All travelers must complete the <strong>Check-Mig</strong> form via Migración Colombia within 72 hours of departure.
+              </p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• <strong>Visa waiver:</strong> 90-day PIP stamp for US, Canada, and EU citizens.</li>
+                <li>• <strong>Extensions:</strong> Apply for a PTP online 15-20 days before expiry.</li>
+                <li>• <strong>Yellow Fever:</strong> Mandatory for National Parks and Amazon regions.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                <span className="w-8 h-8 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-sm">2</span>
+                Situational Awareness
+              </h3>
+              <p className="text-muted-foreground mb-4">
+                Safety in 2026 relies on the <strong>"No dar papaya"</strong> doctrine—minimizing the display of wealth or vulnerability in urban centers.
+              </p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• <strong>Urban Safety:</strong> Use app-based transport; keep electronics out of sight.</li>
+                <li>• <strong>Nightlife:</strong> Never leave drinks unattended; be wary of scopolamine risks.</li>
+                <li>• <strong>Regional Travel:</strong> Use domestic aviation to bypass Andean road complexities.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-12 p-6 bg-muted/50 rounded-xl border-l-4 border-primary">
+            <h3 className="font-bold mb-2">Strategic Timing</h3>
+            <p className="text-sm text-muted-foreground">
+              Peak travel months are <strong>December to March</strong> and <strong>July to August</strong>. For cultural enthusiasts, the 2026 calendar features the Barranquilla Carnival (March 1-4) and Medellín's Flower Festival (August 1-10).
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
         <div className="bg-gradient-to-r from-primary to-blue-600 rounded-2xl p-8 sm:p-16 text-white shadow-xl">

@@ -156,6 +156,70 @@ export const blogPosts: BlogPost[] = [
         author: 'Isabella Martinez',
         date: '2026-02-20',
         tags: ['History', 'Culture', 'Architecture', 'Travel Guide'],
+    },
+    {
+        id: '8',
+        title: '2026 Security Guide: Navigating Colombia Safely',
+        slug: '2026-security-guide-colombia',
+        excerpt: 'An exhaustive analysis of the security environment and situational awareness for travelers in 2026.',
+        content: `
+            <p>The security situation in Colombia remains a critical factor for travelers. While major urban centers have seen significant investment in infrastructure, a high degree of situational awareness is essential.</p>
+            <h2>The "No Dar Papaya" Doctrine</h2>
+            <p>In major metropolitan areas like Bogotá, Medellín, and Cartagena, safety is summarized in the phrase "No dar papaya" (Do not give papaya). This is an imperative to minimize the display of wealth or vulnerability.</p>
+            <h2>Urban Safety Protocols</h2>
+            <ul>
+                <li><strong>Dress Down:</strong> Avoid flashy jewelry or expensive watches in public areas.</li>
+                <li><strong>Electronics:</strong> Keep cell phones and cameras out of sight unless in secure locations.</li>
+                <li><strong>Transport:</strong> Use only official app-based transport (Uber, DiDi) or radio-dispatched taxis. Avoid night driving on secondary roads.</li>
+            </ul>
+            <h2>Chemical Assault Awareness</h2>
+            <p>A severe threat in the nightlife sector is the use of incapacitating drugs like scopolamine (burundanga). Never leave your drinks unattended and refuse snacks, cigarettes, or gum from strangers.</p>
+        `,
+        image: getAssetPath('/images/blog-safety.png'),
+        author: 'Security Analyst',
+        date: '2026-03-01',
+        tags: ['Safety', '2026', 'Travel Tips', 'Security'],
+    },
+    {
+        id: '9',
+        title: 'Essential Logistics: Check-Mig, Visas, and Health 2026',
+        slug: 'essential-logistics-colombia-2026',
+        excerpt: 'A step-by-step guide to the mandatory administrative prerequisites for entering Colombia in 2026.',
+        content: `
+            <p>Failure to comply with Colombia\'s digitalized entry systems can result in immediate logistical failure. Here is what you need to know for 2026.</p>
+            <h2>The Check-Mig System</h2>
+            <p>The mandatory <strong>Check-Mig</strong> form must be completed via the Migración Colombia website within a window of 72 hours down to one hour before your flight’s departure. This is required for both entering and exiting the country.</p>
+            <h2>Visa and Stay Regulations</h2>
+            <p>Citizens from the US, Canada, and the EU receive a "Permiso de Ingreso y Permanencia" (PIP) stamp for 90 days. You can extend this for another 90 days (PTP) online, totaling 180 days per calendar year.</p>
+            <h2>Health and Vaccinations</h2>
+            <p>The Yellow Fever vaccine is highly recommended and often mandatory for visitors to National Parks like Tayrona or regions like the Amazon. Administer it at least 10 days before travel to ensure full immunity.</p>
+        `,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Admin Support',
+        date: '2026-03-05',
+        tags: ['Logistics', 'Visa', 'Health', 'Travel Guide'],
+    },
+    {
+        id: '10',
+        title: 'Climate & Festivals 2026: Best Timing Strategies',
+        slug: 'climate-festivals-colombia-2026',
+        excerpt: 'Maximize your experience by timing your visit with the dry seasons and world-class cultural events.',
+        content: `
+            <p>Colombia\'s lack of traditional seasons means climate is defined by altitude and rainfall patterns. Plan your 2026 trip strategically.</p>
+            <h2>Optimal Travel Windows</h2>
+            <p>The dry seasons from <strong>December to March</strong> and <strong>July to August</strong> are the peak periods for travel. These months offer the most stable conditions for Andean hiking and Caribbean beach activities.</p>
+            <h2>2026 Major Cultural Events</h2>
+            <ul>
+                <li><strong>Barranquilla Carnival (March 1-4):</strong> The world\'s second-largest folkloric celebration.</li>
+                <li><strong>Holy Week in Popayán (Mar 29 - Apr 5):</strong> Historic religious processions dating back to 1556.</li>
+                <li><strong>Medellín Flower Festival (August 1-10):</strong> A week-long celebration of Antioquian flower farming and culture.</li>
+                <li><strong>Salsa Festival in Cali (September 25-28):</strong> Witness the global salsa capital in its full glory.</li>
+            </ul>
+        `,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Culture Scout',
+        date: '2026-03-10',
+        tags: ['Festivals', 'Climate', 'Culture', '2026'],
     }
 ];
 
