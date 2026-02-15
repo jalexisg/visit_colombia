@@ -176,7 +176,7 @@ export default async function NaturalParkDetailPage({ params }: PageProps) {
                                     style={{ border: 0 }}
                                     loading="lazy"
                                     allowFullScreen
-                                    src={`https://maps.google.com/maps?q=${encodeURIComponent(park.name + ', Colombia')}&t=&z=10&ie=UTF8&iwloc=&output=embed`}
+                                    src={`https://maps.google.com/maps?q=${encodeURIComponent(`${park.name}${park.department ? `, ${park.department.name}` : ''}, Colombia`)}&t=&z=10&ie=UTF8&iwloc=&output=embed`}
                                 ></iframe>
                             </div>
                         </section>

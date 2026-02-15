@@ -147,8 +147,9 @@ export const cityImages: Record<string, string> = {
     'apartadó': '/images/city_apartado.png',
     'apartado': '/images/city_apartado.png',
     'arboletes': '/images/city_arboletes.png',
-    'antioquia-barbosa': '/images/city_barbosa.png',
-    'barbosa-antioquia': '/images/city_barbosa.png',
+    'antioquia-barbosa': '/images/city_barbosa_antioquia.png',
+    'barbosa-antioquia': '/images/city_barbosa_antioquia.png',
+    'santander-barbosa': '/images/city_barbosa_santander.png',
     'bello': '/images/city_bello.png',
     'ciudad bolívar': '/images/city_ciudad_bolivar.png',
     'ciudad bolivar': '/images/city_ciudad_bolivar.png',
@@ -191,6 +192,8 @@ export const cityImages: Record<string, string> = {
     'canasgordas': '/images/city_canasgordas.png',
     'cocorná': '/images/city_cocorna.png',
     'cocorna': '/images/city_cocorna.png',
+    'antioquia-concepción': '/images/city_concepcion.png',
+    'antioquia-concepcion': '/images/city_concepcion.png',
     'concepción': '/images/city_concepcion.png',
     'concepcion': '/images/city_concepcion.png',
     'concordia': '/images/city_concordia.png',
@@ -203,8 +206,12 @@ export const cityImages: Record<string, string> = {
     'guarne': '/images/city_guarne.png',
     'ituango': '/images/city_ituango.png',
     'la estrella': '/images/city_la_estrella.png',
+    'antioquia-la unión': '/images/city_la_union.png',
+    'antioquia-la union': '/images/city_la_union.png',
     'la unión': '/images/city_la_union.png',
     'la union': '/images/city_la_union.png',
+    'valle del cauca-la unión': '/images/city_la_union_valle.png',
+    'valle del cauca-la union': '/images/city_la_union_valle.png',
     'san jerónimo': '/images/city_san_jeronimo.png',
     'san jeronimo': '/images/city_san_jeronimo.png',
     'villa de leyva': '/images/city_villa_de_leyva.png',
@@ -349,7 +356,8 @@ export const cityImages: Record<string, string> = {
     'zapatoca': '/images/city_zapatoca.png',
     'curití': '/images/city_curiti.png',
     'curiti': '/images/city_curiti.png',
-    'guadalupe': '/images/city_guadalupe.png',
+    'santander-guadalupe': '/images/city_guadalupe_santander.png',
+    'guadalupe': '/images/city_guadalupe_santander.png',
     'barrancabermeja': '/images/city_barrancabermeja.png',
     'floridablanca': '/images/city_floridablanca.png',
     'piedecuesta': '/images/city_piedecuesta.png',
@@ -359,7 +367,7 @@ export const cityImages: Record<string, string> = {
     'velez': '/images/city_velez.png',
     'villanueva': '/images/city_villanueva.png',
     'aratoca': '/images/city_aratoca.png',
-    'barbosa': '/images/city_barbosa.png',
+    'barbosa': '/images/city_barbosa_santander.png',
     'charalá': '/images/city_charala.png',
     'charala': '/images/city_charala.png',
     'cimitarra': '/images/city_cimitarra.png',
@@ -416,7 +424,7 @@ export const cityImages: Record<string, string> = {
     'santander-carcasí': '/images/city_carcasi.png',
     'santander-charta': '/images/city_charta.png',
     'santander-chipatá': '/images/city_chipata.png',
-    'santander-concepción': '/images/city_concepcion.png',
+    'santander-concepción': '/images/city_concepcion_santander.png',
     'santander-confines': '/images/city_confines.png',
     'santander-coromoro': '/images/city_coromoro.png',
     'santander-el guacamayo': '/images/city_el_guacamayo.png',
@@ -460,22 +468,27 @@ export const cityImages: Record<string, string> = {
 };
 
 export function getCityImage(cityName: string, departmentName?: string): string {
-    const name = cityName.toLowerCase();
-    const dept = departmentName?.toLowerCase();
+    const name = cityName.toLowerCase().trim();
+    const dept = departmentName?.toLowerCase().trim();
 
-    // Check for specific department-city mapping first to handle name collisions
+    // 1. Priority: Exact department-city match
     if (dept) {
         const specificKey = `${dept}-${name}`;
-        if (cityImages[specificKey]) return getAssetPath(cityImages[specificKey]);
+        if (specificKey in cityImages) return getAssetPath(cityImages[specificKey]);
     }
 
+    // 2. Exact name match
+    if (name in cityImages) return getAssetPath(cityImages[name]);
+
+    // 3. Fallback: Includes logic for variations (e.g., "Cartagena de Indias" matching "Cartagena")
+    // Note: We avoid matching department-prefixed keys here if possible by filtering them out or checking length
     for (const [key, value] of Object.entries(cityImages)) {
-        if (name === key || name.includes(key) || key.includes(name)) {
-            return getAssetPath(value);
+        if (!key.includes('-')) { // Only match generic keys here
+            if (name === key || name.includes(key) || key.includes(name)) {
+                return getAssetPath(value);
+            }
         }
     }
-
-    if (cityImages[name]) return getAssetPath(cityImages[name]);
 
     return `https://source.unsplash.com/800x600/?colombia,${cityName}`;
 }
@@ -722,6 +735,11 @@ export const cityOverviews: Record<string, string> = {
     'itagui': 'An industrial city known for its cultural centers and vibrant street murals.',
     'la ceja': 'A peaceful valley town famous for its flower exports and its strong cycling culture.',
     'el carmen de viboral': 'Famous worldwide for its unique, hand-painted ceramic traditions and artistic streets.',
+    'antioquia-concepción': 'A beautifully preserved colonial town in Antioquia, famous for its cobblestone streets and status as a National Heritage site, often called the "Land of the Three Laurels".',
+    'antioquia-concepcion': 'A beautifully preserved colonial town in Antioquia, famous for its cobblestone streets and status as a National Heritage site, often called the "Land of the Three Laurels".',
+    'antioquia-barbosa': 'A gateway to the Aburrá Valley, known for its pleasant climate, parks, and traditional Paisa hospitality.',
+    'antioquia-la unión': 'A peaceful town in Eastern Antioquia known for its high-quality potato production and beautiful rolling green hills.',
+    'antioquia-la union': 'A peaceful town in Eastern Antioquia known for its high-quality potato production and beautiful rolling green hills.',
 
     // Bolívar
     'cartagena': 'A UNESCO World Heritage site and the crown jewel of the Caribbean. The "Walled City" (Centro Histórico) and Getsemaní are living museums of Spanish colonial power, featuring the massive Castillo de San Felipe de Barajas fortress. Modern Cartagena thrives in Bocagrande, a peninsula of high-rise hotels that offers a vibrant contrast to the historic fortifications.',
@@ -773,26 +791,31 @@ export const cityOverviews: Record<string, string> = {
     'bolivar-arenal': 'Arenal is a historic river town known for its traditional colonial architecture and its peaceful setting along the banks of the Magdalena.',
     'bolivar-el peñón': 'El Peñón is a scenic mountain town in the Serranía de San Lucas, offering rugged landscapes and a rich tradition of highland agriculture.',
     'san pablo de borbur': 'Known for its emerald mines, San Pablo de Borbur is a vibrant town set against the dramatic mountain landscapes of the western range.',
-    'bolivar-san pablo de borbur': 'Known for its emerald mines, San Pablo de Borbur is a vibrant town set against the dramatic mountain landscapes of the western range.'
+    'bolivar-san pablo de borbur': 'Known for its emerald mines, San Pablo de Borbur is a vibrant town set against the dramatic mountain landscapes of the western range.',
+    'santander-barbosa': 'The "Golden Gate of Santander," a vital commercial crossroads situated along the Suarez River among tropical mountain scenery.',
+    'valle del cauca-la unión': 'The "Grape Capital" of Colombia, home to vast vineyards and vibrant fruit festivals in the sunset-bathed Cauca River valley.',
+    'valle del cauca-la union': 'The "Grape Capital" of Colombia, home to vast vineyards and vibrant fruit festivals in the sunset-bathed Cauca River valley.',
 };
 
 export function getCityOverview(cityName: string, defaultDescription?: string, departmentName?: string): string {
-    const name = cityName.toLowerCase();
-    const dept = departmentName?.toLowerCase();
+    const name = cityName.toLowerCase().trim();
+    const dept = departmentName?.toLowerCase().trim();
 
-    // Check for specific department-city mapping first to handle name collisions
+    // 1. Priority: Exact department-city match
     if (dept) {
         const specificKey = `${dept}-${name}`;
         if (cityOverviews[specificKey]) return cityOverviews[specificKey];
     }
 
-    // Check for direct matches
+    // 2. Exact name match
     if (cityOverviews[name]) return cityOverviews[name];
 
-    // Check for partial matches
+    // 3. Fallback: Includes logic
     for (const [key, value] of Object.entries(cityOverviews)) {
-        if (name === key || name.includes(key) || key.includes(name)) {
-            return value;
+        if (!key.includes('-')) { // Only match generic keys here
+            if (name === key || name.includes(key) || key.includes(name)) {
+                return value;
+            }
         }
     }
 

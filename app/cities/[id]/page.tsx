@@ -155,7 +155,7 @@ export default async function CityDetailPage({ params }: PageProps) {
                                     style={{ border: 0 }}
                                     loading="lazy"
                                     allowFullScreen
-                                    src={`https://maps.google.com/maps?q=${encodeURIComponent(city.name + ', Colombia')}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
+                                    src={`https://maps.google.com/maps?q=${encodeURIComponent(`${city.name}, ${department.name}, Colombia`)}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
                                 ></iframe>
                             </div>
                         </section>
