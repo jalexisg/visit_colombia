@@ -142,6 +142,13 @@ def respond(message, history):
         if f" {norm_city} " in words or f" {msg_norm} " in f" {norm_city} " or any(f" {word} " == f" {msg_norm} " for word in norm_city.split()):
             found_cities_raw.append(city_name)
     
+    # Priority check for Cartagena/Bogota (Common failures / Aliases)
+    # We move this EARLIER to prevent history hijacking
+    if "cartagena" in msg_norm: found_cities_raw.append("cartagena de indias")
+    if "bogota" in msg_norm: found_cities_raw.append("bogotá")
+    if "leiva" in msg_norm: found_cities_raw.append("villa de leyva")
+    if "leyva" in msg_norm: found_cities_raw.append("villa de leyva")
+    
     # 2. Contexto (Stricter word boundaries for history)
     # Priorizamos lo que dijo el USUARIO (h[0]) antes que la respuesta del asistente (h[1]) 
     # para evitar capturar ciudades mencionadas por el asistente en una desambiguación.
@@ -184,12 +191,6 @@ def respond(message, history):
     else:
         found_cities = found_cities_raw
 
-    # Priority check for Cartagena/Bogota (Common failures)
-    if not found_cities:
-        if "cartagena" in msg_norm: found_cities.append("cartagena de indias")
-        if "bogota" in msg_norm: found_cities.append("bogotá")
-        if "leiva" in msg_norm: found_cities.append("villa de leyva")
-        if "leyva" in msg_norm: found_cities.append("villa de leyva")
 
     # 3. Disambiguación
     for city in found_cities:

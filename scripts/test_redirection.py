@@ -18,16 +18,22 @@ except ImportError:
 def test_city_redirection(query, history=[]):
     msg_norm = normalize(query)
     
-    # EXACT LOGIC COPY FROM app.py (V7 - Phrase Matching)
+    # --- LOGIC V8 (Priority Scan First) ---
+    found_cities_raw = []
     found_cities = []
     words = f" {msg_norm} "
-    found_cities_raw = []
+
+    # 1. Broad scan
     for city_name in MASTER_DATA["cities"].keys():
         norm_city = normalize(city_name)
-        # V7 Logic: Phrase match
         if f" {norm_city} " in words or f" {msg_norm} " in f" {norm_city} " or any(f" {word} " == f" {msg_norm} " for word in norm_city.split()):
             found_cities_raw.append(city_name)
     
+    # 2. PRIORITY SCAN (Moved here from bottom)
+    if "cartagena" in msg_norm: found_cities_raw.append("cartagena de indias")
+    if "bogota" in msg_norm: found_cities_raw.append("bogotá")
+
+    # 3. Context Scan
     history_city = None
     for h in reversed(history[-6:]):
         user_text = ""
@@ -50,7 +56,7 @@ def test_city_redirection(query, history=[]):
             if history_city: break
         if history_city: break
 
-    # Final Decision Logic
+    # Final Decision
     if history_city:
         hist_depts = [normalize(d) for d in MASTER_DATA["cities"][history_city]["departments"]]
         if msg_norm in hist_depts:
@@ -62,35 +68,45 @@ def test_city_redirection(query, history=[]):
     else:
         found_cities = found_cities_raw
 
-    if not found_cities:
-        if "cartagena" in msg_norm: found_cities.append("cartagena de indias")
-        if "bogota" in msg_norm: found_cities.append("bogotá")
+    if found_cities:
+        target_city = found_cities[0]
+        city_data = MASTER_DATA["cities"][target_city]
+        depts_list = city_data["departments"]
+        
+        if len(depts_list) == 1:
+            dept = depts_list[0]
+            truth = city_data["ground_truth"].get(dept, {})
+            city_id = truth.get("id")
+            return f"REDIRECT: /cities/{city_id} ({target_city})"
+        else:
+            matched_dept = None
+            for d in depts_list:
+                if normalize(d) in msg_norm:
+                    matched_dept = d
+                    break
+            
+            if matched_dept:
+                truth = city_data["ground_truth"].get(matched_dept, {})
+                city_id = truth.get("id")
+                return f"REDIRECT: /cities/{city_id} ({target_city})"
+            else:
+                return f"AMBIGUOUS: {target_city}"
+    return "NOT_FOUND"
 
-    return found_cities
+print("--- REDIRECTION AUDIT (HIJACKING FIX) ---")
 
-print("--- EXHAUSTIVE SAN ANDRÉS AUDIT ---")
-query = "San Andres"
-results = test_city_redirection(query)
+# Case: History contains "Visit Colombia", User says "Cartagena"
+# Expected: Cartagena (ID 210), NOT Colombia (ID 665)
+hist_hijack = [["Hi", "Welcome to Visit Colombia AI Assistant!"]]
+query = "what to visit in cartagena"
+res = test_city_redirection(query, hist_hijack)
+expected_id = "210"
 
-expected_keywords = [
-    "san andrés", 
-    "san andrés de cuerquia", 
-    "san andrés de sotavento", 
-    "san andrés de tumaco"
-]
+print(f"Query with 'Colombia' in history: {res}")
 
-print(f"Results for '{query}': {results}")
-
-found_all = True
-for kw in expected_keywords:
-    if kw not in results:
-        print(f"❌ Missing: {kw}")
-        found_all = False
-    else:
-        print(f"✅ Found: {kw}")
-
-if found_all:
-    print("\n🎉 ALL 5 SAN ANDRÉS VARIATIONS ARE NOW DETECTED!")
+if expected_id in res:
+    print("\n✅ HIJACKING FIXED! Cartagena takes priority.")
 else:
-    print("\n❌ AUDIT FAILED. Some variations were missed.")
+    print("\n❌ HIJACKING STILL PRESENT.")
+    print(f"Expected ID {expected_id} (Cartagena). Got: {res}")
     sys.exit(1)
