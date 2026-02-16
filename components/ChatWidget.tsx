@@ -1,10 +1,34 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MessageCircle, X } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 export default function ChatWidget() {
     const [isOpen, setIsOpen] = useState(false);
+    const router = useRouter();
+
+    useEffect(() => {
+        const handleMessage = (event: MessageEvent) => {
+            // Attempt to parse string message (for wider compatibility with HF signals)
+            let data = event.data;
+            if (typeof data === 'string') {
+                try {
+                    data = JSON.parse(data);
+                } catch (e) {
+                    // Not a JSON message, ignore
+                }
+            }
+
+            if (data?.type === 'NAVIGATE' && data?.url) {
+                console.log('Valid navigation signal received:', data.url);
+                router.push(data.url);
+            }
+        };
+
+        window.addEventListener('message', handleMessage);
+        return () => window.removeEventListener('message', handleMessage);
+    }, [router]);
 
     return (
         <div className="fixed bottom-6 right-6 z-[100]">

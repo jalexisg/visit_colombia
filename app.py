@@ -29,52 +29,70 @@ try:
 except Exception as e:
     print(f"Error: {e}")
 
-WELCOME_MSG = f"Hello! Welcome to visit-colombia.com. ({status_geo})\\nHow can I help you explore Colombia today?"
+WELCOME_MSG = f"Hello! Welcome to visit-colombia.com. ({status_geo})\nHow can I help you explore Colombia today?"
 
 css_code = """
 footer {display: none !important;}
 .gradio-container {min-height: 0 !important;}
 #component-0 {gap: 0 !important; padding: 0 !important;}
 textarea {font-size: 16px !important;}
+/* Hide the specific navigation code if it ever leaks to UI */
+.navigation-signal { display: none !important; color: transparent !important; font-size: 0 !important; height: 0; width: 0; }
 """
 
-# Hardened JS Focus Script
-js_code = """
+# Stealth JS Focus + Navigation Broadcaster
+js_code = r"""
 function() {
     const focusTB = () => {
         const tb = document.querySelector('textarea');
-        if (tb && document.activeElement !== tb) {
-            tb.focus();
+        if (tb && document.activeElement !== tb) tb.focus();
+    };
+
+    setTimeout(focusTB, 500);
+
+    const scanAndSignal = () => {
+        // Search in the body text for our characteristic pattern
+        const bodyContent = document.body.innerText;
+        const navMatch = bodyContent.match(/\[\[NAV:(.+?)\]\]/);
+        
+        if (navMatch) {
+            const url = navMatch[1];
+            const msg = { type: 'NAVIGATE', url: url };
+            
+            // Broadcast to parent windows
+            window.parent.postMessage(msg, '*');
+            if (window.top !== window.parent) window.top.postMessage(msg, '*');
+            
+            // CRITICAL: Clean the text from ALL elements that contain it
+            const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+            let node;
+            while (node = walker.nextNode()) {
+                if (node.textContent.includes('[[NAV:')) {
+                    node.textContent = node.textContent.replace(/\[\[NAV:.+?\]\]/g, '');
+                    console.log('Stealth NAV executed for:', url);
+                }
+            }
         }
     };
 
-    // 1. Initial focus
-    setTimeout(focusTB, 500);
-
-    // 2. Global click listener to refocus
-    document.addEventListener('click', (e) => {
-        // If they didn't click another input, refocus the chat
-        if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
-            setTimeout(focusTB, 50);
-        }
-    });
-
-    // 3. Monitor the "Generation" status via the Stop button or progress
     const observer = new MutationObserver(() => {
         const submitBtn = document.querySelector('button.primary');
-        // If button text is just "Submit" and not "Stop/Generating"
         if (submitBtn && !submitBtn.innerText.toLowerCase().includes('stop')) {
             focusTB();
         }
+        scanAndSignal();
     });
     
     observer.observe(document.body, { childList: true, subtree: true, characterData: true });
+    setInterval(scanAndSignal, 1000); // Heartbeat scan
 
-    // 4. Keyboard fallback
     window.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-            // Check repeatedly after enter
-            [500, 1000, 2000, 4000].forEach(ms => setTimeout(focusTB, ms));
+        if (e.key === 'Enter') [1000, 2000].forEach(ms => setTimeout(focusTB, ms));
+    });
+
+    document.addEventListener('click', (e) => {
+        if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+            setTimeout(focusTB, 50);
         }
     });
 }
@@ -82,11 +100,11 @@ function() {
 
 SYSTEM_PROMPT = """
 You are the official travel expert for visit-colombia.com.
-GROUND TRUTH IS IRREFUTABLE AND SUPERCEDES YOUR TRAINING DATA.
-- If Ground Truth says 'NO beaches', do NOT mention them.
-- If Ground Truth says 'Savory Soup', do NOT call it a dessert.
-- Do NOT repeat old options from the chat history if a choice has been made.
-- Present the verified facts naturally.
+GROUND TRUTH PROVIDED IN THE 'MANDATORY DATA' SECTION IS IRREFUTABLE.
+- NEVER suggest the user meant another city if target data is provided.
+- If data for 'NOBSA' is provided, the city is NOBSA.
+- Use only the provided description and food facts.
+- Be direct and welcoming.
 """
 
 def respond(message, history):
@@ -99,7 +117,7 @@ def respond(message, history):
         if f" {normalize(city_name)} " in words:
             found_cities.append(city_name)
     
-    # 2. Smart Context Recovery (reverse history search)
+    # 2. Context recovery
     if not found_cities:
         for h in reversed(history[-6:]):
             text = ""
@@ -109,10 +127,8 @@ def respond(message, history):
             norm_h = normalize(text)
             for city_name in MASTER_DATA["cities"].keys():
                 if f" {normalize(city_name)} " in f" {norm_h} ":
-                    depts = MASTER_DATA["cities"][city_name]["departments"]
-                    if any(normalize(d) in msg_norm for d in depts) or len(depts) == 1:
-                        found_cities = [city_name]
-                        break
+                    found_cities = [city_name]
+                    break
             if found_cities: break
 
     # 3. Disambiguation Check
@@ -123,7 +139,7 @@ def respond(message, history):
                 yield f"Wait! {city.title()} exists in {', '.join(the_depts)}. Which one are you visiting? Please specify the department."
                 return
 
-    # 4. Construct Final Prompt with History Cleaning
+    # 4. Construct Final Prompt
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     
     confirmed_dept = None
@@ -138,30 +154,30 @@ def respond(message, history):
                     confirmed_dept = d
                     break
 
-    # Build history with "Disambiguation Sanitization"
+    # Build history
     for entry in history:
         if isinstance(entry, (list, tuple)) and len(entry) == 2:
             if entry[0]: messages.append({"role": "user", "content": str(entry[0])})
             if entry[1]:
                 bot_msg = str(entry[1])
                 if "exists in" in bot_msg and "Which one are you visiting" in bot_msg and confirmed_dept:
-                    bot_msg = f"Understood. We are discussing {target_city.title()} in the department of {confirmed_dept}."
+                    bot_msg = f"Understood. We are discussing {target_city.title()} in {confirmed_dept}."
                 messages.append({"role": "assistant", "content": bot_msg})
             continue
         elif isinstance(entry, dict):
             messages.append(entry)
 
-    # Add Injection AFTER history cleaning
+    # Fact Injection & NAVIGATION
+    nav_url = ""
     if target_city and confirmed_dept:
         truth = MASTER_DATA["cities"][target_city]["ground_truth"].get(confirmed_dept, {})
-        injection = f"\\n### MANDATORY DATA FOR {target_city.upper()} ({confirmed_dept.upper()}) ###\\n"
-        injection += f"- REAL DESCRIPTION: {truth.get('description', '')}\\n"
-        injection += f"- REAL FOODS: {', '.join(truth.get('recommended_food', []))}\\n"
-        injection += f"- STRICT WARNINGS: {'. '.join(truth.get('warnings', []))}\\n"
-        injection += f"COMMAND: This city is in {confirmed_dept}. Ignore other departments. "
-        if "Santander" in confirmed_dept:
-            injection += "Mute is a SAVORY soup. It is NOT a dessert."
-        
+        city_id = truth.get("id")
+        if city_id: nav_url = f"/cities/{city_id}"
+            
+        injection = f"\n### MANDATORY DATA FOR {target_city.upper()} ({confirmed_dept.upper()}) ###\n"
+        injection += f"STRICT CITY NAME: {target_city.upper()}\n"
+        injection += f"- REAL DESCRIPTION: {truth.get('description', '')}\n"
+        injection += f"- REAL FOODS: {', '.join(truth.get('recommended_food', []))}\n"
         messages[0]["content"] += injection
 
     messages.append({"role": "user", "content": message})
@@ -173,6 +189,11 @@ def respond(message, history):
             if token is not None:
                 response += token
                 yield response
+        
+        # FINAL NAVIGATION SIGNAL (Injected in a way that JS can find but user hopefully won't notice)
+        if nav_url:
+            yield f"{response}\n\n[[NAV:{nav_url}]]"
+
     except Exception as e:
         yield f"Issue: {str(e)}"
 
