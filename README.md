@@ -7,6 +7,7 @@ A modern tourism website for Colombia, built with Next.js and Tailwind CSS, cons
 - **Dynamic Content**: Fetches real data for Departments, Cities, and Natural Parks from API Colombia.
 - **Modern UI**: Responsive design with Tailwind CSS, custom color palette, and glassmorphism effects.
 - **AI Travel Expert**: Integrated AI assistant powered by Hugging Face (Qwen 2.5), featuring anti-hallucination "Ground Truth" data for over 1,000 Colombian municipalities.
+- **Auto-Navigation**: Seamlessly redirects the user to specific city pages based on the chat's destination.
 - **Search**: Integrated search functionality (placeholder/client-side).
 - **Monetization Ready**: Dedicated components for AdSense, Hotel affiliates, and Tour affiliates.
 - **SEO Optimized**: Dynamic metadata implementation for better search engine visibility.
@@ -61,7 +62,8 @@ A modern tourism website for Colombia, built with Next.js and Tailwind CSS, cons
 The assistant uses a **Hybrid Grounding** strategy to prevent geographical errors:
 - **Disambiguation**: Logic that forces the AI to ask for a Department when city names repeat.
 - **Fact Injection**: Mandatory regional facts (food, landmarks) are injected into the prompt based on the chosen location.
-- **History Cleaning**: The assistant "sanitizes" its own conversation history to avoid context self-confusion.
+- **Auto-Navigation**: A signal protocol `[[NAV:/url]]` that triggers client-side redirection via the `ChatWidget`.
+- **History Sanitizer**: The assistant "sanitizes" its own conversation history to avoid context self-confusion.
 
 ## Deployment
 
