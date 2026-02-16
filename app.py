@@ -133,39 +133,63 @@ def respond(message, history):
     msg_norm = normalize(message)
     
     found_cities = []
-    # 1. Buscar ciudades
+    # 1. Detección en el mensaje actual
     words = f" {msg_norm} "
+    found_cities_raw = []
     for city_name in MASTER_DATA["cities"].keys():
         norm_city = normalize(city_name)
-        # Match part of name (e.g. 'cartagena' in 'cartagena de indias')
-        # We check if the search term perfectly matches a word within the official name
-        if f" {norm_city} " in words or any(f" {word} " == f" {msg_norm} " for word in norm_city.split()):
-            found_cities.append(city_name)
+        # Match exacto o si el término de búsqueda es parte del nombre oficial (ej. "San Andrés" -> "San Andrés de Tumaco")
+        if f" {norm_city} " in words or f" {msg_norm} " in f" {norm_city} " or any(f" {word} " == f" {msg_norm} " for word in norm_city.split()):
+            found_cities_raw.append(city_name)
     
+    # 2. Contexto (Stricter word boundaries for history)
+    # Priorizamos lo que dijo el USUARIO (h[0]) antes que la respuesta del asistente (h[1]) 
+    # para evitar capturar ciudades mencionadas por el asistente en una desambiguación.
+    history_city = None
+    for h in reversed(history[-6:]):
+        user_text = ""
+        asst_text = ""
+        if isinstance(h, dict): 
+            if h.get("role") == "user": user_text = str(h.get("content", ""))
+            else: asst_text = str(h.get("content", ""))
+        elif isinstance(h, (list, tuple)) and len(h) >= 2:
+            user_text = str(h[0]) if h[0] else ""
+            asst_text = str(h[1]) if h[1] else ""
+        
+        # Primero intentamos con el texto del usuario
+        for text in [user_text, asst_text]:
+            if not text: continue
+            norm_t = f" {normalize(text)} "
+            for city_name in MASTER_DATA["cities"].keys():
+                norm_city = normalize(city_name)
+                if f" {norm_city} " in norm_t:
+                    history_city = city_name
+                    break
+            if history_city: break
+        if history_city: break
+
+    # 3. Final Decision Logic
+    # PRIORIDAD: Si el mensaje coincide exactamente con un departamento de la ciudad en historial,
+    # asumimos desambiguación y BLOQUEAMOS búsquedas ruidosas de otras ciudades.
+    if history_city:
+        hist_depts = [normalize(d) for d in MASTER_DATA["cities"][history_city]["departments"]]
+        if msg_norm in hist_depts:
+            found_cities = [history_city]
+        elif any(normalize(history_city) == normalize(c) for c in found_cities_raw):
+            # Si el usuario volvió a repetir la ciudad, mantenemos esa
+            found_cities = [history_city]
+        else:
+            # Fallback a ciudades encontradas, pero solo si no hay ruido rudo
+            found_cities = found_cities_raw if found_cities_raw else [history_city]
+    else:
+        found_cities = found_cities_raw
+
     # Priority check for Cartagena/Bogota (Common failures)
     if not found_cities:
         if "cartagena" in msg_norm: found_cities.append("cartagena de indias")
         if "bogota" in msg_norm: found_cities.append("bogotá")
         if "leiva" in msg_norm: found_cities.append("villa de leyva")
         if "leyva" in msg_norm: found_cities.append("villa de leyva")
-    
-    # 2. Contexto (Stricter word boundaries for history)
-    if not found_cities:
-        for h in reversed(history[-6:]):
-            text = ""
-            if isinstance(h, dict): text = str(h.get("content", ""))
-            elif isinstance(h, (list, tuple)) and len(h) >= 2:
-                # Get the last thing said
-                text = str(h[1]) if h[1] else (str(h[0]) if h[0] else "")
-            
-            norm_h = f" {normalize(text)} "
-            for city_name in MASTER_DATA["cities"].keys():
-                norm_city = normalize(city_name)
-                # Must be a whole word match in history
-                if f" {norm_city} " in norm_h:
-                    found_cities = [city_name]
-                    break
-            if found_cities: break
 
     # 3. Disambiguación
     for city in found_cities:
