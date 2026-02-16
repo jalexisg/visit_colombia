@@ -122,8 +122,8 @@ head_script = r"""
 SYSTEM_PROMPT = """
 You are the official travel expert for visit-colombia.com.
 GROUND TRUTH PROVIDED IS IRREFUTABLE AND SUPERCEDES EVERYTHING.
-- Respond ONLY with plain text. 
-- DO NOT use JSON, brackets, or structured formats.
+- Respond ONLY with plain text in English or Spanish.
+- DO NOT use Chinese, JSON, brackets, or other structured formats.
 - If data for Nobsa or Bucaramanga is provided, use it.
 - NEVER suggest other names.
 - Be brief, helpful, and direct.
@@ -136,8 +136,18 @@ def respond(message, history):
     # 1. Buscar ciudades
     words = f" {msg_norm} "
     for city_name in MASTER_DATA["cities"].keys():
-        if f" {normalize(city_name)} " in words:
+        norm_city = normalize(city_name)
+        # Match part of name (e.g. 'cartagena' in 'cartagena de indias')
+        # We check if the search term perfectly matches a word within the official name
+        if f" {norm_city} " in words or any(f" {word} " == f" {msg_norm} " for word in norm_city.split()):
             found_cities.append(city_name)
+    
+    # Priority check for Cartagena/Bogota (Common failures)
+    if not found_cities:
+        if "cartagena" in msg_norm: found_cities.append("cartagena de indias")
+        if "bogota" in msg_norm: found_cities.append("bogotá")
+        if "leiva" in msg_norm: found_cities.append("villa de leyva")
+        if "leyva" in msg_norm: found_cities.append("villa de leyva")
     
     # 2. Contexto
     if not found_cities:
@@ -174,21 +184,41 @@ def respond(message, history):
                     confirmed_dept = d
                     break
 
+    # Build history with COGNITIVE FIREWALL
+    current_city_context = None
+    for entry in history:
+        role = entry.get("role") if isinstance(entry, dict) else ("assistant" if history.index(entry) % 2 else "user")
+        content = str(entry.get("content", "")) if isinstance(entry, dict) else str(entry[1] if role == "assistant" else entry[0])
+        
+        # Detect last mentioned city in history to prevent bleed
+        norm_content = normalize(content)
+        for city in MASTER_DATA["cities"].keys():
+            if f" {normalize(city)} " in f" {norm_content} ":
+                current_city_context = city
+
+    # If user switched city, we must be AGGRESSIVE
+    topic_switch = False
+    if target_city and current_city_context and normalize(target_city) != normalize(current_city_context):
+        topic_switch = True
+
     for entry in history:
         if isinstance(entry, (list, tuple)) and len(entry) == 2:
             u, a = str(entry[0] or ""), str(entry[1] or "")
-            # CLEAN assistant history: strip structured brackets AND old mandatory data
             a = clean_api_response(a)
             a_clean = re.sub(r"### MANDATORY DATA FOR .*? ###.*?\n", "", a, flags=re.DOTALL)
+            # If topic switched, we keep history for flow but strip facts more aggressively
+            if topic_switch:
+                a_clean = " [Previous context about another city omitted] "
             if u: messages.append({"role": "user", "content": u})
             if a_clean: messages.append({"role": "assistant", "content": a_clean})
         elif isinstance(entry, dict):
-            # If it's a dict, also clean assistant role content
             role = entry.get("role")
             content = str(entry.get("content", ""))
             if role == "assistant":
                 content = clean_api_response(content)
                 content = re.sub(r"### MANDATORY DATA FOR .*? ###.*?\n", "", content, flags=re.DOTALL)
+                if topic_switch:
+                    content = " [Previous context omitted] "
             messages.append({"role": role, "content": content})
 
     # Inyección de Verdad Proporcional
@@ -198,7 +228,10 @@ def respond(message, history):
         city_id = truth.get("id")
         if city_id: nav_url = f"/cities/{city_id}"
             
-        injection = f"\n### MANDATORY DATA FOR {target_city.upper()} ###\n"
+        injection = f"\n### IRREFUTABLE FACTS FOR {target_city.upper()} ###\n"
+        if topic_switch:
+            injection = f"\n### ATTENTION: USER CHANGED TOPIC TO {target_city.upper()}. DISREGARD ALL PREVIOUS CITIES. ###\n" + injection
+            
         injection += f"- DESCRIPTION: {truth.get('description', '')}\n"
         injection += f"- FOODS: {', '.join(truth.get('recommended_food', []))}\n"
         messages[0]["content"] += injection
@@ -238,10 +271,16 @@ def respond(message, history):
     except Exception as e:
         yield f"Issue: {str(e)}"
 
-with gr.Blocks(head=head_script, css=css_code) as demo:
-    chatbot = gr.Chatbot(value=[{"role": "assistant", "content": WELCOME_MSG}], height=450)
-    msg_box = gr.Textbox(placeholder="Escribe tu pregunta aquí...", container=False, scale=7)
-    gr.ChatInterface(respond, chatbot=chatbot, textbox=msg_box)
+def create_demo():
+    # Gradio 6.x/4.x compatible Blocks (metadata moved to launch)
+    with gr.Blocks() as demo:
+        # Modern format for value, but removing 'type' which seems unsupported in this specific build
+        chatbot = gr.Chatbot(value=[{"role": "assistant", "content": WELCOME_MSG}], height=450)
+        msg_box = gr.Textbox(placeholder="Escribe tu pregunta aquí...", container=False, scale=7)
+        gr.ChatInterface(respond, chatbot=chatbot, textbox=msg_box)
+    return demo
 
 if __name__ == "__main__":
-    demo.launch()
+    demo = create_demo()
+    # Metadata moved here for Gradio 6.0 compatibility
+    demo.launch(head=head_script, css=css_code)
