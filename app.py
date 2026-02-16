@@ -18,6 +18,25 @@ def normalize(text):
     text = re.sub(r'[^a-z ]', ' ', text)
     return " ".join(text.split())
 
+def clean_api_response(text):
+    if not text: return ""
+    # Strip structured format: [{'text': '...', 'type': 'text'}]
+    # We use a non-greedy regex to find text content inside quotes after 'text':
+    pattern = r"\[\s*\{\s*['\"]text['\"]\s*:\s*['\"](.+?)['\"]\s*,\s*['\"]type['\"]\s*:\s*['\"]text['\"]\s*\}\s*\]"
+    match = re.search(pattern, text, re.DOTALL)
+    if match:
+        return match.group(1).replace("\\n", "\n").replace("\\'", "'").replace('\\"', '"')
+    
+    # Handle partial or fallback: just strip the start/end brackets if they look like JSON
+    text = text.strip()
+    if text.startswith("[{'text':") or text.startswith('[{"text":'):
+        # Brute force strip known keys if regex missed
+        text = re.sub(r"^\[\s*\{\s*['\"]text['\"]\s*:\s*['\"]", "", text)
+        text = re.sub(r"['\"]\s*,\s*['\"]type['\"]\s*:\s*['\"]text['\"]\s*\}\s*\]$", "", text)
+        return text.replace("\\n", "\n").replace("\\'", "'").replace('\\"', '"')
+    
+    return text
+
 # Cargar la base de datos Maestra
 MASTER_DATA = {"cities": {}, "regional_context": {}}
 status_geo = "OFFLINE"
@@ -103,6 +122,8 @@ head_script = r"""
 SYSTEM_PROMPT = """
 You are the official travel expert for visit-colombia.com.
 GROUND TRUTH PROVIDED IS IRREFUTABLE AND SUPERCEDES EVERYTHING.
+- Respond ONLY with plain text. 
+- DO NOT use JSON, brackets, or structured formats.
 - If data for Nobsa or Bucaramanga is provided, use it.
 - NEVER suggest other names.
 - Be brief, helpful, and direct.
@@ -155,10 +176,20 @@ def respond(message, history):
 
     for entry in history:
         if isinstance(entry, (list, tuple)) and len(entry) == 2:
-            if entry[0]: messages.append({"role": "user", "content": str(entry[0])})
-            if entry[1]: messages.append({"role": "assistant", "content": str(entry[1])})
+            u, a = str(entry[0] or ""), str(entry[1] or "")
+            # CLEAN assistant history: strip structured brackets AND old mandatory data
+            a = clean_api_response(a)
+            a_clean = re.sub(r"### MANDATORY DATA FOR .*? ###.*?\n", "", a, flags=re.DOTALL)
+            if u: messages.append({"role": "user", "content": u})
+            if a_clean: messages.append({"role": "assistant", "content": a_clean})
         elif isinstance(entry, dict):
-            messages.append(entry)
+            # If it's a dict, also clean assistant role content
+            role = entry.get("role")
+            content = str(entry.get("content", ""))
+            if role == "assistant":
+                content = clean_api_response(content)
+                content = re.sub(r"### MANDATORY DATA FOR .*? ###.*?\n", "", content, flags=re.DOTALL)
+            messages.append({"role": role, "content": content})
 
     # Inyección de Verdad Proporcional
     nav_url = ""
@@ -176,15 +207,33 @@ def respond(message, history):
     
     try:
         response = ""
-        for resp in client.chat_completion(messages, max_tokens=256, stream=True, temperature=0.0):
+        # Incremental token limit for longer descriptions (Tunja, etc.)
+        for resp in client.chat_completion(messages, max_tokens=512, stream=True, temperature=0.0):
+            if not resp.choices: continue
             token = resp.choices[0].delta.content
-            if token is not None:
+            if token is None: continue
+
+            # HYPER-ROBUST EXTRACTION: Handle strings, dicts, lists, and chunks
+            if isinstance(token, str):
                 response += token
-                yield response
+            elif isinstance(token, dict) and "text" in token:
+                response += str(token["text"])
+            elif isinstance(token, list):
+                for item in token:
+                    if isinstance(item, dict) and "text" in item:
+                        response += str(item["text"])
+                    else:
+                        response += str(item)
+            else:
+                response += str(token)
+            
+            # Continuous cleaning of the response stream
+            yield clean_api_response(response)
         
-        # NAV TRIGGER
+        # NAV TRIGGER - Always ensure it's appended cleanly
         if nav_url:
-            yield f"{response}\n\n[[NAV:{nav_url}]]"
+            final_clean = clean_api_response(response).strip()
+            yield f"{final_clean}\n\n[[NAV:{nav_url}]]"
 
     except Exception as e:
         yield f"Issue: {str(e)}"
