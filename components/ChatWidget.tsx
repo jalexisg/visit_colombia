@@ -10,19 +10,26 @@ export default function ChatWidget() {
 
     useEffect(() => {
         const handleMessage = (event: MessageEvent) => {
-            // Attempt to parse string message (for wider compatibility with HF signals)
+            // Monitor all incoming messages for debugging
+            if (typeof event.data === 'object' || typeof event.data === 'string') {
+                // console.log('Signal detected from:', event.origin, event.data);
+            }
+
             let data = event.data;
+            // Handle stringified JSON
             if (typeof data === 'string') {
                 try {
                     data = JSON.parse(data);
                 } catch (e) {
-                    // Not a JSON message, ignore
+                    // Not a JSON, ignore
                 }
             }
 
             if (data?.type === 'NAVIGATE' && data?.url) {
-                console.log('Valid navigation signal received:', data.url);
+                console.log('🎯 AUTO-NAVIGATING TO:', data.url);
                 router.push(data.url);
+                // Return focus to the parent window to allow scrolling
+                window.focus();
             }
         };
 

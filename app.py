@@ -36,94 +36,94 @@ footer {display: none !important;}
 .gradio-container {min-height: 0 !important;}
 #component-0 {gap: 0 !important; padding: 0 !important;}
 textarea {font-size: 16px !important;}
-/* Hide the specific navigation code if it ever leaks to UI */
-.navigation-signal { display: none !important; color: transparent !important; font-size: 0 !important; height: 0; width: 0; }
+.bot.message { border-radius: 12px !important; transition: border 0.3s ease; }
+/* Ocultar visualmente los tags antes de que el script los elimine */
+span:contains("[[NAV:"), p:contains("[[NAV:") { opacity: 0; pointer-events: none; }
 """
 
-# Stealth JS Focus + Navigation Broadcaster
-js_code = r"""
-function() {
-    const focusTB = () => {
-        const tb = document.querySelector('textarea');
-        if (tb && document.activeElement !== tb) tb.focus();
-    };
+# BRIDGE DE ALTA FIDELIDAD (HEAD INJECTION)
+head_script = r"""
+<script>
+(function() {
+    console.log("� Visit-Colombia Bridge Version 5.0 (Nuclear)");
 
-    setTimeout(focusTB, 500);
-
-    const scanAndSignal = () => {
-        // Search in the body text for our characteristic pattern
-        const bodyContent = document.body.innerText;
-        const navMatch = bodyContent.match(/\[\[NAV:(.+?)\]\]/);
+    function dispatchNav(url, element) {
+        const msg = { type: 'NAVIGATE', url: url };
+        console.log("🚀 SIGNAL SENT:", url);
         
-        if (navMatch) {
-            const url = navMatch[1];
-            const msg = { type: 'NAVIGATE', url: url };
-            
-            // Broadcast to parent windows
-            window.parent.postMessage(msg, '*');
-            if (window.top !== window.parent) window.top.postMessage(msg, '*');
-            
-            // CRITICAL: Clean the text from ALL elements that contain it
-            const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-            let node;
-            while (node = walker.nextNode()) {
-                if (node.textContent.includes('[[NAV:')) {
-                    node.textContent = node.textContent.replace(/\[\[NAV:.+?\]\]/g, '');
-                    console.log('Stealth NAV executed for:', url);
+        // Efecto visual en la burbuja para confirmar detección
+        if (element) {
+            element.closest('.message').style.border = '2px solid #22c55e';
+            setTimeout(() => { element.closest('.message').style.border = 'none'; }, 2000);
+        }
+
+        // Envío redundante
+        window.parent.postMessage(msg, '*');
+        window.parent.postMessage(JSON.stringify(msg), '*');
+        if (window.top && window.top !== window.self) {
+            window.top.postMessage(msg, '*');
+            window.top.postMessage(JSON.stringify(msg), '*');
+        }
+    }
+
+    function scan() {
+        // Escaner de todos los elementos bot
+        const messages = document.querySelectorAll('.bot.message, .bot p, .bot span');
+        messages.forEach(el => {
+            if (el.innerText && el.innerText.includes('[[NAV:')) {
+                const match = el.innerText.match(/\[\[NAV:(.+?)\]\]/);
+                if (match) {
+                    const url = match[1];
+                    // Quirúrgicamente borrar el código del DOM
+                    el.innerHTML = el.innerHTML.replace(/\[\[NAV:.+?\]\]/g, '');
+                    dispatchNav(url, el);
                 }
             }
-        }
-    };
+        });
+    }
 
-    const observer = new MutationObserver(() => {
-        const submitBtn = document.querySelector('button.primary');
-        if (submitBtn && !submitBtn.innerText.toLowerCase().includes('stop')) {
-            focusTB();
-        }
-        scanAndSignal();
-    });
-    
-    observer.observe(document.body, { childList: true, subtree: true, characterData: true });
-    setInterval(scanAndSignal, 1000); // Heartbeat scan
+    // Intervalo agresivo (100ms)
+    setInterval(scan, 100);
 
-    window.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') [1000, 2000].forEach(ms => setTimeout(focusTB, ms));
-    });
-
-    document.addEventListener('click', (e) => {
-        if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
-            setTimeout(focusTB, 50);
+    // Gestor de Foco Hardened
+    setInterval(() => {
+        const tb = document.querySelector('textarea');
+        const btn = document.querySelector('button.primary');
+        if (tb && btn && !btn.innerText.toLowerCase().includes('stop')) {
+            if (document.activeElement !== tb && document.activeElement.tagName !== 'INPUT') {
+                // Solo recuperar foco si estamos en la ventana activa
+                // tb.focus();
+            }
         }
-    });
-}
+    }, 1000);
+})();
+</script>
 """
 
 SYSTEM_PROMPT = """
 You are the official travel expert for visit-colombia.com.
-GROUND TRUTH PROVIDED IN THE 'MANDATORY DATA' SECTION IS IRREFUTABLE.
-- NEVER suggest the user meant another city if target data is provided.
-- If data for 'NOBSA' is provided, the city is NOBSA.
-- Use only the provided description and food facts.
-- Be direct and welcoming.
+GROUND TRUTH PROVIDED IS IRREFUTABLE AND SUPERCEDES EVERYTHING.
+- If data for Nobsa or Bucaramanga is provided, use it.
+- NEVER suggest other names.
+- Be brief, helpful, and direct.
 """
 
 def respond(message, history):
     msg_norm = normalize(message)
     
     found_cities = []
-    # 1. Search cities in CURRENT message
+    # 1. Buscar ciudades
     words = f" {msg_norm} "
     for city_name in MASTER_DATA["cities"].keys():
         if f" {normalize(city_name)} " in words:
             found_cities.append(city_name)
     
-    # 2. Context recovery
+    # 2. Contexto
     if not found_cities:
         for h in reversed(history[-6:]):
             text = ""
             if isinstance(h, dict): text = str(h.get("content", ""))
             elif isinstance(h, (list, tuple)) and len(h) >= 2: text = str(h[0]) if h[0] else ""
-            
             norm_h = normalize(text)
             for city_name in MASTER_DATA["cities"].keys():
                 if f" {normalize(city_name)} " in f" {norm_h} ":
@@ -131,17 +131,16 @@ def respond(message, history):
                     break
             if found_cities: break
 
-    # 3. Disambiguation Check
+    # 3. Disambiguación
     for city in found_cities:
         the_depts = MASTER_DATA["cities"][city]["departments"]
         if len(the_depts) > 1:
             if not any(normalize(dept) in msg_norm for dept in the_depts):
-                yield f"Wait! {city.title()} exists in {', '.join(the_depts)}. Which one are you visiting? Please specify the department."
+                yield f"Wait! {city.title()} exists in {', '.join(the_depts)}. Which one? Specify the department."
                 return
 
-    # 4. Construct Final Prompt
+    # 4. Prompt y Datos
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
-    
     confirmed_dept = None
     target_city = found_cities[0] if found_cities else None
     if target_city:
@@ -154,53 +153,46 @@ def respond(message, history):
                     confirmed_dept = d
                     break
 
-    # Build history
     for entry in history:
         if isinstance(entry, (list, tuple)) and len(entry) == 2:
             if entry[0]: messages.append({"role": "user", "content": str(entry[0])})
-            if entry[1]:
-                bot_msg = str(entry[1])
-                if "exists in" in bot_msg and "Which one are you visiting" in bot_msg and confirmed_dept:
-                    bot_msg = f"Understood. We are discussing {target_city.title()} in {confirmed_dept}."
-                messages.append({"role": "assistant", "content": bot_msg})
-            continue
+            if entry[1]: messages.append({"role": "assistant", "content": str(entry[1])})
         elif isinstance(entry, dict):
             messages.append(entry)
 
-    # Fact Injection & NAVIGATION
+    # Inyección de Verdad Proporcional
     nav_url = ""
     if target_city and confirmed_dept:
         truth = MASTER_DATA["cities"][target_city]["ground_truth"].get(confirmed_dept, {})
         city_id = truth.get("id")
         if city_id: nav_url = f"/cities/{city_id}"
             
-        injection = f"\n### MANDATORY DATA FOR {target_city.upper()} ({confirmed_dept.upper()}) ###\n"
-        injection += f"STRICT CITY NAME: {target_city.upper()}\n"
-        injection += f"- REAL DESCRIPTION: {truth.get('description', '')}\n"
-        injection += f"- REAL FOODS: {', '.join(truth.get('recommended_food', []))}\n"
+        injection = f"\n### MANDATORY DATA FOR {target_city.upper()} ###\n"
+        injection += f"- DESCRIPTION: {truth.get('description', '')}\n"
+        injection += f"- FOODS: {', '.join(truth.get('recommended_food', []))}\n"
         messages[0]["content"] += injection
 
     messages.append({"role": "user", "content": message})
     
     try:
         response = ""
-        for resp in client.chat_completion(messages, max_tokens=512, stream=True, temperature=0.0):
+        for resp in client.chat_completion(messages, max_tokens=256, stream=True, temperature=0.0):
             token = resp.choices[0].delta.content
             if token is not None:
                 response += token
                 yield response
         
-        # FINAL NAVIGATION SIGNAL (Injected in a way that JS can find but user hopefully won't notice)
+        # NAV TRIGGER
         if nav_url:
             yield f"{response}\n\n[[NAV:{nav_url}]]"
 
     except Exception as e:
         yield f"Issue: {str(e)}"
 
-with gr.Blocks() as demo:
+with gr.Blocks(head=head_script, css=css_code) as demo:
     chatbot = gr.Chatbot(value=[{"role": "assistant", "content": WELCOME_MSG}], height=450)
     msg_box = gr.Textbox(placeholder="Escribe tu pregunta aquí...", container=False, scale=7)
     gr.ChatInterface(respond, chatbot=chatbot, textbox=msg_box)
 
 if __name__ == "__main__":
-    demo.launch(css=css_code, js=js_code)
+    demo.launch()
