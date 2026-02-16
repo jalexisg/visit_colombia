@@ -149,15 +149,20 @@ def respond(message, history):
         if "leiva" in msg_norm: found_cities.append("villa de leyva")
         if "leyva" in msg_norm: found_cities.append("villa de leyva")
     
-    # 2. Contexto
+    # 2. Contexto (Stricter word boundaries for history)
     if not found_cities:
         for h in reversed(history[-6:]):
             text = ""
             if isinstance(h, dict): text = str(h.get("content", ""))
-            elif isinstance(h, (list, tuple)) and len(h) >= 2: text = str(h[0]) if h[0] else ""
-            norm_h = normalize(text)
+            elif isinstance(h, (list, tuple)) and len(h) >= 2:
+                # Get the last thing said
+                text = str(h[1]) if h[1] else (str(h[0]) if h[0] else "")
+            
+            norm_h = f" {normalize(text)} "
             for city_name in MASTER_DATA["cities"].keys():
-                if f" {normalize(city_name)} " in f" {norm_h} ":
+                norm_city = normalize(city_name)
+                # Must be a whole word match in history
+                if f" {norm_city} " in norm_h:
                     found_cities = [city_name]
                     break
             if found_cities: break
@@ -196,10 +201,26 @@ def respond(message, history):
             if f" {normalize(city)} " in f" {norm_content} ":
                 current_city_context = city
 
+    # Detect if user mentioned a NEW department (even if no city found)
+    mentioned_dept = None
+    for dept in MASTER_DATA["regional_context"].keys():
+        if f" {normalize(dept)} " in f" {msg_norm} " or (dept.lower() == "huila" and "hula" in msg_norm):
+            mentioned_dept = dept
+            break
+
     # If user switched city, we must be AGGRESSIVE
     topic_switch = False
     if target_city and current_city_context and normalize(target_city) != normalize(current_city_context):
         topic_switch = True
+    
+    # NEW: If user mentions a department that doesn't belong to the current city context
+    if mentioned_dept and current_city_context:
+        current_depts = MASTER_DATA["cities"][current_city_context]["departments"]
+        if mentioned_dept not in current_depts:
+            topic_switch = True
+            # If no new city was found, but a new dept was, we drop the old city
+            if not target_city:
+                current_city_context = None 
 
     for entry in history:
         if isinstance(entry, (list, tuple)) and len(entry) == 2:
@@ -283,4 +304,5 @@ def create_demo():
 if __name__ == "__main__":
     demo = create_demo()
     # Metadata moved here for Gradio 6.0 compatibility
-    demo.launch(head=head_script, css=css_code)
+    # ssr_mode=False added to prevent OOM/Exit 137 error on some Spaces
+    demo.launch(head=head_script, css=css_code, ssr_mode=False)

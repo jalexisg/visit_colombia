@@ -34,7 +34,6 @@ def test_city_redirection(query):
         if "leyva" in msg_norm: found_cities.append("villa de leyva")
     
     if found_cities:
-        # For simplicity in testing, just take the first
         target_city = found_cities[0]
         city_data = MASTER_DATA["cities"][target_city]
         depts_list = city_data["departments"]
@@ -50,22 +49,26 @@ def test_city_redirection(query):
         return "NOT_FOUND"
 
 test_list = [
-    "Nobsa",
-    "Bucaramanga",
-    "Cartagena",
-    "Cartagena de Indias",
-    "Santa Marta",
-    "Neiva",
-    "Manizales",
-    "Cali",
-    "Medellin",
-    "Bogota",
-    "Bogotá D.C.",
-    "Villa de Leyva",
-    "San Andres"
+    ("Nobsa", "FOUND: nobsa (ID: 271)"),
+    ("Cartagena", "FOUND: cartagena de indias (ID: 210)"),
+    ("Bogota", "FOUND: bogotá (ID: 167)"), # Verifying NEW ID 167
+    ("Bogotá D.C.", "FOUND: bogotá (ID: 167)"),
+    ("Malambo", "FOUND: malambo (ID: 149)"), # Verifying Malambo ID 149
+    ("hula", "NOT_FOUND"), # Verifying "hula" (Huila typo) doesn't match Boyaca
+    ("Boyaca", "FOUND: boyacá (ID: 224)"), 
+    ("Villa de Leyva", "FOUND: villa de leyva (ID: 326)")
 ]
 
-print("--- ASSISTANT DETECTION TEST (V2) ---")
-for city in test_list:
+print("--- AUDIT TEST: CITY IDs & DETECTION ---")
+all_pass = True
+for city, expected in test_list:
     res = test_city_redirection(city)
-    print(f"{city:20} -> {res}")
+    status = "✅ PASS" if res == expected else f"❌ FAIL (Expected {expected}, got {res})"
+    if status.startswith("❌"): all_pass = False
+    print(f"{city:20} -> {res:40} {status}")
+
+if all_pass:
+    print("\n🎉 ALL TESTS PASSED! IDs ARE CORRECT.")
+else:
+    print("\n⚠️ SOME TESTS FAILED. CHECK DATABASE COLLISSIONS.")
+    sys.exit(1)
