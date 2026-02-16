@@ -1,0 +1,118 @@
+antioquia-armenia
+antioquia-barbosa
+antioquia-briceno
+antioquia-caldas
+antioquia-concepcion
+antioquia-concepción
+antioquia-don matias
+antioquia-don matías
+antioquia-donmatias
+antioquia-donmatías
+antioquia-la union
+antioquia-la unión
+antioquia-sabanalarga
+antioquia-san andres de cuerquia
+antioquia-san andres de cuerquía
+antioquia-san andrés de cuerquia
+antioquia-san andrés de cuerquía
+antioquia-san carlos
+antioquia-san francisco
+antioquia-san jose de la montaña
+antioquia-san josé de la montaña
+antioquia-san juan de uraba
+antioquia-san juan de urabá
+antioquia-san luis
+antioquia-san pedro de los milagros
+antioquia-san pedro de uraba
+antioquia-san pedro de urabá
+antioquia-san rafael
+antioquia-santa barbara
+antioquia-santa bárbara
+antioquia-santo domingo
+antioquia-toledo
+antioquia-valparaiso
+antioquia-valparaíso
+antioquia-venecia
+armenia-antioquia
+barbosa-antioquia
+bolivar-arenal
+bolivar-calamar
+bolivar-córdoba
+bolivar-el peñon
+bolivar-el peñón
+bolivar-morales
+bolivar-san cristóbal
+bolivar-san fernando
+bolivar-san jacinto del cauca
+bolivar-san pablo
+bolivar-san pablo de borbur
+bolivar-santa rosa
+bolivar-villanueva
+boyacá-jericó
+boyacá-la victoria
+briceño-antioquia
+buenavista-boyaca
+narino-antioquia
+nariño-antioquia
+sabanalarga-antioquia
+san carlos-antioquia
+san francisco-antioquia
+san luis-antioquia
+san pedro de los milagros-antioquia
+san rafael-antioquia
+santa barbara-antioquia
+santa bárbara-antioquia
+santander-aguada
+santander-albania
+santander-barbosa
+santander-bucaramanga
+santander-cabrera
+santander-california
+santander-carcasí
+santander-charta
+santander-chimá
+santander-chipatá
+santander-concepción
+santander-confines
+santander-coromoro
+santander-el guacamayo
+santander-el peñón
+santander-el playón
+santander-encino
+santander-enciso
+santander-galán
+santander-guaca
+santander-guadalupe
+santander-guapotá
+santander-guavatá
+santander-güepsa
+santander-hato
+santander-jesús maría
+santander-la paz
+santander-macaravita
+santander-matanza
+santander-molagavita
+santander-ocamonte
+santander-onzaga
+santander-palmar
+santander-puerto parra
+santander-rionegro
+santander-sabana de torres
+santander-san andrés
+santander-san benito
+santander-san joaquín
+santander-san josé de miranda
+santander-san miguel
+santander-santa bárbara
+santander-santa helena del opón
+santander-simacota
+santander-sucre
+santander-suratá
+santander-tona
+santander-vetas
+santo domingo-antioquia
+toledo-antioquia
+valle del cauca-la union
+valle del cauca-la unión
+valparaiso-antioquia
+venecia-antioquia
