@@ -731,6 +731,39 @@ export const cityImages: Record<string, string> = {
     'río de oro': '/images/city_rio_de_oro_cesar.png',
     'la jagua de ibirico': '/images/city_la_jagua_de_ibirico.png',
 
+    // Chocó
+    'istmina': '/images/city_istmina_choco.png',
+    'acandí': '/images/city_acandi_choco.png',
+    'alto baudo': '/images/city_alto_baudo_choco.png',
+    'atrato': '/images/city_atrato_choco.png',
+    'bagadó': '/images/city_bagado_choco.png',
+    'bahía solano': '/images/city_bahia_solano_choco.png',
+    'bajo baudó': '/images/city_bajo_baudo_choco.png',
+    'bojaya': '/images/city_bojaya_choco.png',
+    'cértegui': '/images/city_certegui_choco.png',
+    'condoto': '/images/city_condoto_choco.png',
+    'juradó': '/images/city_jurado_choco.png',
+    'lloró': '/images/city_lloro_choco.png',
+    'medio atrato': '/images/city_medio_atrato_choco.png',
+    'medio baudó': '/images/city_medio_baudo_choco.png',
+    'medio san juan': '/images/city_medio_san_juan_choco.png',
+    'nóvita': '/images/city_novita_choco.png',
+    'nuquí': '/images/city_nuqui_choco.png',
+    'río iro': '/images/city_rio_iro_choco.png',
+    'río quito': '/images/city_rio_quito_choco.png',
+    'choco-riosucio': '/images/city_riosucio_choco.png',
+    'chocó-riosucio': '/images/city_riosucio_choco.png',
+    'sipí': '/images/city_sipi_choco.png',
+    'unguía': '/images/city_unguia_choco.png',
+    'el litoral del san juan': '/images/city_el_litoral_del_san_juan_choco.png',
+    'el cantón del san pablo': '/images/city_el_canton_del_san_pablo.png',
+    'el carmen de atrato': '/images/city_el_carmen_de_atrato_choco.png',
+    'san josé del palmar': '/images/city_san_jose_del_palmar_choco.png',
+    'belén de bajira': '/images/city_belen_de_bajira_choco.png',
+    'carmen del darien': '/images/city_carmen_del_darien_choco.png',
+    'tadó': '/images/city_tado_choco.png',
+    'unión panamericana': '/images/city_union_panamericana.png',
+
     // Casanare
     'casanare-sabanalarga': '/images/city_sabanalarga_casanare.png',
     'aguazul': '/images/city_aguazul_casanare.png',
@@ -759,8 +792,14 @@ export function getCityImage(cityName: string, departmentName?: string): string 
 
     // 1. Priority: Exact department-city match
     if (dept) {
-        const specificKey = `${dept}-${name}`;
+        // Normalize department name to handle accents (e.g., 'chocó' -> 'choco')
+        const normalizedDept = dept.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        const specificKey = `${normalizedDept}-${name}`;
         if (specificKey in cityImages) return getAssetPath(cityImages[specificKey]);
+
+        // Also try with raw department name just in case
+        const rawSpecificKey = `${dept}-${name}`;
+        if (rawSpecificKey in cityImages) return getAssetPath(cityImages[rawSpecificKey]);
     }
 
     // 2. Exact name match
@@ -1114,6 +1153,39 @@ export const cityOverviews: Record<string, string> = {
     'río de oro': 'A charming colonial mountain town in the Serranía del Perijá, known for its traditional religious festivals and cool climate.',
     'la jagua de ibirico': 'A major coal mining municipality at the foot of the Perijá mountains with a diverse and growing population.',
 
+    // Chocó
+    'istmina': 'A historic river port and commercial hub on the San Juan River, known for its vibrant Afro-Colombian culture.',
+    'acandí': 'A beautiful Caribbean coastal town on the Gulf of Urabá, serving as an entry point to the scenic Darién region.',
+    'alto baudo': 'A remote municipality in the heart of the Pacific rainforest, accessible mainly by river and rich in biodiversity.',
+    'atrato': 'Located near Quibdó on the banks of the Atrato River, known for its traditional river port atmosphere and lush greenery.',
+    'bagadó': 'A remote town in the upper Atrato region, home to diverse Afro-Colombian and indigenous Emberá communities.',
+    'bahía solano': 'A world-class eco-tourism destination where the deep green jungle meets the Pacific Ocean, famous for whale watching.',
+    'bajo baudó': 'A coastal town where the Baudó River meets the Pacific, surrounded by mangroves and traditional fishing communities.',
+    'bojaya': 'A resilient community on the Atrato River, known for its deep history and tradition of Afro-Colombian chants (alabaos).',
+    'cértegui': 'An Afro-Colombian town in the mining heart of Chocó, with rich traditions in music and community festivals.',
+    'condoto': 'Once known as the \"Platinum Capital of the World,\" this town preserves its mining heritage and vibrant local culture.',
+    'juradó': 'A remote Pacific coastal enclave on the border with Panama, offering pristine jungle landscapes and dark sand beaches.',
+    'lloró': 'Officially one of the wettest places on Earth, this town on the Atrato River is surrounded by intense, lush rainforest.',
+    'medio atrato': 'A riverine municipality in the heart of the Atrato basin, characterized by its traditional wooden architecture and dense jungle.',
+    'medio baudó': 'A remote and biodiverse region in the Baudó mountain range, known for its ethnic wealth and lush landscapes.',
+    'medio san juan': 'A historic town on the San Juan River with a long legacy of mining and vibrant Afro-Pacific cultural expressions.',
+    'nóvita': 'A historic colonial-era town in the heart of Chocó, preserving its old wooden architecture and Afro-Colombian traditions.',
+    'nuquí': 'A world-famous Pacific destination offering thermal springs, surfing, and incredible whale-watching experiences mid-year.',
+    'río iro': 'A remote mining and agricultural town in the San Juan basin, characterized by its traditional rural Pacific lifestyle.',
+    'río quito': 'A riverside town near Quibdó, known for its gold-mining history and its relationship with the mighty Atrato River.',
+    'choco-riosucio': 'A gateway to the Darién Tapón region, surrounded by vast wetlands and the diverse ecosystems of the Lower Atrato.',
+    'chocó-riosucio': 'A gateway to the Darién Tapón region, surrounded by vast wetlands and the diverse ecosystems of the Lower Atrato.',
+    'sipí': 'A remote and tranquil riverside town in the San Juan region, surrounded by some of the world\'s densest tropical forests.',
+    'unguía': 'A Caribbean lowland town near the Atrato delta, known for its fertile soils and proximity to the Darién mountains.',
+    'el litoral del san juan': 'A coastal municipality where the mighty San Juan River forms a vast delta of mangroves and jungle channels.',
+    'el cantón del san pablo': 'A cross-cultural town at the heart of the waterway junction between the San Juan and Atrato basins.',
+    'el carmen de atrato': 'A mountain town in the Western Andes, where the Atrato River begins its journey through the Pacific lowlands.',
+    'san josé del palmar': 'A highland municipality in the Western Andes, known for its cool climate and productive coffee-growing lands.',
+    'belén de bajira': 'A multicultural town in the Lower Atrato, serving as a hub for Afro-Colombian, indigenous, and mestizo farming communities.',
+    'carmen del darien': 'A remote town in the heart of the Darién region, characterized by its vast wetlands and strategic river position.',
+    'tadó': 'A town with deep historical roots in mining and religion, home to the beautiful San José de Tadó cathedral.',
+    'unión panamericana': 'A strategic commercial junction town in the central Chocó lowlands, connecting several important regional subregions.',
+
     // Casanare
     'casanare-sabanalarga': 'A gateway town in the Casanare foothills, known for its oil industry heritage and access to the stunning Llanos landscape.',
     'aguazul': 'The \"Pearl of Casanare,\" a modern oil-boom city surrounded by palm-lined roads and the vast Llanos horizon.',
@@ -1375,8 +1447,14 @@ export function getCityOverview(cityName: string, defaultDescription?: string, d
 
     // 1. Priority: Exact department-city match
     if (dept) {
-        const specificKey = `${dept}-${name}`;
+        // Normalize department name to handle accents (e.g., 'chocó' -> 'choco')
+        const normalizedDept = dept.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        const specificKey = `${normalizedDept}-${name}`;
         if (cityOverviews[specificKey]) return cityOverviews[specificKey];
+
+        // Also try with raw department name just in case
+        const rawSpecificKey = `${dept}-${name}`;
+        if (cityOverviews[rawSpecificKey]) return cityOverviews[rawSpecificKey];
     }
 
     // 2. Exact name match
