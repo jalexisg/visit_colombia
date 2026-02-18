@@ -657,6 +657,25 @@ export const cityImages: Record<string, string> = {
     'solita': '/images/city_solita_caqueta.png',
     'caquetá-valparaíso': '/images/city_valparaiso_caqueta.png',
 
+    // Casanare
+    'casanare-sabanalarga': '/images/city_sabanalarga_casanare.png',
+    'aguazul': '/images/city_aguazul_casanare.png',
+    'chámeza': '/images/city_chameza_casanare.png',
+    'hato corozal': '/images/city_hato_corozal_casanare.png',
+    'la salina': '/images/city_la_salina_casanare.png',
+    'maní': '/images/city_mani_casanare.png',
+    'monterrey': '/images/city_monterrey_casanare.png',
+    'nunchía': '/images/city_nunchia_casanare.png',
+    'orocué': '/images/city_orocue_casanare.png',
+    'paz de ariporo': '/images/city_paz_de_ariporo_casanare.png',
+    'pore': '/images/city_pore_casanare.png',
+    'recetor': '/images/city_recetor_casanare.png',
+    'sácama': '/images/city_sacama_casanare.png',
+    'san luis de palenque': '/images/city_san_luis_de_palenque_casanare.png',
+    'támara': '/images/city_tamara_casanare.png',
+    'tauramena': '/images/city_tauramena_casanare.png',
+    'trinidad': '/images/city_trinidad_casanare.png',
+    'casanare-villanueva': '/images/city_villanueva_casanare.png',
 
 };
 
@@ -946,6 +965,27 @@ export const cityOverviews: Record<string, string> = {
     'solano': 'A deep Amazon town at the confluence of the Orteguaza and Caquetá rivers, accessible mainly by boat and air.',
     'solita': 'A remote and tranquil municipality on the banks of the Caquetá River, preserving the essence of the deep jungle.',
     'valparaíso': 'A scenic town in the south, known for its network of rivers and dedication to sustainable agriculture in the Amazon.',
+
+    // Casanare
+    'casanare-sabanalarga': 'A gateway town in the Casanare foothills, known for its oil industry heritage and access to the stunning Llanos landscape.',
+    'aguazul': 'The \"Pearl of Casanare,\" a modern oil-boom city surrounded by palm-lined roads and the vast Llanos horizon.',
+    'chámeza': 'A remote mountain municipality in the Andean foothills, known for its pristine cloud forests and rugged terrain.',
+    'hato corozal': 'A traditional cattle-ranching town in the deep Llanos, famous for its vast wetlands (esteros) and spectacular wildlife.',
+    'la salina': 'A unique highland town known for its historic salt extraction pools, one of the oldest salt sources in the region.',
+    'maní': 'A traditional Llanero town known for its cattle culture, the Maní River, and the vast open plains stretching to the horizon.',
+    'monterrey': 'A modern oil-industry hub at the Andean foothills, offering a blend of industrial activity and Llanos landscapes.',
+    'nunchía': 'A peaceful colonial town perched on the Andean foothills, offering panoramic views of the Casanare plains below.',
+    'orocué': 'A historic river port on the Meta River, once visited by José Eustasio Rivera, offering spectacular Llanos sunsets.',
+    'paz de ariporo': 'The \"City of Wetlands,\" famous for its incredible biodiversity during the dry season when animals congregate.',
+    'pore': 'One of the oldest towns in the Llanos, with colonial heritage and a central role in the independence of the eastern plains.',
+    'recetor': 'A small and tranquil municipality in the Casanare foothills, known for its oil production and natural landscapes.',
+    'sácama': 'A remote mountain town in the Casanare highlands, offering pristine Andean scenery and traditional rural culture.',
+    'san luis de palenque': 'A quintessential Llanos town, famous for its traditional Joropo music festivals and vast cattle ranches.',
+    'támara': 'A picturesque colonial town perched on the Andean foothills, with cobblestone streets and panoramic views of the plains.',
+    'tauramena': 'Home to the Cusiana oil fields, one of Colombia\'s most important oil discoveries, set against the Andean foothills.',
+    'trinidad': 'A remote Llanos town surrounded by iconic Moriche palm wetlands (morichales), a paradise for birdwatchers.',
+    'casanare-villanueva': 'A thriving commercial center in the Casanare foothills, known for its oil industry and gateway to the Llanos.',
+    'yopal': 'The vibrant capital of Casanare, the \"Oil Capital of Colombia,\" where modern urban life meets the vast Llanos horizon.',
 
     'neira': 'Famous for its "Cork" (Corcho) sweets and perfectly preserved colonial architecture near Manizales.',
     'norcasia': 'A hidden gem famous for the Amaní Reservoir and the La Miel River, offering crystal-clear waters and eco-tourism adventures.',
