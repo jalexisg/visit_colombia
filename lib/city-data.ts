@@ -25,7 +25,7 @@ export const cityImages: Record<string, string> = {
     'quibdo': '/images/city_quibdo.png',
     'quibd': '/images/city_quibdo.png',
     'leticia': '/images/city_leticia.png',
-    'florencia': '/images/city_florencia.png',
+
     'yopal': '/images/city_yopal.png',
     'arauca': '/images/city_arauca.png',
     'arauquita': '/images/city_arauquita.png',
@@ -639,6 +639,25 @@ export const cityImages: Record<string, string> = {
     'villamaría': '/images/city_villamaria_caldas.png',
     'viterbo': '/images/city_viterbo_caldas.png',
 
+    // Caquetá
+    'caquetá-albania': '/images/city_albania_caqueta.png',
+    'belén de los andaquíes': '/images/city_belen_de_los_andaquies_caqueta.png',
+    'cartagena del chairá': '/images/city_cartagena_del_chaira_caqueta.png',
+    'curillo': '/images/city_curillo_caqueta.png',
+    'el doncello': '/images/city_el_doncello_caqueta.png',
+    'el paujil': '/images/city_el_paujil_caqueta.png',
+    'florencia': '/images/city_florencia.png',
+    'la montañita': '/images/city_la_montanita_caqueta.png',
+    'milán': '/images/city_milan_caqueta.png',
+    'morelia': '/images/city_morelia_caqueta.png',
+    'caquetá-puerto rico': '/images/city_puerto_rico_caqueta.png',
+    'san josé del fragua': '/images/city_san_jose_del_fragua_caqueta.png',
+    'san vicente del caguán': '/images/city_san_vicente_del_caguan_caqueta.png',
+    'solano': '/images/city_solano_caqueta.png',
+    'solita': '/images/city_solita_caqueta.png',
+    'caquetá-valparaíso': '/images/city_valparaiso_caqueta.png',
+
+
 };
 
 export function getCityImage(cityName: string, departmentName?: string): string {
@@ -909,6 +928,25 @@ export const cityOverviews: Record<string, string> = {
     'marmato': 'The "Golden Crib of Colombia," a unique mining town where houses cling to the steep mountain slopes alongside historic mines.',
     'marquetalia': 'Known for its beautiful landscapes and coffee production, nestled in the eastern mountains of the department.',
     'marulanda': 'Colombia\'s "Wool Capital," a high-altitude town famous for its sheep farming and cold-climate ruana weaving traditions.',
+
+    // Caquetá
+    'albania': '"The Gate of the Amazon," surrounded by lush forests and known for its rich biodiversity near the Los Picachos National Park.',
+    'belén de los andaquíes': 'The "Greenest Municipality of Colombia," filled with rivers, waterfalls, and eco-trails like the Camino Andaquí.',
+    'cartagena del chairá': 'A bustling river port on the Caguán River, blending commerce with the spectacular sunsets of the Amazonian plains.',
+    'curillo': '"The Beautiful Door to the Amazon," located on the banks of the majestic Caquetá River, famous for its golden sunsets.',
+    'el doncello': 'The "Rubber Capital," a thriving agricultural hub known for its rubber plantations and beautiful natural swimming spots.',
+    'el paujil': 'Named after the Paujil bird, this town offers serene lakes like Laguna del Chairá and a deep connection to nature.',
+    'florencia': 'The "Golden Gate to the Amazon," a vibrant capital city set against the backdrop of the Andes meeting the jungle.',
+    'la montañita': 'A peaceful town surrounded by cattle ranches and forests, offering a glimpse into the rural Amazonian lifestyle.',
+    'milán': 'A riverside town on the Orteguaza, known for its strong community spirit and access to deep jungle adventures.',
+    'morelia': 'Famous for the Pirarucú fish culture and its proximity to Florencia, offering a mix of nature and gastronomy.',
+    'puerto rico': 'A northern municipality rich in water resources and part of the vibrant piedmont region ecosystem.',
+    'san josé del fragua': 'Nestled at the foot of the mountains, known for line of the Fragua sights and the Yuruyaco ethereal rock formations.',
+    'san vicente del caguán': 'One of the largest municipalities, famous for the Yarí Plains (Llanos del Yarí) and its immense cattle ranching culture.',
+    'solano': 'A deep Amazon town at the confluence of the Orteguaza and Caquetá rivers, accessible mainly by boat and air.',
+    'solita': 'A remote and tranquil municipality on the banks of the Caquetá River, preserving the essence of the deep jungle.',
+    'valparaíso': 'A scenic town in the south, known for its network of rivers and dedication to sustainable agriculture in the Amazon.',
+
     'neira': 'Famous for its "Cork" (Corcho) sweets and perfectly preserved colonial architecture near Manizales.',
     'norcasia': 'A hidden gem famous for the Amaní Reservoir and the La Miel River, offering crystal-clear waters and eco-tourism adventures.',
     'pácora': 'The "City of Water," known for its abundant water sources, traditional architecture, and constant supply of fresh springs.',
