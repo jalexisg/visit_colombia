@@ -56,7 +56,7 @@ export default function ChatWidget() {
                     </div>
                     <div className="flex-grow overflow-hidden relative bg-white">
                         <iframe
-                            src="https://jalexisg-visit-colombia-chat.hf.space?__theme=light"
+                            src="https://huggingface.co/spaces/jalexisg/visit-colombia-chat/embed?__theme=light"
                             frameBorder="0"
                             width="100%"
                             height="100%"
