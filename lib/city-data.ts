@@ -811,6 +811,13 @@ export const cityImages: Record<string, string> = {
     'tuchin': '/images/city_tuchin_cordoba.png',
     'valencia': '/images/city_valencia_cordoba.png',
 
+    // Cundinamarca
+    'agua de dios': '/images/city_agua_de_dios_cundinamarca.png',
+    'albán': '/images/city_alban_cundinamarca.png',
+    'alban': '/images/city_alban_cundinamarca.png',
+    'anapoima': '/images/city_anapoima_cundinamarca.png',
+    'anolaima': '/images/city_anolaima_cundinamarca.png',
+
     // Casanare
     'casanare-sabanalarga': '/images/city_sabanalarga_casanare.png',
     'aguazul': '/images/city_aguazul_casanare.png',
@@ -1279,6 +1286,13 @@ export const cityOverviews: Record<string, string> = {
     'tuchín': 'An indigenous Zenú stronghold renowned for the artisanal weaving of "Caña Flecha" and preserving ancestral craft traditions.',
     'tuchin': 'An indigenous Zenú stronghold renowned for the artisanal weaving of "Caña Flecha" and preserving ancestral craft traditions.',
     'valencia': 'A thriving agricultural and livestock hub in the fertile Sinú valley, characterized by its green plains and productive rural landscapes.',
+
+    // Cundinamarca
+    'agua de dios': 'A historic town known for its warm climate, colonial architecture, and therapeutic thermal springs nestled in a scenic Andean valley.',
+    'albán': 'A picturesque mountain town set on steep green slopes, offering breathtaking views of the Magdalena River valley and rich coffee heritage.',
+    'alban': 'A picturesque mountain town set on steep green slopes, offering breathtaking views of the Magdalena River valley and rich coffee heritage.',
+    'anapoima': 'Renowned for having one of the best climates in the world, this elegant destination is famous for its luxurious villas and lush tropical gardens.',
+    'anolaima': 'The "Fruit Capital of Colombia," a vibrant town celebrated for its diverse agricultural wealth, colorful festivals, and mist-covered mountain peaks.',
 
     // Casanare
     'casanare-sabanalarga': 'A gateway town in the Casanare foothills, known for its oil industry heritage and access to the stunning Llanos landscape.',
