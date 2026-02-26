@@ -224,5 +224,77 @@ export const manualAttractions: ManualAttraction[] = [
         longitude: "-75.3667",
         images: ["/images/park-mountain.png"],
         link: "/natural-parks/18"
+    },
+    {
+        id: 26,
+        name: "Serranía de Chiribiquete National Park",
+        description: "A UNESCO World Heritage Site and the world's largest tepui plateau, featuring ancient rock art with over 75,000 paintings. It is a biodiversity hotspot and sacred land for indigenous peoples.",
+        latitude: "0.8667",
+        longitude: "-72.6333",
+        images: ["/images/landscape-amazon.png"],
+        link: "/natural-parks/450"
+    },
+    {
+        id: 27,
+        name: "Chingaza National Park",
+        description: "Located northeast of Bogotá, Chingaza is a high-altitude páramo ecosystem that provides drinking water to millions of people. It is home to tapirs, spectacled bears, and the Andean condor.",
+        latitude: "4.5167",
+        longitude: "-73.7500",
+        images: ["/images/park-paramo.png"],
+        link: "/natural-parks/204"
+    },
+    {
+        id: 28,
+        name: "Gorgona Natural National Park",
+        description: "A remote island national park in the Pacific Ocean, formerly a prison colony. Today it is a sanctuary for humpback whales, sea turtles, sharks, and some of the most biodiverse coral reefs in the eastern Pacific.",
+        latitude: "2.9667",
+        longitude: "-78.1833",
+        images: ["/images/park-coast.png"],
+        link: "/natural-parks/149"
+    },
+    {
+        id: 29,
+        name: "Utría National Park",
+        description: "A stunning coastal park on the Pacific coast of Chocó, one of the world's most biodiverse regions. It protects lush jungle, mangroves, and turquoise coves where humpback whales come to breed.",
+        latitude: "6.0167",
+        longitude: "-77.3500",
+        images: ["/images/park-coast.png"],
+        link: "/natural-parks/115"
+    },
+    {
+        id: 30,
+        name: "Puracé National Park",
+        description: "A volcanic landscape in the Colombian Andes featuring the active Puracé volcano, sulfur springs, waterfalls, and páramo ecosystems rich in frailejones and spectacled bears.",
+        latitude: "2.3167",
+        longitude: "-76.4000",
+        images: ["/images/park-mountain.png"],
+        link: "/natural-parks/14"
+    },
+    {
+        id: 31,
+        name: "Santuario Los Flamencos",
+        description: "A wildlife sanctuary on the Caribbean coast of La Guajira, protecting coastal lagoons, mangroves, and beaches. It is famous for its flamingo colonies and is a key stop on migratory bird routes.",
+        latitude: "11.2500",
+        longitude: "-73.4167",
+        images: ["/images/park-coast.png"],
+        link: "/natural-parks/107"
+    },
+    {
+        id: 32,
+        name: "Las Orquídeas National Park",
+        description: "A biodiversity hotspot in the western Colombian Andes, protecting one of the world's greatest concentrations of orchid species alongside jaguar, ocelot, and an extraordinary array of birds.",
+        latitude: "6.5833",
+        longitude: "-76.2500",
+        images: ["/images/park-jungle.png"],
+        link: "/natural-parks/73"
+    },
+    {
+        id: 33,
+        name: "Serranía de la Macarena National Park",
+        description: "A unique biological crossroads where the Andes, Orinoquía, and Amazon regions meet. Home to the legendary Caño Cristales river — the 'River of Five Colors' — and remarkable endemic species.",
+        latitude: "3.3833",
+        longitude: "-73.9167",
+        images: ["/images/blog-cano-cristales.png"],
+        link: "/natural-parks/426"
     }
 ];
