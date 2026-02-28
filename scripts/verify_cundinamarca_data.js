@@ -1,4 +1,4 @@
-const { getCityImage, getCityOverview } = require('./lib/city-data.ts');
+const { getCityImage, getCityOverview } = require('../lib/city-data');
 const fs = require('fs');
 
 console.log('--- Cundinamarca Integration Verification ---');

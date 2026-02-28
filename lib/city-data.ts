@@ -812,6 +812,16 @@ export const cityImages: Record<string, string> = {
     'valencia': '/images/city_valencia_cordoba.png',
 
     // Cundinamarca
+    'bogotá': '/images/city_bogota_cundinamarca.png',
+    'bogota': '/images/city_bogota_cundinamarca.png',
+    'cundinamarca-bogotá': '/images/city_bogota_cundinamarca.png',
+    'cundinamarca-bogota': '/images/city_bogota_cundinamarca.png',
+    'venecia': '/images/city_venecia_cundinamarca.png',
+    'cundinamarca-venecia': '/images/city_venecia_cundinamarca.png',
+    'nariño': '/images/city_narino_cundinamarca.png',
+    'narino': '/images/city_narino_cundinamarca.png',
+    'cundinamarca-nariño': '/images/city_narino_cundinamarca.png',
+    'cundinamarca-narino': '/images/city_narino_cundinamarca.png',
     'agua de dios': '/images/city_agua_de_dios_cundinamarca.png',
     'albán': '/images/city_alban_cundinamarca.png',
     'alban': '/images/city_alban_cundinamarca.png',
@@ -973,10 +983,7 @@ export const cityImages: Record<string, string> = {
     'zipacon': '/images/city_zipacon_cundinamarca.png',
     'zipaquirá': '/images/city_zipaquira_cundinamarca.png',
     'zipaquira': '/images/city_zipaquira_cundinamarca.png',
-    'útica': '/images/city_utica_cundinamarca.png',
     'utica': '/images/city_utica_cundinamarca.png',
-    'bogotá': '/images/city_bogota.png',
-    'bogota': '/images/city_bogota.png',
 
     // Casanare
     'casanare-sabanalarga': '/images/city_sabanalarga_casanare.png',
