@@ -211,7 +211,7 @@ export const blogPosts: BlogPost[] = [
             <h2>2026 Major Cultural Events</h2>
             <ul>
                 <li><strong>Barranquilla Carnival (March 1-4):</strong> The world\'s second-largest folkloric celebration.</li>
-                <li><strong>Holy Week in Popayán (Mar 29 - Apr 5):</strong> Historic religious processions dating back to 1556.</li>
+                <li><strong>Holy Week in Popayán (Mar 29 - Apr 5):</b> Historic religious processions dating back to 1556.</li>
                 <li><strong>Medellín Flower Festival (August 1-10):</strong> A week-long celebration of Antioquian flower farming and culture.</li>
                 <li><strong>Salsa Festival in Cali (September 25-28):</strong> Witness the global salsa capital in its full glory.</li>
             </ul>
@@ -220,6 +220,63 @@ export const blogPosts: BlogPost[] = [
         author: 'Culture Scout',
         date: '2026-03-10',
         tags: ['Festivals', 'Climate', 'Culture', '2026'],
+    },
+    {
+        id: '11',
+        title: 'Descubre la Gastronomía Colombiana: Un Viaje Culinario por Regiones',
+        slug: 'gastronomia-colombiana-viaje-culinario',
+        excerpt: 'Explora los sabores únicos de Colombia, desde la bandeja paisa en los Andes hasta los mariscos frescos del Caribe.',
+        content: `
+            <p>Colombia es un país de sabores vibrantes y diversos, reflejo de su rica geografía y herencia cultural. Cada región ofrece una experiencia culinaria única que encanta a los visitantes.</p>
+            
+            <h2>La Cocina Andina: Tradición y Sabor</h2>
+            <p>En el corazón de los Andes, la gastronomía colombiana se caracteriza por platos contundentes y reconfortantes. La icónica <strong>Bandeja Paisa</strong>, originaria de la región de Antioquia, es un festín de frijoles, arroz, carne molida, chicharrón, huevo frito, chorizo, plátano maduro y aguacate. No puedes irte sin probar el <strong>Ajiaco Santafereño</strong> en Bogotá, una sopa cremosa de pollo, tres tipos de papa y mazorca, servida con alcaparras y crema de leche.</p>
+            
+            <h2>El Caribe: Frescura y Explosión Marina</h2>
+            <p>La costa caribeña seduce con sus sabores tropicales y la abundancia de productos del mar. Prueba el refrescante <strong>Pescado Frito</strong> con arroz con coco y patacones, o deléitate con un buen <strong>Ceviche de Camarones</strong>. Las <strong>Arepas con Huevo</strong> son el desayuno por excelencia en esta región, fritas y rellenas.</p>
+            
+            <h2>El Pacífico: Exotismo y Tradición Afrocolombiana</h2>
+            <p>La cocina del Pacífico es menos conocida pero igualmente fascinante, con fuertes influencias afrocolombianas e ingredientes exóticos. Los <strong>Encocados</strong> de pescado o mariscos, cocinados en leche de coco, son un imperdible, así como el <strong>Sancocho de Pescado</strong> y las empanadas de cambray.</p>
+            
+            <h2>Postres y Bebidas Típicas</h2>
+            <p>Para endulzar el paladar, prueba el <strong>Dulce de Leche (Arequipe)</strong>, los <strong>Bocadillos Veleños</strong> de guayaba o los <strong>Cocadas</strong> de coco. No olvides acompañar tus comidas con un buen <strong>Jugo Natural</strong> de frutas exóticas como lulo, maracuyá o guanábana, y por supuesto, una taza del mundialmente famoso <strong>Café Colombiano</strong>.</p>
+            
+            <p>La gastronomía colombiana es una invitación a explorar la diversidad del país a través de sus sabores, una experiencia inolvidable para cualquier viajero.</p>
+        `,
+        image: getAssetPath('/images/blog-gastronomia.png'),
+        author: 'Bukaro',
+        date: '2026-02-28',
+        tags: ['Gastronomía', 'Comida', 'Cultura', 'Viajes Culinarios', 'Colombia']
+    },
+    {
+        id: '12',
+        title: 'Aventura Extrema en Colombia: Deportes y Actividades para Adrenaline Junkies',
+        slug: 'aventura-extrema-colombia',
+        excerpt: 'Desde parapente en el Valle del Cauca hasta el rafting en el río Magdalena, Colombia ofrece emociones fuertes para todos los amantes de la adrenalina.',
+        content: `
+            <p>Colombia, con su geografía diversa que abarca desde picos andinos hasta selvas amazónicas y costas caribeñas, es un paraíso para los entusiastas de la aventura y los deportes extremos. Prepárate para vivir experiencias que te dejarán sin aliento.</p>
+
+            <h2>Parapente en el Valle del Cauca</h2>
+            <p>Siente la libertad de volar sobre los paisajes verdes del <strong>Valle del Cauca</strong>, especialmente en lugares como Roldanillo o Calima. Las corrientes térmicas favorables hacen de Colombia uno de los mejores destinos del mundo para el parapente, apto tanto para principiantes con vuelos tándem como para pilotos experimentados.</p>
+
+            <h2>Rafting y Kayak en Ríos Salvajes</h2>
+            <p>Los caudalosos ríos colombianos son perfectos para el rafting y el kayak. El <strong>Río Magdalena</strong>, el más importante del país, ofrece tramos emocionantes, mientras que el <strong>Río Suárez</strong> en Santander es conocido por sus rápidos de clase IV y V. Para una experiencia más tranquila pero igualmente hermosa, puedes hacer kayak en el <strong>Río La Miel</strong> en Caldas.</p>
+
+            <h2>Espeleología en Santander y Boyacá</h2>
+            <p>Explora el mundo subterráneo de Colombia adentrándote en sus impresionantes cuevas. La región de Santander, con cuevas como la del Indio o la de la Vaca, y Boyacá, con la Cueva del Nitro, ofrecen formaciones rocosas espectaculares y desafíos para todos los niveles de experiencia.</p>
+
+            <h2>Escalada en Roca y Montañismo</h2>
+            <p>Los Andes colombianos presentan innumerables oportunidades para la escalada. Lugares como <strong>Suesca</strong> (cerca de Bogotá) son famosos por sus paredes rocosas y escuelas de escalada. Para los montañistas, los picos nevados del <strong>Parque Nacional Natural Los Nevados</strong> o la <strong>Sierra Nevada del Cocuy</strong> ofrecen retos inolvidables y paisajes sobrecogedores.</p>
+
+            <h2>Buceo en el Caribe y el Pacífico</h2>
+            <p>Explora la vibrante vida marina en el mar Caribe, con destinos como <strong>Providencia</strong>, <strong>San Andrés</strong> o el <strong>Parque Nacional Natural Corales del Rosario y San Bernardo</strong>. En el Pacífico, el buceo en <strong>Malpelo</strong> o <strong>Gorgona</strong> te permitirá avistar tiburones martillo, ballenas jorobadas (en temporada) y tortugas marinas.</p>
+            
+            <p>Ya sea en el aire, en el agua o bajo tierra, Colombia te espera con una aventura a medida para tu espíritu más audaz. ¡Prepara tu equipo y lánzate a la exploración!</p>
+        `,
+        image: getAssetPath('/images/blog-aventura.png'),
+        author: 'Bukaro',
+        date: '2026-02-28',
+        tags: ['Aventura', 'Deportes Extremos', 'Naturaleza', 'Adrenalina', 'Colombia']
     }
 ];
 
