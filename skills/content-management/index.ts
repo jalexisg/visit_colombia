@@ -243,7 +243,7 @@ export const blogPosts: BlogPost[] = [
             
             <p>La gastronomía colombiana es una invitación a explorar la diversidad del país a través de sus sabores, una experiencia inolvidable para cualquier viajero.</p>
         `,
-        image: getAssetPath('/images/blog-gastronomia.png'),
+        image: getAssetPath('/images/blog-coffee.png'),
         author: 'Bukaro',
         date: '2026-02-28',
         tags: ['Gastronomía', 'Comida', 'Cultura', 'Viajes Culinarios', 'Colombia']
@@ -273,7 +273,7 @@ export const blogPosts: BlogPost[] = [
             
             <p>Ya sea en el aire, en el agua o bajo tierra, Colombia te espera con una aventura a medida para tu espíritu más audaz. ¡Prepara tu equipo y lánzate a la exploración!</p>
         `,
-        image: getAssetPath('/images/blog-aventura.png'),
+        image: getAssetPath('/images/blog-tayrona.png'),
         author: 'Bukaro',
         date: '2026-02-28',
         tags: ['Aventura', 'Deportes Extremos', 'Naturaleza', 'Adrenalina', 'Colombia']
