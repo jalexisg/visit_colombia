@@ -2,6 +2,10 @@ import { getAssetPath } from './utils';
 
 export const cityImages: Record<string, string> = {
     'santander-bucaramanga': '/images/city_bucaramanga.png',
+    'medellín': '/images/city-medellin.png',
+    'medellin': '/images/city-medellin.png',
+    'antioquia-medellín': '/images/city-medellin.png',
+    'antioquia-medellin': '/images/city-medellin.png',
 
     'pereira': '/images/city-pereira.png',
     'armenia': '/images/city-armenia.png',
