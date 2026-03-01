@@ -196,7 +196,7 @@ export const blogPosts: BlogPost[] = [
         `,
         image: getAssetPath('/images/blog-header.png'),
         author: 'Admin Support',
-        date: '2026-03-05',
+        date: '2026-02-25',
         tags: ['Logistics', 'Visa', 'Health', 'Travel Guide'],
     },
     {
@@ -218,7 +218,7 @@ export const blogPosts: BlogPost[] = [
         `,
         image: getAssetPath('/images/blog-header.png'),
         author: 'Culture Scout',
-        date: '2026-03-10',
+        date: '2026-02-26',
         tags: ['Festivals', 'Climate', 'Culture', '2026'],
     },
     {
@@ -281,7 +281,7 @@ export const blogPosts: BlogPost[] = [
 ];
 
 export function getBlogPosts(): Promise<BlogPost[]> {
-    return Promise.resolve(blogPosts);
+    return Promise.resolve([...blogPosts].sort((a, b) => b.date.localeCompare(a.date)));
 }
 
 export function getBlogPost(slug: string): Promise<BlogPost | undefined> {

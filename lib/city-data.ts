@@ -1092,6 +1092,15 @@ export const cityImages: Record<string, string> = {
     'trinidad': '/images/city_trinidad_casanare.png',
     'casanare-villanueva': '/images/city_villanueva_casanare.png',
 
+    // Guainía
+    'barranco minas': '/images/cities/guainia/barranco_minas.png',
+    'guainia-barranco minas': '/images/cities/guainia/barranco_minas.png',
+    'mapiripana': '/images/cities/guainia/mapiripana.png',
+    'guainia-mapiripana': '/images/cities/guainia/mapiripana.png',
+    'san felipe': '/images/cities/guainia/san_felipe.png',
+    'guainia-san felipe': '/images/cities/guainia/san_felipe.png',
+    'guainia-puerto colombia': '/images/cities/guainia/puerto_colombia.png',
+    'puerto colombia-guainia': '/images/cities/guainia/puerto_colombia.png',
 };
 
 export function getCityImage(cityName: string, departmentName?: string): string {
@@ -1958,7 +1967,12 @@ export const cityOverviews: Record<string, string> = {
     'antioquia-don matías': 'A livestock and textile hub known as the "Dairy Gateway to the North," surrounded by rolling green pastures and high mountain scenery.',
     'antioquia-don matias': 'A livestock and textile hub known as the "Dairy Gateway to the North," surrounded by rolling green pastures and high mountain scenery.',
 
-    // End of City Overviews
+    // Guainía Overviews
+    'inírida': 'The capital of Guainía, known as "The Land of Many Waters," gateway to the stunning Cerros de Mavecure.',
+    'barranco minas': 'A remote Amazonian settlement on the Inírida River, gateway to untouched rainforests and indigenous cultures.',
+    'mapiripana': 'A pristine natural area in the heart of the Guainía department, offering breathtaking riverside landscapes.',
+    'san felipe': 'A historic border town on the Rio Negro, where the black waters meet the dense Amazonian jungle.',
+    'guainia-puerto colombia': 'A tranquil river port in the Amazon basin, far removed from its Caribbean namesake.',
 };
 
 export function getCityOverview(cityName: string, defaultDescription?: string, departmentName?: string): string {
