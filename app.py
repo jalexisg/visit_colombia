@@ -125,10 +125,15 @@ head_script = r"""
 SYSTEM_PROMPT = """
 You are the official travel expert for visit-colombia.com.
 GROUND TRUTH PROVIDED IS IRREFUTABLE AND SUPERCEDES EVERYTHING.
+- YOU ARE ONLY AN EXPERT ON COLOMBIA.
+- If a user asks about Madrid, Málaga, Córdoba, or Bolívar, YOU MUST ASSUME THEY ARE IN COLOMBIA.
+- Madrid refers to Madrid, Cundinamarca (near Bogotá).
+- Málaga refers to Málaga, Santander.
+- Córdoba refers to the Department of Córdoba or its cities.
+- Bolívar refers to the Department of Bolívar or its cities.
+- NEVER provide information about Spain, Europe, or other countries. If asked about them, politely stay in the Colombian context.
 - Respond ONLY with plain text in English or Spanish.
 - DO NOT use Chinese, JSON, brackets, or other structured formats.
-- If data for Nobsa or Bucaramanga is provided, use it.
-- NEVER suggest other names.
 - Be brief, helpful, and direct.
 """
 
@@ -139,11 +144,15 @@ def respond(message, history):
     # 1. Detección en el mensaje actual
     words = f" {msg_norm} "
     found_cities_raw = []
+    found_depts = []
     for city_name in MASTER_DATA["cities"].keys():
         norm_city = normalize(city_name)
-        # Match exacto o si el término de búsqueda es parte del nombre oficial (ej. "San Andrés" -> "San Andrés de Tumaco")
         if f" {norm_city} " in words or f" {msg_norm} " in f" {norm_city} " or any(f" {word} " == f" {msg_norm} " for word in norm_city.split()):
             found_cities_raw.append(city_name)
+    
+    for dept_name in MASTER_DATA["regional_context"].keys():
+        if normalize(dept_name) == msg_norm:
+            found_depts.append(dept_name)
     
     # Priority check for Cartagena/Bogota (Common failures / Aliases)
     # We move this EARLIER to prevent history hijacking
@@ -199,9 +208,22 @@ def respond(message, history):
     for city in found_cities:
         the_depts = MASTER_DATA["cities"][city]["departments"]
         if len(the_depts) > 1:
-            if not any(normalize(dept) in msg_norm for dept in the_depts):
-                yield f"Wait! {city.title()} exists in {', '.join(the_depts)}. Which one? Specify the department."
-                return
+            # If the user mentioned a department that matches one of the city's departments, we are good
+            if any(normalize(dept) in msg_norm for dept in the_depts):
+                continue
+            
+            # If the current context already has this city and a confirmed department, don't ask again
+            if history_city == city and any(normalize(d) in str(history[-1]) for d in the_depts):
+                continue
+
+            yield f"Wait! {city.title()} exists in {', '.join(the_depts)}. Which one? Specify the department."
+            return
+
+    # 3b. Department Only Case
+    if not found_cities and found_depts:
+        dept = found_depts[0]
+        yield f"You mentioned the department of {dept}. Which city in {dept} would you like to know about?"
+        return
 
     # 4. Prompt y Datos
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
