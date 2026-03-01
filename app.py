@@ -2,9 +2,12 @@ import gradio as gr
 import os
 import json
 import re
-from huggingface_hub import InferenceClient
+from openai import OpenAI
 
-client = InferenceClient("Qwen/Qwen2.5-7B-Instruct", token=os.getenv("HF_TOKEN"))
+client = OpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key=os.getenv("OPENROUTER_API_KEY"),
+)
 
 def normalize(text):
     if not text: return ""
@@ -64,7 +67,7 @@ span:contains("[[NAV:"), p:contains("[[NAV:") { opacity: 0; pointer-events: none
 head_script = r"""
 <script>
 (function() {
-    console.log("� Visit-Colombia Bridge Version 5.0 (Nuclear)");
+    console.log(" Visit-Colombia Bridge Version 5.0 (Nuclear)");
 
     function dispatchNav(url, element) {
         const msg = { type: 'NAVIGATE', url: url };
@@ -287,7 +290,14 @@ def respond(message, history):
     try:
         response = ""
         # Incremental token limit for longer descriptions (Tunja, etc.)
-        for resp in client.chat_completion(messages, max_tokens=512, stream=True, temperature=0.0):
+        stream = client.chat.completions.create(
+            model="arcee-ai/trinity-large-preview:free",
+            messages=messages,
+            max_tokens=512,
+            stream=True,
+            temperature=0.0
+        )
+        for resp in stream:
             if not resp.choices: continue
             token = resp.choices[0].delta.content
             if token is None: continue
