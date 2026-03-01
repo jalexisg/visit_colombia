@@ -277,6 +277,28 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-02-28',
         tags: ['Aventura', 'Deportes Extremos', 'Naturaleza', 'Adrenalina', 'Colombia']
+    },
+    {
+        id: '13',
+        title: 'New Blog Entry Title',
+        slug: 'new-blog-entry-slug',
+        excerpt: 'This is a short excerpt for the new blog entry.',
+        content: `
+            <p>Welcome to a new exciting blog post!</p>
+            <h2>Introduction</h2>
+            <p>This is where the main content of your blog post will go. Remember to use HTML for formatting.</p>
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Point 1</li>
+                <li>Point 2</li>
+                <li>Point 3</li>
+            </ul>
+            <p>Feel free to expand on these points with more detailed information.</p>
+        `,
+        image: getAssetPath('/images/blog-default.png'),
+        author: 'Bukaro',
+        date: '2026-03-01', // Today's date
+        tags: ['New', 'Entry', 'Placeholder'],
     }
 ];
 
