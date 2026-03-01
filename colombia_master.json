@@ -1378,51 +1378,47 @@
       "departments": [
         "Antioquia",
         "Huila",
-        "Santander"
+        "Santander",
+        "Guainía"
       ],
       "ground_truth": {
         "Antioquia": {
-          "description": "Home to \"Las Gachas,\" a natural wonder of red rock riverbeds with multiple circular pools carved by water.",
+          "description": "A charming town in the northern highlands of Antioquia, surrounded by green hills and waterfalls.",
           "recommended_food": [
             "Bandeja Paisa",
-            "Mazamorra",
-            "Arepa de Mote",
-            "Chorizo Antioqueño"
+            "Mazamorra"
           ],
           "warnings": [
-            "Coffee region.",
-            "Mountainous terrain.",
-            "Flower culture."
+            "Mountainous terrain"
           ],
           "id": 60
         },
         "Huila": {
-          "description": "Home to \"Las Gachas,\" a natural wonder of red rock riverbeds with multiple circular pools carved by water.",
+          "description": "A peaceful town in Huila, known for its religious tradition and beautiful Andean landscapes.",
           "recommended_food": [
             "Asado Huilense",
-            "Achiras",
-            "Tamal Huilense",
-            "Juan Valerio"
+            "Achiras"
           ],
           "warnings": [],
           "id": 669
         },
         "Santander": {
-          "description": "A beautiful municipality known for its andean mountains and deep canyons (chicamocha). It offers a unique cultural and natural experience.",
+          "description": "Situated in the tranquil mountains of Santander, this town is the gateway to \"Las Gachas,\" a natural wonder of red rock riverbeds with multiple circular pools carved by water.",
           "recommended_food": [
-            "Hormigas Culonas (Savory fried ants)",
-            "Mute Santandereano (Savory meat and corn soup)",
-            "Pepitoria (Savory rice with blood and viscera)",
-            "Arepa de Maíz Pelao",
-            "Bocadillo Veleño (Guava paste)"
+            "Mute",
+            "Pepitoria",
+            "Cabrito"
           ],
-          "warnings": [
-            "Andean mountains and deep canyons (Chicamocha).",
-            "NO beaches.",
-            "NO Caribbean influence.",
-            "Climate is temperate to warm mountain air."
+          "warnings": [],
+          "id": 894
+        },
+        "Guainía": {
+          "description": "The southernmost point of Guainía, a border town where Colombia, Brazil, and Venezuela meet at the iconic Piedra del Cocuy.",
+          "recommended_food": [
+            "Local traditional dishes"
           ],
-          "id": 948
+          "warnings": [],
+          "id": 652
         }
       }
     },
@@ -3518,7 +3514,8 @@
     },
     "puerto colombia": {
       "departments": [
-        "Atlántico"
+        "Atlántico",
+        "Guainía"
       ],
       "ground_truth": {
         "Atlántico": {
@@ -3531,6 +3528,14 @@
           ],
           "warnings": [],
           "id": 165
+        },
+        "Guainía": {
+          "description": "A tranquil river port in the Amazon basin, far removed from its Caribbean namesake.",
+          "recommended_food": [
+            "Local traditional dishes"
+          ],
+          "warnings": [],
+          "id": 645
         }
       }
     },
@@ -12387,6 +12392,96 @@
           ],
           "warnings": [],
           "id": 644
+        }
+      }
+    },
+    "barranco minas": {
+      "departments": [
+        "Guainía"
+      ],
+      "ground_truth": {
+        "Guainía": {
+          "description": "A remote Amazonian settlement on the Inírida River, gateway to untouched rainforests and indigenous cultures.",
+          "recommended_food": [
+            "Local traditional dishes"
+          ],
+          "warnings": [],
+          "id": 646
+        }
+      }
+    },
+    "mapiripana": {
+      "departments": [
+        "Guainía"
+      ],
+      "ground_truth": {
+        "Guainía": {
+          "description": "A pristine natural area in the heart of the Guainía department, offering breathtaking riverside landscapes.",
+          "recommended_food": [
+            "Local traditional dishes"
+          ],
+          "warnings": [],
+          "id": 647
+        }
+      }
+    },
+    "san felipe": {
+      "departments": [
+        "Guainía"
+      ],
+      "ground_truth": {
+        "Guainía": {
+          "description": "A historic border town on the Rio Negro, where the black waters meet the dense Amazonian jungle.",
+          "recommended_food": [
+            "Local traditional dishes"
+          ],
+          "warnings": [],
+          "id": 648
+        }
+      }
+    },
+    "cacahual": {
+      "departments": [
+        "Guainía"
+      ],
+      "ground_truth": {
+        "Guainía": {
+          "description": "A remote corregimiento on the Atabapo River, known for its river crossroads and proximity to the Venezuelan border.",
+          "recommended_food": [
+            "Local traditional dishes"
+          ],
+          "warnings": [],
+          "id": 649
+        }
+      }
+    },
+    "pana pana": {
+      "departments": [
+        "Guainía"
+      ],
+      "ground_truth": {
+        "Guainía": {
+          "description": "A deep Amazonian settlement in the heart of the Guainía department, surrounded by dense jungle and blackwater rivers.",
+          "recommended_food": [
+            "Local traditional dishes"
+          ],
+          "warnings": [],
+          "id": 650
+        }
+      }
+    },
+    "morichal": {
+      "departments": [
+        "Guainía"
+      ],
+      "ground_truth": {
+        "Guainía": {
+          "description": "Named after the moriche palms, this area features unique savanna-forest transition ecosystems and indigenous cultures.",
+          "recommended_food": [
+            "Local traditional dishes"
+          ],
+          "warnings": [],
+          "id": 651
         }
       }
     },
