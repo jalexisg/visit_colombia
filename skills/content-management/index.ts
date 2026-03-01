@@ -317,6 +317,7 @@ export const blogPosts: BlogPost[] = [
 ];
 
 export function getBlogPosts(): Promise<BlogPost[]> {
+    return Promise.resolve(blogPosts);
 }
 
 export function getBlogPost(slug: string): Promise<BlogPost | undefined> {
