@@ -281,7 +281,6 @@ export const blogPosts: BlogPost[] = [
     {
         id: '13',
         title: 'The Rhythms of Colombia: A Guide to Its Vibrant Music and Dance',
-        title: 'The Rhythms of Colombia: A Guide to Its Vibrant Music and Dance',
         slug: 'rhythms-colombia-music-dance',
         excerpt: 'Dive into the diverse world of Colombian music and dance, from the lively cumbia to the passionate salsa.',
         content: `
