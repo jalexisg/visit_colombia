@@ -382,7 +382,7 @@ export const blogPosts: BlogPost[] = [
             <p>To truly appreciate the depth and context of Bogotá's street art, consider joining one of the many specialized graffiti tours. Local artists and guides offer invaluable insights into the techniques, political messages, and cultural significance behind the artworks. They often share stories about the artists themselves, the evolution of the graffiti movement in Bogotá, and the unique regulations that have fostered this creative boom.</p>
 
             <h2>Beyond La Candelaria: Exploring New Urban Canvases</h2>
-            <p>While La Candelaria is a must-visit, Bogotá's street art extends far beyond this historic center. Neighborhoods like Usaquén, and even industrial zones are becoming canvases for large-scale murals and evolving artistic projects. Keep an eye out for works by renowned Colombian artists like Guache, DjLu, and Stinkfish, whose distinctive styles contribute to Bogotá's dynamic urban landscape.</p>
+            <p>While La Candelaria is a must-visit, Bogotá's street art extends far beyond this historic center. Neighborhoods like Usaquén and even industrial zones are becoming canvases for large-scale murals and evolving artistic projects. Keep an eye out for works by renowned Colombian artists like Guache, DjLu, and Stinkfish, whose distinctive styles contribute to Bogotá's dynamic urban landscape.</p>
 
             <p>Bogotá's street art scene is a testament to the city's resilience, creativity, and willingness to embrace art as a tool for dialogue and transformation. It's an essential experience that offers a unique perspective on Colombian culture and society.</p>
         `,
