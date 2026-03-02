@@ -186,7 +186,7 @@ export const blogPosts: BlogPost[] = [
         slug: 'essential-logistics-colombia-2026',
         excerpt: 'A step-by-step guide to the mandatory administrative prerequisites for entering Colombia in 2026.',
         content: `
-            <p>Failure to comply with Colombia\'s digitalized entry systems can result in immediate logistical failure. Here is what you need to know for 2026.</p>
+            <p>Failure to comply with Colombia's digitalized entry systems can result in immediate logistical failure. Here is what you need to know for 2026.</p>
             <h2>The Check-Mig System</h2>
             <p>The mandatory <strong>Check-Mig</strong> form must be completed via the Migración Colombia website within a window of 72 hours down to one hour before your flight’s departure. This is required for both entering and exiting the country.</p>
             <h2>Visa and Stay Regulations</h2>
@@ -205,12 +205,12 @@ export const blogPosts: BlogPost[] = [
         slug: 'climate-festivals-colombia-2026',
         excerpt: 'Maximize your experience by timing your visit with the dry seasons and world-class cultural events.',
         content: `
-            <p>Colombia\'s lack of traditional seasons means climate is defined by altitude and rainfall patterns. Plan your 2026 trip strategically.</p>
+            <p>Colombia's lack of traditional seasons means climate is defined by altitude and rainfall patterns. Plan your 2026 trip strategically.</p>
             <h2>Optimal Travel Windows</h2>
             <p>The dry seasons from <strong>December to March</strong> and <strong>July to August</strong> are the peak periods for travel. These months offer the most stable conditions for Andean hiking and Caribbean beach activities.</p>
             <h2>2026 Major Cultural Events</h2>
             <ul>
-                <li><strong>Barranquilla Carnival (March 1-4):</strong> The world\'s second-largest folkloric celebration.</li>
+                <li><strong>Barranquilla Carnival (March 1-4):</strong> The world's second-largest folkloric celebration.</li>
                 <li><strong>Holy Week in Popayán (Mar 29 - Apr 5):</strong> Historic religious processions dating back to 1556.</li>
                 <li><strong>Medellín Flower Festival (August 1-10):</strong> A week-long celebration of Antioquian flower farming and culture.</li>
                 <li><strong>Salsa Festival in Cali (September 25-28):</strong> Witness the global salsa capital in its full glory.</li>
@@ -319,21 +319,21 @@ export const blogPosts: BlogPost[] = [
         slug: 'exploring-vibrant-streets-cartagena',
         excerpt: 'Discover the magic of Cartagena, a UNESCO World Heritage site, with its colorful colonial architecture, captivating history, and lively squares.',
         content: `
-            <p>Cartagena de Indias, a jewel on Colombia\'s Caribbean coast, is a city brimming with history, romance, and incredible vibrancy. Declared a UNESCO World Heritage site, its impeccably preserved colonial architecture, colorful streets, and lively plazas transport visitors to another era.</p>
+            <p>Cartagena de Indias, a jewel on Colombia's Caribbean coast, is a city brimming with history, romance, and incredible vibrancy. Declared a UNESCO World Heritage site, its impeccably preserved colonial architecture, colorful streets, and lively plazas transport visitors to another era.</p>
 
             <h2>The Walled City: A Step Back in Time</h2>
-            <p>The beating heart of Cartagena is its Walled City (Ciudad Amurallada). Wander through narrow cobblestone streets, discover charming balconies adorned with bougainvillea, and admire grand colonial mansions. Don\'t miss exploring iconic spots like the Clock Tower (Torre del Reloj), Plaza de Bolívar, and the Palace of the Inquisition. The massive walls themselves offer stunning sunset views over the Caribbean Sea.</p>
+            <p>The beating heart of Cartagena is its Walled City (Ciudad Amurallada). Wander through narrow cobblestone streets, discover charming balconies adorned with bougainvillea, and admire grand colonial mansions. Don't miss exploring iconic spots like the Clock Tower (Torre del Reloj), Plaza de Bolívar, and the Palace of the Inquisition. The massive walls themselves offer stunning sunset views over the Caribbean Sea.</p>
 
             <h2>Getsemaní: The Bohemian Soul</h2>
-            <p>Just outside the main walls lies Getsemaní, a vibrant, bohemian neighborhood that was once a working-class area. Today, it\'s famous for its incredible street art, trendy cafes, lively bars, and buzzing nightlife. Explore its colorful alleyways, discover hidden squares, and feel the contemporary pulse of the city.</p>
+            <p>Just outside the main walls lies Getsemaní, a vibrant, bohemian neighborhood that was once a working-class area. Today, it's famous for its incredible street art, trendy cafes, lively bars, and buzzing nightlife. Explore its colorful alleyways, discover hidden squares, and feel the contemporary pulse of the city.</p>
 
             <h2>Beyond the Walls: Beaches and Islands</h2>
-            <p>While Cartagena\'s charm is undeniable, nearby islands and beaches offer a perfect escape. Take a boat trip to the Rosario Islands for pristine white sands and crystal-clear waters, ideal for snorkeling and relaxing. Closer to the city, Bocagrande offers a more developed beach experience with high-rise hotels.</p>
+            <p>While Cartagena's charm is undeniable, nearby islands and beaches offer a perfect escape. Take a boat trip to the Rosario Islands for pristine white sands and crystal-clear waters, ideal for snorkeling and relaxing. Closer to the city, Bocagrande offers a more developed beach experience with high-rise hotels.</p>
 
             <h2>Gastronomy: A Culinary Delight</h2>
-            <p>Cartagena\'s culinary scene is a delightful fusion of Caribbean flavors, fresh seafood, and traditional Colombian cuisine. Indulge in fresh ceviches, traditional fish dishes, and exotic fruit juices. The city offers everything from street food delights to upscale dining experiences.</p>
+            <p>Cartagena's culinary scene is a delightful fusion of Caribbean flavors, fresh seafood, and traditional Colombian cuisine. Indulge in fresh ceviches, traditional fish dishes, and exotic fruit juices. The city offers everything from street food delights to upscale dining experiences.</p>
 
-            <p>Whether you\'re enchanted by its history, thrilled by its nightlife, or simply wish to soak up the Caribbean sun, Cartagena promises an unforgettable Colombian adventure.</p>
+            <p>Whether you're enchanted by its history, thrilled by its nightlife, or simply wish to soak up the Caribbean sun, Cartagena promises an unforgettable Colombian adventure.</p>
         `,
         image: getAssetPath('/images/blog-header.png'),
         author: 'Bukaro',
@@ -352,15 +352,15 @@ export const blogPosts: BlogPost[] = [
             <p>Leticia is a vibrant city situated on the Amazon River, where Colombia, Brazil (Tabatinga), and Peru (Santa Rosa) converge. This unique geopolitical position makes it a melting pot of cultures and a bustling hub for trade and tourism. From here, you can easily explore all three countries, experience diverse cuisines, and immerse yourself in the local way of life.</p>
 
             <h2>Puerto Nariño: A Model of Ecotourism</h2>
-            <p>A short boat ride upriver from Leticia takes you to Puerto Nariño, Colombia\'s second municipality in the Amazonas, and a true gem of sustainable tourism. This tranquil, car-free town is dedicated to preserving its natural environment and indigenous traditions. Visitors can observe pink and gray river dolphins, visit local indigenous communities, and learn about their efforts to live in harmony with the rainforest.</p>
+            <p>A short boat ride upriver from Leticia takes you to Puerto Nariño, Colombia's second municipality in the Amazonas, and a true gem of sustainable tourism. This tranquil, car-free town is dedicated to preserving its natural environment and indigenous traditions. Visitors can observe pink and gray river dolphins, visit local indigenous communities, and learn about their efforts to live in harmony with the rainforest.</p>
 
             <h2>Flora and Fauna: A Biodiversity Hotspot</h2>
-            <p>The Colombian Amazon is home to an astonishing array of wildlife. Guided excursions offer the chance to spot monkeys, sloths, caimans, anacondas, and a spectacular variety of birds, including macaws and toucans. The rainforest\'s plant life is equally impressive, with giant water lilies, towering Ceiba trees, and countless medicinal plants.</p>
+            <p>The Colombian Amazon is home to an astonishing array of wildlife. Guided excursions offer the chance to spot monkeys, sloths, caimans, anacondas, and a spectacular variety of birds, including macaws and toucans. The rainforest's plant life is equally impressive, with giant water lilies, towering Ceiba trees, and countless medicinal plants.</p>
 
             <h2>Cultural Immersion: Indigenous Communities</h2>
             <p>Interacting with the indigenous communities that have inhabited the Amazon for centuries is a profound experience. Many tours include visits to Tikuna, Huitoto, and Yagua villages, where you can learn about their customs, traditional crafts, music, and their deep spiritual connection to the forest.</p>
 
-            <p>An adventure in the Amazon Rainforest is more than just a trip; it\'s a journey into the heart of nature\'s grandeur and a testament to the planet\'s thriving biodiversity. Prepare to be amazed by the sights, sounds, and vibrant life of this extraordinary region.</p>
+            <p>An adventure in the Amazon Rainforest is more than just a trip; it's a journey into the heart of nature's grandeur and a testament to the planet's thriving biodiversity. Prepare to be amazed by the sights, sounds, and vibrant life of this extraordinary region.</p>
         `,
         image: getAssetPath('/images/blog-header.png'),
         author: 'Bukaro',
