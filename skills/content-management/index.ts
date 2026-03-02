@@ -360,6 +360,30 @@ export const blogPosts: BlogPost[] = [
         date: '2026-03-02',
         tags: ['Coffee', 'Culture', 'Ecotourism', 'Travel Guide'],
     }
+    {
+        id: '16',
+        title: 'Discover the Enchanting Heart of Colombia's Coffee Region',
+        slug: 'discover-enchanting-heart-colombia-coffee-region',
+        excerpt: 'Journey through the lush, mountainous terrain where the world's finest coffee beans are cultivated, and immerse yourself in the rich culture and hospitality of the Eje Cafetero.',
+        content: `
+            <p>The Coffee Cultural Landscape of Colombia, a UNESCO World Heritage site, is more than just a place to grow coffee; it's a vibrant tapestry of natural beauty, welcoming communities, and deep-rooted traditions. This region, primarily encompassing the departments of Quindío, Risaralda, and Caldas, offers an unparalleled experience for travelers seeking authenticity and connection.</p>
+
+            <h2>A Taste of Tradition: Coffee Farm Experiences</h2>
+            <p>No visit to the Eje Cafetero is complete without an in-depth tour of a working coffee farm (finca cafetera). Here, you'll walk amongst the coffee trees, learn about the meticulous process from cultivation to roasting, and, most importantly, savor a freshly brewed cup of world-class Colombian coffee directly from its source. Many haciendas also offer charming accommodations, allowing you to wake up to the aromas of freshly brewed coffee and the sounds of nature.</p>
+
+            <h2>Salento and the Cocora Valley: Iconic Landscapes</h2>
+            <p>Picture-perfect Salento, with its brightly colored balconies and artisan shops, serves as a gateway to the breathtaking Cocora Valley. This magical valley is home to the towering wax palms, Colombia's national tree, which stand majestically amidst the misty, emerald hills. Hiking, birdwatching, and horseback riding are popular activities to fully appreciate this unique ecosystem.</p>
+
+            <h2>Beyond Coffee: Adventure and Gastronomy</h2>
+            <p>The Coffee Region also caters to adventure enthusiasts. Explore natural parks, go paragliding over panoramic valleys, or experience white-water rafting. When it comes to food, indulge in regional specialties like "bandeja paisa" (a hearty platter), "trucha" (fresh trout) from local rivers, and of course, an endless variety of exquisite coffee-infused treats.</p>
+
+            <p>The warmth of its people, the spectacular landscapes, and the aroma of coffee make Colombia's Eje Cafetero an unforgettable destination for any traveler.</p>
+        `,
+        image: getAssetPath('/images/blog-coffee.png'),
+        author: 'Bukaro',
+        date: '2026-03-02',
+        tags: ['Coffee', 'Culture', 'Ecotourism', 'Travel Guide', 'Andean'],
+    }
 ];
 
 export function getBlogPosts(): Promise<BlogPost[]> {
