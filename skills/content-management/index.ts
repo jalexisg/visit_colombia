@@ -312,6 +312,33 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-01',
         tags: ['Music', 'Dance', 'Culture', 'Festivals']
+    },
+    {
+        id: '14',
+        title: 'Exploring the Vibrant Streets of Cartagena: A Caribbean Gem',
+        slug: 'exploring-vibrant-streets-cartagena',
+        excerpt: 'Discover the magic of Cartagena, a UNESCO World Heritage site, with its colorful colonial architecture, captivating history, and lively squares.',
+        content: `
+            <p>Cartagena de Indias, a jewel on Colombia\'s Caribbean coast, is a city brimming with history, romance, and incredible vibrancy. Declared a UNESCO World Heritage site, its impeccably preserved colonial architecture, colorful streets, and lively plazas transport visitors to another era.</p>
+
+            <h2>The Walled City: A Step Back in Time</h2>
+            <p>The beating heart of Cartagena is its Walled City (Ciudad Amurallada). Wander through narrow cobblestone streets, discover charming balconies adorned with bougainvillea, and admire grand colonial mansions. Don\'t miss exploring iconic spots like the Clock Tower (Torre del Reloj), Plaza de Bolívar, and the Palace of the Inquisition. The massive walls themselves offer stunning sunset views over the Caribbean Sea.</p>
+
+            <h2>Getsemaní: The Bohemian Soul</h2>
+            <p>Just outside the main walls lies Getsemaní, a vibrant, bohemian neighborhood that was once a working-class area. Today, it\'s famous for its incredible street art, trendy cafes, lively bars, and buzzing nightlife. Explore its colorful alleyways, discover hidden squares, and feel the contemporary pulse of the city.</p>
+
+            <h2>Beyond the Walls: Beaches and Islands</h2>
+            <p>While Cartagena\'s charm is undeniable, nearby islands and beaches offer a perfect escape. Take a boat trip to the Rosario Islands for pristine white sands and crystal-clear waters, ideal for snorkeling and relaxing. Closer to the city, Bocagrande offers a more developed beach experience with high-rise hotels.</p>
+
+            <h2>Gastronomy: A Culinary Delight</h2>
+            <p>Cartagena\'s culinary scene is a delightful fusion of Caribbean flavors, fresh seafood, and traditional Colombian cuisine. Indulge in fresh ceviches, traditional fish dishes, and exotic fruit juices. The city offers everything from street food delights to upscale dining experiences.</p>
+
+            <p>Whether you\'re enchanted by its history, thrilled by its nightlife, or simply wish to soak up the Caribbean sun, Cartagena promises an unforgettable Colombian adventure.</p>
+        `,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Bukaro',
+        date: '2026-03-02',
+        tags: ['Cartagena', 'Caribbean', 'History', 'Culture', 'Travel Guide']
     }
 ];
 
