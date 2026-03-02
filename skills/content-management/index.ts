@@ -339,6 +339,26 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-02',
         tags: ['Cartagena', 'Caribbean', 'History', 'Culture', 'Travel Guide']
+    },
+    {
+        id: '15',
+        title: 'Discover the Magic of Colombia\'s Coffee Region',
+        slug: 'discover-magic-colombia-coffee-region',
+        excerpt: 'Explore the breathtaking landscapes, traditional haciendas, and aromatic coffee plantations of Colombia\'s Coffee Region, an immersive cultural experience.',
+        content: `
+            <p>Colombia's Coffee Region, or "Eje Cafetero," is a breathtaking landscape of rolling green hills, traditional haciendas, and, of course, the world's most aromatic coffee plantations. This region offers an immersive cultural experience, combining stunning natural beauty with the rich heritage of Colombian coffee production.</p>
+            <h2>Explore Coffee Farms</h2>
+            <p>Visit a working coffee farm to learn about the entire process, from bean to cup. You'll get to pick coffee cherries, witness the washing and drying, and enjoy a fresh, expertly brewed cup.</p>
+            <h2>Charming Towns and Landscapes</h2>
+            <p>Wander through picturesque towns like Salento with its colorful architecture and the stunning Cocora Valley, home to the iconic wax palm trees.</p>
+            <h2>Adventure and Relaxation</h2>
+            <p>Beyond coffee, the region boasts hot springs, paragliding opportunities, and delicious local cuisine. Whether you seek adventure or tranquility, the Coffee Region has something for everyone.</p>
+            <p>Plan your trip to Colombia's Coffee Region and immerse yourself in an unforgettable experience!</p>
+        `,
+        image: getAssetPath('/images/blog-coffee.png'),
+        author: 'Bukaro',
+        date: '2026-03-02',
+        tags: ['Coffee', 'Culture', 'Ecotourism', 'Travel Guide'],
     }
 ];
 
