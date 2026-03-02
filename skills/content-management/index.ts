@@ -114,7 +114,7 @@ export const blogPosts: BlogPost[] = [
                 <li><strong>Dec: Cali Fair (Feria de Cali)</strong> - The salsa capital of the world comes alive with parties and concerts.</li>
             </ul>
         `,
-        image: getAssetPath('/images/hero-home.png'),
+        image: getAssetPath('/images/blog-best-time.png'),
         author: 'Elena Rodriguez',
         date: '2026-02-10',
         tags: ['Travel Tips', 'Weather', 'Festivals'],
@@ -175,7 +175,7 @@ export const blogPosts: BlogPost[] = [
             <h2>Chemical Assault Awareness</h2>
             <p>A severe threat in the nightlife sector is the use of incapacitating drugs like scopolamine (burundanga). Never leave your drinks unattended and refuse snacks, cigarettes, or gum from strangers.</p>
         `,
-        image: getAssetPath('/images/blog-safety.png'),
+        image: getAssetPath('/images/blog-security-2026.png'),
         author: 'Security Analyst',
         date: '2026-03-01',
         tags: ['Safety', '2026', 'Travel Tips', 'Security'],
@@ -194,7 +194,7 @@ export const blogPosts: BlogPost[] = [
             <h2>Health and Vaccinations</h2>
             <p>The Yellow Fever vaccine is highly recommended and often mandatory for visitors to National Parks like Tayrona or regions like the Amazon. Administer it at least 10 days before travel to ensure full immunity.</p>
         `,
-        image: getAssetPath('/images/blog-header.png'),
+        image: getAssetPath('/images/blog-logistics.png'),
         author: 'Admin Support',
         date: '2026-02-25',
         tags: ['Logistics', 'Visa', 'Health', 'Travel Guide'],
@@ -216,7 +216,7 @@ export const blogPosts: BlogPost[] = [
                 <li><strong>Salsa Festival in Cali (September 25-28):</strong> Witness the global salsa capital in its full glory.</li>
             </ul>
         `,
-        image: getAssetPath('/images/blog-header.png'),
+        image: getAssetPath('/images/blog-festivals.png'),
         author: 'Culture Scout',
         date: '2026-02-26',
         tags: ['Festivals', 'Climate', 'Culture', '2026'],
@@ -308,7 +308,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Experiencing Colombia's music and dance is to experience its soul. Whether you're watching a professional performance, taking a salsa class, or simply enjoying the rhythms spilling from a local bar, you'll feel the infectious energy that makes Colombia so unique.</p>
         `,
-        image: getAssetPath('/images/blog-header.png'),
+        image: getAssetPath('/images/blog-rhythms.png'),
         author: 'Sofía Herrera',
         date: '2026-03-01',
         tags: ['Music', 'Dance', 'Culture', 'Festivals']
@@ -335,7 +335,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Whether you're enchanted by its history, thrilled by its nightlife, or simply wish to soak up the Caribbean sun, Cartagena promises an unforgettable Colombian adventure.</p>
         `,
-        image: getAssetPath('/images/blog-header.png'),
+        image: getAssetPath('/images/blog-cartagena.png'),
         author: 'Andrés Castro',
         date: '2026-03-02',
         tags: ['Cartagena', 'Caribbean', 'History', 'Culture', 'Travel Guide']
@@ -362,7 +362,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>An adventure in the Amazon Rainforest is more than just a trip; it's a journey into the heart of nature's grandeur and a testament to the planet's thriving biodiversity. Prepare to be amazed by the sights, sounds, and vibrant life of this extraordinary region.</p>
         `,
-        image: getAssetPath('/images/blog-header.png'),
+        image: getAssetPath('/images/blog-amazon-rainforest.png'),
         author: 'Valentina Ortiz',
         date: '2026-03-02',
         tags: ['Amazon', 'Ecotourism', 'Wildlife', 'Adventure', 'Culture']
@@ -386,7 +386,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Bogotá's street art scene is a testament to the city's resilience, creativity, and willingness to embrace art as a tool for dialogue and transformation. It's an essential experience that offers a unique perspective on Colombian culture and society.</p>
         `,
-        image: getAssetPath('/images/blog-header.png'),
+        image: getAssetPath('/images/blog-bogota-street-art.png'),
         author: 'Nicolás Vargas',
         date: '2026-03-02',
         tags: ['Bogota', 'Street Art', 'Culture', 'Urban Exploration', 'Art']
@@ -413,7 +413,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>A journey to Colombia's Pacific coast is an adventure into an untamed, culturally rich, and ecologically vital part of the world. It's an ideal destination for travelers seeking authentic experiences, unparalleled wildlife encounters, and a deep connection with nature.</p>
         `,
-        image: getAssetPath('/images/blog-header.png'),
+        image: getAssetPath('/images/blog-pacific-coast.png'),
         author: 'Felipe Mendoza',
         date: '2026-03-02',
         tags: ['Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Nature']
