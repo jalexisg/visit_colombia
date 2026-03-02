@@ -366,7 +366,7 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-02',
         tags: ['Amazon', 'Ecotourism', 'Wildlife', 'Adventure', 'Culture']
-    }
+    },
     {
         id: '17',
         title: 'Exploring Colombia's Pacific Coast: Nature, Whales, and Afro-Colombian Culture',
