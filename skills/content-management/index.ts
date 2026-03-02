@@ -129,7 +129,7 @@ export const blogPosts: BlogPost[] = [
             <h2>Leticia: The Gateway</h2>
             <p>Start your journey in Leticia, where Colombia borders Brazil and Peru. It's a vibrant hub of culture and nature.</p>
             <h2>Puerto Nariño</h2>
-            <p>Known as the "Green Crib of Colombia," this eco-friendly village has no cars and is a model for sustainable living.</p>
+            <p>Known as the "Green Crib of Colombia", this eco-friendly village has no cars and is a model for sustainable living.</p>
             <h2>Wildlife</h2>
             <p>Look out for pink river dolphins, sloths, monkeys, and thousands of bird species.</p>
         `,
@@ -186,7 +186,7 @@ export const blogPosts: BlogPost[] = [
         slug: 'essential-logistics-colombia-2026',
         excerpt: 'A step-by-step guide to the mandatory administrative prerequisites for entering Colombia in 2026.',
         content: `
-            <p>Failure to comply with Colombia\'s digitalized entry systems can result in immediate logistical failure. Here is what you need to know for 2026.</p>
+            <p>Failure to comply with Colombia's digitalized entry systems can result in immediate logistical failure. Here is what you need to know for 2026.</p>
             <h2>The Check-Mig System</h2>
             <p>The mandatory <strong>Check-Mig</strong> form must be completed via the Migración Colombia website within a window of 72 hours down to one hour before your flight’s departure. This is required for both entering and exiting the country.</p>
             <h2>Visa and Stay Regulations</h2>
@@ -205,13 +205,13 @@ export const blogPosts: BlogPost[] = [
         slug: 'climate-festivals-colombia-2026',
         excerpt: 'Maximize your experience by timing your visit with the dry seasons and world-class cultural events.',
         content: `
-            <p>Colombia\'s lack of traditional seasons means climate is defined by altitude and rainfall patterns. Plan your 2026 trip strategically.</p>
+            <p>Colombia's lack of traditional seasons means climate is defined by altitude and rainfall patterns. Plan your 2026 trip strategically.</p>
             <h2>Optimal Travel Windows</h2>
             <p>The dry seasons from <strong>December to March</strong> and <strong>July to August</strong> are the peak periods for travel. These months offer the most stable conditions for Andean hiking and Caribbean beach activities.</p>
             <h2>2026 Major Cultural Events</h2>
             <ul>
-                <li><strong>Barranquilla Carnival (March 1-4):</strong> The world\'s second-largest folkloric celebration.</li>
-                <li><strong>Holy Week in Popayán (Mar 29 - Apr 5):</b> Historic religious processions dating back to 1556.</li>
+                <li><strong>Barranquilla Carnival (March 1-4):</strong> The world's second-largest folkloric celebration.</li>
+                <li><strong>Holy Week in Popayán (Mar 29 - Apr 5):</strong> Historic religious processions dating back to 1556.</li>
                 <li><strong>Medellín Flower Festival (August 1-10):</strong> A week-long celebration of Antioquian flower farming and culture.</li>
                 <li><strong>Salsa Festival in Cali (September 25-28):</strong> Witness the global salsa capital in its full glory.</li>
             </ul>
@@ -297,7 +297,7 @@ export const blogPosts: BlogPost[] = [
 
             <h2>Champeta: The African Influence Continues</h2>
             <p>A more modern and urban genre, champeta is a fusion of African rhythms, Colombian folk, and Caribbean sounds, primarily from Cartagena. It's characterized by its fast-paced, often provocative dance moves and socially conscious lyrics. Champeta parties are lively, energetic affairs where dancers let loose to infectious beats.</p>
-            
+
             <h2>Bambuco, Joropo, and More</h2>
             <p>Beyond these popular styles, Colombia boasts a wealth of regional music and dance forms:</p>
             <ul>
@@ -319,21 +319,21 @@ export const blogPosts: BlogPost[] = [
         slug: 'exploring-vibrant-streets-cartagena',
         excerpt: 'Discover the magic of Cartagena, a UNESCO World Heritage site, with its colorful colonial architecture, captivating history, and lively squares.',
         content: `
-            <p>Cartagena de Indias, a jewel on Colombia\'s Caribbean coast, is a city brimming with history, romance, and incredible vibrancy. Declared a UNESCO World Heritage site, its impeccably preserved colonial architecture, colorful streets, and lively plazas transport visitors to another era.</p>
+            <p>Cartagena de Indias, a jewel on Colombia's Caribbean coast, is a city brimming with history, romance, and incredible vibrancy. Declared a UNESCO World Heritage site, its impeccably preserved colonial architecture, colorful streets, and lively plazas transport visitors to another era.</p>
 
             <h2>The Walled City: A Step Back in Time</h2>
-            <p>The beating heart of Cartagena is its Walled City (Ciudad Amurallada). Wander through narrow cobblestone streets, discover charming balconies adorned with bougainvillea, and admire grand colonial mansions. Don\'t miss exploring iconic spots like the Clock Tower (Torre del Reloj), Plaza de Bolívar, and the Palace of the Inquisition. The massive walls themselves offer stunning sunset views over the Caribbean Sea.</p>
+            <p>The beating heart of Cartagena is its Walled City (Ciudad Amurallada). Wander through narrow cobblestone streets, discover charming balconies adorned with bougainvillea, and admire grand colonial mansions. Don't miss exploring iconic spots like the Clock Tower (Torre del Reloj), Plaza de Bolívar, and the Palace of the Inquisition. The massive walls themselves offer stunning sunset views over the Caribbean Sea.</p>
 
             <h2>Getsemaní: The Bohemian Soul</h2>
-            <p>Just outside the main walls lies Getsemaní, a vibrant, bohemian neighborhood that was once a working-class area. Today, it\'s famous for its incredible street art, trendy cafes, lively bars, and buzzing nightlife. Explore its colorful alleyways, discover hidden squares, and feel the contemporary pulse of the city.</p>
+            <p>Just outside the main walls lies Getsemaní, a vibrant, bohemian neighborhood that was once a working-class area. Today, it's famous for its incredible street art, trendy cafes, lively bars, and buzzing nightlife. Explore its colorful alleyways, discover hidden squares, and feel the contemporary pulse of the city.</p>
 
             <h2>Beyond the Walls: Beaches and Islands</h2>
-            <p>While Cartagena\'s charm is undeniable, nearby islands and beaches offer a perfect escape. Take a boat trip to the Rosario Islands for pristine white sands and crystal-clear waters, ideal for snorkeling and relaxing. Closer to the city, Bocagrande offers a more developed beach experience with high-rise hotels.</p>
+            <p>While Cartagena's charm is undeniable, nearby islands and beaches offer a perfect escape. Take a boat trip to the Rosario Islands for pristine white sands and crystal-clear waters, ideal for snorkeling and relaxing. Closer to the city, Bocagrande offers a more developed beach experience with high-rise hotels.</p>
 
             <h2>Gastronomy: A Culinary Delight</h2>
-            <p>Cartagena\'s culinary scene is a delightful fusion of Caribbean flavors, fresh seafood, and traditional Colombian cuisine. Indulge in fresh ceviches, traditional fish dishes, and exotic fruit juices. The city offers everything from street food delights to upscale dining experiences.</p>
+            <p>Cartagena's culinary scene is a delightful fusion of Caribbean flavors, fresh seafood, and traditional Colombian cuisine. Indulge in fresh ceviches, traditional fish dishes, and exotic fruit juices. The city offers everything from street food delights to upscale dining experiences.</p>
 
-            <p>Whether you\'re enchanted by its history, thrilled by its nightlife, or simply wish to soak up the Caribbean sun, Cartagena promises an unforgettable Colombian adventure.</p>
+            <p>Whether you're enchanted by its history, thrilled by its nightlife, or simply wish to soak up the Caribbean sun, Cartagena promises an unforgettable Colombian adventure.</p>
         `,
         image: getAssetPath('/images/blog-header.png'),
         author: 'Bukaro',
@@ -368,6 +368,30 @@ export const blogPosts: BlogPost[] = [
         tags: ['Amazon', 'Ecotourism', 'Wildlife', 'Adventure', 'Culture']
     },
     {
+        id: '16',
+        title: 'Exploring the Vibrant Street Art of Bogotá: A Cultural Journey',
+        slug: 'exploring-vibrant-street-art-bogota',
+        excerpt: 'Discover the dynamic and colorful street art scene in Bogotá, a city transformed by urban art and creative expression.',
+        content: `
+            <p>Bogotá, the bustling capital of Colombia, has emerged as a global hub for street art. What was once seen as vandalism has evolved into a powerful form of urban expression, transforming the city's walls into a vibrant outdoor gallery. Exploring Bogotá's street art is not just about admiring beautiful murals; it's a deep dive into the city's history, politics, and social narratives.</p>
+
+            <h2>La Candelaria: The Heart of Bogotá's Graffiti Scene</h2>
+            <p>The historic neighborhood of La Candelaria is arguably the best place to start your street art exploration. Its narrow, cobblestone streets and colonial architecture provide a stunning backdrop for an incredible concentration of murals, tags, and stencil art. Here, every corner tells a story, with art addressing themes from indigenous rights and environmental issues to social justice and everyday Colombian life.</p>
+
+            <h2>Graffiti Tours: Unlocking the Stories Behind the Art</h2>
+            <p>To truly appreciate the depth and context of Bogotá's street art, consider joining one of the many specialized graffiti tours. Local artists and guides offer invaluable insights into the techniques, political messages, and cultural significance behind the artworks. They often share stories about the artists themselves, the evolution of the graffiti movement in Bogotá, and the unique regulations that have fostered this creative boom.</p>
+
+            <h2>Beyond La Candelaria: Exploring New Urban Canvases</h2>
+            <p>While La Candelaria is a must-visit, Bogotá's street art extends far beyond this historic center. Neighborhoods like Usaquén and even industrial zones are becoming canvases for large-scale murals and evolving artistic projects. Keep an eye out for works by renowned Colombian artists like Guache, DjLu, and Stinkfish, whose distinctive styles contribute to Bogotá's dynamic urban landscape.</p>
+
+            <p>Bogotá's street art scene is a testament to the city's resilience, creativity, and willingness to embrace art as a tool for dialogue and transformation. It's an essential experience that offers a unique perspective on Colombian culture and society.</p>
+        `,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Bukaro',
+        date: '2026-03-02',
+        tags: ['Bogota', 'Street Art', 'Culture', 'Urban Exploration', 'Art']
+    },
+    {
         id: '17',
         title: "Exploring Colombia's Pacific Coast: Nature, Whales, and Afro-Colombian Culture",
         slug: 'exploring-colombias-pacific-coast',
@@ -393,7 +417,7 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-02',
         tags: ['Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Nature']
-    },
+    }
 ];
 
 export function getBlogPosts(): Promise<BlogPost[]> {
