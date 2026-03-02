@@ -366,10 +366,10 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-02',
         tags: ['Amazon', 'Ecotourism', 'Wildlife', 'Adventure', 'Culture']
-    }
-,
+    },
     {
         id: '16',
+        title: 'Cartagena\'s Colonial Charms: A Historic Walking Tour',
         title: 'Cartagena\'s Colonial Charms: A Historic Walking Tour',
         slug: 'cartagena-colonial-charms-historic-tour',
         excerpt: 'Immerse yourself in the colonial past of Cartagena with a captivating historic walking tour through its enchanting walled city.',
