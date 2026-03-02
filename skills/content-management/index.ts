@@ -369,9 +369,9 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '17',
-        title: 'Exploring Colombia's Pacific Coast: Nature, Whales, and Afro-Colombian Culture',
+        title: "Exploring Colombia's Pacific Coast: Nature, Whales, and Afro-Colombian Culture",
         slug: 'exploring-colombias-pacific-coast',
-        excerpt: 'Discover the untamed beauty of Colombia's Pacific coast, home to rich biodiversity, humpback whales, and vibrant Afro-Colombian traditions.',
+        excerpt: "Discover the untamed beauty of Colombia's Pacific coast, home to rich biodiversity, humpback whales, and vibrant Afro-Colombian traditions.",
         content: `
             <p>Colombia's Pacific coast is a realm of mesmerizing natural beauty, offering an experience vastly different from its Caribbean counterpart. This region, characterized by dense rainforest meeting the ocean, is a sanctuary for marine life and a cradle of Afro-Colombian culture.</p>
 
