@@ -367,6 +367,34 @@ export const blogPosts: BlogPost[] = [
         date: '2026-03-02',
         tags: ['Amazon', 'Ecotourism', 'Wildlife', 'Adventure', 'Culture']
     }
+,
+    {
+        id: '16',
+        title: 'Cartagena\'s Colonial Charms: A Historic Walking Tour',
+        slug: 'cartagena-colonial-charms-historic-tour',
+        excerpt: 'Immerse yourself in the colonial past of Cartagena with a captivating historic walking tour through its enchanting walled city.',
+        content: `
+            <p>Step back in time and explore the UNESCO World Heritage site of Cartagena de Indias on a walking tour that uncovers its rich colonial history.</p>
+
+            <h2>The Walled City: A Fortress of Stories</h2>
+            <p>The iconic walled city, or <em>Ciudad Amurallada</em>, is a testament to Cartagena's strategic importance during the Spanish colonial era. Built to protect against pirate attacks, these formidable walls now encapsulate centuries of history. Wander through its labyrinthine streets, discovering colorful houses, ornate balconies, and charming plazas.</p>
+
+            <h2>Plaza de Bolívar and the Palace of the Inquisition</h2>
+            <p>Central to any historic tour is the lively Plaza de Bolívar, a green oasis surrounded by significant buildings. Here you'll find the majestic Cathedral of Cartagena and the infamous Palace of the Inquisition, a striking example of colonial architecture with a dark past, now a museum offering insights into the Spanish colonial court.</p>
+
+            <h2>Santo Domingo Plaza and the Church</h2>
+            <p>Another must-see is the Santo Domingo Plaza, often bustling with street performers and vibrant nightlife. It's home to the oldest church in Cartagena, the Church of Santo Domingo, whose leaning tower adds to its unique charm.</p>
+
+            <h2>Getsemaní: Beyond the Walls</h2>
+            <p>While not strictly colonial, a historic tour can extend to the vibrant Getsemaní neighborhood, just outside the main walls. This area, once home to artisans and freed slaves, offers a glimpse into Cartagena's more recent past with its revolutionary spirit and burgeoning street art scene.</p>
+
+            <p>A historic walking tour is the best way to truly connect with Cartagena's soul, understanding its resilience and the layers of history that make it such a beloved destination.</p>
+        `,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Bukaro',
+        date: '2026-03-02',
+        tags: ['Cartagena', 'History', 'Colonial', 'Walking Tour', 'Culture']
+    }
 ];
 
 export function getBlogPosts(): Promise<BlogPost[]> {
