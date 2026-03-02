@@ -386,7 +386,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Bogotá's street art scene is a testament to the city's resilience, creativity, and willingness to embrace art as a tool for dialogue and transformation. It's an essential experience that offers a unique perspective on Colombian culture and society.</p>
         `,
-        image: getAssetPath('/images/blog-bogota.png'),
+        image: getAssetPath('/images/blog-header.png'),
         author: 'Bukaro',
         date: '2026-03-02',
         tags: ['Bogota', 'Street Art', 'Culture', 'Urban Exploration', 'Art']
