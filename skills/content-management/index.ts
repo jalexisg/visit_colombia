@@ -223,60 +223,60 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '11',
-        title: 'Descubre la Gastronomía Colombiana: Un Viaje Culinario por Regiones',
-        slug: 'gastronomia-colombiana-viaje-culinario',
-        excerpt: 'Explora los sabores únicos de Colombia, desde la bandeja paisa en los Andes hasta los mariscos frescos del Caribe.',
+        title: 'Discover Colombian Gastronomy: A Culinary Journey Through Regions',
+        slug: 'colombian-gastronomy-culinary-journey',
+        excerpt: 'Explore the unique flavors of Colombia, from the bandeja paisa in the Andes to the fresh seafood of the Caribbean.',
         content: `
-            <p>Colombia es un país de sabores vibrantes y diversos, reflejo de su rica geografía y herencia cultural. Cada región ofrece una experiencia culinaria única que encanta a los visitantes.</p>
-            
-            <h2>La Cocina Andina: Tradición y Sabor</h2>
-            <p>En el corazón de los Andes, la gastronomía colombiana se caracteriza por platos contundentes y reconfortantes. La icónica <strong>Bandeja Paisa</strong>, originaria de la región de Antioquia, es un festín de frijoles, arroz, carne molida, chicharrón, huevo frito, chorizo, plátano maduro y aguacate. No puedes irte sin probar el <strong>Ajiaco Santafereño</strong> en Bogotá, una sopa cremosa de pollo, tres tipos de papa y mazorca, servida con alcaparras y crema de leche.</p>
-            
-            <h2>El Caribe: Frescura y Explosión Marina</h2>
-            <p>La costa caribeña seduce con sus sabores tropicales y la abundancia de productos del mar. Prueba el refrescante <strong>Pescado Frito</strong> con arroz con coco y patacones, o deléitate con un buen <strong>Ceviche de Camarones</strong>. Las <strong>Arepas con Huevo</strong> son el desayuno por excelencia en esta región, fritas y rellenas.</p>
-            
-            <h2>El Pacífico: Exotismo y Tradición Afrocolombiana</h2>
-            <p>La cocina del Pacífico es menos conocida pero igualmente fascinante, con fuertes influencias afrocolombianas e ingredientes exóticos. Los <strong>Encocados</strong> de pescado o mariscos, cocinados en leche de coco, son un imperdible, así como el <strong>Sancocho de Pescado</strong> y las empanadas de cambray.</p>
-            
-            <h2>Postres y Bebidas Típicas</h2>
-            <p>Para endulzar el paladar, prueba el <strong>Dulce de Leche (Arequipe)</strong>, los <strong>Bocadillos Veleños</strong> de guayaba o los <strong>Cocadas</strong> de coco. No olvides acompañar tus comidas con un buen <strong>Jugo Natural</strong> de frutas exóticas como lulo, maracuyá o guanábana, y por supuesto, una taza del mundialmente famoso <strong>Café Colombiano</strong>.</p>
-            
-            <p>La gastronomía colombiana es una invitación a explorar la diversidad del país a través de sus sabores, una experiencia inolvidable para cualquier viajero.</p>
+            <p>Colombia is a country of vibrant and diverse flavors, reflecting its rich geography and cultural heritage. Each region offers a unique culinary experience that delights visitors.</p>
+
+            <h2>Andean Cuisine: Tradition and Flavor</h2>
+            <p>In the heart of the Andes, Colombian gastronomy is characterized by hearty and comforting dishes. The iconic <strong>Bandeja Paisa</strong>, originally from the Antioquia region, is a feast of beans, rice, ground meat, chicharrón (pork belly), fried egg, chorizo, sweet plantain, and avocado. You cannot leave without trying the <strong>Ajiaco Santafereño</strong> in Bogotá, a creamy soup made with chicken, three types of potatoes, and corn on the cob, served with capers and cream.</p>
+
+            <h2>The Caribbean: Freshness and Marine Explosion</h2>
+            <p>The Caribbean coast seduces with its tropical flavors and abundance of seafood. Try the refreshing <strong>Fried Fish</strong> with coconut rice and patacones (fried green plantains), or indulge in a good <strong>Shrimp Ceviche</strong>. <strong>Arepas con Huevo</strong> (egg-filled arepas) are the quintessential breakfast in this region, deep-fried and stuffed.</p>
+
+            <h2>The Pacific: Exoticism and Afro-Colombian Tradition</h2>
+            <p>Pacific cuisine is less known but equally fascinating, with strong Afro-Colombian influences and exotic ingredients. <strong>Encocados</strong> (fish or seafood stews cooked in coconut milk) are a must-try, as well as <strong>Fish Sancocho</strong> and cambray empanadas.</p>
+
+            <h2>Typical Desserts and Drinks</h2>
+            <p>To sweeten the palate, try <strong>Dulce de Leche (Arequipe)</strong>, <strong>Bocadillos Veleños</strong> (guava paste), or coconut <strong>Cocadas</strong>. Don't forget to accompany your meals with a good <strong>Natural Juice</strong> made from exotic fruits like lulo, passion fruit (maracuyá), or soursop (guanábana), and of course, a cup of world-famous <strong>Colombian Coffee</strong>.</p>
+
+            <p>Colombian gastronomy is an invitation to explore the country's diversity through its flavors, an unforgettable experience for any traveler.</p>
         `,
         image: getAssetPath('/images/blog-gastronomia.png'),
         author: 'Bukaro',
         date: '2026-02-28',
-        tags: ['Gastronomía', 'Comida', 'Cultura', 'Viajes Culinarios', 'Colombia']
+        tags: ['Gastronomy', 'Food', 'Culture', 'Culinary Travels', 'Colombia']
     },
     {
         id: '12',
-        title: 'Aventura Extrema en Colombia: Deportes y Actividades para Adrenaline Junkies',
-        slug: 'aventura-extrema-colombia',
-        excerpt: 'Desde parapente en el Valle del Cauca hasta el rafting en el río Magdalena, Colombia ofrece emociones fuertes para todos los amantes de la adrenalina.',
+        title: 'Extreme Adventure in Colombia: Sports and Activities for Adrenaline Junkies',
+        slug: 'extreme-adventure-colombia',
+        excerpt: 'From paragliding in Valle del Cauca to rafting on the Magdalena River, Colombia offers strong thrills for all adrenaline lovers.',
         content: `
-            <p>Colombia, con su geografía diversa que abarca desde picos andinos hasta selvas amazónicas y costas caribeñas, es un paraíso para los entusiastas de la aventura y los deportes extremos. Prepárate para vivir experiencias que te dejarán sin aliento.</p>
+            <p>Colombia, with its diverse geography ranging from Andean peaks to Amazonian jungles and Caribbean coasts, is a paradise for adventure enthusiasts and extreme sports lovers. Get ready for experiences that will take your breath away.</p>
 
-            <h2>Parapente en el Valle del Cauca</h2>
-            <p>Siente la libertad de volar sobre los paisajes verdes del <strong>Valle del Cauca</strong>, especialmente en lugares como Roldanillo o Calima. Las corrientes térmicas favorables hacen de Colombia uno de los mejores destinos del mundo para el parapente, apto tanto para principiantes con vuelos tándem como para pilotos experimentados.</p>
+            <h2>Paragliding in Valle del Cauca</h2>
+            <p>Feel the freedom of flying over the green landscapes of <strong>Valle del Cauca</strong>, especially in places like Roldanillo or Calima. Favorable thermal currents make Colombia one of the world's best destinations for paragliding, suitable for both beginners with tandem flights and experienced pilots.</p>
 
-            <h2>Rafting y Kayak en Ríos Salvajes</h2>
-            <p>Los caudalosos ríos colombianos son perfectos para el rafting y el kayak. El <strong>Río Magdalena</strong>, el más importante del país, ofrece tramos emocionantes, mientras que el <strong>Río Suárez</strong> en Santander es conocido por sus rápidos de clase IV y V. Para una experiencia más tranquila pero igualmente hermosa, puedes hacer kayak en el <strong>Río La Miel</strong> en Caldas.</p>
+            <h2>Rafting and Kayaking in Wild Rivers</h2>
+            <p>Colombia's powerful rivers are perfect for rafting and kayaking. The <strong>Magdalena River</strong>, the country's most important, offers exciting sections, while the <strong>Suárez River</strong> in Santander is known for its class IV and V rapids. For a calmer but equally beautiful experience, you can kayak on the <strong>La Miel River</strong> in Caldas.</p>
 
-            <h2>Espeleología en Santander y Boyacá</h2>
-            <p>Explora el mundo subterráneo de Colombia adentrándote en sus impresionantes cuevas. La región de Santander, con cuevas como la del Indio o la de la Vaca, y Boyacá, con la Cueva del Nitro, ofrecen formaciones rocosas espectaculares y desafíos para todos los niveles de experiencia.</p>
+            <h2>Caving in Santander and Boyacá</h2>
+            <p>Explore Colombia's underground world by entering its impressive caves. The Santander region, with caves like El Indio or La Vaca, and Boyacá, with the Nitro Cave, offer spectacular rock formations and challenges for all experience levels.</p>
 
-            <h2>Escalada en Roca y Montañismo</h2>
-            <p>Los Andes colombianos presentan innumerables oportunidades para la escalada. Lugares como <strong>Suesca</strong> (cerca de Bogotá) son famosos por sus paredes rocosas y escuelas de escalada. Para los montañistas, los picos nevados del <strong>Parque Nacional Natural Los Nevados</strong> o la <strong>Sierra Nevada del Cocuy</strong> ofrecen retos inolvidables y paisajes sobrecogedores.</p>
+            <h2>Rock Climbing and Mountaineering</h2>
+            <p>The Colombian Andes present innumerable opportunities for climbing. Places like <strong>Suesca</strong> (cerca de Bogotá) are famous for their rock walls and climbing schools. For mountaineers, the snow-capped peaks of <strong>Los Nevados National Natural Park</strong> or the <strong>Sierra Nevada del Cocuy</strong> offer unforgettable challenges and breathtaking landscapes.</p>
 
-            <h2>Buceo en el Caribe y el Pacífico</h2>
-            <p>Explora la vibrante vida marina en el mar Caribe, con destinos como <strong>Providencia</strong>, <strong>San Andrés</strong> o el <strong>Parque Nacional Natural Corales del Rosario y San Bernardo</strong>. En el Pacífico, el buceo en <strong>Malpelo</strong> o <strong>Gorgona</strong> te permitirá avistar tiburones martillo, ballenas jorobadas (en temporada) y tortugas marinas.</p>
-            
-            <p>Ya sea en el aire, en el agua o bajo tierra, Colombia te espera con una aventura a medida para tu espíritu más audaz. ¡Prepara tu equipo y lánzate a la exploración!</p>
+            <h2>Diving in the Caribbean and the Pacific</h2>
+            <p>Explore vibrant marine life in the Caribbean Sea, with destinations like <strong>Providencia</strong>, <strong>San Andrés</strong>, or the <strong>Corales del Rosario and San Bernardo National Natural Park</strong>. In the Pacific, diving in <strong>Malpelo</strong> or <strong>Gorgona</strong> will allow you to spot hammerhead sharks, humpback whales (in season), and sea turtles.</p>
+
+            <p>Whether in the air, in the water, or underground, Colombia awaits you with an adventure tailored to your boldest spirit. Get your gear ready and jump into exploration!</p>
         `,
         image: getAssetPath('/images/blog-aventura.png'),
         author: 'Bukaro',
         date: '2026-02-28',
-        tags: ['Aventura', 'Deportes Extremos', 'Naturaleza', 'Adrenalina', 'Colombia']
+        tags: ['Adventure', 'Extreme Sports', 'Nature', 'Adrenaline', 'Colombia']
     },
     {
         id: '13',
