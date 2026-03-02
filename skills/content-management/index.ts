@@ -129,7 +129,7 @@ export const blogPosts: BlogPost[] = [
             <h2>Leticia: The Gateway</h2>
             <p>Start your journey in Leticia, where Colombia borders Brazil and Peru. It's a vibrant hub of culture and nature.</p>
             <h2>Puerto Nariño</h2>
-            <p>Known as the "Green Crib of Colombia," this eco-friendly village has no cars and is a model for sustainable living.</p>
+            <p>Known as the "Green Crib of Colombia", this eco-friendly village has no cars and is a model for sustainable living.</p>
             <h2>Wildlife</h2>
             <p>Look out for pink river dolphins, sloths, monkeys, and thousands of bird species.</p>
         `,
@@ -211,7 +211,7 @@ export const blogPosts: BlogPost[] = [
             <h2>2026 Major Cultural Events</h2>
             <ul>
                 <li><strong>Barranquilla Carnival (March 1-4):</strong> The world\'s second-largest folkloric celebration.</li>
-                <li><strong>Holy Week in Popayán (Mar 29 - Apr 5):</b> Historic religious processions dating back to 1556.</li>
+                <li><strong>Holy Week in Popayán (Mar 29 - Apr 5):</strong> Historic religious processions dating back to 1556.</li>
                 <li><strong>Medellín Flower Festival (August 1-10):</strong> A week-long celebration of Antioquian flower farming and culture.</li>
                 <li><strong>Salsa Festival in Cali (September 25-28):</strong> Witness the global salsa capital in its full glory.</li>
             </ul>
@@ -297,7 +297,7 @@ export const blogPosts: BlogPost[] = [
 
             <h2>Champeta: The African Influence Continues</h2>
             <p>A more modern and urban genre, champeta is a fusion of African rhythms, Colombian folk, and Caribbean sounds, primarily from Cartagena. It's characterized by its fast-paced, often provocative dance moves and socially conscious lyrics. Champeta parties are lively, energetic affairs where dancers let loose to infectious beats.</p>
-            
+
             <h2>Bambuco, Joropo, and More</h2>
             <p>Beyond these popular styles, Colombia boasts a wealth of regional music and dance forms:</p>
             <ul>
@@ -352,20 +352,44 @@ export const blogPosts: BlogPost[] = [
             <p>Leticia is a vibrant city situated on the Amazon River, where Colombia, Brazil (Tabatinga), and Peru (Santa Rosa) converge. This unique geopolitical position makes it a melting pot of cultures and a bustling hub for trade and tourism. From here, you can easily explore all three countries, experience diverse cuisines, and immerse yourself in the local way of life.</p>
 
             <h2>Puerto Nariño: A Model of Ecotourism</h2>
-            <p>A short boat ride upriver from Leticia takes you to Puerto Nariño, Colombia's second municipality in the Amazonas, and a true gem of sustainable tourism. This tranquil, car-free town is dedicated to preserving its natural environment and indigenous traditions. Visitors can observe pink and gray river dolphins, visit local indigenous communities, and learn about their efforts to live in harmony with the rainforest.</p>
+            <p>A short boat ride upriver from Leticia takes you to Puerto Nariño, Colombia\'s second municipality in the Amazonas, and a true gem of sustainable tourism. This tranquil, car-free town is dedicated to preserving its natural environment and indigenous traditions. Visitors can observe pink and gray river dolphins, visit local indigenous communities, and learn about their efforts to live in harmony with the rainforest.</p>
 
             <h2>Flora and Fauna: A Biodiversity Hotspot</h2>
-            <p>The Colombian Amazon is home to an astonishing array of wildlife. Guided excursions offer the chance to spot monkeys, sloths, caimans, anacondas, and a spectacular variety of birds, including macaws and toucans. The rainforest's plant life is equally impressive, with giant water lilies, towering Ceiba trees, and countless medicinal plants.</p>
+            <p>The Colombian Amazon is home to an astonishing array of wildlife. Guided excursions offer the chance to spot monkeys, sloths, caimans, anacondas, and a spectacular variety of birds, including macaws and toucans. The rainforest\'s plant life is equally impressive, with giant water lilies, towering Ceiba trees, and countless medicinal plants.</p>
 
             <h2>Cultural Immersion: Indigenous Communities</h2>
             <p>Interacting with the indigenous communities that have inhabited the Amazon for centuries is a profound experience. Many tours include visits to Tikuna, Huitoto, and Yagua villages, where you can learn about their customs, traditional crafts, music, and their deep spiritual connection to the forest.</p>
 
-            <p>An adventure in the Amazon Rainforest is more than just a trip; it's a journey into the heart of nature's grandeur and a testament to the planet's thriving biodiversity. Prepare to be amazed by the sights, sounds, and vibrant life of this extraordinary region.</p>
+            <p>An adventure in the Amazon Rainforest is more than just a trip; it\'s a journey into the heart of nature\'s grandeur and a testament to the planet\'s thriving biodiversity. Prepare to be amazed by the sights, sounds, and vibrant life of this extraordinary region.</p>
         `,
         image: getAssetPath('/images/blog-header.png'),
         author: 'Bukaro',
         date: '2026-03-02',
         tags: ['Amazon', 'Ecotourism', 'Wildlife', 'Adventure', 'Culture']
+    },
+    {
+        id: '16',
+        title: 'Exploring the Vibrant Street Art of Bogotá: A Cultural Journey',
+        slug: 'exploring-vibrant-street-art-bogota',
+        excerpt: 'Discover the dynamic and colorful street art scene in Bogotá, a city transformed by urban art and creative expression.',
+        content: `
+            <p>Bogotá, the bustling capital of Colombia, has emerged as a global hub for street art. What was once seen as vandalism has evolved into a powerful form of urban expression, transforming the city's walls into a vibrant outdoor gallery. Exploring Bogotá's street art is not just about admiring beautiful murals; it's a deep dive into the city's history, politics, and social narratives.</p>
+
+            <h2>La Candelaria: The Heart of Bogotá's Graffiti Scene</h2>
+            <p>The historic neighborhood of La Candelaria is arguably the best place to start your street art exploration. Its narrow, cobblestone streets and colonial architecture provide a stunning backdrop for an incredible concentration of murals, tags, and stencil art. Here, every corner tells a story, with art addressing themes from indigenous rights and environmental issues to social justice and everyday Colombian life.</p>
+
+            <h2>Graffiti Tours: Unlocking the Stories Behind the Art</h2>
+            <p>To truly appreciate the depth and context of Bogotá's street art, consider joining one of the many specialized graffiti tours. Local artists and guides offer invaluable insights into the techniques, political messages, and cultural significance behind the artworks. They often share stories about the artists themselves, the evolution of the graffiti movement in Bogotá, and the unique regulations that have fostered this creative boom.</p>
+
+            <h2>Beyond La Candelaria: Exploring New Urban Canvases</h2>
+            <p>While La Candelaria is a must-visit, Bogotá's street art extends far beyond this historic center. Neighborhoods like Getsemani (Cartagena - not Bogotá, correction needed), Usaquén, and even industrial zones are becoming canvases for large-scale murals and evolving artistic projects. Keep an eye out for works by renowned Colombian artists like Guache, DjLu, and Stinkfish, whose distinctive styles contribute to Bogotá's dynamic urban landscape.</p>
+
+            <p>Bogotá's street art scene is a testament to the city's resilience, creativity, and willingness to embrace art as a tool for dialogue and transformation. It's an essential experience that offers a unique perspective on Colombian culture and society.</p>
+        `,
+        image: getAssetPath('/images/blog-bogota.png'),
+        author: 'Bukaro',
+        date: '2026-03-02',
+        tags: ['Bogota', 'Street Art', 'Culture', 'Urban Exploration', 'Art']
     },
     {
         id: '17',
@@ -393,7 +417,7 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-02',
         tags: ['Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Nature']
-    },
+    }
 ];
 
 export function getBlogPosts(): Promise<BlogPost[]> {
