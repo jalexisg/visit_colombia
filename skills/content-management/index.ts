@@ -244,7 +244,7 @@ export const blogPosts: BlogPost[] = [
             <p>Colombian gastronomy is an invitation to explore the country's diversity through its flavors, an unforgettable experience for any traveler.</p>
         `,
         image: getAssetPath('/images/blog-gastronomia.png'),
-        author: 'Bukaro',
+        author: 'Camila Rojas',
         date: '2026-02-28',
         tags: ['Gastronomy', 'Food', 'Culture', 'Culinary Travels', 'Colombia']
     },
@@ -274,7 +274,7 @@ export const blogPosts: BlogPost[] = [
             <p>Whether in the air, in the water, or underground, Colombia awaits you with an adventure tailored to your boldest spirit. Get your gear ready and jump into exploration!</p>
         `,
         image: getAssetPath('/images/blog-aventura.png'),
-        author: 'Bukaro',
+        author: 'Diego Morales',
         date: '2026-02-28',
         tags: ['Adventure', 'Extreme Sports', 'Nature', 'Adrenaline', 'Colombia']
     },
@@ -309,7 +309,7 @@ export const blogPosts: BlogPost[] = [
             <p>Experiencing Colombia's music and dance is to experience its soul. Whether you're watching a professional performance, taking a salsa class, or simply enjoying the rhythms spilling from a local bar, you'll feel the infectious energy that makes Colombia so unique.</p>
         `,
         image: getAssetPath('/images/blog-header.png'),
-        author: 'Bukaro',
+        author: 'Sofía Herrera',
         date: '2026-03-01',
         tags: ['Music', 'Dance', 'Culture', 'Festivals']
     },
@@ -336,7 +336,7 @@ export const blogPosts: BlogPost[] = [
             <p>Whether you're enchanted by its history, thrilled by its nightlife, or simply wish to soak up the Caribbean sun, Cartagena promises an unforgettable Colombian adventure.</p>
         `,
         image: getAssetPath('/images/blog-header.png'),
-        author: 'Bukaro',
+        author: 'Andrés Castro',
         date: '2026-03-02',
         tags: ['Cartagena', 'Caribbean', 'History', 'Culture', 'Travel Guide']
     },
@@ -363,7 +363,7 @@ export const blogPosts: BlogPost[] = [
             <p>An adventure in the Amazon Rainforest is more than just a trip; it's a journey into the heart of nature's grandeur and a testament to the planet's thriving biodiversity. Prepare to be amazed by the sights, sounds, and vibrant life of this extraordinary region.</p>
         `,
         image: getAssetPath('/images/blog-header.png'),
-        author: 'Bukaro',
+        author: 'Valentina Ortiz',
         date: '2026-03-02',
         tags: ['Amazon', 'Ecotourism', 'Wildlife', 'Adventure', 'Culture']
     },
@@ -387,7 +387,7 @@ export const blogPosts: BlogPost[] = [
             <p>Bogotá's street art scene is a testament to the city's resilience, creativity, and willingness to embrace art as a tool for dialogue and transformation. It's an essential experience that offers a unique perspective on Colombian culture and society.</p>
         `,
         image: getAssetPath('/images/blog-header.png'),
-        author: 'Bukaro',
+        author: 'Nicolás Vargas',
         date: '2026-03-02',
         tags: ['Bogota', 'Street Art', 'Culture', 'Urban Exploration', 'Art']
     },
@@ -414,7 +414,7 @@ export const blogPosts: BlogPost[] = [
             <p>A journey to Colombia's Pacific coast is an adventure into an untamed, culturally rich, and ecologically vital part of the world. It's an ideal destination for travelers seeking authentic experiences, unparalleled wildlife encounters, and a deep connection with nature.</p>
         `,
         image: getAssetPath('/images/blog-header.png'),
-        author: 'Bukaro',
+        author: 'Felipe Mendoza',
         date: '2026-03-02',
         tags: ['Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Nature']
     }
