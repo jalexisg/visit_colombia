@@ -339,6 +339,33 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-02',
         tags: ['Cartagena', 'Caribbean', 'History', 'Culture', 'Travel Guide']
+    },
+    {
+        id: '15',
+        title: 'Exploring the Amazon Rainforest in Colombia: An Unforgettable Adventure',
+        slug: 'exploring-amazon-rainforest-colombia',
+        excerpt: 'Dive deep into the heart of the Colombian Amazon, a region bursting with biodiversity and unique cultural experiences.',
+        content: `
+            <p>The Amazon Rainforest, often called the "Lungs of the Earth," is a destination that captivates with its unparalleled natural beauty and incredible biodiversity. Colombia offers a fascinating and accessible gateway to this vast ecosystem, primarily through its Amazonas department, with Leticia as the main entry point.</p>
+
+            <h2>Leticia: The Three-Border Town</h2>
+            <p>Leticia is a vibrant city situated on the Amazon River, where Colombia, Brazil (Tabatinga), and Peru (Santa Rosa) converge. This unique geopolitical position makes it a melting pot of cultures and a bustling hub for trade and tourism. From here, you can easily explore all three countries, experience diverse cuisines, and immerse yourself in the local way of life.</p>
+
+            <h2>Puerto Nariño: A Model of Ecotourism</h2>
+            <p>A short boat ride upriver from Leticia takes you to Puerto Nariño, Colombia's second municipality in the Amazonas, and a true gem of sustainable tourism. This tranquil, car-free town is dedicated to preserving its natural environment and indigenous traditions. Visitors can observe pink and gray river dolphins, visit local indigenous communities, and learn about their efforts to live in harmony with the rainforest.</p>
+
+            <h2>Flora and Fauna: A Biodiversity Hotspot</h2>
+            <p>The Colombian Amazon is home to an astonishing array of wildlife. Guided excursions offer the chance to spot monkeys, sloths, caimans, anacondas, and a spectacular variety of birds, including macaws and toucans. The rainforest's plant life is equally impressive, with giant water lilies, towering Ceiba trees, and countless medicinal plants.</p>
+
+            <h2>Cultural Immersion: Indigenous Communities</h2>
+            <p>Interacting with the indigenous communities that have inhabited the Amazon for centuries is a profound experience. Many tours include visits to Tikuna, Huitoto, and Yagua villages, where you can learn about their customs, traditional crafts, music, and their deep spiritual connection to the forest.</p>
+
+            <p>An adventure in the Amazon Rainforest is more than just a trip; it's a journey into the heart of nature's grandeur and a testament to the planet's thriving biodiversity. Prepare to be amazed by the sights, sounds, and vibrant life of this extraordinary region.</p>
+        `,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Bukaro',
+        date: '2026-03-02',
+        tags: ['Amazon', 'Ecotourism', 'Wildlife', 'Adventure', 'Culture']
     }
 ];
 
