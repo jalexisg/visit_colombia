@@ -417,8 +417,7 @@ export const blogPosts: BlogPost[] = [
         author: 'Felipe Mendoza',
         date: '2026-03-02',
         tags: ['Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Nature']
-    }
-,
+    },
     {
         id: '18',
         title: 'Colombian Coffee Culture: A Journey from Bean to Cup',
@@ -443,12 +442,11 @@ export const blogPosts: BlogPost[] = [
 
             <p>Exploring Colombian coffee culture is a deep dive into the country's soul, offering delicious flavors, stunning landscapes, and heartwarming encounters with the people who dedicate their lives to this cherished crop.</p>
         `,
-        image: getAssetPath('/images/blog-coffee.png'),
-        author: 'Bukaro Agent',
+        image: getAssetPath('/images/blog-coffee-culture.png'),
+        author: 'Laura Martinez',
         date: '2026-03-03',
         tags: ['Coffee', 'Culture', 'Gastronomy', 'Travel Guide']
-    }
-,
+    },
     {
         id: '19',
         title: 'Discovering the Lost City: An Ancient Adventure in the Sierra Nevada',
