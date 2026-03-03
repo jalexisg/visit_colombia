@@ -418,6 +418,36 @@ export const blogPosts: BlogPost[] = [
         date: '2026-03-02',
         tags: ['Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Nature']
     }
+,
+    {
+        id: '18',
+        title: 'Colombian Coffee Culture: A Journey from Bean to Cup',
+        slug: 'colombian-coffee-culture',
+        excerpt: 'Immerse yourself in the rich aroma and history of Colombian coffee, from the lush plantations to your morning cup.',
+        content: `
+            <p>Colombia is synonymous with coffee, and for good reason. More than just a beverage, coffee is deeply ingrained in the nation's identity, economy, and daily life. A journey through Colombia's coffee regions offers a sensory experience unlike any other, revealing the passion and tradition behind every bean.</p>
+
+            <h2>The Coffee Belt: A Landscape of Green Gold</h2>
+            <p>The ‘Eje Cafetero’ or Coffee Axis, encompassing regions like Quindío, Caldas, and Risaralda, is the heartland of Colombian coffee production. Here, verdant mountains are carpeted with coffee plants, interspersed with charming towns like Salento, Filandia, and Pijao. The unique microclimates and rich volcanic soil create the perfect conditions for growing high-quality Arabica beans.</p>
+
+            <h2>From Finca to Cup: The Coffee Process</h2>
+            <p>Visiting a coffee farm (finca) is an essential part of understanding Colombian coffee culture. On these tours, you’ll learn about:</p>
+            <ul>
+                <li><strong>Cultivation:</strong> How coffee plants are grown, cared for, and harvested by hand.</li>
+                <li><strong>Processing:</strong> The intricate steps of de-pulping, fermenting, washing, and sun-drying the beans.</li>
+                <li><strong>Roasting & Tasting:</strong> The transformation of green beans into aromatic roasted coffee, culminating in a tasting (catación) session to appreciate the nuanced flavors.</li>
+            </ul>
+
+            <h2>Beyond the Farm: Coffee in Daily Life</h2>
+            <p>Coffee is a central part of Colombian hospitality. A 'tinto' (black coffee) is offered at almost every social gathering and business meeting. From bustling city cafes serving specialized brews to roadside stands offering a quick pick-me-up, coffee is a constant companion.</p>
+
+            <p>Exploring Colombian coffee culture is a deep dive into the country's soul, offering delicious flavors, stunning landscapes, and heartwarming encounters with the people who dedicate their lives to this cherished crop.</p>
+        `,
+        image: getAssetPath('/images/blog-coffee.png'),
+        author: 'Bukaro Agent',
+        date: '2026-03-03',
+        tags: ['Coffee', 'Culture', 'Gastronomy', 'Travel Guide']
+    }
 ];
 
 export function getBlogPosts(): Promise<BlogPost[]> {
