@@ -442,7 +442,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Exploring Colombian coffee culture is a deep dive into the country's soul, offering delicious flavors, stunning landscapes, and heartwarming encounters with the people who dedicate their lives to this cherished crop.</p>
         `,
-        image: getAssetPath('/images/blog-coffee.png'),
+        image: getAssetPath('/images/blog-coffee-culture.png'),
         author: 'Bukaro Agent',
         date: '2026-03-03',
         tags: ['Coffee', 'Culture', 'Gastronomy', 'Travel Guide']
