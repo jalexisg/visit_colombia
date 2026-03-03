@@ -472,7 +472,7 @@ export const blogPosts: BlogPost[] = [
             <p>A trek to Ciudad Perdida is more than just a hike; it’s a profound cultural and historical immersion, connecting you with Colombia's ancient past and its vibrant natural present.</p>
         `,
         image: getAssetPath('/images/blog-ciudad-perdida.png'),
-        author: 'Bukaro Agent',
+        author: 'Laura Martinez',
         date: '2026-03-03',
         tags: ['Archaeology', 'Adventure', 'Hiking', 'Sierra Nevada', 'Indigenous Culture']
     }
