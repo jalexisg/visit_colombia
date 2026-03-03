@@ -417,8 +417,7 @@ export const blogPosts: BlogPost[] = [
         author: 'Felipe Mendoza',
         date: '2026-03-02',
         tags: ['Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Nature']
-    }
-,
+    },
     {
         id: '18',
         title: 'Colombian Coffee Culture: A Journey from Bean to Cup',
