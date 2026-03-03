@@ -443,9 +443,36 @@ export const blogPosts: BlogPost[] = [
             <p>Exploring Colombian coffee culture is a deep dive into the country's soul, offering delicious flavors, stunning landscapes, and heartwarming encounters with the people who dedicate their lives to this cherished crop.</p>
         `,
         image: getAssetPath('/images/blog-coffee.png'),
-        author: 'Bukaro Agent',
+        author: 'Laura Martinez',
         date: '2026-03-03',
         tags: ['Coffee', 'Culture', 'Gastronomy', 'Travel Guide']
+    },
+    {
+        id: '19',
+        title: 'Discovering the Lost City: An Ancient Adventure in the Sierra Nevada',
+        slug: 'discovering-ciudad-perdida-ancient-adventure',
+        excerpt: 'Embark on an archaeological trek to Teyuna, the Lost City, nestled deep within the Sierra Nevada de Santa Marta. A journey through ancient history and breathtaking nature.',
+        content: `
+            <p>Deep within the dense tropical rainforest of the Sierra Nevada de Santa Marta lies Teyuna, famously known as the Lost City (Ciudad Perdida). This ancient archaeological site, built by the Tairona civilization around 800 AD, predates Machu Picchu by some 650 years and offers an unparalleled trekking experience for adventurers and history enthusiasts.</p>
+
+            <h2>The Trek: A Journey Through Nature and Time</h2>
+            <p>The journey to Ciudad Perdida is typically a 4 or 5-day trek that winds through rivers, mountains, and indigenous communities. It's a challenging but deeply rewarding experience, immersing hikers in the pristine beauty of Colombia's largest coastal mountain range and its rich biodiversity. Along the way, you’ll encounter diverse flora and fauna, swim in natural pools, and interact with descendants of the Tairona, the Kogi, Wiwa, Arhuaco, and Kankuamo people, who still inhabit the region and act as guardians of the sacred site.</p>
+
+            <h2>Reaching the Lost City</h2>
+            <p>After days of hiking, the final ascent involves climbing approximately 1,200 stone steps, overgrown with moss and jungle vegetation, that lead directly into the heart of the ancient city. Once there, you'll discover a series of intricate terraces, plazas, and carved stone paths, offering a glimpse into the sophisticated civilization that once thrived here. The site is spread across several hectares, with stone circles that once formed the foundations of homes and ceremonial centers.</p>
+
+            <h2>Respecting Indigenous Culture</h2>
+            <p>The Sierra Nevada de Santa Marta is considered the heart of the world by its indigenous communities. Visitors are encouraged to show respect for their traditions and beliefs. Many tours employ local guides, providing a unique opportunity to learn about their worldview and the significance of Ciudad Perdida.</p>
+
+            <h2>Planning Your Adventure</h2>
+            <p>Access to Ciudad Perdida is controlled, and it can only be visited with authorized tour operators. This helps preserve the site and support local communities. The best time to go is during the dry season (December to March and July to August), although the jungle climate means rain can occur at any time. A reasonable level of physical fitness is required for this unforgettable expedition.</p>
+
+            <p>A trek to Ciudad Perdida is more than just a hike; it’s a profound cultural and historical immersion, connecting you with Colombia's ancient past and its vibrant natural present.</p>
+        `,
+        image: getAssetPath('/images/blog-ciudad-perdida.png'),
+        author: 'Laura Martinez',
+        date: '2026-03-03',
+        tags: ['Archaeology', 'Adventure', 'Hiking', 'Sierra Nevada', 'Indigenous Culture']
     }
 ];
 
