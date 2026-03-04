@@ -484,7 +484,7 @@ export const blogPosts: BlogPost[] = [
 
             <h2>A Unique Martian Landscape</h2>
             <p>The Tatacoa Desert is not a true desert, but rather a tropical dry forest that has been eroded over millions of years. It's primarily characterized by two distinct terrains: the red labyrinth of the "Cuzco" sector, with its towering, eroded clay formations, and the gray, lunar-like landscape of "Los Hoyos", where visitors can often find natural pools to cool off.</p>
-            <p>Walking through the crimson canyons of Cuzco feels like stepping onto the surface of Mars. The contrasting blues of the sky against the deep reds and browns of the earth create photographic opportunities at every turn. In Los Hoyos, the grey formations and sparse vegetation offer a different kind of desolate beauty, perfect for quiet reflection.</p>
+            <p>Walking through the crimson canyons of Cuzco feels like stepping onto the surface of Mars. The contrasting blues of the sky against the deep reds and browns of the earth create photographic opportunities at every turn. In Los Hoyos, the gray formations and sparse vegetation offer a different kind of desolate beauty, perfect for quiet reflection.</p>
 
             <h2>Stargazing Paradise</h2>
             <p>One of Tatacoa's greatest draws is its incredible potential for stargazing. Far from city lights and pollution, the desert boasts exceptionally clear skies practically year-round. It is home to a public astronomical observatory where visitors can learn about constellations, planets, and galaxies, offering a truly magical experience of the cosmos.</p>
