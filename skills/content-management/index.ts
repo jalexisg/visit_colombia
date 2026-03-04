@@ -496,7 +496,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Venturing beyond the major attractions to these hidden gems offers a deeper, more authentic travel experience in Colombia. Each town tells its own story, inviting visitors to slow down, explore, and connect with the heart and soul of this incredible country.</p>
         `,
-        image: getAssetPath('/images/blog-jardin.png'), // Placeholder. This image probably doesn't exist, will need to be added or defaulted.
+        image: getAssetPath('/images/city_jardin.png'),
         author: 'Isabella Rodriguez',
         date: '2026-03-04',
         tags: ['Charming Towns', 'Off the Beaten Path', 'Culture', 'History', 'Antioquia', 'Santander', 'Bolívar']
