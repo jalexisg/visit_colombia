@@ -473,6 +473,37 @@ export const blogPosts: BlogPost[] = [
         author: 'Laura Martinez',
         date: '2026-03-03',
         tags: ['Archaeology', 'Adventure', 'Hiking', 'Sierra Nevada', 'Indigenous Culture']
+    },
+    {
+        id: '20',
+        title: 'Hidden Gems: Exploring the Tatacoa Desert – Colombia\'s Martian Landscape',
+        slug: 'hidden-gems-tatacoa-desert',
+        excerpt: 'Discover Colombia\'s unique Tatacoa Desert, a surreal landscape perfect for adventure and stargazing, far from the typical tourist trails.',
+        content: `
+            <p>Often overshadowed by its Caribbean beaches and Andean peaks, Colombia harbors a hidden geological marvel: the Tatacoa Desert. Located in the department of Huila, this arid, semi-desertic region is a world away from the lush greenery typically associated with Colombia. Its surreal landscapes, vibrant hues, and pristine night skies make it an unforgettable destination for the adventurous traveler.</p>
+
+            <h2>A Unique Martian Landscape</h2>
+            <p>The Tatacoa Desert is not a true desert, but rather a tropical dry forest that has been eroded over millions of years. It's primarily characterized by two distinct terrains: the red labyrinth of the "Cuzco" sector, with its towering, eroded clay formations, and the gray, lunar-like landscape of "Los Hoyos", where visitors can often find natural pools to cool off.</p>
+            <p>Walking through the crimson canyons of Cuzco feels like stepping onto the surface of Mars. The contrasting blues of the sky against the deep reds and browns of the earth create photographic opportunities at every turn. In Los Hoyos, the gray formations and sparse vegetation offer a different kind of desolate beauty, perfect for quiet reflection.</p>
+
+            <h2>Stargazing Paradise</h2>
+            <p>One of Tatacoa's greatest draws is its incredible potential for stargazing. Far from city lights and pollution, the desert boasts exceptionally clear skies practically year-round. It is home to a public astronomical observatory where visitors can learn about constellations, planets, and galaxies, offering a truly magical experience of the cosmos.</p>
+            <p>Spending a night in Tatacoa, lying on the ground looking up at the Milky Way, is an experience that stays with you long after you've left. It's a reminder of the vastness of the universe and the quiet beauty of our own planet.</p>
+
+            <h2>Planning Your Visit</h2>
+            <ul>
+                <li><strong>Getting There:</strong> The closest major city is Neiva, accessible by flight or bus from Bogotá. From Neiva, you can take a local bus or taxi to Villavieja, the gateway town to the desert.</li>
+                <li><strong>Accommodation:</strong> Options range from simple hotels in Villavieja to rustic cabins and hammocks within the desert itself. For the full stargazing experience, staying overnight in the desert is highly recommended.</li>
+                <li><strong>Activities:</strong> Explore the red and gray deserts on foot or by local mototaxi, visit the astronomical observatory at night, and cool off in the natural springs of Los Hoyos.</li>
+                <li><strong>What to Bring:</strong> Sunscreen, a hat, plenty of water, comfortable walking shoes, insect repellent, and a camera are essential.</li>
+            </ul>
+
+            <p>The Tatacoa Desert is a testament to Colombia's extraordinary geographical diversity. It's a place that challenges expectations and rewards visitors with unforgettable sights and experiences. Don't miss this hidden gem on your Colombian adventure!</p>
+        `,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Bukaro',
+        date: '2026-03-04',
+        tags: ['Desert', 'Ecotourism', 'Stargazing', 'Adventure', 'Nature'],
     }
 ];
 
