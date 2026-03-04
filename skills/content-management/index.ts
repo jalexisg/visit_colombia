@@ -498,6 +498,39 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-04',
         tags: ["Bogota", "Colombia", "Travel", "Culture", "History"]
+    },
+    {
+        id: '21',
+        title: "Exploring the Coffee Regions of Colombia",
+        slug: "exploring-coffee-regions",
+        excerpt: "Embárcate en un viaje inolvidable a través de las exuberantes y vibrantes regiones cafetaleras de Colombia, donde el aroma del café recién tostado impregna el aire y los paisajes de montañas esmeralda te dejarán sin aliento. Colombia es mundialmente reconocida por producir algunos de los mejores cafés suaves arábica del mundo, un legado cultivado con pasión a través de generaciones de caficultores.",
+        content: `
+            Embárcate en un viaje inolvidable a través de las exuberantes y vibrantes regiones cafetaleras de Colombia, donde el aroma del café recién tostado impregna el aire y los paisajes de montañas esmeralda te dejarán sin aliento. Colombia es mundialmente reconocida por producir algunos de los mejores cafés suaves arábica del mundo, un legado cultivado con pasión a través de generaciones de caficultores.
+
+            **Un Sabor Único en Cada Taza**
+
+            Desde las alturas de la Sierra Nevada de Santa Marta hasta los valles fértiles del Eje Cafetero, cada región ofrece perfiles de sabor distintos. Explora plantaciones de café en la zona cafetera, aprende sobre el meticuloso proceso de cultivo, recolección y tostado, y degusta tazas recién preparadas que revelan notas frutales, achocolatadas o incluso cítricas.
+
+            **Más Allá de la Taza: Cultura y Aventura**
+
+            Pero el café es solo el comienzo. Sumérgete en la cultura cafetera, hospédate en encantadoras fincas coloniales transformadas en hoteles, y disfruta de la hospitalidad local. Aventúrate en senderos ecológicos que atraviesan bosques nubosos, observa aves exóticas y maravíllate con la biodiversidad. El Eje Cafetero, declarado Patrimonio de la Humanidad por la UNESCO, es un paraíso para los amantes de la naturaleza y la aventura.
+
+            **Rutas Cafeteras Imperdibles**
+
+            1.  **Salento y el Valle de Cocora:** Con sus icónicas palmas de cera que se elevan majestuosamente, este es un destino imprescindible. Recorre fincas cafeteras, disfruta de vistas panorámicas y explora el pintoresco pueblo de Salento.
+            2.  **Manizales, Pereira y Armenia:** Las capitales del Eje Cafetero te ofrecen una mezcla de modernidad y tradición. Visita haciendas, museos del café y descubre la vibrante vida nocturna.
+            3.  **Santander y el Cañón del Chicamocha:** Esta región, menos explorada, sorprende con su café de especialidad y paisajes dramáticos, ideal para los que buscan aventura y tranquilidad.
+
+            **El Compromiso con la Sostenibilidad**
+
+            La caficultura colombiana se ha comprometido con prácticas sostenibles, protegiendo el medio ambiente y mejorando la calidad de vida de las comunidades. Al visitar estas regiones, contribuyes directamente a este esfuerzo, apoyando el comercio justo y el turismo responsable.
+
+            Prepárate para dejarte seducir por la magia del café colombiano y los encantos de sus regiones. ¡Una experiencia que despertará todos tus sentidos!
+        `,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Bukaro',
+        date: '2026-03-04',
+        tags: ["coffee", "culture", "nature", "adventure"],
     }
 ];
 
