@@ -476,6 +476,34 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '20',
+
+        title: 'Hidden Gems of Colombia: Charming Towns Off the Beaten Path',
+        slug: 'hidden-gems-colombia-charming-towns',
+        excerpt: 'Beyond the bustling cities and popular beaches, Colombia hides a treasure trove of picturesque towns. Discover their vibrant culture, historical charm, and serene beauty.',
+        content: `
+            <p>While Bogotá, Medellín, and Cartagena captivate with their energy, Colombia's true charm often lies in its lesser-known, picturesque towns. These "Pueblos Patrimonio" (Heritage Towns) offer an authentic glimpse into the country's rich history, diverse culture, and stunning landscapes, far from the typical tourist trails.</p>
+
+            <h2>Jardín, Antioquia: The Green Heart of Coffee Country</h2>
+            <p>Nestled in the southwestern mountains of Antioquia, Jardín is a vibrant, well-preserved colonial town renowned for its colorful architecture, bustling main square, and surrounding coffee plantations. Life here revolves around the plaza, where locals gather to chat and sip coffee. Explore the cobblestone streets, visit the ornate Basílica Menor de la Inmaculada Concepción, or take a scenic cable car ride for panoramic views. It's also a birdwatcher's paradise, home to the vibrant Andean Cock-of-the-Rock.</p>
+
+            <h2>Barichara, Santander: The Most Beautiful Town in Colombia</h2>
+            <p>Often proclaimed as Colombia's most beautiful town, Barichara lives up to its reputation with its perfectly preserved colonial buildings, terracotta roofs, and quiet, stone-paved streets. This tranquil haven is ideal for leisurely strolls, art appreciation, and enjoying slow-paced village life. Don't miss the Camino Real, an ancient stone road leading to the nearby town of Guane, offering breathtaking views of the Suárez River Canyon.</p>
+
+            <h2>Mompox, Bolívar: A Town Frozen in Time</h2>
+            <p>A UNESCO World Heritage site, Santa Cruz de Mompox is a captivating colonial town situated on an island in the Magdalena River. Its isolation has helped preserve its unique architecture, traditions, and a serene atmosphere that feels like stepping back in time. Famous for its intricate filigree gold jewelry, Mompox is a magical place to explore by foot, visit its many churches, and soak in the slow rhythm of river life.</p>
+
+            <h2>Salento, Quindío: Gateway to Wax Palms and Coffee</h2>
+            <p>Though more popular than other "hidden gems," Salento retains an irresistible charm as the gateway to the Cocora Valley and the heart of the Coffee Cultural Landscape. Its brightly painted "bahareque" houses, lively craft shops, and exquisite coffee are a delight. Trek to the towering wax palms in Cocora Valley, tour a coffee finca, and enjoy the freshest brew imaginable.</p>
+
+            <p>Venturing beyond the major attractions to these hidden gems offers a deeper, more authentic travel experience in Colombia. Each town tells its own story, inviting visitors to slow down, explore, and connect with the heart and soul of this incredible country.</p>
+        `,
+        image: getAssetPath('/images/city_jardin.png'),
+        author: 'Isabella Rodriguez',
+        date: '2026-03-04',
+        tags: ['Charming Towns', 'Off the Beaten Path', 'Culture', 'History', 'Antioquia', 'Santander', 'Bolívar']
+    },
+    {
+        id: '21',
         title: 'Hidden Gems: Exploring the Tatacoa Desert – Colombia\'s Martian Landscape',
         slug: 'hidden-gems-tatacoa-desert',
         excerpt: 'Discover Colombia\'s unique Tatacoa Desert, a surreal landscape perfect for adventure and stargazing, far from the typical tourist trails.',
@@ -504,6 +532,7 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-04',
         tags: ['Desert', 'Ecotourism', 'Stargazing', 'Adventure', 'Nature'],
+
     }
 ];
 
