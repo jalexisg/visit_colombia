@@ -1,0 +1,42 @@
+name: Auto-request Copilot review
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+
+permissions:
+  pull-requests: write
+  issues: write
+
+jobs:
+  comment:
+    # Evita comentar en PRs desde forks (no siempre hay permisos para escribir comentarios)
+    if: ${{ github.event.pull_request.head.repo.fork == false }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment asking Copilot to review
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const body = [
+              "👋 @copilot ¿puedes revisar este PR automáticamente?",
+              "",
+              "Checklist:",
+              "- Riesgos / edge cases",
+              "- Tests faltantes",
+              "- Seguridad (inputs, secrets, permisos)",
+              "- Calidad: naming, complejidad, duplicación",
+              "",
+              `PR: #${pr.number}`
+            ].join("\n");
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: pr.number,
+              body
+            });
