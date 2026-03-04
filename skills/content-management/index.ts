@@ -473,6 +473,31 @@ export const blogPosts: BlogPost[] = [
         author: 'Laura Martinez',
         date: '2026-03-03',
         tags: ['Archaeology', 'Adventure', 'Hiking', 'Sierra Nevada', 'Indigenous Culture']
+    },
+    {
+        id: '20',
+        title: "Exploring Bogotá: A Journey Through Colombia's Vibrant Capital",
+        slug: "exploring-bogota",
+        excerpt: "Discover the rich history, vibrant culture, and stunning landscapes of Bogotá, Colombia. From historic plazas to modern art, there's something for everyone in this bustling Andean city.",
+        content: `
+            <p>Bogotá, the capital city of Colombia, is a sprawling metropolis nestled high in the Andes mountains. It's a city of contrasts, where colonial architecture stands alongside towering skyscrapers, and traditional markets blend seamlessly with upscale boutiques.</p>
+
+            <h3>Historic La Candelaria</h3>
+            <p>Start your journey in La Candelaria, Bogotá's historic heart. Wander through cobblestone streets, admire colorful colonial houses, and visit iconic landmarks like Plaza de Bolívar, the primary square surrounded by the Primatial Cathedral of Bogotá, the Palace of Justice, and the Liévano Palace.</p>
+
+            <h3>Art and Culture</h3>
+            <p>Bogotá boasts a thriving arts scene. Explore the Botero Museum, home to a vast collection of works by Colombian artist Fernando Botero, as well as European artists like Picasso and Dalí. Don't miss the Gold Museum, which houses an astounding collection of pre-Hispanic gold artifacts.</p>
+
+            <h3>Gastronomy</h3>
+            <p>Indulge in Bogotá's diverse culinary offerings. Sample traditional Colombian dishes like Ajiaco, a hearty chicken and potato soup, or enjoy a fresh-squeezed fruit juice from one of the many street vendors. For coffee lovers, a visit to a local café for a freshly brewed Colombian coffee is a must.</p>
+
+            <h3>Mount Monserrate</h3>
+            <p>For breathtaking panoramic views of the city, take a cable car or funicular up to Monserrate. At 3,152 meters (10,341 feet) above sea level, the sanctuary at the top offers a serene escape and unforgettable vistas, especially at sunset.</p>
+        `,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Bukaro',
+        date: '2026-03-04',
+        tags: ["Bogota", "Colombia", "Travel", "Culture", "History"]
     }
 ];
 
