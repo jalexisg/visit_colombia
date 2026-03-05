@@ -529,12 +529,12 @@ export const blogPosts: BlogPost[] = [
             <p>The Tatacoa Desert is a testament to Colombia's extraordinary geographical diversity. It's a place that challenges expectations and rewards visitors with unforgettable sights and experiences. Don't miss this hidden gem on your Colombian adventure!</p>
         `,
         image: getAssetPath('/images/dept-huila.png'),
-        author: 'Bukaro',
+        author: 'Daniela Soto',
         date: '2026-03-04',
         tags: ['Desert', 'Ecotourism', 'Stargazing', 'Adventure', 'Nature'],
 
     },
-   {
+    {
         id: '22',
         title: 'Exploring the Coffee Triangle: A Sensory Journey',
         slug: 'coffee-triangle-sensory-journey',
@@ -554,7 +554,7 @@ export const blogPosts: BlogPost[] = [
             <p>Exploring the Coffee Triangle is an invitation to awaken your senses and discover the magic of Colombia\'s coffee culture. From the aromatic beans to the stunning landscapes and vibrant traditions, this journey will leave you with a lasting appreciation for this remarkable region and its people.</p>
         `,
         image: getAssetPath('/images/blog-coffee-sensory.png'),
-        author: 'Bukaro',
+        author: 'Gabriel Rojas',
         date: '2026-03-05',
         tags: ['Coffee', 'Sensory Experience', 'Culture', 'Travel Guide']
     },
@@ -568,7 +568,7 @@ export const blogPosts: BlogPost[] = [
 <ul><li>The Blue-bearded Helmetcrest hummingbird</li><li>The Santa Marta Parakeet</li><li>The Santa Marta Mountain Rat</li><li>Numerous amphibian species</li></ul><h2>Planning Your Visit</h2><p>The best way to explore these ecosystems is through guided treks that respect both the natural environment and the indigenous communities who call this sacred mountain home. Popular access points include:</p>
 <ul><li>Minca: Gateway to cloud forests and birdwatching</li><li>Palomino: Access to lower elevation trails and rivers</li><li>El Dorado Reserve: Premier birdwatching location</li></ul><p>Whether you're a nature enthusiast, researcher, or simply someone who appreciates natural wonders, the Sierra Nevada de Santa Marta offers an unparalleled opportunity to witness the incredible diversity of life that Colombia harbors.</p>`,
         image: getAssetPath('/images/blog-sierra-nevada.png'),
-        author: 'Bukaro',
+        author: 'Camila Restrepo',
         date: '2026-03-05',
         tags: ['Nature', 'Biodiversity', 'Mountains', 'Ecotourism', 'Wildlife']
     }
