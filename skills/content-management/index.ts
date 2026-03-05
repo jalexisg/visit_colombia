@@ -543,6 +543,20 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-05',
         tags: ['Coffee', 'Sensory Experience', 'Culture', 'Travel Guide']
+    },
+    {
+        id: '1772727335200',
+        title: `Sierra Nevada de Santa Marta: A World of Ecosystems in One Mountain`,
+        slug: 'sierra-nevada-ecosystems-biodiversity',
+        excerpt: `Explore the incredible biodiversity of the Sierra Nevada de Santa Marta, where tropical beaches meet snow-capped peaks in the world's highest coastal mountain range.`,
+        content: `<p>Rising dramatically from the Caribbean Sea to snow-capped peaks at 5,775 meters, the Sierra Nevada de Santa Marta is a biological wonder and the highest coastal mountain range in the world. This unique mountain system hosts every type of ecosystem found in Colombia within its boundaries.</p><h2>A Living Laboratory</h2><p>The Sierra Nevada is home to 635 species of birds, 120 mammals, and thousands of plant species, many of which are found nowhere else on Earth. This extraordinary biodiversity is due to its isolation from the Andes and the dramatic changes in altitude that create distinct life zones.</p><h2>From Beach to Snow</h2><p>Within just 42 kilometers, the landscape transforms from tropical beaches through cloud forests to permanent snow. This compressed gradient of ecosystems makes it possible to experience multiple climates and habitats in a single day:
+<ul><li><strong>Tropical Dry Forest (0-1,000m):</strong> Cacti, thorny shrubs, and drought-resistant trees.</li><li><strong>Rainforest (1,000-2,500m):</strong> Dense vegetation, orchids, and abundant wildlife.</li><li><strong>Cloud Forest (2,500-3,300m):</strong> Misty environment with moss-covered trees and unique orchids.</li><li><strong>Páramo (3,300-4,500m):</strong> High-altitude grasslands with frailejones and specialized plants.</li><li><strong>Snow Zone (4,500m+):</strong> Permanent snow caps on the peaks of Colón and Bolívar.</li></ul></p><h2>Endemic Species</h2><p>The isolation of the Sierra Nevada has led to the evolution of species found nowhere else, including:
+<ul><li>The Blue-bearded Helmetcrest hummingbird</li><li>The Santa Marta Parakeet</li><li>The Santa Marta Mountain Rat</li><li>Numerous amphibian species</li></ul></p><h2>Planning Your Visit</h2><p>The best way to explore these ecosystems is through guided treks that respect both the natural environment and the indigenous communities who call this sacred mountain home. Popular access points include:
+<ul><li>Minca: Gateway to cloud forests and birdwatching</li><li>Palomino: Access to lower elevation trails and rivers</li><li>El Dorado Reserve: Premier birdwatching location</li></ul></p><p>Whether you're a nature enthusiast, researcher, or simply someone who appreciates natural wonders, the Sierra Nevada de Santa Marta offers an unparalleled opportunity to witness the incredible diversity of life that Colombia harbors.</p>`,
+        image: getAssetPath('/images/blog-sierra-nevada.png'),
+        author: 'Bukaro',
+        date: '2026-03-05',
+        tags: ['Nature', 'Biodiversity', 'Mountains', 'Ecotourism', 'Wildlife']
     }
 ];
 
