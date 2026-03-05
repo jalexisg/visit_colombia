@@ -533,6 +533,44 @@ export const blogPosts: BlogPost[] = [
         date: '2026-03-04',
         tags: ['Desert', 'Ecotourism', 'Stargazing', 'Adventure', 'Nature'],
 
+    },
+   {
+        id: '22',
+        title: 'Exploring the Coffee Triangle: A Sensory Journey',
+        slug: 'coffee-triangle-sensory-journey',
+        excerpt: 'Delve into the heart of Colombia\'s Coffee Triangle, where every sense is awakened by rich aromas, stunning landscapes, and vibrant traditions.',
+        content: `
+            <p>The Coffee Triangle (Eje Cafetero) is a UNESCO World Heritage Site that invites you to embark on a sensory journey unlike any other. This region, nestled in the foothills of the Andes, is renowned for its lush coffee plantations, picturesque towns, and the warm hospitality of its people.</p>
+            <h2>Aromatic Awakening</h2>
+            <p>Begin your journey by immersing yourself in the intoxicating aroma of freshly roasted coffee beans. Visit a traditional coffee farm (finca) and learn about the meticulous process of cultivating, harvesting, and processing the beans. Breathe in the rich, earthy scent as you walk through the green fields, and witness the traditional methods handed down through generations.</p>
+            <h2>Visual Feast</h2>
+            <p>Prepare for a visual feast as you explore the rolling hills and stunning landscapes of the Coffee Triangle. Quindío, Caldas, and Risaralda are dotted with charming towns boasting colorful architecture, vibrant plazas, and panoramic vistas. Wander through the streets of Salento, with its iconic wax palms framing the horizon, or marvel at the breathtaking views from the mountaintop town of Filandia.</p>
+            <h2>Tastes of Tradition</h2>
+            <p>Indulge in the authentic flavors of Colombian cuisine, sampling local specialties that complement the coffee experience. Savor the traditional bandeja paisa, a hearty platter of beans, rice, meat, and fried plantains, or treat yourself to a sweet arequipe (dulce de leche) made with locally sourced milk. And, of course, no visit to the Coffee Triangle is complete without savoring a cup of freshly brewed Colombian coffee, prepared with expertise and passion.</p>
+            <h2>Soundscapes of the Andes</h2>
+            <p>Listen to the sounds of the Colombian countryside as you immerse yourself in the local culture. Enjoy the lively rhythms of vallenato music, played on accordions and traditional instruments, and engage in conversations with the welcoming locals, eager to share their stories and traditions. Visit a traditional fair or festival to experience the true spirit of the Coffee Triangle.</p>
+            <h2>Embrace the Texture</h2>
+            <p>Feel the warmth of the sun on your skin as you hike through the verdant hills, and the smooth texture of a perfectly roasted coffee bean in your hand. Connect with the earth as you explore the coffee plantations and learn about the region\'s dedication to sustainable farming practices. The Coffee Triangle offers a tactile experience that will leave you feeling refreshed and revitalized.</p>
+            <p>Exploring the Coffee Triangle is an invitation to awaken your senses and discover the magic of Colombia\'s coffee culture. From the aromatic beans to the stunning landscapes and vibrant traditions, this journey will leave you with a lasting appreciation for this remarkable region and its people.</p>
+        `,
+        image: getAssetPath('/images/blog-coffee-sensory.png'),
+        author: 'Bukaro',
+        date: '2026-03-05',
+        tags: ['Coffee', 'Sensory Experience', 'Culture', 'Travel Guide']
+    },
+    {
+        id: '1772727335200',
+        title: `Sierra Nevada de Santa Marta: A World of Ecosystems in One Mountain`,
+        slug: 'sierra-nevada-ecosystems-biodiversity',
+        excerpt: `Explore the incredible biodiversity of the Sierra Nevada de Santa Marta, where tropical beaches meet snow-capped peaks in the world's highest coastal mountain range.`,
+        content: `<p>Rising dramatically from the Caribbean Sea to snow-capped peaks at 5,775 meters, the Sierra Nevada de Santa Marta is a biological wonder and the highest coastal mountain range in the world. This unique mountain system hosts every type of ecosystem found in Colombia within its boundaries.</p><h2>A Living Laboratory</h2><p>The Sierra Nevada is home to 635 species of birds, 120 mammals, and thousands of plant species, many of which are found nowhere else on Earth. This extraordinary biodiversity is due to its isolation from the Andes and the dramatic changes in altitude that create distinct life zones.</p><h2>From Beach to Snow</h2><p>Within just 42 kilometers, the landscape transforms from tropical beaches through cloud forests to permanent snow. This compressed gradient of ecosystems makes it possible to experience multiple climates and habitats in a single day:</p>
+<ul><li><strong>Tropical Dry Forest (0-1,000m):</strong> Cacti, thorny shrubs, and drought-resistant trees.</li><li><strong>Rainforest (1,000-2,500m):</strong> Dense vegetation, orchids, and abundant wildlife.</li><li><strong>Cloud Forest (2,500-3,300m):</strong> Misty environment with moss-covered trees and unique orchids.</li><li><strong>Páramo (3,300-4,500m):</strong> High-altitude grasslands with frailejones and specialized plants.</li><li><strong>Snow Zone (4,500m+):</strong> Permanent snow caps on the peaks of Colón and Bolívar.</li></ul><h2>Endemic Species</h2><p>The isolation of the Sierra Nevada has led to the evolution of species found nowhere else, including:</p>
+<ul><li>The Blue-bearded Helmetcrest hummingbird</li><li>The Santa Marta Parakeet</li><li>The Santa Marta Mountain Rat</li><li>Numerous amphibian species</li></ul><h2>Planning Your Visit</h2><p>The best way to explore these ecosystems is through guided treks that respect both the natural environment and the indigenous communities who call this sacred mountain home. Popular access points include:</p>
+<ul><li>Minca: Gateway to cloud forests and birdwatching</li><li>Palomino: Access to lower elevation trails and rivers</li><li>El Dorado Reserve: Premier birdwatching location</li></ul><p>Whether you're a nature enthusiast, researcher, or simply someone who appreciates natural wonders, the Sierra Nevada de Santa Marta offers an unparalleled opportunity to witness the incredible diversity of life that Colombia harbors.</p>`,
+        image: getAssetPath('/images/blog-sierra-nevada.png'),
+        author: 'Bukaro',
+        date: '2026-03-05',
+        tags: ['Nature', 'Biodiversity', 'Mountains', 'Ecotourism', 'Wildlife']
     }
 ];
 
