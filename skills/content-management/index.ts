@@ -528,11 +528,10 @@ export const blogPosts: BlogPost[] = [
 
             <p>The Tatacoa Desert is a testament to Colombia's extraordinary geographical diversity. It's a place that challenges expectations and rewards visitors with unforgettable sights and experiences. Don't miss this hidden gem on your Colombian adventure!</p>
         `,
-        image: getAssetPath('/images/dept-huila.png'),
+        image: getAssetPath('/images/blog-tatacoa-desert.png'),
         author: 'Daniela Soto',
         date: '2026-03-04',
         tags: ['Desert', 'Ecotourism', 'Stargazing', 'Adventure', 'Nature'],
-
     },
     {
         id: '22',
