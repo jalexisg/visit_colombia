@@ -1111,6 +1111,16 @@ export const cityImages: Record<string, string> = {
     'morichal': '/images/cities/guainia/morichal.png',
     'guainia-morichal': '/images/cities/guainia/morichal.png',
     'guainia-guadalupe': '/images/cities/guainia/guadalupe.png',
+    // Huila
+    'san agustin': '/images/cities/huila/san_agustin.png',
+    'san agustín': '/images/cities/huila/san_agustin.png',
+    'rivera': '/images/cities/huila/rivera.png',
+    'pitalito': '/images/cities/huila/pitalito.png',
+    'villavieja': '/images/cities/huila/villavieja.png',
+    'garzon': '/images/cities/huila/garzon.png',
+    'garzón': '/images/cities/huila/garzon.png',
+    'gigante': '/images/cities/huila/gigante.png',
+    'paicol': '/images/cities/huila/paicol.png',
 
     // Guaviare
     'san josh del guaviare': '/images/cities/guaviare/san_jose_del_guaviare.png',
@@ -2128,6 +2138,17 @@ export const cityOverviews: Record<string, string> = {
     'guaviare-calamar': 'A bustling river port on the Unilla River, surrounded by the lush green of the transition between Orinoquía and Amazonia.',
     'guaviare-miraflores': 'Located deep in the jungle along the Vaupés River, an untamed natural paradise.',
     'el retorno': 'A beautiful landscape where Amazonian jungles meet natural savannas.',
+
+    // Huila Overviews
+    'san agustin': 'Home to the magnificent San Agustín Archaeological Park, showcasing mysterious pre-Columbian stone statues amid lush Andean landscapes.',
+    'san agustín': 'Home to the magnificent San Agustín Archaeological Park, showcasing mysterious pre-Columbian stone statues amid lush Andean landscapes.',
+    'rivera': 'A green oasis famous for its soothing natural thermal hot springs and relaxing wellness tourism.',
+    'pitalito': 'The heart of Huila’s coffee region, surrounded by rolling hills and known for traditional Chiva crafts.',
+    'villavieja': 'The gateway to the surreal Tatacoa Desert, a landscape of eroded ochre rock formations and spectacular stargazing.',
+    'garzon': 'The Diocesan Capital of Huila, known for its majestic cathedral, religious heritage, and excellent coffee.',
+    'garzón': 'The Diocesan Capital of Huila, known for its majestic cathedral, religious heritage, and excellent coffee.',
+    'gigante': 'Home to the legendary "Ceiba de la Libertad" and stunning panoramic viewpoints over the Magdalena valley.',
+    'paicol': 'A picturesque town with beautiful colonial stone architecture and a vibrant central square set against green mountains.',
 };
 
 export function getCityOverview(cityName: string, defaultDescription?: string, departmentName?: string): string {
