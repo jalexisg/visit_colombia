@@ -571,6 +571,46 @@ export const blogPosts: BlogPost[] = [
         author: 'Camila Restrepo',
         date: '2026-03-05',
         tags: ['Nature', 'Biodiversity', 'Mountains', 'Ecotourism', 'Wildlife']
+    },
+    {
+        id: '1772813132073',
+        title: `Modern Architecture in Colombia: A Blend of Innovation and Tradition`,
+        slug: 'modern-architecture-colombia',
+        excerpt: `From Medellín's social urbanism to Bogotá's avant-garde buildings, discover how Colombian architecture is reshaping cities while honoring cultural heritage.`,
+        content: `
+            <p>Colombia's architectural landscape is a testament to innovation, sustainability, and social transformation. The country has emerged as a laboratory for modern urban solutions that address both aesthetic and social needs.</p>
+            <h2>Medellín: Social Architecture at its Finest</h2>
+            <p>Once known for its turbulent past, Medellín has become a global reference for social urbanism. Key projects include:</p>
+            <ul>
+                <li><strong>Biblioteca España:</strong> Three black rock-like structures perched on a hillside, serving as both a library and a symbol of transformation.</li>
+                <li><strong>Parque Biblioteca León de Greiff:</strong> A stunning example of how modern architecture can create inclusive public spaces.</li>
+                <li><strong>Metrocable system:</strong> Not just transportation, but an architectural statement that connects communities.</li>
+            </ul>
+            <h2>Bogotá's Architectural Revolution</h2>
+            <p>The capital city showcases bold architectural statements that blend functionality with artistic vision:</p>
+            <ul>
+                <li><strong>Torres del Atrio:</strong> Twin towers designed by Rogers Stirk Harbour + Partners, setting new standards for sustainable architecture.</li>
+                <li><strong>Centro Empresarial Santa Bárbara:</strong> A complex that combines traditional materials with modern design principles.</li>
+                <li><strong>ÁGORA Convention Centre:</strong> An architectural marvel that hosts international events while showcasing Colombian innovation.</li>
+            </ul>
+            <h2>Sustainable Design Movement</h2>
+            <p>Colombian architects are leading the way in sustainable design:</p>
+            <ul>
+                <li><strong>B3 Hotel Virrey:</strong> Bogotá's first bioclimatic hotel, using natural ventilation and solar energy.</li>
+                <li><strong>Universidad EAN:</strong> A pioneering example of circular architecture, using recycled materials and efficient energy systems.</li>
+            </ul>
+            <h2>Preserving Heritage</h2>
+            <p>Modern Colombian architecture doesn't reject the past but embraces it:</p>
+            <ul>
+                <li><strong>Renovation of historic centers:</strong> Projects that carefully blend modern amenities with colonial architecture.</li>
+                <li><strong>Adaptive reuse:</strong> Converting historic buildings into contemporary spaces while preserving their character.</li>
+            </ul>
+            <p>Visit these architectural landmarks to witness how Colombia is building its future while honoring its past. Each structure tells a story of innovation, resilience, and cultural pride.</p>
+        `,
+        image: getAssetPath('/images/blog-cartagena.png'),
+        author: 'Daniel Torres',
+        date: '2026-03-05',
+        tags: ['Architecture', 'Urban Design', 'Innovation', 'Culture', 'Cities']
     }
 ];
 
