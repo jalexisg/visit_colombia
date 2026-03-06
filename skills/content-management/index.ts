@@ -607,7 +607,7 @@ export const blogPosts: BlogPost[] = [
             </ul>
             <p>Visit these architectural landmarks to witness how Colombia is building its future while honoring its past. Each structure tells a story of innovation, resilience, and cultural pride.</p>
         `,
-        image: getAssetPath('/images/blog-cartagena.png'),
+        image: getAssetPath('/images/blog-modern-architecture.png'),
         author: 'Daniel Torres',
         date: '2026-03-05',
         tags: ['Architecture', 'Urban Design', 'Innovation', 'Culture', 'Cities']
