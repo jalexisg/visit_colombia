@@ -1112,6 +1112,19 @@ export const cityImages: Record<string, string> = {
     'guainia-morichal': '/images/cities/guainia/morichal.png',
     'guainia-guadalupe': '/images/cities/guainia/guadalupe.png',
 
+    // Guaviare
+    'san josh del guaviare': '/images/cities/guaviare/san_jose_del_guaviare.png',
+    'san jose del guaviare': '/images/cities/guaviare/san_jose_del_guaviare.png',
+    'san josé del guaviare': '/images/cities/guaviare/san_jose_del_guaviare.png',
+    'guaviare-san jose del guaviare': '/images/cities/guaviare/san_jose_del_guaviare.png',
+    'guaviare-san josé del guaviare': '/images/cities/guaviare/san_jose_del_guaviare.png',
+    'guaviare-calamar': '/images/cities/guaviare/calamar.png',
+    'calamar-guaviare': '/images/cities/guaviare/calamar.png',
+    'guaviare-miraflores': '/images/cities/guaviare/miraflores.png',
+    'miraflores-guaviare': '/images/cities/guaviare/miraflores.png',
+    'el retorno': '/images/cities/guaviare/el_retorno.png',
+    'guaviare-el retorno': '/images/cities/guaviare/el_retorno.png',
+
     // Nariño
     'nariño-nariño': '/images/cities/narino/city_narino_narino.png',
     'narino-nariño': '/images/cities/narino/city_narino_narino.png',
@@ -2108,6 +2121,13 @@ export const cityOverviews: Record<string, string> = {
     'morichal': 'Named after the moriche palms, this area features unique savanna-forest transition ecosystems and indigenous cultures.',
     'guainia-morichal': 'Named after the moriche palms, this area features unique savanna-forest transition ecosystems and indigenous cultures.',
     'guainia-guadalupe': 'The southernmost point of Guainía, a border town where Colombia, Brazil, and Venezuela meet at the iconic Piedra del Cocuy.',
+
+    // Guaviare Overviews
+    'san jose del guaviare': 'The capital of Guaviare, a gateway to the Amazon known for ancient rock paintings and the Guayabero River.',
+    'san josé del guaviare': 'The capital of Guaviare, a gateway to the Amazon known for ancient rock paintings and the Guayabero River.',
+    'guaviare-calamar': 'A bustling river port on the Unilla River, surrounded by the lush green of the transition between Orinoquía and Amazonia.',
+    'guaviare-miraflores': 'Located deep in the jungle along the Vaupés River, an untamed natural paradise.',
+    'el retorno': 'A beautiful landscape where Amazonian jungles meet natural savannas.',
 };
 
 export function getCityOverview(cityName: string, defaultDescription?: string, departmentName?: string): string {
