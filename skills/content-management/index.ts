@@ -543,6 +543,17 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-07',
         tags: ['Nature', 'Biodiversity', 'Wildlife', 'Conservation', 'Colombia']
+    },
+    {
+        id: '1772905026408',
+        title: `Guatapé: The Most Colorful Town in Colombia`,
+        slug: 'guatape-colorful-pueblo',
+        excerpt: `Experience the vibrant charm of Guatapé, famous for its colorful "zócalos" and the breathtaking view from the top of the Rock of Guatapé.`,
+        content: `<p>Nestled in the rolling hills of Antioquia, just a few hours from Medellín, lies Guatapé, a town that seems to have jumped straight out of a painting. Known for its incredible use of color and its iconic monolithic rock, Guatapé is a highlight of any trip to Colombia.</p>\n\n<h2>The "Zócalos" of Guatapé</h2>\n<p>What makes Guatapé truly unique are the "zócalos" that adorn the lower half of almost every building. These carved and painted bas-reliefs depict everything from flowers and animals to scenes of daily life and historical events. Walking through the streets is like exploring an open-air gallery, with each building telling its own story through its vibrant and detailed decorations.</p>\n\n<h2>El Peñol: The Giant Rock</h2>\n<p>The town"s most famous landmark is "El Peñol" (The Rock of Guatapé), a massive 200-meter-high monolithic rock. For those willing to climb the 742 steps built into a crack on one side, the reward is one of the most breathtaking views in the world: a 360-degree panorama of the surrounding reservoir and its countless verdant islands.</p>\n\n<h2>The Reservoir: Adventure and Tranquility</h2>\n<p>The vast reservoir, formed by the construction of the Guatapé-El Peñol hydroelectric complex in the 1970s, offers a playground for water sports and recreational activities. You can enjoy boat rides, jet-skiing, kayaking, or simply relax by the water"s edge. The tranquil waters also hide the remnants of the old town of El Peñol, which was submerged to create the reservoir, adding a layer of history beneath the surface.</p>\n\n<h2>Local Culture and Gastronomy</h2>\n<p>Beyond its visual appeal, Guatapé offers a taste of authentic Colombian paisa culture. Sample traditional dishes like bandeja paisa, fresh trout from the reservoir, or a warm arepa with cheese. The town"s vibrant plazas often host local musicians and artisans, providing a lively atmosphere, especially on weekends and holidays.</p>\n\n<p>Guatapé is more than just a colorful facade; it"s a destination that perfectly blends natural beauty, unique artistic expression, and a laid-back atmosphere, making it a must-visit for any traveler to Colombia.</p>`,
+        image: getAssetPath('/images/blog-guatape.png'),
+        author: 'Bukaro',
+        date: '2026-03-07',
+        tags: ['Guatape', 'Antioquia', 'Colorful Towns', 'Adventure', 'Culture']
     }
 ];
 
