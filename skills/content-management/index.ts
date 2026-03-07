@@ -120,25 +120,6 @@ export const blogPosts: BlogPost[] = [
         tags: ['Travel Tips', 'Weather', 'Festivals'],
     },
     {
-        id: '6',
-        title: 'Discovering the Amazon: The Ultimate Ecotourism Adventure',
-        slug: 'amazon-ecotourism-guide',
-        excerpt: 'Immerse yourself in the lungs of the world. A guide to Leticia, Puerto Nariño, and the Amazon river.',
-        content: `
-            <p>The Colombian Amazon offers one of the most accessible and safe ways to experience the world's largest rainforest.</p>
-            <h2>Leticia: The Gateway</h2>
-            <p>Start your journey in Leticia, where Colombia borders Brazil and Peru. It's a vibrant hub of culture and nature.</p>
-            <h2>Puerto Nariño</h2>
-            <p>Known as the "Green Crib of Colombia", this eco-friendly village has no cars and is a model for sustainable living.</p>
-            <h2>Wildlife</h2>
-            <p>Look out for pink river dolphins, sloths, monkeys, and thousands of bird species.</p>
-        `,
-        image: getAssetPath('/images/dept-amazonas.png'),
-        author: 'Mateo Silva',
-        date: '2026-02-15',
-        tags: ['Amazon', 'Wildlife', 'Ecotourism', 'Nature'],
-    },
-    {
         id: '7',
         title: 'Charming Colonial Towns You Can’t Miss',
         slug: 'colonial-towns-colombia',
@@ -210,7 +191,7 @@ export const blogPosts: BlogPost[] = [
             <p>The dry seasons from <strong>December to March</strong> and <strong>July to August</strong> are the peak periods for travel. These months offer the most stable conditions for Andean hiking and Caribbean beach activities.</p>
             <h2>2026 Major Cultural Events</h2>
             <ul>
-                <li><strong>Barranquilla Carnival (March 1-4):</strong> The world's second-largest folkloric celebration.</li>
+                <li><strong>Barranquilla Carnival (February 14-17):</strong> The world's second-largest folkloric celebration.</li>
                 <li><strong>Holy Week in Popayán (Mar 29 - Apr 5):</strong> Historic religious processions dating back to 1556.</li>
                 <li><strong>Medellín Flower Festival (August 1-10):</strong> A week-long celebration of Antioquian flower farming and culture.</li>
                 <li><strong>Salsa Festival in Cali (September 25-28):</strong> Witness the global salsa capital in its full glory.</li>
@@ -262,8 +243,8 @@ export const blogPosts: BlogPost[] = [
             <h2>Rafting and Kayaking in Wild Rivers</h2>
             <p>Colombia's powerful rivers are perfect for rafting and kayaking. The <strong>Magdalena River</strong>, the country's most important, offers exciting sections, while the <strong>Suárez River</strong> in Santander is known for its class IV and V rapids. For a calmer but equally beautiful experience, you can kayak on the <strong>La Miel River</strong> in Caldas.</p>
 
-            <h2>Caving in Santander and Boyacá</h2>
-            <p>Explore Colombia's underground world by entering its impressive caves. The Santander region, with caves like El Indio or La Vaca, and Boyacá, with the Nitro Cave, offer spectacular rock formations and challenges for all experience levels.</p>
+            <h2>Caving in Santander</h2>
+            <p>Explore Colombia's underground world by entering its impressive caves. The Santander region, with caves like El Indio, La Vaca, and the Nitro Cave in Zapatoca, offers spectacular rock formations and challenges for all experience levels.</p>
 
             <h2>Rock Climbing and Mountaineering</h2>
             <p>The Colombian Andes present innumerable opportunities for climbing. Places like <strong>Suesca</strong> (cerca de Bogotá) are famous for their rock walls and climbing schools. For mountaineers, the snow-capped peaks of <strong>Los Nevados National Natural Park</strong> or the <strong>Sierra Nevada del Cocuy</strong> offer unforgettable challenges and breathtaking landscapes.</p>
@@ -419,35 +400,6 @@ export const blogPosts: BlogPost[] = [
         tags: ['Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Nature']
     },
     {
-        id: '18',
-        title: 'Colombian Coffee Culture: A Journey from Bean to Cup',
-        slug: 'colombian-coffee-culture',
-        excerpt: 'Immerse yourself in the rich aroma and history of Colombian coffee, from the lush plantations to your morning cup.',
-        content: `
-            <p>Colombia is synonymous with coffee, and for good reason. More than just a beverage, coffee is deeply ingrained in the nation's identity, economy, and daily life. A journey through Colombia's coffee regions offers a sensory experience unlike any other, revealing the passion and tradition behind every bean.</p>
-
-            <h2>The Coffee Belt: A Landscape of Green Gold</h2>
-            <p>The ‘Eje Cafetero’ or Coffee Axis, encompassing regions like Quindío, Caldas, and Risaralda, is the heartland of Colombian coffee production. Here, verdant mountains are carpeted with coffee plants, interspersed with charming towns like Salento, Filandia, and Pijao. The unique microclimates and rich volcanic soil create the perfect conditions for growing high-quality Arabica beans.</p>
-
-            <h2>From Finca to Cup: The Coffee Process</h2>
-            <p>Visiting a coffee farm (finca) is an essential part of understanding Colombian coffee culture. On these tours, you’ll learn about:</p>
-            <ul>
-                <li><strong>Cultivation:</strong> How coffee plants are grown, cared for, and harvested by hand.</li>
-                <li><strong>Processing:</strong> The intricate steps of de-pulping, fermenting, washing, and sun-drying the beans.</li>
-                <li><strong>Roasting & Tasting:</strong> The transformation of green beans into aromatic roasted coffee, culminating in a tasting (catación) session to appreciate the nuanced flavors.</li>
-            </ul>
-
-            <h2>Beyond the Farm: Coffee in Daily Life</h2>
-            <p>Coffee is a central part of Colombian hospitality. A 'tinto' (black coffee) is offered at almost every social gathering and business meeting. From bustling city cafes serving specialized brews to roadside stands offering a quick pick-me-up, coffee is a constant companion.</p>
-
-            <p>Exploring Colombian coffee culture is a deep dive into the country's soul, offering delicious flavors, stunning landscapes, and heartwarming encounters with the people who dedicate their lives to this cherished crop.</p>
-        `,
-        image: getAssetPath('/images/blog-coffee-culture.png'),
-        author: 'Laura Martinez',
-        date: '2026-03-03',
-        tags: ['Coffee', 'Culture', 'Gastronomy', 'Travel Guide']
-    },
-    {
         id: '19',
         title: 'Discovering the Lost City: An Ancient Adventure in the Sierra Nevada',
         slug: 'discovering-ciudad-perdida-ancient-adventure',
@@ -473,34 +425,6 @@ export const blogPosts: BlogPost[] = [
         author: 'Laura Martinez',
         date: '2026-03-03',
         tags: ['Archaeology', 'Adventure', 'Hiking', 'Sierra Nevada', 'Indigenous Culture']
-    },
-    {
-        id: '20',
-
-        title: 'Hidden Gems of Colombia: Charming Towns Off the Beaten Path',
-        slug: 'hidden-gems-colombia-charming-towns',
-        excerpt: 'Beyond the bustling cities and popular beaches, Colombia hides a treasure trove of picturesque towns. Discover their vibrant culture, historical charm, and serene beauty.',
-        content: `
-            <p>While Bogotá, Medellín, and Cartagena captivate with their energy, Colombia's true charm often lies in its lesser-known, picturesque towns. These "Pueblos Patrimonio" (Heritage Towns) offer an authentic glimpse into the country's rich history, diverse culture, and stunning landscapes, far from the typical tourist trails.</p>
-
-            <h2>Jardín, Antioquia: The Green Heart of Coffee Country</h2>
-            <p>Nestled in the southwestern mountains of Antioquia, Jardín is a vibrant, well-preserved colonial town renowned for its colorful architecture, bustling main square, and surrounding coffee plantations. Life here revolves around the plaza, where locals gather to chat and sip coffee. Explore the cobblestone streets, visit the ornate Basílica Menor de la Inmaculada Concepción, or take a scenic cable car ride for panoramic views. It's also a birdwatcher's paradise, home to the vibrant Andean Cock-of-the-Rock.</p>
-
-            <h2>Barichara, Santander: The Most Beautiful Town in Colombia</h2>
-            <p>Often proclaimed as Colombia's most beautiful town, Barichara lives up to its reputation with its perfectly preserved colonial buildings, terracotta roofs, and quiet, stone-paved streets. This tranquil haven is ideal for leisurely strolls, art appreciation, and enjoying slow-paced village life. Don't miss the Camino Real, an ancient stone road leading to the nearby town of Guane, offering breathtaking views of the Suárez River Canyon.</p>
-
-            <h2>Mompox, Bolívar: A Town Frozen in Time</h2>
-            <p>A UNESCO World Heritage site, Santa Cruz de Mompox is a captivating colonial town situated on an island in the Magdalena River. Its isolation has helped preserve its unique architecture, traditions, and a serene atmosphere that feels like stepping back in time. Famous for its intricate filigree gold jewelry, Mompox is a magical place to explore by foot, visit its many churches, and soak in the slow rhythm of river life.</p>
-
-            <h2>Salento, Quindío: Gateway to Wax Palms and Coffee</h2>
-            <p>Though more popular than other "hidden gems," Salento retains an irresistible charm as the gateway to the Cocora Valley and the heart of the Coffee Cultural Landscape. Its brightly painted "bahareque" houses, lively craft shops, and exquisite coffee are a delight. Trek to the towering wax palms in Cocora Valley, tour a coffee finca, and enjoy the freshest brew imaginable.</p>
-
-            <p>Venturing beyond the major attractions to these hidden gems offers a deeper, more authentic travel experience in Colombia. Each town tells its own story, inviting visitors to slow down, explore, and connect with the heart and soul of this incredible country.</p>
-        `,
-        image: getAssetPath('/images/city_jardin.png'),
-        author: 'Isabella Rodriguez',
-        date: '2026-03-04',
-        tags: ['Charming Towns', 'Off the Beaten Path', 'Culture', 'History', 'Antioquia', 'Santander', 'Bolívar']
     },
     {
         id: '21',
@@ -532,30 +456,6 @@ export const blogPosts: BlogPost[] = [
         author: 'Daniela Soto',
         date: '2026-03-04',
         tags: ['Desert', 'Ecotourism', 'Stargazing', 'Adventure', 'Nature'],
-    },
-    {
-        id: '22',
-        title: 'Exploring the Coffee Triangle: A Sensory Journey',
-        slug: 'coffee-triangle-sensory-journey',
-        excerpt: 'Delve into the heart of Colombia\'s Coffee Triangle, where every sense is awakened by rich aromas, stunning landscapes, and vibrant traditions.',
-        content: `
-            <p>The Coffee Triangle (Eje Cafetero) is a UNESCO World Heritage Site that invites you to embark on a sensory journey unlike any other. This region, nestled in the foothills of the Andes, is renowned for its lush coffee plantations, picturesque towns, and the warm hospitality of its people.</p>
-            <h2>Aromatic Awakening</h2>
-            <p>Begin your journey by immersing yourself in the intoxicating aroma of freshly roasted coffee beans. Visit a traditional coffee farm (finca) and learn about the meticulous process of cultivating, harvesting, and processing the beans. Breathe in the rich, earthy scent as you walk through the green fields, and witness the traditional methods handed down through generations.</p>
-            <h2>Visual Feast</h2>
-            <p>Prepare for a visual feast as you explore the rolling hills and stunning landscapes of the Coffee Triangle. Quindío, Caldas, and Risaralda are dotted with charming towns boasting colorful architecture, vibrant plazas, and panoramic vistas. Wander through the streets of Salento, with its iconic wax palms framing the horizon, or marvel at the breathtaking views from the mountaintop town of Filandia.</p>
-            <h2>Tastes of Tradition</h2>
-            <p>Indulge in the authentic flavors of Colombian cuisine, sampling local specialties that complement the coffee experience. Savor the traditional bandeja paisa, a hearty platter of beans, rice, meat, and fried plantains, or treat yourself to a sweet arequipe (dulce de leche) made with locally sourced milk. And, of course, no visit to the Coffee Triangle is complete without savoring a cup of freshly brewed Colombian coffee, prepared with expertise and passion.</p>
-            <h2>Soundscapes of the Andes</h2>
-            <p>Listen to the sounds of the Colombian countryside as you immerse yourself in the local culture. Enjoy the lively rhythms of vallenato music, played on accordions and traditional instruments, and engage in conversations with the welcoming locals, eager to share their stories and traditions. Visit a traditional fair or festival to experience the true spirit of the Coffee Triangle.</p>
-            <h2>Embrace the Texture</h2>
-            <p>Feel the warmth of the sun on your skin as you hike through the verdant hills, and the smooth texture of a perfectly roasted coffee bean in your hand. Connect with the earth as you explore the coffee plantations and learn about the region\'s dedication to sustainable farming practices. The Coffee Triangle offers a tactile experience that will leave you feeling refreshed and revitalized.</p>
-            <p>Exploring the Coffee Triangle is an invitation to awaken your senses and discover the magic of Colombia\'s coffee culture. From the aromatic beans to the stunning landscapes and vibrant traditions, this journey will leave you with a lasting appreciation for this remarkable region and its people.</p>
-        `,
-        image: getAssetPath('/images/blog-coffee-sensory.png'),
-        author: 'Gabriel Rojas',
-        date: '2026-03-05',
-        tags: ['Coffee', 'Sensory Experience', 'Culture', 'Travel Guide']
     },
     {
         id: '1772727335200',
@@ -612,17 +512,6 @@ export const blogPosts: BlogPost[] = [
         tags: ['Architecture', 'Urban Design', 'Innovation', 'Culture', 'Cities']
     },
     {
-        id: '1772882784937',
-        title: `The Ultimate Guide to Colombian Coffee Festivals: A Cultural Journey`,
-        slug: 'colombian-coffee-festivals-cultural-journey',
-        excerpt: `Explore the vibrant coffee festivals across Colombia, where tradition meets celebration in honor of the nation's beloved brew.`,
-        content: `<p>Colombia's coffee festivals are more than just celebrations of a cherished beverage—they are vibrant expressions of national identity, cultural heritage, and community spirit. These festivals, held throughout the country, offer visitors an immersive experience into the heart of Colombian coffee culture, revealing the stories, traditions, and people behind every cup.</p><h2>Historical Roots</h2><p>Many of these festivals originated from ancient indigenous practices of coffee cultivation. Over time, they evolved into community celebrations that highlight the critical role of coffee in Colombia's economy and social fabric. The tradition of celebrating coffee harvests and processing dates back centuries and embodies the deep connection between the land and the people who tend it.</p><h2>Festival Highlights</h2><p><strong>Flower Festival (Feria de Flores), Medellín:</strong> Held annually in August, this is the most famous coffee-related festival in Colombia. Participants dress in elaborate costumes, representing their coffee-growing regions, and celebrate with colorful parades, traditional dances, and local delicacies. The festival also features competitions among coffee growers, showcasing the latest harvests.</p><p><strong>Coffee Days, Cali:</strong> Taking place in April, this festival brings together coffee enthusiasts, artisans, and producers to discuss sustainable practices, explore the future of coffee, and promote quality. It includes workshops, cupping sessions, and artisanal coffee exhibitions.</p><p><strong>Harvest Festival, Manizales:</strong> Celebrated in March, this community-driven festival focuses on the traditions and labor of coffee farmers. Guests enjoy workshops on coffee processing, cultural shows, and tastings of local products.</p><h2>What to Expect</h2><p>Attending a coffee festival in Colombia is a sensory journey. You can expect:</p><ul><li>Live musical performances by traditional Colombian bands</li><li>Cultural exhibitions showcasing indigenous practices</li><li>Handcrafted artisan goods, including coffee-related gifts and crafts</li><li>Local cuisine pairing with specialty coffee drinks</li><li>Workshops on coffee cultivation and processing techniques</li><li>Meet-and-greets with local coffee experts</li></ul><h2>Why Visit?</h2><p>Experience the true essence of Colombian hospitality and the passionate dedication of its coffee farmers. These festivals are a unique opportunity to understand the social and economic impact of coffee on Colombia, enjoy traditional culture, and taste the finest Colombian coffee in an unforgettable setting. Whether you are a coffee aficionado or a curious traveler, attending a coffee festival in Colombia is a rewarding experience that connects you to the country's history, people, and flavors.</p>`,
-        image: getAssetPath('/images/blog-festivals.png'),
-        author: 'Maria Gonzalez',
-        date: '2026-03-07',
-        tags: ['Coffee', 'Festivals', 'Culture', 'Travel Guide', 'Tradition']
-    },
-    {
         id: '1772885775837',
         title: `Exploring Colombia's Indigenous Heritage: A Journey Through Traditional Communities`,
         slug: 'colombian-indigenous-culture',
@@ -643,6 +532,17 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-07',
         tags: ['Travel Trends', '2026', 'Destinations', 'Colombia']
+    },
+    {
+        id: '1772901325492',
+        title: `Colombian Ecosystems: A Rich Tapestry of Biodiversity`,
+        slug: 'colombian-ecosystems-rich-diversity',
+        excerpt: `Discover the extraordinary biodiversity of Colombia's diverse ecosystems, from Amazon rainforests to Andean cloud forests.`,
+        content: `<p>Colombia, often hailed as one of the most biodiverse countries on Earth, harbors an astonishing array of ecosystems within its borders. This South American nation spans from the Caribbean Sea to the Pacific Ocean, encompassing a wide range of climatic zones and geographical features that support an unparalleled diversity of life.</p><h2>The Amazon Basin: A Living Laboratory</h2><p>Colombia contains a significant portion of the Amazon rainforest, and its Amazonian region covers a large share of the country's territory. The Amazon Basin within Colombia is home to thousands of species of insects, hundreds of bird species, and more than 200 species of mammals. The region's rivers, such as the Amazon and its tributaries, support an intricate web of aquatic life.</p><h2>Andean Cloud Forests: Fragile Jewel</h2><p>The high-altitude cloud forests of the Andes are among the most threatened ecosystems globally. These misty, elevated environments host endemic species found nowhere else on Earth, including the iconic spectacled bear, the golden frog, and a vast array of orchids.</p><h2>Coastal Ecosystems: Diversity Across Waters</h2><p>Colombia's dual coastline—Caribbean and Pacific—supports distinct marine ecosystems. The Caribbean coast features coral reefs, while the Pacific coast hosts mangrove forests and deep-sea environments. Both coasts are crucial habitats for marine giants like humpback whales, sea turtles, and various dolphin species.</p><h2>Chocó Biogeographic Region: The Most Biodiverse Area</h2><p>This region, located along the Pacific coast, is considered one of the most biodiverse terrestrial areas on the planet, with species richness comparable to the Amazon basin. It serves as a critical corridor for animal migration and plant dispersal, containing unique endemic species and colorful birds such as the resplendent quetzal, which still survives in the wild.</p><h2>Conservation Efforts: Protecting Colombia's Legacy</h2><p>Colombia has made significant strides in conservation through national parks, protected reserves, and indigenous territories. The establishment of the Chocó Biosphere Reserve, the Amazon rainforest conservation programs, and sustainable tourism practices aim to preserve its ecological heritage for future generations.</p>`,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Bukaro',
+        date: '2026-03-07',
+        tags: ['Nature', 'Biodiversity', 'Wildlife', 'Conservation', 'Colombia']
     }
 ];
 

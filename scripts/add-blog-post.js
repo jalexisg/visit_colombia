@@ -17,6 +17,12 @@ function addBlogPost(jsonStr) {
         process.exit(1);
     }
 
+    // Check for duplicate slug
+    if (content.includes(`slug: '${newPost.slug}'`)) {
+        console.error(`Post with slug "${newPost.slug}" already exists!`);
+        process.exit(1);
+    }
+
     // Format the post as a TypeScript object string
     const tagsStr = newPost.tags ? `[${newPost.tags.map(t => "'" + t.replace(/'/g, "\\'") + "'").join(', ')}]` : '[]';
 
