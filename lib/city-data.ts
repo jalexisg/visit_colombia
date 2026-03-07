@@ -1155,8 +1155,8 @@ export const cityImages: Record<string, string> = {
     'pital': '/images/cities/huila/pital.png',
     'el pital': '/images/cities/huila/pital.png',
     'saladoblanco': '/images/cities/huila/saladoblanco.png',
-    'santa maria': '/images/cities/huila/santa_maria.png',
-    'santa maría': '/images/cities/huila/santa_maria.png',
+    'huila-santa maria': '/images/cities/huila/santa_maria.png',
+    'huila-santa maría': '/images/cities/huila/santa_maria.png',
     'tarqui': '/images/cities/huila/tarqui.png',
     'tello': '/images/cities/huila/tello.png',
 
@@ -2221,8 +2221,8 @@ export const cityOverviews: Record<string, string> = {
     'pital': 'A historic town with a grand colonial church, surrounded by the fertile agricultural beauty of the central Huila region.',
     'el pital': 'A historic town with a grand colonial church, surrounded by the fertile agricultural beauty of the central Huila region.',
     'saladoblanco': 'Known as the "Jardín del Huila", it features exuberant nature, colorful exotic flowers, and pristine waterfalls.',
-    'santa maria': 'The gateway to the Nevado del Huila from the east, showcasing majestic paramos and volcanic mountain scenery.',
-    'santa maría': 'The gateway to the Nevado del Huila from the east, showcasing majestic paramos and volcanic mountain scenery.',
+    'huila-santa maria': 'The gateway to the Nevado del Huila from the east, showcasing majestic paramos and volcanic mountain scenery.',
+    'huila-santa maría': 'The gateway to the Nevado del Huila from the east, showcasing majestic paramos and volcanic mountain scenery.',
     'tarqui': 'Known as the "Ruiseñor del Huila", it is located in a poetic, fertile valley with beautiful river vistas and rural traditions.',
     'tello': 'A warm and welcoming town connecting the mountains with the Magdalena valley, famous for its fruit and cattle farming.',
 };
