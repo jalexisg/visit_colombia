@@ -1126,6 +1126,17 @@ export const cityImages: Record<string, string> = {
     'yaguara': '/images/cities/huila/yaguara.png',
     'yaguará': '/images/cities/huila/yaguara.png',
     'isnos': '/images/cities/huila/isnos.png',
+    'la plata': '/images/cities/huila/la_plata.png',
+    'timana': '/images/cities/huila/timana.png',
+    'timaná': '/images/cities/huila/timana.png',
+    'suaza': '/images/cities/huila/suaza.png',
+    'altamira': '/images/cities/huila/altamira.png',
+    'campoalegre': '/images/cities/huila/campoalegre.png',
+    'aipe': '/images/cities/huila/aipe.png',
+    'algeciras': '/images/cities/huila/algeciras.png',
+    'baraya': '/images/cities/huila/baraya.png',
+    'colombia': '/images/cities/huila/colombia.png',
+    'huila-colombia': '/images/cities/huila/colombia.png',
 
     // Guaviare
     'san josh del guaviare': '/images/cities/guaviare/san_jose_del_guaviare.png',
@@ -2159,6 +2170,17 @@ export const cityOverviews: Record<string, string> = {
     'yaguara': 'Famous for the vast Embalse de Betania, a paradise for water sports and fishing set amid rolling hills.',
     'yaguará': 'Famous for the vast Embalse de Betania, a paradise for water sports and fishing set amid rolling hills.',
     'isnos': 'Home to the Alto de los Ídolos Archaeological Park, featuring mysterious ancient statues carved from volcanic rock.',
+    'la plata': 'A historic Colombian town nestled in the western mountains of Huila, known for its colonial architecture and lush landscapes.',
+    'timana': 'One of Colombia’s oldest towns, known as the land of the legendary Cacica Gaitana, surrounded by coffee plantations.',
+    'timaná': 'One of Colombia’s oldest towns, known as the land of the legendary Cacica Gaitana, surrounded by coffee plantations.',
+    'suaza': 'A vibrant agricultural valley famous nationwide for its exquisite, handwoven "Sombreros de Suaza" and green hills.',
+    'altamira': 'A warm and welcoming town, celebrated across the country for producing the traditional and delicious "Achiras" biscuits.',
+    'campoalegre': 'Known as the "Rice Capital of Huila", featuring vast, beautiful emerald-green rice paddies extending to the horizon.',
+    'aipe': 'Located along the Magdalena River, this town is historically significant for its ancient indigenous petroglyphs and tropical forest.',
+    'algeciras': 'Considered the agricultural pantry of Huila, boasting wildly fertile valleys and hillsides terraced with diverse crops.',
+    'baraya': 'A serene, peaceful town in the foothills of the eastern cordillera, offering authentic rural life and beautiful agricultural vistas.',
+    'colombia': 'The northernmost municipality of Huila, a highly remote and pristine high-altitude Andean environment with dramatic paramos.',
+    'huila-colombia': 'The northernmost municipality of Huila, a highly remote and pristine high-altitude Andean environment with dramatic paramos.',
 };
 
 export function getCityOverview(cityName: string, defaultDescription?: string, departmentName?: string): string {
