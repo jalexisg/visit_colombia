@@ -1111,6 +1111,8 @@ export const cityImages: Record<string, string> = {
     'morichal': '/images/cities/guainia/morichal.png',
     'guainia-morichal': '/images/cities/guainia/morichal.png',
     'guainia-guadalupe': '/images/cities/guainia/guadalupe.png',
+    'la guadalupe': '/images/cities/guainia/guadalupe.png',
+    'guainia-la guadalupe': '/images/cities/guainia/guadalupe.png',
     // Huila
     'san agustin': '/images/cities/huila/san_agustin.png',
     'san agustín': '/images/cities/huila/san_agustin.png',
@@ -1121,6 +1123,9 @@ export const cityImages: Record<string, string> = {
     'garzón': '/images/cities/huila/garzon.png',
     'gigante': '/images/cities/huila/gigante.png',
     'paicol': '/images/cities/huila/paicol.png',
+    'yaguara': '/images/cities/huila/yaguara.png',
+    'yaguará': '/images/cities/huila/yaguara.png',
+    'isnos': '/images/cities/huila/isnos.png',
 
     // Guaviare
     'san josh del guaviare': '/images/cities/guaviare/san_jose_del_guaviare.png',
@@ -2131,6 +2136,8 @@ export const cityOverviews: Record<string, string> = {
     'morichal': 'Named after the moriche palms, this area features unique savanna-forest transition ecosystems and indigenous cultures.',
     'guainia-morichal': 'Named after the moriche palms, this area features unique savanna-forest transition ecosystems and indigenous cultures.',
     'guainia-guadalupe': 'The southernmost point of Guainía, a border town where Colombia, Brazil, and Venezuela meet at the iconic Piedra del Cocuy.',
+    'la guadalupe': 'The southernmost point of Guainía, a border town where Colombia, Brazil, and Venezuela meet at the iconic Piedra del Cocuy.',
+    'guainia-la guadalupe': 'The southernmost point of Guainía, a border town where Colombia, Brazil, and Venezuela meet at the iconic Piedra del Cocuy.',
 
     // Guaviare Overviews
     'san jose del guaviare': 'The capital of Guaviare, a gateway to the Amazon known for ancient rock paintings and the Guayabero River.',
@@ -2149,6 +2156,9 @@ export const cityOverviews: Record<string, string> = {
     'garzón': 'The Diocesan Capital of Huila, known for its majestic cathedral, religious heritage, and excellent coffee.',
     'gigante': 'Home to the legendary "Ceiba de la Libertad" and stunning panoramic viewpoints over the Magdalena valley.',
     'paicol': 'A picturesque town with beautiful colonial stone architecture and a vibrant central square set against green mountains.',
+    'yaguara': 'Famous for the vast Embalse de Betania, a paradise for water sports and fishing set amid rolling hills.',
+    'yaguará': 'Famous for the vast Embalse de Betania, a paradise for water sports and fishing set amid rolling hills.',
+    'isnos': 'Home to the Alto de los Ídolos Archaeological Park, featuring mysterious ancient statues carved from volcanic rock.',
 };
 
 export function getCityOverview(cityName: string, defaultDescription?: string, departmentName?: string): string {
