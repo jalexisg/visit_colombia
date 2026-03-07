@@ -1,18 +1,16 @@
 import { getCityImage, getCityOverview } from '../lib/city-data';
 
 const citiesToVerify = [
-    { name: 'Acevedo', dept: 'Huila' },
-    { name: 'Agrado', dept: 'Huila' },
-    { name: 'Elías', dept: 'Huila' },
-    { name: 'Huila-Guadalupe', dept: 'Huila' },
-    { name: 'Hobo', dept: 'Huila' },
-    { name: 'Íquira', dept: 'Huila' },
-    { name: 'La Argentina', dept: 'Huila' },
-    { name: 'Nátaga', dept: 'Huila' },
-    { name: 'Oporapa', dept: 'Huila' }
+    { name: 'Palermo', dept: 'Huila' },
+    { name: 'Palestina', dept: 'Huila' },
+    { name: 'El Pital', dept: 'Huila' },
+    { name: 'Saladoblanco', dept: 'Huila' },
+    { name: 'Santa María', dept: 'Huila' },
+    { name: 'Tarqui', dept: 'Huila' },
+    { name: 'Tello', dept: 'Huila' }
 ];
 
-console.log('--- Huila Batch 3 Full Verification ---');
+console.log('--- Huila Batch 4 Partial Verification ---');
 
 citiesToVerify.forEach(city => {
     const image = getCityImage(city.name, city.dept);
@@ -24,8 +22,6 @@ citiesToVerify.forEach(city => {
 
     if (image.includes('source.unsplash.com') || image.includes('placeholder')) {
         console.log('❌ FAILED: Unexpected image path (possible fallback used)');
-    } else if (city.name.toLowerCase().includes('guadalupe') && !image.includes('huila/guadalupe')) {
-        console.log('❌ FAILED: Incorrect image path for Guadalupe (likely conflict)');
     } else {
         console.log('✅ PASSED: Custom image mapping found');
     }
