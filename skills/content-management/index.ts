@@ -632,6 +632,17 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-07',
         tags: ['Indigenous Culture', 'Traditions', 'Ecotourism', 'Travel Guide', 'Heritage']
+    },
+    {
+        id: '1772888313338',
+        title: `Trending Travel Destinations in Colombia for 2026`,
+        slug: 'trending-travel-destinations-2026',
+        excerpt: `Discover the most sought-after travel spots in Colombia this year, from emerging hotspots to timeless favorites.`,
+        content: `<p>Colombia continues to evolve as a premier travel destination, blending rich culture, natural wonders, and thrilling adventures. Here are the top trending travel destinations shaping the 2026 travel landscape:</p><h2>Emerging Destinations</h2><p><strong>El Dorado Reserve:</strong> Known for its exceptional birdwatching opportunities, this reserve in the Sierra Nevada region is gaining traction among eco-tourists. Watch rare species like the Blue-bearded Helmetcrest hummingbird and endemic butterflies, while exploring pristine cloud forests and high-altitude páramos.</p><p><strong>La Macarena:</strong> The mystical “River of Five Colors” continues to draw travelers from across the globe. While Caño Cristales is the primary draw, the broader region is now recognized for its unique geological formations and diverse ecosystems.</p><p><strong>Tatacoa Desert:</strong> With its stark beauty and unmatched stargazing, the Tatacoa Desert is capturing imaginations of adventure seekers looking for offbeat experiences. Beyond its geological curiosities, it’s also known for its rich biodiversity in unexpected places.</p><h2>Timeless Favorites</h2><p><strong>Bogotá:</strong> As the pulsing heart of the nation, Bogotá has consistently been a favorite for its museums, art galleries, and vibrant nightlife. The city’s commitment to sustainable urban growth makes it a modern showcase of Colombian urban excellence.</p><p><strong>Cartagena:</strong> This UNESCO World Heritage site remains unchanged in its ability to enchant visitors with its romantic beaches, colonial architecture, and vibrant street life. The rise of cultural events and improved accessibility make it even more attractive.</p><p><strong>Medellín:</strong> A city transformed. Medellín is increasingly known for its innovative urban planning, public art installations, and its robust coffee culture. The city’s social urbanism projects have redefined how public spaces contribute to urban identity.</p><h2>What Makes These Places Special?</h2><p>What distinguishes these locations is a combination of natural beauty, cultural richness, and evolving tourism infrastructure. Colombia’s unique geography offers every type of environment, from snow-capped peaks to Caribbean beaches, ensuring a diverse mix of experiences for the modern traveler.</p>`,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Bukaro',
+        date: '2026-03-07',
+        tags: ['Travel Trends', '2026', 'Destinations', 'Colombia']
     }
 ];
 
