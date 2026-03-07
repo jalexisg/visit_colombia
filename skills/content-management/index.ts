@@ -612,6 +612,17 @@ export const blogPosts: BlogPost[] = [
         tags: ['Architecture', 'Urban Design', 'Innovation', 'Culture', 'Cities']
     },
     {
+        id: '1772882784937',
+        title: `The Ultimate Guide to Colombian Coffee Festivals: A Cultural Journey`,
+        slug: 'colombian-coffee-festivals-cultural-journey',
+        excerpt: `Explore the vibrant coffee festivals across Colombia, where tradition meets celebration in honor of the nation's beloved brew.`,
+        content: `<p>Colombia's coffee festivals are more than just celebrations of a cherished beverage—they are vibrant expressions of national identity, cultural heritage, and community spirit. These festivals, held throughout the country, offer visitors an immersive experience into the heart of Colombian coffee culture, revealing the stories, traditions, and people behind every cup.</p><h2>Historical Roots</h2><p>Many of these festivals originated from ancient indigenous practices of coffee cultivation. Over time, they evolved into community celebrations that highlight the critical role of coffee in Colombia's economy and social fabric. The tradition of celebrating coffee harvests and processing dates back centuries and embodies the deep connection between the land and the people who tend it.</p><h2>Festival Highlights</h2><p><strong>Flower Festival (Feria de Flores), Medellín:</strong> Held annually in August, this is the most famous coffee-related festival in Colombia. Participants dress in elaborate costumes, representing their coffee-growing regions, and celebrate with colorful parades, traditional dances, and local delicacies. The festival also features competitions among coffee growers, showcasing the latest harvests.</p><p><strong>Coffee Days, Cali:</strong> Taking place in April, this festival brings together coffee enthusiasts, artisans, and producers to discuss sustainable practices, explore the future of coffee, and promote quality. It includes workshops, cupping sessions, and artisanal coffee exhibitions.</p><p><strong>Harvest Festival, Manizales:</strong> Celebrated in March, this community-driven festival focuses on the traditions and labor of coffee farmers. Guests enjoy workshops on coffee processing, cultural shows, and tastings of local products.</p><h2>What to Expect</h2><p>Attending a coffee festival in Colombia is a sensory journey. You can expect:</p><ul><li>Live musical performances by traditional Colombian bands</li><li>Cultural exhibitions showcasing indigenous practices</li><li>Handcrafted artisan goods, including coffee-related gifts and crafts</li><li>Local cuisine pairing with specialty coffee drinks</li><li>Workshops on coffee cultivation and processing techniques</li><li>Meet-and-greets with local coffee experts</li></ul><h2>Why Visit?</h2><p>Experience the true essence of Colombian hospitality and the passionate dedication of its coffee farmers. These festivals are a unique opportunity to understand the social and economic impact of coffee on Colombia, enjoy traditional culture, and taste the finest Colombian coffee in an unforgettable setting. Whether you are a coffee aficionado or a curious traveler, attending a coffee festival in Colombia is a rewarding experience that connects you to the country's history, people, and flavors.</p>`,
+        image: getAssetPath('/images/blog-festivals.png'),
+        author: 'Maria Gonzalez',
+        date: '2026-03-07',
+        tags: ['Coffee', 'Festivals', 'Culture', 'Travel Guide', 'Tradition']
+    },
+    {
         id: '1772885775837',
         title: `Exploring Colombia's Indigenous Heritage: A Journey Through Traditional Communities`,
         slug: 'colombian-indigenous-culture',
@@ -621,6 +632,17 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-07',
         tags: ['Indigenous Culture', 'Traditions', 'Ecotourism', 'Travel Guide', 'Heritage']
+    },
+    {
+        id: '1772888365620',
+        title: `Trending Travel Destinations in Colombia for 2026`,
+        slug: 'trending-travel-destinations-colombia-2026',
+        excerpt: `Discover the emerging and timeless favorites that are set to top every traveler's list in 2026.`,
+        content: `<p>As we look forward to 2026, Colombia continues to evolve as a premier travel destination, blending its rich cultural heritage with innovative urban experiences and breathtaking natural wonders. Here are the top trending destinations you shouldn't miss.</p><h2>1. The "Green Metropolitan" - Medellín</h2><p>Medellín remains at the forefront of urban transformation. In 2026, the city is set to unveil new "green corridors" and sustainable transport initiatives that make it more walkable and eco-friendly than ever. Don't miss the burgeoning art scene in Comuna 13 and the world-class gastronomy in El Poblado.</p><h2>2. Remote Paradise - Bahía Solano</h2><p>For those seeking to disconnect, Bahía Solano on the Pacific coast is the place to be. With a focus on high-end ecotourism, visitors can enjoy whale watching, jungle treks, and pristine beaches with minimal environmental impact.</p><h2>3. Cultural Hub - Popayán</h2><p>Known as the "White City," Popayán is gaining international recognition for its culinary traditions and historic Holy Week processions. In 2026, it will host several international gastronomy festivals that highlight traditional flavors with a modern twist.</p><h2>4. Adventure Frontier - San José del Guaviare</h2><p>The gateway to the Chiribiquete National Park, San José del Guaviare offers ancient rock art and stunning geological formations. It's the ultimate destination for off-the-beaten-path explorers.</p><h2>Planning Your 2026 Trip</h2><p>Whether you're drawn to the vibrant cities or the serene countryside, 2026 is the perfect year to experience the diverse beauty of Colombia. Be sure to book community-led tours to support local heritage and sustainable practices.</p>`,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Bukaro',
+        date: '2026-03-07',
+        tags: ['Travel Trends', '2026', 'Destinations', 'Colombia']
     }
 ];
 

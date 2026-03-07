@@ -1,0 +1,63 @@
+From c116b598cf0f5ceaf4b199e55b65d42b92ffa3cc Mon Sep 17 00:00:00 2001
+From: "Bukaro (Alex's Content Agent)" <bukaro-agent@openclaw.ai>
+Date: Sat, 7 Mar 2026 12:58:47 +0000
+Subject: [PATCH 1/2] feat(blog): add trending travel destinations in 2026
+
+---
+ skills/content-management/index.ts | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+diff --git a/skills/content-management/index.ts b/skills/content-management/index.ts
+index 15a97af..9bf3228 100644
+--- a/skills/content-management/index.ts
++++ b/skills/content-management/index.ts
+@@ -632,6 +632,17 @@ export const blogPosts: BlogPost[] = [
+         author: 'Bukaro',
+         date: '2026-03-07',
+         tags: ['Indigenous Culture', 'Traditions', 'Ecotourism', 'Travel Guide', 'Heritage']
++    },
++    {
++        id: '1772888313338',
++        title: `Trending Travel Destinations in Colombia for 2026`,
++        slug: 'trending-travel-destinations-2026',
++        excerpt: `Discover the most sought-after travel spots in Colombia this year, from emerging hotspots to timeless favorites.`,
++        content: `<p>Colombia continues to evolve as a premier travel destination, blending rich culture, natural wonders, and thrilling adventures. Here are the top trending travel destinations shaping the 2026 travel landscape:</p><h2>Emerging Destinations</h2><p><strong>El Dorado Reserve:</strong> Known for its exceptional birdwatching opportunities, this reserve in the Sierra Nevada region is gaining traction among eco-tourists. Watch rare species like the Blue-bearded Helmetcrest hummingbird and endemic butterflies, while exploring pristine cloud forests and high-altitude páramos.</p><p><strong>La Macarena:</strong> The mystical “River of Five Colors” continues to draw travelers from across the globe. While Caño Cristales is the primary draw, the broader region is now recognized for its unique geological formations and diverse ecosystems.</p><p><strong>Tatacoa Desert:</strong> With its stark beauty and unmatched stargazing, the Tatacoa Desert is capturing imaginations of adventure seekers looking for offbeat experiences. Beyond its geological curiosities, it’s also known for its rich biodiversity in unexpected places.</p><h2>Timeless Favorites</h2><p><strong>Bogotá:</strong> As the pulsing heart of the nation, Bogotá has consistently been a favorite for its museums, art galleries, and vibrant nightlife. The city’s commitment to sustainable urban growth makes it a modern showcase of Colombian urban excellence.</p><p><strong>Cartagena:</strong> This UNESCO World Heritage site remains unchanged in its ability to enchant visitors with its romantic beaches, colonial architecture, and vibrant street life. The rise of cultural events and improved accessibility make it even more attractive.</p><p><strong>Medellín:</strong> A city transformed. Medellín is increasingly known for its innovative urban planning, public art installations, and its robust coffee culture. The city’s social urbanism projects have redefined how public spaces contribute to urban identity.</p><h2>What Makes These Places Special?</h2><p>What distinguishes these locations is a combination of natural beauty, cultural richness, and evolving tourism infrastructure. Colombia’s unique geography offers every type of environment, from snow-capped peaks to Caribbean beaches, ensuring a diverse mix of experiences for the modern traveler.</p>`,
++        image: getAssetPath('/images/blog-header.png'),
++        author: 'Bukaro',
++        date: '2026-03-07',
++        tags: ['Travel Trends', '2026', 'Destinations', 'Colombia']
+     }
+ ];
+ 
+
+From abecd713fd8dc3ef286d7b94ddbfb142b87d8654 Mon Sep 17 00:00:00 2001
+From: "Bukaro (Alex's Content Agent)" <bukaro-agent@openclaw.ai>
+Date: Sat, 7 Mar 2026 15:51:46 +0000
+Subject: [PATCH 2/2] feat(blog): The Hidden Beauty of Colombia's Pacific Coast
+
+---
+ skills/content-management/index.ts | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+diff --git a/skills/content-management/index.ts b/skills/content-management/index.ts
+index 79b3455..798e007 100644
+--- a/skills/content-management/index.ts
++++ b/skills/content-management/index.ts
+@@ -632,6 +632,17 @@ export const blogPosts: BlogPost[] = [
+         author: 'Bukaro',
+         date: '2026-03-07',
+         tags: ['Travel Trends', '2026', 'Destinations', 'Colombia']
++    },
++    {
++        id: '1772898696918',
++        title: `The Hidden Beauty of Colombia's Pacific Coast`,
++        slug: 'hidden-beauty-pacific-coast',
++        excerpt: `Discover the untouched natural wonders and rich biodiversity of Colombia's Pacific coast, a region where dense rainforest meets the ocean.`,
++        content: `<p>Colombia's Pacific coast is a realm of mesmerizing natural beauty, offering an experience vastly different from its Caribbean counterpart. This region, characterized by dense rainforest meeting the ocean, is a sanctuary for marine life and a cradle of Afro-Colombian culture.</p><h2>Humpback Whale Watching (July - October)</h2><p>One of the most spectacular natural events along the Pacific coast is the annual migration of humpback whales. From July to October, these magnificent creatures visit the warm waters of areas like Bahía Solano and Nuquí to calve and mate. Several tour operators offer guided boat trips for an up-close and unforgettable whale-watching experience.</p><h2>Biodiversity and Ecotourism</h2><p>The Chocó biogeographic region, which encompasses the Pacific coast, is one of the most biodiverse areas on the planet. Its lush rainforests are home to countless species of birds, monkeys, and amphibians. Ecotourism is a growing focus here, with opportunities for jungle treks, birdwatching, and exploring hidden waterfalls and hot springs.</p><h2>Afro-Colombian Culture and Gastronomy</h2><p>The Pacific coast is also the heartland of Afro-Colombian culture. Communities here have preserved their rich heritage through vibrant music, dance, and culinary traditions. Experience the powerful rhythms of 'currulao' music, taste delicious seafood dishes featuring fresh fish, plantains, and coconut milk, and immerse yourself in the warmth and hospitality of the local people.</p><h2>Untouched Beaches and Remote Villages</h2><p>Unlike the bustling Caribbean beaches, the Pacific coast offers vast, often deserted stretches of dark sand beaches, perfect for quiet contemplation and enjoying the raw power of the ocean. Explore charming, remote towns like Nuquí, Bahía Solano, and El Valle, where life moves at a slower pace and nature takes center stage.</p><p>A journey to Colombia's Pacific coast is an adventure into an untamed, culturally rich, and ecologically vital part of the world. It's an ideal destination for travelers seeking authentic experiences, unparalleled wildlife encounters, and a deep connection with nature.</p>`,
++        image: getAssetPath('/images/blog-pacific-coast.png'),
++        author: 'Bukaro',
++        date: '2026-03-07',
++        tags: ['Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Nature']
+     }
+ ];
+ 
