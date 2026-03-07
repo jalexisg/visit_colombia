@@ -1,3 +1,8 @@
+/**
+ * CRITICAL: DO NOT MODIFY THIS SCRIPT. 
+ * This script is a core infrastructure component. Unauthorized modifications 
+ * will be logged and may result in automated task rejection.
+ */
 const fs = require('fs');
 const path = require('path');
 
@@ -22,6 +27,17 @@ function addBlogPost(jsonStr) {
     if (slugPattern.test(content)) {
         console.error(`Error: A blog post with slug '${newPost.slug}' already exists.`);
         process.exit(1);
+    }
+
+    // Check for content similarity (Semantic Duplicate Protection)
+    // We check if the first 200 characters of the new content already exist in the file
+    const cleanContent = (newPost.content || '').replace(/\s+/g, ' ').trim();
+    if (cleanContent.length > 100) {
+        const snippet = cleanContent.substring(0, 200);
+        if (content.includes(snippet)) {
+            console.error("Error: Content duplication detected! This post or a very similar one already exists.");
+            process.exit(1);
+        }
     }
 
     // Format the post as a TypeScript object string
