@@ -512,37 +512,29 @@ export const blogPosts: BlogPost[] = [
         tags: ['Architecture', 'Urban Design', 'Innovation', 'Culture', 'Cities']
     },
     {
-        id: '1772885775837',
-        title: `Exploring Colombia's Indigenous Heritage: A Journey Through Traditional Communities`,
-        slug: 'colombian-indigenous-culture',
-        excerpt: `Discover the rich cultural traditions and ancestral wisdom of Colombia's indigenous communities.`,
-        content: `<p>Colombia is home to over 100 indigenous peoples, each with their own unique traditions, languages, and ways of life. These communities represent one of the country's most valuable cultural treasures, offering deep insights into sustainable living and ancestral wisdom.</p><h2>The Diversity of Indigenous Communities</h2><p>From the Amazon rainforest to the Andes Mountains and the Caribbean coast, Colombia's indigenous peoples have thrived in diverse ecosystems for thousands of years. The Wayuu of La Guajira, the Kogui of the Sierra Nevada, the Embera of Chocó, and the Yanomami of the Amazon are just a few examples of the rich tapestry of indigenous cultures.</p><h2>Traditional Practices and Knowledge</h2><p>Indigenous communities possess extensive knowledge of medicinal plants, sustainable agriculture, and ecological balance. Many communities practice agroforestry, maintaining forest gardens that provide food while conserving biodiversity. Their traditional crafts, such as the intricate textiles of the Embera or the weaving of the Wayuu, showcase exquisite artistic skills.</p><h2>Modern Challenges and Resilience</h2><p>Despite facing numerous challenges including territorial disputes, resource extraction pressures, and cultural assimilation attempts, indigenous communities continue to fight for their rights and preserve their heritage. Many have embraced modern technology while maintaining their core values.</p><h2>Experiences for Visitors</h2><p>Travelers interested in experiencing indigenous culture can participate in community-led tourism initiatives. These often include:</p><ul><li>Guided visits to traditional villages</li><li>Educational workshops on ancestral crafts</li><li>Organic farming experiences</li><li>Traditional medicine consultations</li><li>Community-supported eco-lodges</li></ul><p>These encounters provide authentic glimpses into daily life, traditional ceremonies, and sustainable practices that have sustained these communities for millennia.</p>`,
-        image: getAssetPath('/images/blog-tayrona.png'),
+        id: '1772904706305',
+        title: `Guatapé: The Most Colorful Town in Colombia`,
+        slug: 'guatape-colorful-pueblo',
+        excerpt: `Experience the vibrant charm of Guatapé, famous for its colorful "zócalos" and the breathtaking view from the top of the Rock of Guatapé.`,
+        content: `<p>Nestled in the rolling hills of Antioquia, just a few hours from Medellín, lies Guatapé, a town that seems to have jumped straight out of a painting. Known for its incredible use of color and its iconic monolithic rock, Guatapé is a highlight of any trip to Colombia.</p>
+
+<h2>The "Zócalos" of Guatapé</h2>
+<p>What makes Guatapé truly unique are the "zócalos" that adorn the lower half of almost every building. These carved and painted bas-reliefs depict everything from flowers and animals to scenes of daily life and historical events. Walking through the streets is like exploring an open-air gallery, with each building telling its own story through its vibrant and detailed decorations.</p>
+
+<h2>El Peñol: The Giant Rock</h2>
+<p>The town"s most famous landmark is "El Peñol" (The Rock of Guatapé), a massive 200-meter-high monolithic rock. For those willing to climb the 742 steps built into a crack on one side, the reward is one of the most breathtaking views in the world: a 360-degree panorama of the surrounding reservoir and its countless verdant islands.</p>
+
+<h2>The Reservoir: Adventure and Tranquility</h2>
+<p>The vast reservoir, formed by the construction of the Guatapé-El Peñol hydroelectric complex in the 1970s, offers a playground for water sports and recreational activities. You can enjoy boat rides, jet-skiing, kayaking, or simply relax by the water"s edge. The tranquil waters also hide the remnants of the old town of El Peñol, which was submerged to create the reservoir, adding a layer of history beneath the surface.</p>
+
+<h2>Local Culture and Gastronomy</h2>
+<p>Beyond its visual appeal, Guatapé offers a taste of authentic Colombian paisa culture. Sample traditional dishes like bandeja paisa, fresh trout from the reservoir, or a warm arepa with cheese. The town"s vibrant plazas often host local musicians and artisans, providing a lively atmosphere, especially on weekends and holidays.</p>
+
+<p>Guatapé is more than just a colorful facade; it"s a destination that perfectly blends natural beauty, unique artistic expression, and a laid-back atmosphere, making it a must-visit for any traveler to Colombia.</p>`,
+        image: getAssetPath('/images/blog-guatape.png'),
         author: 'Bukaro',
         date: '2026-03-07',
-        tags: ['Indigenous Culture', 'Traditions', 'Ecotourism', 'Travel Guide', 'Heritage']
-    },
-    {
-        id: '1772888365620',
-        title: `Trending Travel Destinations in Colombia for 2026`,
-        slug: 'trending-travel-destinations-colombia-2026',
-        excerpt: `Discover the emerging and timeless favorites that are set to top every traveler's list in 2026.`,
-        content: `<p>As we look forward to 2026, Colombia continues to evolve as a premier travel destination, blending its rich cultural heritage with innovative urban experiences and breathtaking natural wonders. Here are the top trending destinations you shouldn't miss.</p><h2>1. The "Green Metropolitan" - Medellín</h2><p>Medellín remains at the forefront of urban transformation. In 2026, the city is set to unveil new "green corridors" and sustainable transport initiatives that make it more walkable and eco-friendly than ever. Don't miss the burgeoning art scene in Comuna 13 and the world-class gastronomy in El Poblado.</p><h2>2. Remote Paradise - Bahía Solano</h2><p>For those seeking to disconnect, Bahía Solano on the Pacific coast is the place to be. With a focus on high-end ecotourism, visitors can enjoy whale watching, jungle treks, and pristine beaches with minimal environmental impact.</p><h2>3. Cultural Hub - Popayán</h2><p>Known as the "White City," Popayán is gaining international recognition for its culinary traditions and historic Holy Week processions. In 2026, it will host several international gastronomy festivals that highlight traditional flavors with a modern twist.</p><h2>4. Adventure Frontier - San José del Guaviare</h2><p>The gateway to the Chiribiquete National Park, San José del Guaviare offers ancient rock art and stunning geological formations. It's the ultimate destination for off-the-beaten-path explorers.</p><h2>Planning Your 2026 Trip</h2><p>Whether you're drawn to the vibrant cities or the serene countryside, 2026 is the perfect year to experience the diverse beauty of Colombia. Be sure to book community-led tours to support local heritage and sustainable practices.</p>`,
-        image: getAssetPath('/images/blog-header.png'),
-        author: 'Bukaro',
-        date: '2026-03-07',
-        tags: ['Travel Trends', '2026', 'Destinations', 'Colombia']
-    },
-    {
-        id: '1772901325492',
-        title: `Colombian Ecosystems: A Rich Tapestry of Biodiversity`,
-        slug: 'colombian-ecosystems-rich-diversity',
-        excerpt: `Discover the extraordinary biodiversity of Colombia's diverse ecosystems, from Amazon rainforests to Andean cloud forests.`,
-        content: `<p>Colombia, often hailed as one of the most biodiverse countries on Earth, harbors an astonishing array of ecosystems within its borders. This South American nation spans from the Caribbean Sea to the Pacific Ocean, encompassing a wide range of climatic zones and geographical features that support an unparalleled diversity of life.</p><h2>The Amazon Basin: A Living Laboratory</h2><p>Colombia contains a significant portion of the Amazon rainforest, and its Amazonian region covers a large share of the country's territory. The Amazon Basin within Colombia is home to thousands of species of insects, hundreds of bird species, and more than 200 species of mammals. The region's rivers, such as the Amazon and its tributaries, support an intricate web of aquatic life.</p><h2>Andean Cloud Forests: Fragile Jewel</h2><p>The high-altitude cloud forests of the Andes are among the most threatened ecosystems globally. These misty, elevated environments host endemic species found nowhere else on Earth, including the iconic spectacled bear, the golden frog, and a vast array of orchids.</p><h2>Coastal Ecosystems: Diversity Across Waters</h2><p>Colombia's dual coastline—Caribbean and Pacific—supports distinct marine ecosystems. The Caribbean coast features coral reefs, while the Pacific coast hosts mangrove forests and deep-sea environments. Both coasts are crucial habitats for marine giants like humpback whales, sea turtles, and various dolphin species.</p><h2>Chocó Biogeographic Region: The Most Biodiverse Area</h2><p>This region, located along the Pacific coast, is considered one of the most biodiverse terrestrial areas on the planet, with species richness comparable to the Amazon basin. It serves as a critical corridor for animal migration and plant dispersal, containing unique endemic species and colorful birds such as the resplendent quetzal, which still survives in the wild.</p><h2>Conservation Efforts: Protecting Colombia's Legacy</h2><p>Colombia has made significant strides in conservation through national parks, protected reserves, and indigenous territories. The establishment of the Chocó Biosphere Reserve, the Amazon rainforest conservation programs, and sustainable tourism practices aim to preserve its ecological heritage for future generations.</p>`,
-        image: getAssetPath('/images/blog-header.png'),
-        author: 'Bukaro',
-        date: '2026-03-07',
-        tags: ['Nature', 'Biodiversity', 'Wildlife', 'Conservation', 'Colombia']
+        tags: ['Guatape', 'Antioquia', 'Colorful Towns', 'Adventure', 'Culture']
     }
 ];
 
