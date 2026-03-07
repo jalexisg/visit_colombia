@@ -1137,6 +1137,9 @@ export const cityImages: Record<string, string> = {
     'baraya': '/images/cities/huila/baraya.png',
     'colombia': '/images/cities/huila/colombia.png',
     'huila-colombia': '/images/cities/huila/colombia.png',
+    'acevedo': '/images/cities/huila/acevedo.png',
+    'agrado': '/images/cities/huila/agrado.png',
+    'el agrado': '/images/cities/huila/agrado.png',
 
     // Guaviare
     'san josh del guaviare': '/images/cities/guaviare/san_jose_del_guaviare.png',
@@ -2181,6 +2184,9 @@ export const cityOverviews: Record<string, string> = {
     'baraya': 'A serene, peaceful town in the foothills of the eastern cordillera, offering authentic rural life and beautiful agricultural vistas.',
     'colombia': 'The northernmost municipality of Huila, a highly remote and pristine high-altitude Andean environment with dramatic paramos.',
     'huila-colombia': 'The northernmost municipality of Huila, a highly remote and pristine high-altitude Andean environment with dramatic paramos.',
+    'acevedo': 'The gateway to the majestic Cueva de los Guácharos National Natural Park, characterized by pristine Andean jungles and caves.',
+    'agrado': 'A peaceful town offering beautiful viewpoints over the Magdalena valley and a deeply rooted tradition of religious tourism.',
+    'el agrado': 'A peaceful town offering beautiful viewpoints over the Magdalena valley and a deeply rooted tradition of religious tourism.',
 };
 
 export function getCityOverview(cityName: string, defaultDescription?: string, departmentName?: string): string {
