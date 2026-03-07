@@ -1,0 +1,5 @@
+{
+  "_comment": "Deprecated/unreferenced post data. This file is kept only as a non-production fixture and can be safely removed or moved to a fixtures/scripts directory.",
+  "fixture": true,
+  "type": "unreferenced_post_data"
+}
