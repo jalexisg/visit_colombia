@@ -555,6 +555,34 @@ export const blogPosts: BlogPost[] = [
         date: '2026-03-07',
         tags: ['Culture', 'Andes', 'Heritage', 'Traditions', 'Travel Guide']
     }
+,
+    {
+        id: '22',
+        title: `Guatapé: Colombia's Most Colorful Town and the Majestic Piedra del Peñol`,
+        slug: 'guatape-colorful-town-piedra-penol',
+        excerpt: `Explore the vibrant zócalos of Guatapé and ascend the monolithic Piedra del Peñol for breathtaking panoramic views in this Colombian gem.`,
+        content: `
+            <p>Nestled in the department of Antioquia, about two hours east of Medellín, lies Guatapé, often hailed as Colombia's most colorful town. This charming pueblo is famous for its houses adorned with unique, brightly painted frescos known as 'zócalos', and for the colossal rock formation that looms beside it, the Piedra del Peñol.</p>
+
+            <h2>The Zócalos: A Living Art Gallery</h2>
+            <p>Every building in Guatapé tells a story through its zócalos – three-dimensional friezes that decorate the lower parts of the houses. Each zócalo depicts scenes from daily life, local fauna, flora, religious symbols, or abstract designs, making a stroll through the town an immersive experience in folk art. This tradition started as a way to distinguish homes and businesses and has evolved into an integral part of Guatapé's identity, attracting artists and tourists alike.</p>
+
+            <h2>Piedra del Peñol: The Giant of Guatapé</h2>
+            <p>Dominating the landscape is the monolithic Piedra del Peñol, a granite rock formation that rises 200 meters above the surrounding reservoir. Visitors can climb a staircase of over 700 steps built into a crack of the rock to reach its summit. The reward is a breathtaking 360-degree panoramic view of the intricate network of islands and waterways created by the hydroelectric dam, making it one of Colombia's most iconic viewpoints.</p>
+
+            <h2>The Reservoir: Adventure and Tranquility</h2>
+            <p>The vast reservoir, formed by the construction of the Guatapé-El Peñol hydroelectric complex in the 1970s, offers a playground for water sports and recreational activities. You can enjoy boat rides, jet-skiing, kayaking, or simply relax by the water's edge. The tranquil waters also hide the remnants of the old town of El Peñol, which was submerged to create the reservoir, adding a layer of history beneath the surface.</p>
+
+            <h2>Local Culture and Gastronomy</h2>
+            <p>Beyond its visual appeal, Guatapé offers a taste of authentic Colombian paisa culture. Sample traditional dishes like bandeja paisa, fresh trout from the reservoir, or a warm arepa with cheese. The town's vibrant plazas often host local musicians and artisans, providing a lively atmosphere, especially on weekends and holidays.</p>
+
+            <p>Guatapé is more than just a colorful facade; it's a destination that perfectly blends natural beauty, unique artistic expression, and a laid-back atmosphere, making it a must-visit for any traveler to Colombia.</p>
+        `,
+        image: getAssetPath('/images/blog-guatape.png'),
+        author: 'Bukaro',
+        date: '2026-03-07',
+        tags: ['Guatape', 'Antioquia', 'Colorful Towns', 'Adventure', 'Culture']
+    }
 ];
 
 export function getBlogPosts(): Promise<BlogPost[]> {
