@@ -554,6 +554,43 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-07',
         tags: ['Guatape', 'Antioquia', 'Colorful Towns', 'Adventure', 'Culture']
+    },
+    {
+        id: '1772905948351',
+        title: `Hidden Festivals of Colombia: Celebrating Regional Traditions`,
+        slug: 'hidden-festivals-colombia-regional-traditions',
+        excerpt: `Discover Colombia's lesser-known cultural celebrations, from the Bambuco Festival in Neiva to the Devil's Carnival in Riosucio.`,
+        content: `<p>While Colombia's most famous festivals like the Barranquilla Carnival draw international attention, the country's rich cultural tapestry includes numerous lesser-known celebrations that offer authentic glimpses into regional traditions and local life.</p>
+
+<h2>Festival del Bambuco in Neiva</h2>
+<p>Every June, the city of Neiva comes alive with the Festival del Bambuco, a celebration of the region's folklore and traditional music. The festival showcases the bambuco dance, a graceful courtship dance that embodies the spirit of the Andean region. Participants in traditional dress perform intricate choreographies, while musical groups compete in instrumental and vocal categories.</p>
+
+<h2>Carnaval del Diablo in Riosucio</h2>
+<p>Every two years, the small town of Riosucio, Caldas, hosts one of Colombia's most unique celebrations: the Devil's Carnival. Despite its name, this is not a dark celebration but rather a joyous festival where the devil represents fun and social criticism. The carnival features poetry contests, traditional music, and elaborate masquerades that blend indigenous, African, and European traditions.</p>
+
+<h2>Festival de la Leyenda Vallenata in Valledupar</h2>
+<p>While better known than our other examples, this festival deserves mention for its cultural significance. It celebrates vallenato music in its purest form, featuring competitions in traditional categories: accordion, caja (drum), and guacharaca. The festival honors the legend of Francisco El Hombre, who according to folklore, defeated the devil in a musical duel.</p>
+
+<h2>Torneo Internacional del Joropo</h2>
+<p>In Villavicencio, the Joropo Tournament celebrates the music and dance of the Colombian plains (llanos). Dancers compete in various categories, demonstrating their mastery of this energetic dance that mimics the movements of plains cowboys (llaneros) and their horses.</p>
+
+<h2>Festival Nacional del Porro in San Pelayo</h2>
+<p>This festival in Córdoba celebrates porro music, a traditional genre featuring brass bands. The celebration includes band competitions, street parades, and dancing exhibitions, showcasing a musical tradition that blends European brass band music with Caribbean and African rhythms.</p>
+
+<h2>Planning Your Visit</h2>
+<p>These festivals offer unique opportunities to experience Colombian culture beyond the typical tourist circuit. Here are some tips for attending:</p>
+<ul>
+    <li>Book accommodations well in advance, as small towns can fill up quickly during festivals</li>
+    <li>Research specific dates, as some festivals follow lunar or religious calendars</li>
+    <li>Bring appropriate clothing for both daytime heat and evening coolness</li>
+    <li>Learn basic dance steps beforehand to participate fully in the celebrations</li>
+</ul>
+
+<p>Each of these festivals represents a unique facet of Colombia's cultural heritage, offering visitors authentic experiences and insights into local traditions that have been preserved for generations.</p>`,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Bukaro',
+        date: '2026-03-07',
+        tags: ['Festivals', 'Culture', 'Music', 'Dance', 'Traditions']
     }
 ];
 
