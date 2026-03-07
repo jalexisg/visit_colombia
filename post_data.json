@@ -1,10 +1,11 @@
 {
-  "title": "Exploring Colombia's Indigenous Heritage: A Journey Through Traditional Communities",
-  "slug": "colombian-indigenous-culture",
-  "excerpt": "Discover the rich cultural traditions and ancestral wisdom of Colombia's indigenous communities.",
-  "content": "<p>Colombia is home to over 100 indigenous peoples, each with their own unique traditions, languages, and ways of life. These communities represent one of the country's most valuable cultural treasures, offering deep insights into sustainable living and ancestral wisdom.</p><h2>The Diversity of Indigenous Communities</h2><p>From the Amazon rainforest to the Andes Mountains and the Caribbean coast, Colombia's indigenous peoples have thrived in diverse ecosystems for thousands of years. The Wayuu of La Guajira, the Kogui of the Sierra Nevada, the Embera of Chocó, and the Yanomami of the Amazon are just a few examples of the rich tapestry of indigenous cultures.</p><h2>Traditional Practices and Knowledge</h2><p>Indigenous communities possess extensive knowledge of medicinal plants, sustainable agriculture, and ecological balance. Many communities practice agroforestry, maintaining forest gardens that provide food while conserving biodiversity. Their traditional crafts, such as the intricate textiles of the Embera or the weaving of the Wayuu, showcase exquisite artistic skills.</p><h2>Modern Challenges and Resilience</h2><p>Despite facing numerous challenges including territorial disputes, resource extraction pressures, and cultural assimilation attempts, indigenous communities continue to fight for their rights and preserve their heritage. Many have embraced modern technology while maintaining their core values.</p><h2>Experiences for Visitors</h2><p>Travelers interested in experiencing indigenous culture can participate in community-led tourism initiatives. These often include:</p><ul><li>Guided visits to traditional villages</li><li>Educational workshops on ancestral crafts</li><li>Organic farming experiences</li><li>Traditional medicine consultations</li><li>Community-supported eco-lodges</li></ul><p>These encounters provide authentic glimpses into daily life, traditional ceremonies, and sustainable practices that have sustained these communities for millennia.</p>",
-  "image": "/images/default.png",
-  "author": "Bukaro",
-  "date": "2026-03-07",
-  "tags": ["Indigenous Culture", "Traditions", "Ecotourism", "Travel Guide", "Heritage"]
+  "__note": "Example blog post payload for scripts/documentation only. This file is not referenced by the application at runtime.",
+  "title": "Example Post Title",
+  "slug": "example-post-slug",
+  "excerpt": "A short summary of the example blog post, demonstrating the expected JSON shape.",
+  "content": "<p>This is example content used to illustrate the expected HTML body for a blog post. Replace this with real content when using it as input for tools or scripts.</p>",
+  "image": "/images/example-post.png",
+  "author": "Example Author",
+  "date": "2024-01-01",
+  "tags": ["example", "documentation"]
 }
