@@ -520,7 +520,7 @@ export const blogPosts: BlogPost[] = [
 
         content: `<p>As we look forward to 2026, Colombia continues to evolve as a premier travel destination, blending its rich cultural heritage with innovative urban experiences and breathtaking natural wonders. Here are the top trending destinations you shouldn't miss.</p><h2>1. The "Green Metropolitan" - Medellín</h2><p>Medellín remains at the forefront of urban transformation. In 2026, the city is set to unveil new "green corridors" and sustainable transport initiatives that make it more walkable and eco-friendly than ever. Don't miss the burgeoning art scene in Comuna 13 and the world-class gastronomy in El Poblado.</p><h2>2. Remote Paradise - Bahía Solano</h2><p>For those seeking to disconnect, Bahía Solano on the Pacific coast is the place to be. With a focus on high-end ecotourism, visitors can enjoy whale watching, jungle treks, and pristine beaches with minimal environmental impact.</p><h2>3. Cultural Hub - Popayán</h2><p>Known as the "White City," Popayán is gaining international recognition for its culinary traditions and historic Holy Week processions. In 2026, it will host several international gastronomy festivals that highlight traditional flavors with a modern twist.</p><h2>4. Adventure Frontier - San José del Guaviare</h2><p>The gateway to the Chiribiquete National Park, San José del Guaviare offers ancient rock art and stunning geological formations. It's the ultimate destination for off-the-beaten-path explorers.</p><h2>Planning Your 2026 Trip</h2><p>Whether you're drawn to the vibrant cities or the serene countryside, 2026 is the perfect year to experience the diverse beauty of Colombia. Be sure to book community-led tours to support local heritage and sustainable practices.</p>`,
         image: getAssetPath('/images/blog-trending-2026.png'),
-        author: 'Bukaro',
+        author: 'Adriana Silva',
         date: '2026-03-07',
         tags: ['Travel Trends', '2026', 'Destinations', 'Colombia']
     },
@@ -531,7 +531,7 @@ export const blogPosts: BlogPost[] = [
         excerpt: `Discover the extraordinary biodiversity of Colombia's diverse ecosystems, from Amazon rainforests to Andean cloud forests.`,
         content: `<p>Colombia, often hailed as one of the most biodiverse countries on Earth, harbors an astonishing array of ecosystems within its borders. This South American nation spans from the Caribbean Sea to the Pacific Ocean, encompassing a wide range of climatic zones and geographical features that support an unparalleled diversity of life.</p><h2>The Amazon Basin: A Living Laboratory</h2><p>Colombia contains a significant portion of the Amazon rainforest, and its Amazonian region covers a large share of the country's territory. The Amazon Basin within Colombia is home to thousands of species of insects, hundreds of bird species, and more than 200 species of mammals. The region's rivers, such as the Amazon and its tributaries, support an intricate web of aquatic life.</p><h2>Andean Cloud Forests: Fragile Jewel</h2><p>The high-altitude cloud forests of the Andes are among the most threatened ecosystems globally. These misty, elevated environments host endemic species found nowhere else on Earth, including the iconic spectacled bear, the golden frog, and a vast array of orchids.</p><h2>Coastal Ecosystems: Diversity Across Waters</h2><p>Colombia's dual coastline—Caribbean and Pacific—supports distinct marine ecosystems. The Caribbean coast features coral reefs, while the Pacific coast hosts mangrove forests and deep-sea environments. Both coasts are crucial habitats for marine giants like humpback whales, sea turtles, and various dolphin species.</p><h2>Chocó Biogeographic Region: The Most Biodiverse Area</h2><p>This region, located along the Pacific coast, is considered one of the most biodiverse terrestrial areas on the planet, with species richness comparable to the Amazon basin. It serves as a critical corridor for animal migration and plant dispersal, containing unique endemic species and colorful birds such as the resplendent quetzal, which still survives in the wild.</p><h2>Conservation Efforts: Protecting Colombia's Legacy</h2><p>Colombia has made significant strides in conservation through national parks, protected reserves, and indigenous territories. The establishment of the Chocó Biosphere Reserve, the Amazon rainforest conservation programs, and sustainable tourism practices aim to preserve its ecological heritage for future generations.</p>`,
         image: getAssetPath('/images/blog-ecosystems.png'),
-        author: 'Bukaro',
+        author: 'Mateo Jiménez',
         date: '2026-03-07',
         tags: ['Nature', 'Biodiversity', 'Wildlife', 'Conservation', 'Colombia']
     },
@@ -556,7 +556,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Guatapé is more than just a colorful facade; it's a destination that perfectly blends natural beauty, unique artistic expression, and a laid-back atmosphere, making it a must-visit for any traveler to Colombia.</p>`,
         image: getAssetPath('/images/blog-guatape.png'),
-        author: 'Bukaro',
+        author: 'Lucía Fernández',
         date: '2026-03-07',
         tags: ['Guatape', 'Antioquia', 'Colorful Towns', 'Adventure', 'Culture']
     },
@@ -607,7 +607,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>This cultural diversity is not just a tourist attraction; it is the very essence of Colombia, a country that celebrates its differences and finds in them its greatest strength. Each cultural manifestation is a thread in the social fabric that makes Colombia a unique and fascinating destination.</p>`,
         image: getAssetPath('/images/blog-indigenous-heritage.png'),
-        author: 'Bukaro',
+        author: 'Javier Córdoba',
         date: '2026-03-08',
         tags: ['Culture', 'Traditions', 'Music', 'Gastronomy', 'Indigenous', 'Colombia'],
     },
@@ -635,7 +635,7 @@ export const blogPosts: BlogPost[] = [
             <p>Security has improved significantly, allowing visitors to enjoy the city's pulse with peace of mind. As always, it is recommended to use reliable transportation platforms and maintain general situational awareness. Whether you're here for the urban innovation or the salsa beats, Medellín in 2026 is a city that dreams and constantly redefines itself.</p>
         `,
         image: getAssetPath('/images/blog-festivals.png'),
-        author: 'Bukaro',
+        author: 'Carolina Duque',
         date: '2026-03-08',
         tags: ['Medellín', 'Urbanism', 'Sustainability', 'Nightlife', 'Culture', '2026'],
     },
@@ -662,7 +662,7 @@ export const blogPosts: BlogPost[] = [
             <p>Reaching Nuquí typically involves a short flight from Medellín or Quibdó, followed by a boat transfer. This effort is richly rewarded by an experience that feels truly off the grid, providing a unique insight into Colombia’s wild Pacific soul.</p>
         `,
         image: getAssetPath('/images/blog-nuqui.png'),
-        author: 'Bukaro',
+        author: 'Ricardo Mesa',
         date: '2026-03-08',
         tags: ['Nuquí', 'Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Adventure']
     }
