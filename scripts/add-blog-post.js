@@ -34,7 +34,7 @@ function addBlogPost(jsonStr) {
         excerpt: \`${(newPost.excerpt || '').replace(/`/g, "\\`")}\`,
         content: \`${(newPost.content || '').replace(/`/g, "\\`")}\`,
         image: getAssetPath('${newPost.image || '/images/blog-header.png'}'),
-        author: '${newPost.author || 'Bukaro'}',
+        author: '${newPost.author || 'Visit Colombia Team'}',
         date: '${newPost.date || new Date().toISOString().split('T')[0]}',
         tags: ${tagsStr}
     }`;
