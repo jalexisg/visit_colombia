@@ -400,7 +400,7 @@ export const blogPosts: BlogPost[] = [
         tags: ['Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Nature']
     },
     {
-        id: '19',
+        id: '18',
         title: 'Discovering the Lost City: An Ancient Adventure in the Sierra Nevada',
         slug: 'discovering-ciudad-perdida-ancient-adventure',
         excerpt: 'Embark on an archaeological trek to Teyuna, the Lost City, nestled deep within the Sierra Nevada de Santa Marta. A journey through ancient history and breathtaking nature.',
@@ -427,7 +427,7 @@ export const blogPosts: BlogPost[] = [
         tags: ['Archaeology', 'Adventure', 'Hiking', 'Sierra Nevada', 'Indigenous Culture']
     },
     {
-        id: '21',
+        id: '19',
         title: `Hidden Gems: Exploring the Tatacoa Desert – Colombia's Martian Landscape`,
         slug: 'hidden-gems-tatacoa-desert',
         excerpt: `Discover Colombia's unique Tatacoa Desert, a surreal landscape perfect for adventure and stargazing, far from the typical tourist trails.`,
@@ -458,7 +458,7 @@ export const blogPosts: BlogPost[] = [
         tags: ['Desert', 'Ecotourism', 'Stargazing', 'Adventure', 'Nature'],
     },
     {
-        id: '1772727335200',
+        id: '20',
         title: `Sierra Nevada de Santa Marta: A World of Ecosystems in One Mountain`,
         slug: 'sierra-nevada-ecosystems-biodiversity',
         excerpt: `Explore the incredible biodiversity of the Sierra Nevada de Santa Marta, where tropical beaches meet snow-capped peaks in the world's highest coastal mountain range.`,
@@ -472,7 +472,7 @@ export const blogPosts: BlogPost[] = [
         tags: ['Nature', 'Biodiversity', 'Mountains', 'Ecotourism', 'Wildlife']
     },
     {
-        id: '1772813132073',
+        id: '21',
         title: `Modern Architecture in Colombia: A Blend of Innovation and Tradition`,
         slug: 'modern-architecture-colombia',
         excerpt: `From Medellín's social urbanism to Bogotá's avant-garde buildings, discover how Colombian architecture is reshaping cities while honoring cultural heritage.`,
@@ -513,7 +513,7 @@ export const blogPosts: BlogPost[] = [
     },
 
     {
-        id: '1772888365620',
+        id: '22',
         title: `Trending Travel Destinations in Colombia for 2026`,
         slug: 'trending-travel-destinations-colombia-2026',
         excerpt: `Discover the emerging and timeless favorites that are set to top every traveler's list in 2026.`,
@@ -525,7 +525,7 @@ export const blogPosts: BlogPost[] = [
         tags: ['Travel Trends', '2026', 'Destinations', 'Colombia']
     },
     {
-        id: '1772901325492',
+        id: '23',
         title: `Colombian Ecosystems: A Rich Tapestry of Biodiversity`,
         slug: 'colombian-ecosystems-rich-diversity',
         excerpt: `Discover the extraordinary biodiversity of Colombia's diverse ecosystems, from Amazon rainforests to Andean cloud forests.`,
@@ -536,7 +536,7 @@ export const blogPosts: BlogPost[] = [
         tags: ['Nature', 'Biodiversity', 'Wildlife', 'Conservation', 'Colombia']
     },
     {
-        id: '1772905026408',
+        id: '24',
         title: `Guatapé: The Most Colorful Town in Colombia`,
         slug: 'guatape-colorful-pueblo',
         excerpt: `Experience the vibrant charm of Guatapé, famous for its colorful "zócalos" and the breathtaking view from the top of the Rock of Guatapé.`,
@@ -695,6 +695,37 @@ export const blogPosts: BlogPost[] = [
         tags: ['Handicrafts', 'Art', 'Culture', 'Ráquira', 'Boyacá', 'Pottery'],
     }
 
+,
+    {
+        id: '23',
+        title: "Colombia's Unique Wildlife: A Journey Through Biodiversity",
+        slug: 'colombias-unique-wildlife-biodiversity',
+        excerpt: 'Explore the astonishing array of wildlife in Colombia, a megadiverse country home to countless species, from the Amazon to the Andes.',
+        content: `
+            <p>Colombia is a megadiverse country, boasting an incredible variety of ecosystems and an astonishing abundance of wildlife. Ranked among the top countries for biodiversity, it's a paradise for nature lovers and wildlife enthusiasts.</p>
+
+            <h2>Birds: A Birder's Paradise</h2>
+            <p>With over 1,900 species, Colombia is the country with the most bird species in the world. From the Andean condor majestically soaring above the mountains to the vibrant hummingbirds flitting through cloud forests, birdwatching opportunities are endless. Famous spots include the Sierra Nevada de Santa Marta and the Amazon.</p>
+
+            <h2>Mammals: From Jaguars to Monkeys</h2>
+            <p>Colombia's diverse landscapes host a wide range of mammals. The Amazon and Pacific regions are home to elusive jaguars and pumas, while various species of monkeys swing through the canopy. Tapirs, sloths, and anteaters can also be found in different habitats across the country.</p>
+
+            <h2>Amphibians: A World of Frogs</h2>
+            <p>The country is particularly renowned for its amphibian diversity, especially frogs. The colorful poison dart frogs are a striking example, found in the Chocó region and other rainforests. Their vibrant hues often serve as a warning to predators.</p>
+
+            <h2>Marine Life: Whales and Dolphins</h2>
+            <p>Both the Caribbean and Pacific coasts offer spectacular marine life. Humpback whales migrate to the Pacific waters between July and October to breed and calve, offering incredible whale-watching experiences. Pink river dolphins grace the waters of the Amazon, a unique and enchanting sight.</p>
+
+            <h2>Conservation Efforts</h2>
+            <p>Numerous national parks and protected areas are dedicated to preserving Colombia's precious wildlife. Efforts are ongoing to protect endangered species and their habitats, ensuring that future generations can continue to marvel at this natural heritage.</p>
+
+            <p>A journey through Colombia is a journey through nature's masterpiece, a chance to witness life in its most vibrant and diverse forms.</p>
+        `,
+        image: getAssetPath('/images/blog-ecosystems.png'),
+        author: 'Nature Explorer',
+        date: '2026-03-08',
+        tags: ['Wildlife', 'Biodiversity', 'Nature', 'Ecotourism', 'Colombia'],
+    }
 ];
 
 export function getBlogPosts(): Promise<BlogPost[]> {
