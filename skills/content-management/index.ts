@@ -526,17 +526,6 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '23',
-        title: `Colombian Ecosystems: A Rich Tapestry of Biodiversity`,
-        slug: 'colombian-ecosystems-rich-diversity',
-        excerpt: `Discover the extraordinary biodiversity of Colombia's diverse ecosystems, from Amazon rainforests to Andean cloud forests.`,
-        content: `<p>Colombia, often hailed as one of the most biodiverse countries on Earth, harbors an astonishing array of ecosystems within its borders. This South American nation spans from the Caribbean Sea to the Pacific Ocean, encompassing a wide range of climatic zones and geographical features that support an unparalleled diversity of life.</p><h2>The Amazon Basin: A Living Laboratory</h2><p>Colombia contains a significant portion of the Amazon rainforest, and its Amazonian region covers a large share of the country's territory. The Amazon Basin within Colombia is home to thousands of species of insects, hundreds of bird species, and more than 200 species of mammals. The region's rivers, such as the Amazon and its tributaries, support an intricate web of aquatic life.</p><h2>Andean Cloud Forests: Fragile Jewel</h2><p>The high-altitude cloud forests of the Andes are among the most threatened ecosystems globally. These misty, elevated environments host endemic species found nowhere else on Earth, including the iconic spectacled bear, the golden frog, and a vast array of orchids.</p><h2>Coastal Ecosystems: Diversity Across Waters</h2><p>Colombia's dual coastline—Caribbean and Pacific—supports distinct marine ecosystems. The Caribbean coast features coral reefs, while the Pacific coast hosts mangrove forests and deep-sea environments. Both coasts are crucial habitats for marine giants like humpback whales, sea turtles, and various dolphin species.</p><h2>Chocó Biogeographic Region: The Most Biodiverse Area</h2><p>This region, located along the Pacific coast, is considered one of the most biodiverse terrestrial areas on the planet, with species richness comparable to the Amazon basin. It serves as a critical corridor for animal migration and plant dispersal, containing unique endemic species and colorful birds such as the resplendent quetzal, which still survives in the wild.</p><h2>Conservation Efforts: Protecting Colombia's Legacy</h2><p>Colombia has made significant strides in conservation through national parks, protected reserves, and indigenous territories. The establishment of the Chocó Biosphere Reserve, the Amazon rainforest conservation programs, and sustainable tourism practices aim to preserve its ecological heritage for future generations.</p>`,
-        image: getAssetPath('/images/blog-ecosystems.png'),
-        author: 'Mateo Jiménez',
-        date: '2026-03-07',
-        tags: ['Nature', 'Biodiversity', 'Wildlife', 'Conservation', 'Colombia']
-    },
-    {
-        id: '24',
         title: `Guatapé: The Most Colorful Town in Colombia`,
         slug: 'guatape-colorful-pueblo',
         excerpt: `Experience the vibrant charm of Guatapé, famous for its colorful "zócalos" and the breathtaking view from the top of the Rock of Guatapé.`,
@@ -561,7 +550,7 @@ export const blogPosts: BlogPost[] = [
         tags: ['Guatape', 'Antioquia', 'Colorful Towns', 'Adventure', 'Culture']
     },
     {
-        id: '1772922020301',
+        id: '24',
         title: "Colombia's Richness: A Journey Through Its Cultural Diversity",
         slug: 'colombias-richness-cultural-diversity',
         excerpt: `Explore Colombia's vibrant cultural mosaic, from ancestral rhythms to the traditions that bring each of its regions to life.`,
@@ -606,13 +595,13 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <p>This cultural diversity is not just a tourist attraction; it is the very essence of Colombia, a country that celebrates its differences and finds in them its greatest strength. Each cultural manifestation is a thread in the social fabric that makes Colombia a unique and fascinating destination.</p>`,
-        image: getAssetPath('/images/blog-indigenous-heritage.png'),
+        image: getAssetPath('/images/blog-cultural-diversity.png'),
         author: 'Javier Córdoba',
         date: '2026-03-08',
         tags: ['Culture', 'Traditions', 'Music', 'Gastronomy', 'Indigenous', 'Colombia'],
     },
     {
-        id: '1772925600000',
+        id: '25',
         title: 'Medellín: The City of Eternal Spring Reimagines Itself in 2026',
         slug: 'medellin-eternal-spring-reimagines-2026',
         excerpt: `Discover how Medellín, the 'City of Eternal Spring', is leading urban transformation with its green corridors, sustainable transport, and a vibrant cultural and nightlife scene in 2026.`,
@@ -634,13 +623,13 @@ export const blogPosts: BlogPost[] = [
             <h2>Safety and Local Rhythm</h2>
             <p>Security has improved significantly, allowing visitors to enjoy the city's pulse with peace of mind. As always, it is recommended to use reliable transportation platforms and maintain general situational awareness. Whether you're here for the urban innovation or the salsa beats, Medellín in 2026 is a city that dreams and constantly redefines itself.</p>
         `,
-        image: getAssetPath('/images/blog-festivals.png'),
+        image: getAssetPath('/images/blog-medellin-urbanism.png'),
         author: 'Carolina Duque',
         date: '2026-03-08',
         tags: ['Medellín', 'Urbanism', 'Sustainability', 'Nightlife', 'Culture', '2026'],
     },
     {
-        id: '1709849100000',
+        id: '26',
         title: `Nuquí: Colombia's Untouched Pacific Gem`,
         slug: 'nuqui-colombias-untouched-pacific-gem',
         excerpt: `Discover the raw beauty of Nuquí, a secluded paradise on Colombia's Pacific coast, known for whale watching, hot springs, and vibrant Afro-Colombian culture.`,
@@ -667,7 +656,7 @@ export const blogPosts: BlogPost[] = [
         tags: ['Nuquí', 'Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Adventure']
     },
     {
-        id: '22',
+        id: '27',
         title: 'Handicrafts of Ráquira: The Clay Capital of Colombia',
         slug: 'handicrafts-raquira-clay-capital',
         excerpt: `Discover Ráquira, Colombia's renowned "Clay Capital," where vibrant pottery and traditional crafts come to life, embodying centuries of artistic heritage.`,
@@ -695,36 +684,39 @@ export const blogPosts: BlogPost[] = [
         tags: ['Handicrafts', 'Art', 'Culture', 'Ráquira', 'Boyacá', 'Pottery'],
     }
 
-,
+    ,
     {
-        id: '23',
-        title: "Colombia's Unique Wildlife: A Journey Through Biodiversity",
-        slug: 'colombias-unique-wildlife-biodiversity',
-        excerpt: 'Explore the astonishing array of wildlife in Colombia, a megadiverse country home to countless species, from the Amazon to the Andes.',
+        id: '28',
+        title: "Colombia's Biodiversity: A Journey Through Ecosystems and Wildlife",
+        slug: 'colombia-biodiversity-ecosystems-wildlife',
+        excerpt: 'Explore the extraordinary tapestry of life in Colombia, where unique wildlife thrives across diverse ecosystems, from the Amazon to the Andes.',
         content: `
-            <p>Colombia is a megadiverse country, boasting an incredible variety of ecosystems and an astonishing abundance of wildlife. Ranked among the top countries for biodiversity, it's a paradise for nature lovers and wildlife enthusiasts.</p>
+            <p>Colombia, often hailed as one of the most biodiverse countries on Earth, harbors an astonishing array of ecosystems and wildlife within its borders. This South American nation spans from the Caribbean Sea to the Pacific Ocean, encompassing a wide range of climatic zones that support an unparalleled diversity of life.</p>
 
-            <h2>Birds: A Birder's Paradise</h2>
-            <p>With over 1,900 species, Colombia is the country with the most bird species in the world. From the Andean condor majestically soaring above the mountains to the vibrant hummingbirds flitting through cloud forests, birdwatching opportunities are endless. Famous spots include the Sierra Nevada de Santa Marta and the Amazon.</p>
+            <h2>Vital Ecosystems: From Jungle to Cloud Forest</h2>
+            <p>Colombia's geography creates unique habitats that are essential for global ecological balance:</p>
+            <ul>
+                <li><strong>The Amazon Basin:</strong> A living laboratory containing a significant portion of the world's rainforest, home to thousands of species and vital waterways.</li>
+                <li><strong>Andean Cloud Forests:</strong> Fragile, misty environments that host endemic species like the spectacled bear and a vast array of orchids.</li>
+                <li><strong>Chocó Biogeographic Region:</strong> One of the wettest and most biodiverse areas on the planet, with species richness comparable to the Amazon.</li>
+                <li><strong>Coastal Ecosystems:</strong> From Caribbean coral reefs to Pacific mangrove forests, these areas are crucial for marine life.</li>
+            </ul>
 
-            <h2>Mammals: From Jaguars to Monkeys</h2>
-            <p>Colombia's diverse landscapes host a wide range of mammals. The Amazon and Pacific regions are home to elusive jaguars and pumas, while various species of monkeys swing through the canopy. Tapirs, sloths, and anteaters can also be found in different habitats across the country.</p>
+            <h2>A Birder's and Wildlife Paradise</h2>
+            <p>With its varied landscapes, Colombia is a sanctuary for an incredible abundance of wildlife:</p>
+            <ul>
+                <li><strong>Birds:</strong> With over 1,900 species, Colombia has the most bird species in the world, including the majestic Andean condor and vibrant hummingbirds.</li>
+                <li><strong>Mammals:</strong> From elusive jaguars and pumas to playful monkeys and the unique pink river dolphins of the Amazon.</li>
+                <li><strong>Amphibians:</strong> Renowned for its frog diversity, including the striking but lethal poison dart frogs of the Pacific rainforests.</li>
+            </ul>
 
-            <h2>Amphibians: A World of Frogs</h2>
-            <p>The country is particularly renowned for its amphibian diversity, especially frogs. The colorful poison dart frogs are a striking example, found in the Chocó region and other rainforests. Their vibrant hues often serve as a warning to predators.</p>
-
-            <h2>Marine Life: Whales and Dolphins</h2>
-            <p>Both the Caribbean and Pacific coasts offer spectacular marine life. Humpback whales migrate to the Pacific waters between July and October to breed and calve, offering incredible whale-watching experiences. Pink river dolphins grace the waters of the Amazon, a unique and enchanting sight.</p>
-
-            <h2>Conservation Efforts</h2>
-            <p>Numerous national parks and protected areas are dedicated to preserving Colombia's precious wildlife. Efforts are ongoing to protect endangered species and their habitats, ensuring that future generations can continue to marvel at this natural heritage.</p>
-
-            <p>A journey through Colombia is a journey through nature's masterpiece, a chance to witness life in its most vibrant and diverse forms.</p>
+            <h2>The Importance of Conservation</h2>
+            <p>Colombia has made significant strides in conservation through an extensive network of national parks and protected reserves. Supporting sustainable tourism and community-led initiatives is essential to preserving this natural legacy for future generations. A journey through Colombia is a chance to witness nature's masterpiece in its most vibrant and diverse forms.</p>
         `,
-        image: getAssetPath('/images/blog-ecosystems.png'),
-        author: 'Nature Explorer',
+        image: getAssetPath('/images/blog-wildlife-biodiversity.png'),
+        author: 'Mateo Jiménez',
         date: '2026-03-08',
-        tags: ['Wildlife', 'Biodiversity', 'Nature', 'Ecotourism', 'Colombia'],
+        tags: ['Wildlife', 'Biodiversity', 'Nature', 'Ecotourism', 'Conservation', 'Colombia'],
     }
 ];
 
