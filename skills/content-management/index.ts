@@ -571,91 +571,91 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '1772922020301',
-        title: `La riqueza de Colombia: Un Viaje a Través de Su Diversidad Cultural`,
-        slug: 'la-riqueza-colombia-diversidad-cultural',
-        excerpt: `Explora el vibrante mosaico cultural de Colombia, desde sus ritmos ancestrales hasta las tradiciones que dan vida a cada una de sus regiones.`,
-        content: `<p>Colombia es un país donde la diversidad cultural se manifiesta en cada rincón, desde las tradiciones milenarias de sus pueblos indígenas hasta las expresiones contemporáneas que fusionan lo ancestral con lo moderno. Esta riqueza cultural es el resultado de siglos de intercambio entre pueblos indígenas, europeos y africanos.</p>
+        title: "Colombia's Richness: A Journey Through Its Cultural Diversity",
+        slug: 'colombias-richness-cultural-diversity',
+        excerpt: `Explore Colombia's vibrant cultural mosaic, from ancestral rhythms to the traditions that bring each of its regions to life.`,
+        content: `<p>Colombia is a country where cultural diversity manifests in every corner, from the millennial traditions of its indigenous peoples to contemporary expressions that fuse the ancestral with the modern. This cultural richness is the result of centuries of exchange between indigenous, European, and African peoples.</p>
 
-<h2>El Mosaico de las Tradiciones Vivas</h2>
-<p>En Colombia, cada región cuenta su propia historia a través de manifestaciones culturales únicas:</p>
+<h2>The Mosaic of Living Traditions</h2>
+<p>In Colombia, each region tells its own story through unique cultural manifestations:</p>
 <ul>
-<li>La Costa Caribe, con su alegre cumbia y vallenato</li>
-<li>El Pacífico y sus ritmos ancestrales como el currulao</li>
-<li>Los Llanos Orientales, donde el joropo marca el paso de la vida</li>
-<li>La región Andina, guardiana del bambuco y el pasillo</li>
+<li>The Caribbean Coast, with its joyful cumbia and vallenato</li>
+<li>The Pacific and its ancestral rhythms such as currulao</li>
+<li>The Eastern Plains (Llanos), where joropo marks the pace of life</li>
+<li>The Andean region, guardian of bambuco and pasillo</li>
 </ul>
 
-<h2>Pueblos Originarios: Guardianes de la Sabiduría Ancestral</h2>
-<p>Las comunidades indígenas de Colombia mantienen vivo un legado milenario de conocimientos y tradiciones. Desde los Wayuu en La Guajira hasta los Tikuna en el Amazonas, cada pueblo aporta su propia visión del mundo y formas únicas de relacionarse con la naturaleza.</p>
+<h2>Indigenous Peoples: Guardians of Ancestral Wisdom</h2>
+<p>Colombia's indigenous communities keep alive a millenary legacy of knowledge and traditions. From the Wayuu in La Guajira to the Tikuna in the Amazon, each people contributes their own vision of the world and unique ways of relating to nature.</p>
 
-<h2>Artesanía: El Arte de las Manos Colombianas</h2>
-<p>La artesanía colombiana refleja la diversidad cultural del país:</p>
+<h2>Artisanship: The Art of Colombian Hands</h2>
+<p>Colombian artisanship reflects the country's cultural diversity:</p>
 <ul>
-<li>Las mochilas Wayuu, tejidas con historias ancestrales</li>
-<li>La cerámica de La Chamba, negra y roja, que conserva técnicas precolombinas</li>
-<li>Los sombreros vueltiaos, símbolo de la cultura Zenú</li>
-<li>Las máscaras del Carnaval de Barranquilla, que cuentan historias de resistencia y celebración</li>
+<li>Wayuu mochilas (bags), woven with ancestral stories</li>
+<li>La Chamba pottery, black and red, preserving pre-Columbian techniques</li>
+<li>Vueltiao hats, a symbol of the Zenú culture</li>
+<li>Barranquilla Carnival masks, telling stories of resistance and celebration</li>
 </ul>
 
-<h2>Festivales y Celebraciones: La Alegría Hecha Tradición</h2>
-<p>El calendario colombiano está marcado por celebraciones que resaltan esta diversidad cultural:</p>
+<h2>Festivals and Celebrations: Joy Turned into Tradition</h2>
+<p>The Colombian calendar is marked by celebrations that highlight this cultural diversity:</p>
 <ul>
-<li>El Carnaval de Barranquilla, Patrimonio Cultural de la Humanidad</li>
-<li>El Festival Petronio Álvarez en Cali, la mayor celebración de la música del Pacífico</li>
-<li>El Carnaval de Negros y Blancos en Pasto, una fiesta de igualdad y arte</li>
+<li>The Barranquilla Carnival, a Masterpiece of the Oral and Intangible Heritage of Humanity</li>
+<li>The Petronio Álvarez Festival in Cali, the largest celebration of Pacific music</li>
+<li>The Black and White Carnival in Pasto, a festival of equality and art</li>
 </ul>
 
-<h2>Gastronomía: Un Festín de Sabores y Saberes</h2>
-<p>La cocina colombiana es un reflejo de su diversidad cultural, donde cada región aporta ingredientes y técnicas únicas:</p>
+<h2>Gastronomy: A Feast of Flavors and Knowledge</h2>
+<p>Colombian cuisine reflects its cultural diversity, with each region providing unique ingredients and techniques:</p>
 <ul>
-<li>El Caribe y sus preparaciones con coco y pescado fresco</li>
-<li>La región Andina y sus sopas reconfortantes como el ajiaco</li>
-<li>El Pacífico y sus mariscos en preparaciones ancestrales</li>
-<li>La Amazonía y sus frutas exóticas y preparaciones tradicionales</li>
+<li>The Caribbean and its preparations with coconut and fresh fish</li>
+<li>The Andean region and its comforting soups like ajiaco</li>
+<li>The Pacific and its seafood in ancestral preparations</li>
+<li>The Amazon and its exotic fruits and traditional dishes</li>
 </ul>
 
-<p>Esta diversidad cultural no es solo un atractivo turístico; es la esencia misma de Colombia, un país que celebra sus diferencias y encuentra en ellas su mayor fortaleza. Cada manifestación cultural es un hilo en el tejido social que hace de Colombia un destino único y fascinante.</p>`,
+<p>This cultural diversity is not just a tourist attraction; it is the very essence of Colombia, a country that celebrates its differences and finds in them its greatest strength. Each cultural manifestation is a thread in the social fabric that makes Colombia a unique and fascinating destination.</p>`,
         image: getAssetPath('/images/blog-indigenous-heritage.png'),
         author: 'Bukaro',
         date: '2026-03-08',
-        tags: ['Cultura', 'Tradiciones', 'Música', 'Gastronomía', 'Indígenas', 'Colombia']
+        tags: ['Culture', 'Traditions', 'Music', 'Gastronomy', 'Indigenous', 'Colombia'],
     },
     {
         id: '1772925600000',
-        title: 'Medellín: La Ciudad de la Eterna Primavera se Reimagina en 2026',
-        slug: 'medellin-ciudad-eterna-primavera-2026',
-        excerpt: 'Descubre cómo Medellín, la \'Ciudad de la Eterna Primavera\', está liderando la transformación urbana con sus corredores verdes, transporte sostenible y una vibrante escena cultural en 2026.',
+        title: 'Medellín: The City of Eternal Spring Reimagines Itself in 2026',
+        slug: 'medellin-eternal-spring-reimagines-2026',
+        excerpt: `Discover how Medellín, the 'City of Eternal Spring', is leading urban transformation with its green corridors, sustainable transport, and a vibrant cultural scene in 2026.`,
         content: `
-            <p>Medellín, conocida mundialmente como la "Ciudad de la Eterna Primavera", continúa su notable transformación urbana y se perfila como un destino imperdible en 2026. Esta metrópolis andina es un faro de innovación en sostenibilidad y diseño urbano.</p>
+            <p>Medellín, known worldwide as the "City of Eternal Spring," continues its remarkable urban transformation and emerges as a must-visit destination in 2026. This Andean metropolis is a beacon of innovation in sustainability and urban design.</p>
 
-            <h2>Corredores Verdes y Transporte Sostenible</h2>
-            <p>En 2026, Medellín celebra la expansión de sus "corredores verdes", que no solo embellecen la ciudad sino que también mejoran la calidad del aire y la biodiversidad urbana. Estos espacios, junto con un sistema de transporte público integral que incluye el Metrocable y bicicletas públicas, hacen de Medellín una ciudad más caminable y amigable con el medio ambiente, redefiniendo la experiencia urbana para residentes y visitantes.</p>
+            <h2>Green Corridors and Sustainable Transport</h2>
+            <p>In 2026, Medellín celebrates the expansion of its "green corridors," which not only beautify the city but also improve air quality and urban biodiversity. These spaces, along with an integrated public transport system that includes Metrocable and public bicycles, make Medellín a more walkable and environmentally friendly city, redefining the urban experience for residents and visitors.</p>
 
-            <h2>Arte y Cultura en Comuna 13</h2>
-            <p>La vibrante escena artística de la Comuna 13 sigue siendo un testimonio de resiliencia y creatividad. Sus famosas escaleras eléctricas al aire libre y los coloridos murales de grafiti cuentan historias de transformación social. En 2026, nuevos colectivos artísticos y galerías emergentes continúan enriqueciendo este espacio, ofreciendo visitas guiadas que profundizan en el significado cultural detrás de cada obra.</p>
+            <h2>Art and Culture in Comuna 13</h2>
+            <p>The vibrant artistic scene of Comuna 13 continues to be a testament to resilience and creativity. Its famous outdoor electric escalators and colorful graffiti murals tell stories of social transformation. In 2026, new artistic collectives and emerging galleries continue to enrich this space, offering guided tours that delve into the cultural meaning behind each work.</p>
 
-            <h2>Gastronomía Innovadora en El Poblado</h2>
-            <p>El barrio de El Poblado se consolida como un centro gastronómico de clase mundial. Desde restaurantes con estrellas Michelin que experimentan con ingredientes locales hasta conceptos de cocina de autor que rinden homenaje a las raíces paisas, la oferta culinaria es tan diversa como deliciosa. Los mercados orgánicos y las cafeterías especializadas en el café de la región complementan esta experiencia, invitando a un recorrido por los sabores de Colombia.</p>
+            <h2>Innovative Gastronomy in El Poblado</h2>
+            <p>The El Poblado neighborhood consolidates itself as a world-class gastronomic hub. From Michelin-starred restaurants experimenting with local ingredients to signature cuisine concepts that pay homage to Paisa roots, the culinary offer is as diverse as it is delicious. Organic markets and specialized coffee shops featuring regional beans complement this experience, inviting a journey through the flavors of Colombia.</p>
 
-            <p>Medellín en 2026 es el epítome de la ciudad que sueña y se redefine constantemente, ofreciendo una mezcla única de innovación, cultura viva y una belleza natural que justifica su apodo de "Eterna Primavera".</p>
+            <p>Medellín in 2026 is the epitome of a city that dreams and constantly redefines itself, offering a unique blend of innovation, living culture, and natural beauty that justifies its nickname "Eternal Spring."</p>
         `,
         image: getAssetPath('/images/blog-festivals.png'),
         author: 'Bukaro',
         date: '2026-03-08',
-        tags: ['Medellín', 'Urbanismo', 'Sostenibilidad', 'Cultura', '2026'],
+        tags: ['Medellín', 'Urbanism', 'Sustainability', 'Culture', '2026'],
     },
     {
         id: '1772974580060',
-        title: `Descubre la vibrante vida nocturna de Medellín`,
-        slug: 'medellin-vida-nocturna',
-        excerpt: `Medellín, la ciudad de la eterna primavera, ofrece una experiencia nocturna inigualable. Desde bares en El Poblado hasta discotecas en Laureles, hay algo para todos.`,
+        title: 'Discover Medellín\'s Vibrant Nightlife',
+        slug: 'medellin-vibrant-nightlife',
+        excerpt: `Medellín, the city of eternal spring, offers an unparalleled nightlife experience. From bars in El Poblado to clubs in Laureles, there is something for everyone.`,
         content: `
-            <p>Medellín, conocida como la ciudad de la eterna primavera, se transforma al caer la noche en un crisol de ritmos, sabores y encuentros. La vida nocturna de la capital antioqueña es tan diversa como sus paisajes, ofreciendo opciones para todo tipo de gustos. El epicentro de esta efervescencia es, sin duda, El Poblado, con su icónico Parque Lleras y las calles aledañas repletas de bares de cócteles sofisticados, pubs con música en vivo y terrazas con vistas impresionantes de la ciudad. Para aquellos que buscan una atmósfera más local y bohemia, el barrio de Laureles ofrece una alternativa encantadora, con sus fondas paisas y bares de salsa donde el baile es parte esencial de la experiencia. No puedes irte de Medellín sin experimentar las tabernas donde la música popular colombiana es la protagonista, o las discotecas de música electrónica que atraen a djs nacionales e internacionales. La seguridad ha mejorado significativamente, permitiendo a locales y visitantes disfrutar con tranquilidad. Recuerda siempre tomar precauciones básicas como usar taxis o plataformas de transporte confiables. ¡Prepárate para bailar hasta el amanecer y vivir noches inolvidables en Medellín!</p>
+            <p>Medellín, known as the city of eternal spring, transforms at nightfall into a melting pot of rhythms, flavors, and encounters. The nightlife of the Antioquian capital is as diverse as its landscapes, offering options for all tastes. The epicenter of this effervescence is undoubtedly El Poblado, with its iconic Parque Lleras and surrounding streets filled with sophisticated cocktail bars, live music pubs, and terraces with stunning city views. For those seeking a more local and bohemian atmosphere, the Laureles neighborhood offers a charming alternative, with its "fondas paisas" and salsa bars where dancing is an essential part of the experience. You can't leave Medellín without experiencing the taverns where popular Colombian music takes center stage, or the electronic music clubs that attract national and international DJs. Security has improved significantly, allowing locals and visitors to enjoy themselves with peace of mind. Remember always to take basic precautions such as using taxis or reliable transportation platforms. Get ready to dance until dawn and live unforgettable nights in Medellín!</p>
         `,
         image: getAssetPath('/images/blog-header.png'),
         author: 'Bukaro',
         date: '2026-03-08',
-        tags: ['Medellín', 'Vida nocturna', 'Turismo', 'Colombia']
+        tags: ['Medellín', 'Nightlife', 'Tourism', 'Colombia'],
     }
 ];
 
