@@ -428,9 +428,9 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '21',
-        title: 'Hidden Gems: Exploring the Tatacoa Desert – Colombia's Martian Landscape',
+        title: `Hidden Gems: Exploring the Tatacoa Desert – Colombia's Martian Landscape`,
         slug: 'hidden-gems-tatacoa-desert',
-        excerpt: 'Discover Colombia's unique Tatacoa Desert, a surreal landscape perfect for adventure and stargazing, far from the typical tourist trails.',
+        excerpt: `Discover Colombia's unique Tatacoa Desert, a surreal landscape perfect for adventure and stargazing, far from the typical tourist trails.`,
         content: `
             <p>Often overshadowed by its Caribbean beaches and Andean peaks, Colombia harbors a hidden geological marvel: the Tatacoa Desert. Located in the department of Huila, this arid, semi-desertic region is a world away from the lush greenery typically associated with Colombia. Its surreal landscapes, vibrant hues, and pristine night skies make it an unforgettable destination for the adventurous traveler.</p>
 
@@ -572,9 +572,9 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '1709849100000', // Using a timestamp for uniqueness
-        title: 'Nuquí: Colombia's Untouched Pacific Gem',
+        title: `Nuquí: Colombia's Untouched Pacific Gem`,
         slug: 'nuqui-colombias-untouched-pacific-gem',
-        excerpt: 'Discover the raw beauty of Nuquí, a secluded paradise on Colombia's Pacific coast, known for whale watching, hot springs, and vibrant Afro-Colombian culture.',
+        excerpt: `Discover the raw beauty of Nuquí, a secluded paradise on Colombia's Pacific coast, known for whale watching, hot springs, and vibrant Afro-Colombian culture.`,
         content: `
             <p>Nuquí, a remote municipality on Colombia's Pacific coast, is one of the country's best-kept secrets. Far from the bustling tourist hubs, this region offers an authentic encounter with pristine nature and the rich traditions of its Afro-Colombian communities. It's a destination for those who seek tranquility, adventure, and a deep connection with the environment.</p>
 
