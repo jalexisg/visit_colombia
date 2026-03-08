@@ -3,34 +3,6 @@ import { getAssetPath } from '@/lib/utils';
 
 export const blogPosts: BlogPost[] = [
     {
-        id: '1772929200000',
-        title: 'Handicrafts of Raquira: The Clay Capital of Colombia',
-        slug: 'handicrafts-raquira-clay-capital',
-        excerpt: 'Discover Ráquira, Colombia\'s renowned "Clay Capital," where vibrant pottery and traditional crafts come to life, embodying centuries of artistic heritage.',
-        content: `
-            <p>Nestled in the department of Boyacá, the charming town of Ráquira proudly carries the title of "The Clay Capital of Colombia." For centuries, its inhabitants have dedicated themselves to the art of pottery, transforming the rich local earth into an astonishing array of utilitarian and decorative handicrafts.</p>
-
-            <h2>A World of Clay and Color</h2>
-            <p>Walking through the streets of Ráquira is like stepping into an open-air gallery. Every shop overflows with vibrant ceramics, from traditional cooking vessels and intricate figurines to colorful animal sculptures and elaborate home decor. The diversity of designs and the skill of the artisans are truly captivating.</p>
-
-            <p>The characteristic red, orange, and earthy tones of the clay are often adorned with bright blues, greens, and yellows, reflecting the cheerful spirit of Colombian folk art. You'll find everything from miniature pesebres (nativity scenes) to larger-than-life garden ornaments.</p>
-
-            <h2>Beyond Pottery: Textiles and More</h2>
-            <p>While clay is king in Ráquira, the town's craftsmanship extends to other traditional arts. Hand-woven textiles, including ponchos, blankets, and hats, showcase intricate patterns and natural dyes. Visitors can also find leather goods and wooden carvings, all made with meticulous attention to detail and a deep respect for ancestral techniques.</p>
-
-            <h2>The Artisan Experience</h2>
-            <p>One of the highlights of visiting Ráquira is the opportunity to see artisans at work. Many workshops are open to the public, allowing you to observe potters spinning clay on their wheels, meticulously painting intricate designs, or firing their creations in traditional kilns. It's a chance to understand the dedication and passion that goes into each piece.</p>
-            <p>Don't miss the central plaza, where artisans often display their wares and where you can find unique souvenirs and gifts directly from the makers. Engaging with the local community and learning about their craft is an enriching experience.</p>
-
-            <h2>A Cultural Treasure</h2>
-            <p>Ráquira is more than just a marketplace; it's a living testament to Colombia's rich cultural heritage. The town's vibrant handicrafts tell stories of its people, their connection to the land, and their enduring artistic traditions. A visit here offers a colorful and authentic glimpse into the heart of Colombian craftsmanship.</p>
-        `,
-        image: getAssetPath('/images/blog-raquira-clay.png'),
-        author: 'Elena "Potter" Ramirez',
-        date: '2026-03-08',
-        tags: ['Handicrafts', 'Art', 'Culture', 'Raquira', 'Boyacá', 'Pottery'],
-    },
-    {
         id: '1',
         title: 'Top 10 Beaches to Visit in Colombia',
         slug: 'top-10-beaches-colombia',
