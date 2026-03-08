@@ -619,7 +619,7 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-08',
         tags: ['Cultura', 'Tradiciones', 'Música', 'Gastronomía', 'Indígenas', 'Colombia']
-    }
+    },
     {
         id: '1772925600000',
         title: 'Medellín: La Ciudad de la Eterna Primavera se Reimagina en 2026',
