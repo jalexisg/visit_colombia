@@ -419,7 +419,7 @@ export const blogPosts: BlogPost[] = [
             <h2>Planning Your Adventure</h2>
             <p>Access to Ciudad Perdida is controlled, and it can only be visited with authorized tour operators. This helps preserve the site and support local communities. The best time to go is during the dry season (December to March and July to August), although the jungle climate means rain can occur at any time. A reasonable level of physical fitness is required for this unforgettable expedition.</p>
 
-            <p>A trek to Ciudad Perdida is more than just a hike; it’s a profound cultural and historical immersion, connecting you with Colombia's ancient past and its vibrant natural present.</p>
+            <p>A trek to Ciudad Perdida is more than just a hike; it's a profound cultural and historical immersion, connecting you with Colombia's ancient past and its vibrant natural present.</p>
         `,
         image: getAssetPath('/images/blog-ciudad-perdida.png'),
         author: 'Laura Martinez',
@@ -428,9 +428,9 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: '21',
-        title: 'Hidden Gems: Exploring the Tatacoa Desert – Colombia\'s Martian Landscape',
+        title: `Hidden Gems: Exploring the Tatacoa Desert – Colombia's Martian Landscape`,
         slug: 'hidden-gems-tatacoa-desert',
-        excerpt: 'Discover Colombia\'s unique Tatacoa Desert, a surreal landscape perfect for adventure and stargazing, far from the typical tourist trails.',
+        excerpt: `Discover Colombia's unique Tatacoa Desert, a surreal landscape perfect for adventure and stargazing, far from the typical tourist trails.`,
         content: `
             <p>Often overshadowed by its Caribbean beaches and Andean peaks, Colombia harbors a hidden geological marvel: the Tatacoa Desert. Located in the department of Huila, this arid, semi-desertic region is a world away from the lush greenery typically associated with Colombia. Its surreal landscapes, vibrant hues, and pristine night skies make it an unforgettable destination for the adventurous traveler.</p>
 
@@ -517,6 +517,7 @@ export const blogPosts: BlogPost[] = [
         title: `Trending Travel Destinations in Colombia for 2026`,
         slug: 'trending-travel-destinations-colombia-2026',
         excerpt: `Discover the emerging and timeless favorites that are set to top every traveler's list in 2026.`,
+
         content: `<p>As we look forward to 2026, Colombia continues to evolve as a premier travel destination, blending its rich cultural heritage with innovative urban experiences and breathtaking natural wonders. Here are the top trending destinations you shouldn't miss.</p><h2>1. The "Green Metropolitan" - Medellín</h2><p>Medellín remains at the forefront of urban transformation. In 2026, the city is set to unveil new "green corridors" and sustainable transport initiatives that make it more walkable and eco-friendly than ever. Don't miss the burgeoning art scene in Comuna 13 and the world-class gastronomy in El Poblado.</p><h2>2. Remote Paradise - Bahía Solano</h2><p>For those seeking to disconnect, Bahía Solano on the Pacific coast is the place to be. With a focus on high-end ecotourism, visitors can enjoy whale watching, jungle treks, and pristine beaches with minimal environmental impact.</p><h2>3. Cultural Hub - Popayán</h2><p>Known as the "White City," Popayán is gaining international recognition for its culinary traditions and historic Holy Week processions. In 2026, it will host several international gastronomy festivals that highlight traditional flavors with a modern twist.</p><h2>4. Adventure Frontier - San José del Guaviare</h2><p>The gateway to the Chiribiquete National Park, San José del Guaviare offers ancient rock art and stunning geological formations. It's the ultimate destination for off-the-beaten-path explorers.</p><h2>Planning Your 2026 Trip</h2><p>Whether you're drawn to the vibrant cities or the serene countryside, 2026 is the perfect year to experience the diverse beauty of Colombia. Be sure to book community-led tours to support local heritage and sustainable practices.</p>`,
         image: getAssetPath('/images/blog-trending-2026.png'),
         author: 'Bukaro',
@@ -637,6 +638,33 @@ export const blogPosts: BlogPost[] = [
         author: 'Bukaro',
         date: '2026-03-08',
         tags: ['Medellín', 'Urbanism', 'Sustainability', 'Nightlife', 'Culture', '2026'],
+    },
+    {
+        id: '1709849100000',
+        title: `Nuquí: Colombia's Untouched Pacific Gem`,
+        slug: 'nuqui-colombias-untouched-pacific-gem',
+        excerpt: `Discover the raw beauty of Nuquí, a secluded paradise on Colombia's Pacific coast, known for whale watching, hot springs, and vibrant Afro-Colombian culture.`,
+        content: `
+            <p>Nuquí, a remote municipality on Colombia's Pacific coast, is one of the country's best-kept secrets. Far from the bustling tourist hubs, this region offers an authentic encounter with pristine nature and the rich traditions of its Afro-Colombian communities. It's a destination for those who seek tranquility, adventure, and a deep connection with the environment.</p>
+
+            <h2>Whale Watching Extravaganza</h2>
+            <p>Between July and October, Nuquí transforms into a prime spot for whale watching. Majestic humpback whales migrate from Antarctica to the warm waters of the Pacific to calve and breed. Boat tours with local guides offer incredible opportunities to witness these gentle giants breaching and playing, an unforgettable spectacle of nature.</p>
+
+            <h2>Thermal Springs and Mangrove Forests</h2>
+            <p>Beyond whale watching, Nuquí boasts natural thermal springs, such as those in Termales, where visitors can relax in mineral-rich waters surrounded by lush jungle. The intricate network of mangrove forests is perfect for kayaking or paddleboarding, allowing for intimate encounters with diverse birdlife, monkeys, and other small creatures.</p>
+
+            <h2>Afro-Colombian Culture and Gastronomy</h2>
+            <p>The heart of Nuquí beats to the rhythm of Afro-Colombian culture. The warmth and hospitality of the local people are as captivating as the landscape. Visitors can immerse themselves in local traditions through music, dance, and storytelling. The gastronomy is a highlight, featuring an abundance of fresh seafood prepared with coconut milk, plantains, and local spices, offering a true taste of the Pacific.</p>
+
+            <h2>Surfing and Pristine Beaches</h2>
+            <p>The powerful Pacific swells make Nuquí a growing destination for surfers, with uncrowded breaks suitable for various skill levels. For those preferring relaxation, the extensive, dark sand beaches like Playa Guachalito offer serene spots for unwinding, surrounded by the jungle's embrace and the ocean's soothing sounds.</p>
+
+            <p>Reaching Nuquí typically involves a short flight from Medellín or Quibdó, followed by a boat transfer. This effort is richly rewarded by an experience that feels truly off the grid, providing a unique insight into Colombia’s wild Pacific soul.</p>
+        `,
+        image: getAssetPath('/images/blog-nuqui.png'),
+        author: 'Bukaro',
+        date: '2026-03-08',
+        tags: ['Nuquí', 'Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Adventure']
     }
 ];
 
