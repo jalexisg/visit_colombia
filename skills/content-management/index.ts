@@ -695,6 +695,37 @@ export const blogPosts: BlogPost[] = [
         tags: ['Handicrafts', 'Art', 'Culture', 'Ráquira', 'Boyacá', 'Pottery'],
     }
 
+,
+    {
+        id: '23',
+        title: 'Colombia's Unique Wildlife: A Journey Through Biodiversity',
+        slug: 'colombias-unique-wildlife-biodiversity',
+        excerpt: 'Explore the astonishing array of wildlife in Colombia, a megadiverse country home to countless species, from the Amazon to the Andes.',
+        content: `
+            <p>Colombia is a megadiverse country, boasting an incredible variety of ecosystems and an astonishing abundance of wildlife. Ranked among the top countries for biodiversity, it's a paradise for nature lovers and wildlife enthusiasts.</p>
+
+            <h2>Birds: A Birder's Paradise</h2>
+            <p>With over 1,900 species, Colombia is the country with the most bird species in the world. From the Andean condor majestically soaring above the mountains to the vibrant hummingbirds flitting through cloud forests, birdwatching opportunities are endless. Famous spots include the Sierra Nevada de Santa Marta and the Amazon.</p>
+
+            <h2>Mammals: From Jaguars to Monkeys</h2>
+            <p>Colombia's diverse landscapes host a wide range of mammals. The Amazon and Pacific regions are home to elusive jaguars and pumas, while various species of monkeys swing through the canopy. Tapirs, sloths, and anteaters can also be found in different habitats across the country.</p>
+
+            <h2>Amphibians: A World of Frogs</h2>
+            <p>The country is particularly renowned for its amphibian diversity, especially frogs. The colorful poison dart frogs are a striking example, found in the Chocó region and other rainforests. Their vibrant hues often serve as a warning to predators.</p>
+
+            <h2>Marine Life: Whales and Dolphins</h2>
+            <p>Both the Caribbean and Pacific coasts offer spectacular marine life. Humpback whales migrate to the Pacific waters between July and October to breed and calve, offering incredible whale-watching experiences. Pink river dolphins grace the waters of the Amazon, a unique and enchanting sight.</p>
+
+            <h2>Conservation Efforts</h2>
+            <p>Numerous national parks and protected areas are dedicated to preserving Colombia's precious wildlife. Efforts are ongoing to protect endangered species and their habitats, ensuring that future generations can continue to marvel at this natural heritage.</p>
+
+            <p>A journey through Colombia is a journey through nature's masterpiece, a chance to witness life in its most vibrant and diverse forms.</p>
+        `,
+        image: getAssetPath('/images/blog-ecosystems.png'),
+        author: 'Nature Explorer',
+        date: '2026-03-08',
+        tags: ['Wildlife', 'Biodiversity', 'Nature', 'Ecotourism', 'Colombia'],
+    }
 ];
 
 export function getBlogPosts(): Promise<BlogPost[]> {
