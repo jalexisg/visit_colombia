@@ -569,6 +569,37 @@ export const blogPosts: BlogPost[] = [
         date: '2026-03-07',
         tags: ['Guatape', 'Antioquia', 'Colorful Towns', 'Adventure', 'Culture']
     }
+    },
+    {
+        id: '1772974580061', // ID único basado en timestamp
+        title: 'Explorando los Festivales Más Vibrantes de Colombia en 2026',
+        slug: 'festivales-mas-vibrantes-colombia-2026',
+        excerpt: 'Descubre los festivales colombianos que no te puedes perder en 2026: una explosión de color, música y tradición que define el espíritu del país.',
+        content: `
+            <p>Colombia es sinónimo de fiesta, color y alegría. En 2026, el país se prepara para recibir a visitantes de todo el mundo en una serie de festivales que celebran su rica diversidad cultural. Planifica tu viaje alrededor de estas fechas clave para sumergirte en el verdadero espíritu colombiano.</p>
+
+            <h2>Carnaval de Barranquilla (14-17 de Febrero)</h2>
+            <p>Declarado Obra Maestra del Patrimonio Oral e Inmaterial de la Humanidad por la UNESCO, el Carnaval de Barranquilla es el segundo más grande del mundo. Durante cuatro días, la ciudad se inunda de desfiles vibrantes, música de cumbia y vallenato, y personajes míticos como la Marimonda y el Rey Momo. ¡Es una experiencia que debes vivir al menos una vez en la vida!</p>
+
+            <h2>Festival Internacional de Cine de Cartagena (Marzo)</h2>
+            <p>Cartagena no solo es historia y playas; también es el epicentro del cine en la región. En marzo, la "ciudad heroica" se viste de gala para proyectar lo mejor del cine iberoamericano e internacional. Asiste a premiers, charlas con directores y disfruta del glamour bajo el sol caribeño.</p>
+
+            <h2>Festival de la Leyenda Vallenata (Abril/Mayo)</h2>
+            <p>En Valledupar, la capital mundial del vallenato, este festival rinde homenaje a un género musical que es Patrimonio Cultural e Inmaterial de la Humanidad. Es la oportunidad perfecta para escuchar a los mejores acordeoneros, compositores y cantantes, y sentir el alma de la música costeña.</p>
+
+            <h2>Feria de las Flores de Medellín (Agosto)</h2>
+            <p>Medellín, la "Ciudad de la Eterna Primavera", florece en agosto con la Feria de las Flores. El Desfile de Silleteros, donde campesinos exhiben impresionantes arreglos florales cargados en sus espaldas, es el evento central. La ciudad entera se llena de orquídeas, música y alegría.</p>
+
+            <h2>Festival Petronio Álvarez de Cali (Agosto)</h2>
+            <p>Para los amantes de la cultura afrocolombiana, el Petronio Álvarez en Cali es una cita ineludible. Este festival celebra la música del Pacífico colombiano (currulao, chirimía, caderona) con concursos, gastronomía exótica y demostraciones de danzas ancestrales. Es una explosión de ritmo y tradición.</p>
+
+            <p>No importa qué festival elijas, Colombia promete una inmersión cultural profunda, llena de alegría, música y experiencias inolvidables. ¡Prepara tus maletas y tu espíritu festivo!</p>
+        `,
+        image: getAssetPath('/images/blog-festivals.png'),
+        author: 'Bukaro',
+        date: '2026-03-08',
+        tags: ['Festivales', 'Cultura', 'Música', 'Tradiciones', 'Colombia', '2026'],
+    }
 ];
 
 export function getBlogPosts(): Promise<BlogPost[]> {
