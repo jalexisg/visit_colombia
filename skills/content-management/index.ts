@@ -614,7 +614,7 @@ export const blogPosts: BlogPost[] = [
         id: '1772925600000',
         title: 'Medellín: The City of Eternal Spring Reimagines Itself in 2026',
         slug: 'medellin-eternal-spring-reimagines-2026',
-        excerpt: `Discover how Medellín, the 'City of Eternal Spring', is leading urban transformation with its green corridors, sustainable transport, and a vibrant cultural scene in 2026.`,
+        excerpt: `Discover how Medellín, the 'City of Eternal Spring', is leading urban transformation with its green corridors, sustainable transport, and a vibrant cultural and nightlife scene in 2026.`,
         content: `
             <p>Medellín, known worldwide as the "City of Eternal Spring," continues its remarkable urban transformation and emerges as a must-visit destination in 2026. This Andean metropolis is a beacon of innovation in sustainability and urban design.</p>
 
@@ -627,25 +627,16 @@ export const blogPosts: BlogPost[] = [
             <h2>Innovative Gastronomy in El Poblado</h2>
             <p>The El Poblado neighborhood consolidates itself as a world-class gastronomic hub. From Michelin-starred restaurants experimenting with local ingredients to signature cuisine concepts that pay homage to Paisa roots, the culinary offer is as diverse as it is delicious. Organic markets and specialized coffee shops featuring regional beans complement this experience, inviting a journey through the flavors of Colombia.</p>
 
-            <p>Medellín in 2026 is the epitome of a city that dreams and constantly redefines itself, offering a unique blend of innovation, living culture, and natural beauty that justifies its nickname "Eternal Spring."</p>
+            <h2>Vibrant Nightlife: From El Poblado to Laureles</h2>
+            <p>At nightfall, Medellín transforms into a melting pot of rhythms and encounters. The epicenter is El Poblado, with its iconic Parque Lleras and streets filled with sophisticated cocktail bars, live music pubs, and terraces with stunning city views. For a more local and bohemian atmosphere, the Laureles neighborhood offers "fondas paisas" and salsa bars where dancing is an essential part of the experience. The city also boasts world-class electronic music clubs that attract international DJs.</p>
+
+            <h2>Safety and Local Rhythm</h2>
+            <p>Security has improved significantly, allowing visitors to enjoy the city's pulse with peace of mind. As always, it is recommended to use reliable transportation platforms and maintain general situational awareness. Whether you're here for the urban innovation or the salsa beats, Medellín in 2026 is a city that dreams and constantly redefines itself.</p>
         `,
         image: getAssetPath('/images/blog-festivals.png'),
         author: 'Bukaro',
         date: '2026-03-08',
-        tags: ['Medellín', 'Urbanism', 'Sustainability', 'Culture', '2026'],
-    },
-    {
-        id: '1772974580060',
-        title: 'Discover Medellín\'s Vibrant Nightlife',
-        slug: 'medellin-vibrant-nightlife',
-        excerpt: `Medellín, the city of eternal spring, offers an unparalleled nightlife experience. From bars in El Poblado to clubs in Laureles, there is something for everyone.`,
-        content: `
-            <p>Medellín, known as the city of eternal spring, transforms at nightfall into a melting pot of rhythms, flavors, and encounters. The nightlife of the Antioquian capital is as diverse as its landscapes, offering options for all tastes. The epicenter of this effervescence is undoubtedly El Poblado, with its iconic Parque Lleras and surrounding streets filled with sophisticated cocktail bars, live music pubs, and terraces with stunning city views. For those seeking a more local and bohemian atmosphere, the Laureles neighborhood offers a charming alternative, with its "fondas paisas" and salsa bars where dancing is an essential part of the experience. You can't leave Medellín without experiencing the taverns where popular Colombian music takes center stage, or the electronic music clubs that attract national and international DJs. Security has improved significantly, allowing locals and visitors to enjoy themselves with peace of mind. Remember always to take basic precautions such as using taxis or reliable transportation platforms. Get ready to dance until dawn and live unforgettable nights in Medellín!</p>
-        `,
-        image: getAssetPath('/images/blog-header.png'),
-        author: 'Bukaro',
-        date: '2026-03-08',
-        tags: ['Medellín', 'Nightlife', 'Tourism', 'Colombia'],
+        tags: ['Medellín', 'Urbanism', 'Sustainability', 'Nightlife', 'Culture', '2026'],
     }
 ];
 
