@@ -692,7 +692,7 @@ export const blogPosts: BlogPost[] = [
         image: getAssetPath('/images/blog-raquira-clay.png'),
         author: 'Elena "Potter" Ramirez',
         date: '2026-03-08',
-        tags: ['Handicrafts', 'Art', 'Culture', 'Raquira', 'Boyacá', 'Pottery'],
+        tags: ['Handicrafts', 'Art', 'Culture', 'Ráquira', 'Boyacá', 'Pottery'],
     }
 
 ];
