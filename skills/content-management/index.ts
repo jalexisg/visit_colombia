@@ -639,7 +639,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Medellín en 2026 es el epítome de la ciudad que sueña y se redefine constantemente, ofreciendo una mezcla única de innovación, cultura viva y una belleza natural que justifica su apodo de "Eterna Primavera".</p>
         `,
-        image: getAssetPath('/images/blog-medellin.png'),
+        image: getAssetPath('/images/blog-festivals.png'),
         author: 'Bukaro',
         date: '2026-03-08',
         tags: ['Medellín', 'Urbanismo', 'Sostenibilidad', 'Cultura', '2026'],
