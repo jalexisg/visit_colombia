@@ -1159,6 +1159,8 @@ export const cityImages: Record<string, string> = {
     'huila-santa maría': '/images/cities/huila/santa_maria.png',
     'tarqui': '/images/cities/huila/tarqui.png',
     'tello': '/images/cities/huila/tello.png',
+    'teruel': '/images/cities/huila/teruel.png',
+    'tesalia': '/images/cities/huila/tesalia.png',
 
     // Guaviare
     'san josh del guaviare': '/images/cities/guaviare/san_jose_del_guaviare.png',
@@ -2225,6 +2227,8 @@ export const cityOverviews: Record<string, string> = {
     'huila-santa maría': 'The gateway to the Nevado del Huila from the east, showcasing majestic paramos and volcanic mountain scenery.',
     'tarqui': 'Known as the "Ruiseñor del Huila", it is located in a poetic, fertile valley with beautiful river vistas and rural traditions.',
     'tello': 'A warm and welcoming town connecting the mountains with the Magdalena valley, famous for its fruit and cattle farming.',
+    'teruel': 'Often called "El Paraíso del Huila", it is a picturesque town defined by lush coffee fincas, vibrant gardens, and serene Andean beauty.',
+    'tesalia': 'Known as "La Ciudad de los Cisnes", this town is steeped in legend and nestled in a scenic landscape of lagoons and natural beauty.',
 };
 
 export function getCityOverview(cityName: string, defaultDescription?: string, departmentName?: string): string {
