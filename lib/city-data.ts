@@ -1192,6 +1192,13 @@ export const cityImages: Record<string, string> = {
     'distracción': '/images/cities/guajira/distraccion.png',
     'guajira-distraccion': '/images/cities/guajira/distraccion.png',
     'guajira-distracción': '/images/cities/guajira/distraccion.png',
+    'dibula': '/images/cities/guajira/dibulla.png',
+    'el molino': '/images/cities/guajira/el_molino.png',
+    'guajira-el molino': '/images/cities/guajira/el_molino.png',
+    'urumita': '/images/cities/guajira/urumita.png',
+    'guajira-urumita': '/images/cities/guajira/urumita.png',
+    'la jagua del pilar': '/images/cities/guajira/la_jagua_del_pilar.png',
+    'guajira-la jagua del pilar': '/images/cities/guajira/la_jagua_del_pilar.png',
 
 
 
@@ -2292,6 +2299,13 @@ export const cityOverviews: Record<string, string> = {
     'distracción': 'Famous for its natural river springs and oasis-like landscapes, providing a lush, green retreat in the heart of the department.',
     'guajira-distraccion': 'Famous for its natural river springs and oasis-like landscapes, providing a lush, green retreat in the heart of the department.',
     'guajira-distracción': 'Famous for its natural river springs and oasis-like landscapes, providing a lush, green retreat in the heart of the department.',
+    'dibula': 'A tranquil coastal gem at the foot of the Sierra Nevada, where tropical rivers meet palm-lined beaches in an authentic Caribbean setting.',
+    'el molino': 'Known for its agricultural abundance and the San Benito church, set in a fertile valley of southern La Guajira.',
+    'guajira-el molino': 'Known for its agricultural abundance and the San Benito church, set in a fertile valley of southern La Guajira.',
+    'urumita': 'A picturesque town at the foot of the Perijá mountains, famous for its annual "Festival de las Flores y Calagualas".',
+    'guajira-urumita': 'A picturesque town at the foot of the Perijá mountains, famous for its annual "Festival de las Flores y Calagualas".',
+    'la jagua del pilar': 'A gateway to the southern Sierra Nevada, rich in vallenato legends and lush tropical landscapes.',
+    'guajira-la jagua del pilar': 'A gateway to the southern Sierra Nevada, rich in vallenato legends and lush tropical landscapes.',
 
 
 };
