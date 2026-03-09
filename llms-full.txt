@@ -1,0 +1,41 @@
+# Visit Colombia 🇨🇴 - Full Documentation for LLMs
+
+> This file provides an expanded overview of the Visit Colombia project, including detailed component descriptions and technical specifications.
+
+## Project Vision
+Visit Colombia aims to be the premier digital resource for travelers, combining modern web technology with a factual, anti-hallucinatory AI assistant to provide reliable information about Colombian geography, culture, and tourism.
+
+## Core Components
+
+### 1. Front-end (Next.js 14+)
+- **App Router**: Uses the late Next.js patterns for routing and metadata.
+- **Tailwind CSS**: Custom design system focused on premium aesthetics and responsive layouts.
+- **Client-side Components**: Interactive UI like the `ChatWidget` for AI interaction.
+
+### 2. AI Assistant (Python/Hugging Face)
+- **Hugging Face Space**: The backend runs a Python server with Gradio.
+- **Anti-Hallucination**: Implements factual grounding using `colombia_master.json`.
+- **Hybrid Grounding**: Combines model reasoning with strict regional fact injection.
+- **Auto-Navigation**: Proprietary protocol for triggering UI navigation from AI chat responses.
+
+### 3. Data & Knowledge Base
+- **colombia_master.json**: A curated database of over 1,000 Colombian municipalities, including facts, food, and landmarks.
+- **Scripts**: Tools in `scripts/geo_tools/` are used to maintain and update this knowledge base.
+
+## Detailed Directory Map
+
+- `app/`: Contains layouts, page components, and global styles (`globals.css`).
+- `components/`: UI library including `Hero`, `ChatWidget`, `DepartmentCard`, etc.
+- `lib/`: Business logic, constants, and API integration wrappers.
+- `public/`: Static assets, including site-wide images and the `robots.txt` / `sitemap.xml`.
+- `skills/`: Specialized documentation for AI agents working on specific project domains.
+
+## Development Workflow
+1. **Dependencies**: Managed via `npm`.
+2. **Docker**: `docker-compose.dev.yml` for a reproducible local development environment.
+3. **CI/CD**: Codecov integration for testing quality.
+
+## Deployment Strategy
+- **Frontend**: Vercel (Next.js optimized).
+- **AI Backend**: Hugging Face Spaces (Gradio).
+- **Data**: Statically bundled or fetched from API Colombia.

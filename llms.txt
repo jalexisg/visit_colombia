@@ -1,0 +1,26 @@
+# Visit Colombia 🇨🇴
+
+> A modern tourism website for Colombia, built with Next.js and Tailwind CSS, featuring an AI Travel Expert with a specialized geographical knowledge base.
+
+## Project Structure
+
+- [README.md](README.md): Overview and setup instructions.
+- [AGENTS.md](AGENTS.md): Mission, core capabilities, and skills for AI agents.
+- [app](app/): Next.js App Router root (pages, layouts, and logic).
+- [components](components/): Reusable UI components (Navbar, Hero, ChatWidget).
+- [lib](lib/): Utility functions and API clients.
+- [scripts](scripts/): Tools for data processing and knowledge base generation.
+- [data](data/): Geographic data mappings and backups.
+
+## Key Resources for LLMs
+
+- [colombia_master.json](colombia_master.json): Factual "Ground Truth" database for the AI Assistant.
+- [app.py](app.py): Core logic for the Hugging Face AI Assistant (Python/Gradio).
+- [skills/](skills/): Detailed documentation of project-specific AI capabilities.
+
+## Technical Stack
+
+- **Framework**: Next.js 14+ (App Router)
+- **Styling**: Tailwind CSS
+- **AI Backend**: Python (Gradio) + Hugging Face Spaces
+- **Data Source**: API Colombia
