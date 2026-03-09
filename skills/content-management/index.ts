@@ -717,6 +717,18 @@ export const blogPosts: BlogPost[] = [
         author: 'Mateo Jiménez',
         date: '2026-03-08',
         tags: ['Wildlife', 'Biodiversity', 'Nature', 'Ecotourism', 'Conservation', 'Colombia'],
+    },
+    {
+        id: '29',
+        title: `The Enchanting World of Colombian Flowers: A Horticultural Journey`,
+        slug: 'colombian-flowers-horticultural-journey',
+        excerpt: `Explore Colombia's vibrant floral industry and its rich botanical diversity, from exotic orchids to iconic carnations.`,
+        content: `<h2>Colombia: A Floral Powerhouse</h2><p>Colombia is renowned globally as one of the world\'s leading exporters of fresh-cut flowers. Its privileged geographical location, boasting a wide range of climates and fertile soils, creates ideal conditions for cultivating an extraordinary variety of blooms year-round. This floricultural abundance is not just an economic boon but also a source of national pride and natural beauty.</p><h3>Orchids: The National Flower</h3><p>Among Colombia\'s most cherished flowers, the orchid holds a special place, particularly the <em>Cattleya trianae</em>, which is the national flower. The country is home to an astonishing number of orchid species, with new discoveries still being made. Regions like the Andean mountains are natural greenhouses for these delicate and diverse plants, attracting botanists and enthusiasts from across the globe.</p><h3>Carnations and Roses: Global Exports</h3><p>While orchids symbolize native beauty, Colombian carnations and roses are celebrated worldwide for their quality and vibrant colors. The Sabana de Bogotá, with its consistent mild climate, is the epicenter of this export industry, where vast flower farms produce millions of stems annually for international markets, especially for holidays like Valentine\'s Day.</p><h3>Exotic and Native Blooms</h3><p>Beyond its commercial success, Colombia\'s natural landscapes burst with exotic flora. From the fiery heliconias of the tropical lowlands to the delicate frailejones of the high-altitude páramos, the country\'s botanical diversity is breathtaking. Exploring national parks and botanical gardens offers a glimpse into this natural spectacle.</p><h2>Floral Festivals and Traditions</h2><p>Flowers are deeply embedded in Colombian culture, celebrated in various traditions:</p><ul><li><strong>Medellín Flower Festival (Feria de las Flores):</strong> An iconic annual event where \'silleteros\' (flower
+farmers) parade intricate floral arrangements on their backs, showcasing the region\'s floricultural artistry.</li><li><strong>Religious Processions:</strong> Flowers play a significant role in religious ceremonies and festivals, used to decorate churches and adorn "procesiones".</li><li><strong>Everyday Life:</strong> From vibrant market stalls to home decorations, flowers are a daily presence, reflecting the country\'s optimistic and colorful spirit.</li></ul><p>A visit to Colombia offers a unique opportunity to immerse oneself in this enchanting floral world, whether through scientific exploration, cultural appreciation, or simply enjoying the visual feast.</p>`,
+        image: getAssetPath('/images/blog/flower-festival.png'),
+        author: 'Isabella Flores',
+        date: '2026-03-09',
+        tags: ['Flowers', 'Nature', 'Culture', 'Ecotourism', 'Horticulture', 'Medellin']
     }
 ];
 
