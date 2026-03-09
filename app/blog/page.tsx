@@ -10,13 +10,13 @@ export const metadata = {
     openGraph: {
         title: 'Travel Journal | Visit Colombia Blog',
         description: 'Expert guides, travel tips, and inspiring stories for your Colombian adventure.',
-        images: ['/images/blog-header.png'],
+        images: ['/images/blog/header.png'],
     },
     twitter: {
         card: "summary_large_image",
         title: "Travel Journal | Visit Colombia Blog",
         description: "Expert guides, travel tips, and inspiring stories for your Colombian adventure.",
-        images: ["/images/blog-header.png"],
+        images: ["/images/blog/header.png"],
     },
 };
 
@@ -29,7 +29,7 @@ export default async function BlogPage() {
             <div className="relative py-24 bg-black/60">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src={getAssetPath('/images/blog-header.png')}
+                        src={getAssetPath('/images/blog/header.png')}
                         alt="Blog Background"
                         className="w-full h-full object-cover"
                     />

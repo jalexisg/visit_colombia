@@ -20,7 +20,7 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col gap-12 pb-12">
-      <Hero backgroundImage={getAssetPath('/images/hero-home.png')} />
+      <Hero backgroundImage={getAssetPath('/images/ui/hero-home.png')} />
 
       {/* Featured Destinations */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -30,10 +30,10 @@ export default async function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {featuredCities.map((city) => {
             const images = [
-              getAssetPath('/images/blog-cartagena.png'),
-              getAssetPath('/images/blog-safety.png'),
-              getAssetPath('/images/blog-coffee.png'),
-              getAssetPath('/images/blog-tayrona.png')
+              getAssetPath('/images/blog/cartagena.png'),
+              getAssetPath('/images/blog/safety.png'),
+              getAssetPath('/images/blog/coffee.png'),
+              getAssetPath('/images/blog/tayrona.png')
             ];
             const imageIndex = (city.id % images.length);
             return (

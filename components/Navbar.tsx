@@ -29,7 +29,7 @@ export default function Navbar() {
                     <div className="flex items-center">
                         <Link href="/" className="flex-shrink-0 flex items-center gap-2">
                             <img
-                                src={getAssetPath('/images/logo.png')}
+                                src={getAssetPath('/images/ui/logo.png')}
                                 alt="Visit Colombia Logo"
                                 className="h-10 w-auto"
                             />

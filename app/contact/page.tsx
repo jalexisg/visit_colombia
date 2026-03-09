@@ -8,7 +8,7 @@ export const metadata = {
     openGraph: {
         title: 'Contact Us | Visit Colombia',
         description: 'Get in touch with the Visit Colombia team.',
-        images: ['/images/hero-home.png'],
+        images: ['/images/ui/hero-home.png'],
     },
 };
 

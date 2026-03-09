@@ -28,11 +28,11 @@ export async function generateMetadata({ params }: PageProps) {
     const { id } = await Promise.resolve(params);
     try {
         const park = await api.getNaturalArea(parseInt(id));
-        const image = getAssetPath(id === '66' ? '/images/park-coast.png' : // Tayrona
-            id === '65' ? '/images/park-mountain.png' : // Los Nevados
-                id === '67' ? '/images/park-jungle.png' : // Amacayacu
-                    ['206', '207', '208', '209'].includes(id) ? '/images/park-rosario.png' : // Islas del Rosario
-                        '/images/park-paramo.png'); // Default
+        const image = getAssetPath(id === '66' ? '/images/parks/coast.png' : // Tayrona
+            id === '65' ? '/images/parks/mountain.png' : // Los Nevados
+                id === '67' ? '/images/parks/jungle.png' : // Amacayacu
+                    ['206', '207', '208', '209'].includes(id) ? '/images/parks/rosario.png' : // Islas del Rosario
+                        '/images/parks/paramo.png'); // Default
 
         return {
             title: `${park.name} | Visit Colombia`,
@@ -92,11 +92,11 @@ export default async function NaturalParkDetailPage({ params }: PageProps) {
             <div className="relative h-[60vh] min-h-[400px] w-full">
                 <div className="absolute inset-0 bg-black/30 z-10" />
                 <img
-                    src={getAssetPath(id === '66' ? '/images/park-coast.png' : // Tayrona
-                        id === '65' ? '/images/park-mountain.png' : // Los Nevados
-                            id === '67' ? '/images/park-jungle.png' : // Amacayacu
-                                ['206', '207', '208', '209'].includes(id) ? '/images/park-rosario.png' : // Islas del Rosario
-                                    '/images/park-paramo.png')} // Default
+                    src={getAssetPath(id === '66' ? '/images/parks/coast.png' : // Tayrona
+                        id === '65' ? '/images/parks/mountain.png' : // Los Nevados
+                            id === '67' ? '/images/parks/jungle.png' : // Amacayacu
+                                ['206', '207', '208', '209'].includes(id) ? '/images/parks/rosario.png' : // Islas del Rosario
+                                    '/images/parks/paramo.png')} // Default
                     alt={park.name}
                     className="w-full h-full object-cover"
                 />

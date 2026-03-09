@@ -9,7 +9,7 @@ export const metadata = {
     openGraph: {
         title: 'About Us | Visit Colombia',
         description: 'Learn about our mission to showcase the beauty of Colombia to the world.',
-        images: ['/images/hero-home.png'],
+        images: ['/images/ui/hero-home.png'],
     },
 };
 
@@ -20,7 +20,7 @@ export default function AboutPage() {
             <div className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src={getAssetPath('/images/hero-home.png')}
+                        src={getAssetPath('/images/ui/hero-home.png')}
                         alt="Colombia Landscape"
                         className="w-full h-full object-cover opacity-60"
                     />
@@ -55,7 +55,7 @@ export default function AboutPage() {
                     </div>
                     <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
                         <img
-                            src={getAssetPath('/images/dept-coffee.png')}
+                            src={getAssetPath('/images/departments/coffee.png')}
                             alt="Colombian Coffee Culture"
                             className="w-full h-full object-cover"
                         />

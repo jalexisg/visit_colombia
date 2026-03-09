@@ -27,14 +27,14 @@ export default async function NaturalParksPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {parks.map((park) => {
                     const images = [
-                        getAssetPath('/images/landscape-andes.png'),
-                        getAssetPath('/images/landscape-amazon.png'),
-                        getAssetPath('/images/landscape-guajira.png'),
-                        getAssetPath('/images/blog-safety.png'),
-                        getAssetPath('/images/blog-tayrona.png'),
-                        getAssetPath('/images/blog-cano-cristales.png'),
-                        getAssetPath('/images/blog-coffee.png'),
-                        getAssetPath('/images/hero-home.png')
+                        getAssetPath('/images/landscapes/andes.png'),
+                        getAssetPath('/images/landscapes/amazon.png'),
+                        getAssetPath('/images/landscapes/guajira.png'),
+                        getAssetPath('/images/blog/safety.png'),
+                        getAssetPath('/images/blog/tayrona.png'),
+                        getAssetPath('/images/blog/cano-cristales.png'),
+                        getAssetPath('/images/blog/coffee.png'),
+                        getAssetPath('/images/ui/hero-home.png')
                     ];
                     // Pseudorandom index to avoid repetition patterns
                     const imageIndex = (Number(park.id) + park.name.length) % images.length;

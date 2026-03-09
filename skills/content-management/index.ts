@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
             <p>True to its name, this beach offers some of the clearest waters in the park, perfect for snorkeling.</p>
             <p>Whether you're looking for a luxury resort or a rustic eco-lodge, Colombia's beaches have something for everyone.</p>
         `,
-        image: getAssetPath('/images/blog-tayrona.png'),
+        image: getAssetPath('/images/blog/tayrona.png'),
         author: 'Maria Garcia',
         date: '2025-10-15',
         tags: ['Beaches', 'Caribbean', 'Pacific', 'Travel Guide'],
@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
             <h2>Coffee Farm Tours</h2>
             <p>No visit is complete without a tour of a working coffee farm (finca). Learn about the entire process from bean to cup.</p>
         `,
-        image: getAssetPath('/images/blog-coffee.png'),
+        image: getAssetPath('/images/blog/coffee.png'),
         author: 'Juan Perez',
         date: '2025-11-02',
         tags: ['Coffee', 'Culture', 'Mountains', 'Gastronomy'],
@@ -70,7 +70,7 @@ export const blogPosts: BlogPost[] = [
             <p>While English is spoken in major tourist areas, knowing basic Spanish phrases goes a long way and is appreciated by locals.</p>
             <p>Most travelers have a trouble-free experience by using common sense and following local advice.</p>
         `,
-        image: getAssetPath('/images/blog-safety.png'),
+        image: getAssetPath('/images/blog/safety.png'),
         author: 'Alex Traveler',
         date: '2025-12-10',
         tags: ['Safety', 'Tips', 'Travel Advice'],
@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
             <p>Access is typically via a flight to La Macarena from Bogota or Villavicencio. It's a remote destination that requires a guide.</p>
             <p>It is a fragile ecosystem, so strict rules apply to visitors to preserve its beauty.</p>
         `,
-        image: getAssetPath('/images/blog-cano-cristales.png'),
+        image: getAssetPath('/images/blog/cano-cristales.png'),
         author: 'Sarah Jenkins',
         date: '2026-01-20',
         tags: ['Nature', 'Adventure', 'Ecotourism'],
@@ -114,7 +114,7 @@ export const blogPosts: BlogPost[] = [
                 <li><strong>Dec: Cali Fair (Feria de Cali)</strong> - The salsa capital of the world comes alive with parties and concerts.</li>
             </ul>
         `,
-        image: getAssetPath('/images/blog-best-time.png'),
+        image: getAssetPath('/images/blog/best-time.png'),
         author: 'Elena Rodriguez',
         date: '2026-02-10',
         tags: ['Travel Tips', 'Weather', 'Festivals'],
@@ -133,7 +133,7 @@ export const blogPosts: BlogPost[] = [
             <h2>Mompox, Bolívar</h2>
             <p>A riverside town frozen in time, Mompox played a key role in Colombia's independence and is a UNESCO World Heritage site.</p>
         `,
-        image: getAssetPath('/images/dept-boyaca.png'),
+        image: getAssetPath('/images/departments/boyaca.png'),
         author: 'Isabella Martinez',
         date: '2026-02-20',
         tags: ['History', 'Culture', 'Architecture', 'Travel Guide'],
@@ -156,7 +156,7 @@ export const blogPosts: BlogPost[] = [
             <h2>Chemical Assault Awareness</h2>
             <p>A severe threat in the nightlife sector is the use of incapacitating drugs like scopolamine (burundanga). Never leave your drinks unattended and refuse snacks, cigarettes, or gum from strangers.</p>
         `,
-        image: getAssetPath('/images/blog-security-2026.png'),
+        image: getAssetPath('/images/blog/security-2026.png'),
         author: 'Security Analyst',
         date: '2026-03-01',
         tags: ['Safety', '2026', 'Travel Tips', 'Security'],
@@ -175,7 +175,7 @@ export const blogPosts: BlogPost[] = [
             <h2>Health and Vaccinations</h2>
             <p>The Yellow Fever vaccine is highly recommended and often mandatory for visitors to National Parks like Tayrona or regions like the Amazon. Administer it at least 10 days before travel to ensure full immunity.</p>
         `,
-        image: getAssetPath('/images/blog-logistics.png'),
+        image: getAssetPath('/images/blog/logistics.png'),
         author: 'Admin Support',
         date: '2026-02-25',
         tags: ['Logistics', 'Visa', 'Health', 'Travel Guide'],
@@ -197,7 +197,7 @@ export const blogPosts: BlogPost[] = [
                 <li><strong>Salsa Festival in Cali (September 25-28):</strong> Witness the global salsa capital in its full glory.</li>
             </ul>
         `,
-        image: getAssetPath('/images/blog-festivals.png'),
+        image: getAssetPath('/images/blog/festivals.png'),
         author: 'Culture Scout',
         date: '2026-02-26',
         tags: ['Festivals', 'Climate', 'Culture', '2026'],
@@ -224,7 +224,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Colombian gastronomy is an invitation to explore the country's diversity through its flavors, an unforgettable experience for any traveler.</p>
         `,
-        image: getAssetPath('/images/blog-gastronomia.png'),
+        image: getAssetPath('/images/blog/gastronomia.png'),
         author: 'Camila Rojas',
         date: '2026-02-28',
         tags: ['Gastronomy', 'Food', 'Culture', 'Culinary Travels', 'Colombia']
@@ -254,7 +254,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Whether in the air, in the water, or underground, Colombia awaits you with an adventure tailored to your boldest spirit. Get your gear ready and jump into exploration!</p>
         `,
-        image: getAssetPath('/images/blog-aventura.png'),
+        image: getAssetPath('/images/blog/aventura.png'),
         author: 'Diego Morales',
         date: '2026-02-28',
         tags: ['Adventure', 'Extreme Sports', 'Nature', 'Adrenaline', 'Colombia']
@@ -289,7 +289,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Experiencing Colombia's music and dance is to experience its soul. Whether you're watching a professional performance, taking a salsa class, or simply enjoying the rhythms spilling from a local bar, you'll feel the infectious energy that makes Colombia so unique.</p>
         `,
-        image: getAssetPath('/images/blog-rhythms.png'),
+        image: getAssetPath('/images/blog/rhythms.png'),
         author: 'Sofía Herrera',
         date: '2026-03-01',
         tags: ['Music', 'Dance', 'Culture', 'Festivals']
@@ -316,7 +316,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Whether you're enchanted by its history, thrilled by its nightlife, or simply wish to soak up the Caribbean sun, Cartagena promises an unforgettable Colombian adventure.</p>
         `,
-        image: getAssetPath('/images/blog-cartagena.png'),
+        image: getAssetPath('/images/blog/cartagena.png'),
         author: 'Andrés Castro',
         date: '2026-03-02',
         tags: ['Cartagena', 'Caribbean', 'History', 'Culture', 'Travel Guide']
@@ -343,7 +343,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>An adventure in the Amazon Rainforest is more than just a trip; it's a journey into the heart of nature's grandeur and a testament to the planet's thriving biodiversity. Prepare to be amazed by the sights, sounds, and vibrant life of this extraordinary region.</p>
         `,
-        image: getAssetPath('/images/blog-amazon-rainforest.png'),
+        image: getAssetPath('/images/blog/amazon-rainforest.png'),
         author: 'Valentina Ortiz',
         date: '2026-03-02',
         tags: ['Amazon', 'Ecotourism', 'Wildlife', 'Adventure', 'Culture']
@@ -367,7 +367,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Bogotá's street art scene is a testament to the city's resilience, creativity, and willingness to embrace art as a tool for dialogue and transformation. It's an essential experience that offers a unique perspective on Colombian culture and society.</p>
         `,
-        image: getAssetPath('/images/blog-bogota-street-art.png'),
+        image: getAssetPath('/images/blog/bogota-street-art.png'),
         author: 'Nicolás Vargas',
         date: '2026-03-02',
         tags: ['Bogota', 'Street Art', 'Culture', 'Urban Exploration', 'Art']
@@ -394,7 +394,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>A journey to Colombia's Pacific coast is an adventure into an untamed, culturally rich, and ecologically vital part of the world. It's an ideal destination for travelers seeking authentic experiences, unparalleled wildlife encounters, and a deep connection with nature.</p>
         `,
-        image: getAssetPath('/images/blog-pacific-coast.png'),
+        image: getAssetPath('/images/blog/pacific-coast.png'),
         author: 'Felipe Mendoza',
         date: '2026-03-02',
         tags: ['Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Nature']
@@ -421,7 +421,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>A trek to Ciudad Perdida is more than just a hike; it's a profound cultural and historical immersion, connecting you with Colombia's ancient past and its vibrant natural present.</p>
         `,
-        image: getAssetPath('/images/blog-ciudad-perdida.png'),
+        image: getAssetPath('/images/blog/ciudad-perdida.png'),
         author: 'Laura Martinez',
         date: '2026-03-03',
         tags: ['Archaeology', 'Adventure', 'Hiking', 'Sierra Nevada', 'Indigenous Culture']
@@ -452,7 +452,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>The Tatacoa Desert is a testament to Colombia's extraordinary geographical diversity. It's a place that challenges expectations and rewards visitors with unforgettable sights and experiences. Don't miss this hidden gem on your Colombian adventure!</p>
         `,
-        image: getAssetPath('/images/blog-tatacoa-desert.png'),
+        image: getAssetPath('/images/blog/tatacoa-desert.png'),
         author: 'Daniela Soto',
         date: '2026-03-04',
         tags: ['Desert', 'Ecotourism', 'Stargazing', 'Adventure', 'Nature'],
@@ -466,7 +466,7 @@ export const blogPosts: BlogPost[] = [
 <ul><li><strong>Tropical Dry Forest (0-1,000m):</strong> Cacti, thorny shrubs, and drought-resistant trees.</li><li><strong>Rainforest (1,000-2,500m):</strong> Dense vegetation, orchids, and abundant wildlife.</li><li><strong>Cloud Forest (2,500-3,300m):</strong> Misty environment with moss-covered trees and unique orchids.</li><li><strong>Páramo (3,300-4,500m):</strong> High-altitude grasslands with frailejones and specialized plants.</li><li><strong>Snow Zone (4,500m+):</strong> Permanent snow caps on the peaks of Colón and Bolívar.</li></ul><h2>Endemic Species</h2><p>The isolation of the Sierra Nevada has led to the evolution of species found nowhere else, including:</p>
 <ul><li>The Blue-bearded Helmetcrest hummingbird</li><li>The Santa Marta Parakeet</li><li>The Santa Marta Mountain Rat</li><li>Numerous amphibian species</li></ul><h2>Planning Your Visit</h2><p>The best way to explore these ecosystems is through guided treks that respect both the natural environment and the indigenous communities who call this sacred mountain home. Popular access points include:</p>
 <ul><li>Minca: Gateway to cloud forests and birdwatching</li><li>Palomino: Access to lower elevation trails and rivers</li><li>El Dorado Reserve: Premier birdwatching location</li></ul><p>Whether you're a nature enthusiast, researcher, or simply someone who appreciates natural wonders, the Sierra Nevada de Santa Marta offers an unparalleled opportunity to witness the incredible diversity of life that Colombia harbors.</p>`,
-        image: getAssetPath('/images/blog-sierra-nevada.png'),
+        image: getAssetPath('/images/blog/sierra-nevada.png'),
         author: 'Camila Restrepo',
         date: '2026-03-05',
         tags: ['Nature', 'Biodiversity', 'Mountains', 'Ecotourism', 'Wildlife']
@@ -506,7 +506,7 @@ export const blogPosts: BlogPost[] = [
             </ul>
             <p>Visit these architectural landmarks to witness how Colombia is building its future while honoring its past. Each structure tells a story of innovation, resilience, and cultural pride.</p>
         `,
-        image: getAssetPath('/images/blog-modern-architecture.png'),
+        image: getAssetPath('/images/blog/modern-architecture.png'),
         author: 'Daniel Torres',
         date: '2026-03-05',
         tags: ['Architecture', 'Urban Design', 'Innovation', 'Culture', 'Cities']
@@ -519,7 +519,7 @@ export const blogPosts: BlogPost[] = [
         excerpt: `Discover the emerging and timeless favorites that are set to top every traveler's list in 2026.`,
 
         content: `<p>As we look forward to 2026, Colombia continues to evolve as a premier travel destination, blending its rich cultural heritage with innovative urban experiences and breathtaking natural wonders. Here are the top trending destinations you shouldn't miss.</p><h2>1. The "Green Metropolitan" - Medellín</h2><p>Medellín remains at the forefront of urban transformation. In 2026, the city is set to unveil new "green corridors" and sustainable transport initiatives that make it more walkable and eco-friendly than ever. Don't miss the burgeoning art scene in Comuna 13 and the world-class gastronomy in El Poblado.</p><h2>2. Remote Paradise - Bahía Solano</h2><p>For those seeking to disconnect, Bahía Solano on the Pacific coast is the place to be. With a focus on high-end ecotourism, visitors can enjoy whale watching, jungle treks, and pristine beaches with minimal environmental impact.</p><h2>3. Cultural Hub - Popayán</h2><p>Known as the "White City," Popayán is gaining international recognition for its culinary traditions and historic Holy Week processions. In 2026, it will host several international gastronomy festivals that highlight traditional flavors with a modern twist.</p><h2>4. Adventure Frontier - San José del Guaviare</h2><p>The gateway to the Chiribiquete National Park, San José del Guaviare offers ancient rock art and stunning geological formations. It's the ultimate destination for off-the-beaten-path explorers.</p><h2>Planning Your 2026 Trip</h2><p>Whether you're drawn to the vibrant cities or the serene countryside, 2026 is the perfect year to experience the diverse beauty of Colombia. Be sure to book community-led tours to support local heritage and sustainable practices.</p>`,
-        image: getAssetPath('/images/blog-trending-2026.png'),
+        image: getAssetPath('/images/blog/trending-2026.png'),
         author: 'Adriana Silva',
         date: '2026-03-07',
         tags: ['Travel Trends', '2026', 'Destinations', 'Colombia']
@@ -544,7 +544,7 @@ export const blogPosts: BlogPost[] = [
 <p>Beyond its visual appeal, Guatapé offers a taste of authentic Colombian paisa culture. Sample traditional dishes like bandeja paisa, fresh trout from the reservoir, or a warm arepa with cheese. The town's vibrant plazas often host local musicians and artisans, providing a lively atmosphere, especially on weekends and holidays.</p>
 
 <p>Guatapé is more than just a colorful facade; it's a destination that perfectly blends natural beauty, unique artistic expression, and a laid-back atmosphere, making it a must-visit for any traveler to Colombia.</p>`,
-        image: getAssetPath('/images/blog-guatape.png'),
+        image: getAssetPath('/images/blog/guatape.png'),
         author: 'Lucía Fernández',
         date: '2026-03-07',
         tags: ['Guatape', 'Antioquia', 'Colorful Towns', 'Adventure', 'Culture']
@@ -595,7 +595,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <p>This cultural diversity is not just a tourist attraction; it is the very essence of Colombia, a country that celebrates its differences and finds in them its greatest strength. Each cultural manifestation is a thread in the social fabric that makes Colombia a unique and fascinating destination.</p>`,
-        image: getAssetPath('/images/blog-cultural-diversity.png'),
+        image: getAssetPath('/images/blog/cultural-diversity.png'),
         author: 'Javier Córdoba',
         date: '2026-03-08',
         tags: ['Culture', 'Traditions', 'Music', 'Gastronomy', 'Indigenous', 'Colombia'],
@@ -623,7 +623,7 @@ export const blogPosts: BlogPost[] = [
             <h2>Safety and Local Rhythm</h2>
             <p>Security has improved significantly, allowing visitors to enjoy the city's pulse with peace of mind. As always, it is recommended to use reliable transportation platforms and maintain general situational awareness. Whether you're here for the urban innovation or the salsa beats, Medellín in 2026 is a city that dreams and constantly redefines itself.</p>
         `,
-        image: getAssetPath('/images/blog-medellin-urbanism.png'),
+        image: getAssetPath('/images/blog/medellin-urbanism.png'),
         author: 'Carolina Duque',
         date: '2026-03-08',
         tags: ['Medellín', 'Urbanism', 'Sustainability', 'Nightlife', 'Culture', '2026'],
@@ -650,7 +650,7 @@ export const blogPosts: BlogPost[] = [
 
             <p>Reaching Nuquí typically involves a short flight from Medellín or Quibdó, followed by a boat transfer. This effort is richly rewarded by an experience that feels truly off the grid, providing a unique insight into Colombia’s wild Pacific soul.</p>
         `,
-        image: getAssetPath('/images/blog-nuqui.png'),
+        image: getAssetPath('/images/blog/nuqui.png'),
         author: 'Ricardo Mesa',
         date: '2026-03-08',
         tags: ['Nuquí', 'Pacific Coast', 'Whale Watching', 'Ecotourism', 'Afro-Colombian Culture', 'Adventure']
@@ -678,7 +678,7 @@ export const blogPosts: BlogPost[] = [
             <h2>A Cultural Treasure</h2>
             <p>Ráquira is more than just a marketplace; it's a living testament to Colombia's rich cultural heritage. The town's vibrant handicrafts tell stories of its people, their connection to the land, and their enduring artistic traditions. A visit here offers a colorful and authentic glimpse into the heart of Colombian craftsmanship.</p>
         `,
-        image: getAssetPath('/images/blog-raquira-clay.png'),
+        image: getAssetPath('/images/blog/raquira-clay.png'),
         author: 'Elena "Potter" Ramirez',
         date: '2026-03-08',
         tags: ['Handicrafts', 'Art', 'Culture', 'Ráquira', 'Boyacá', 'Pottery'],
@@ -713,7 +713,7 @@ export const blogPosts: BlogPost[] = [
             <h2>The Importance of Conservation</h2>
             <p>Colombia has made significant strides in conservation through an extensive network of national parks and protected reserves. Supporting sustainable tourism and community-led initiatives is essential to preserving this natural legacy for future generations. A journey through Colombia is a chance to witness nature's masterpiece in its most vibrant and diverse forms.</p>
         `,
-        image: getAssetPath('/images/blog-wildlife-biodiversity.png'),
+        image: getAssetPath('/images/blog/wildlife-biodiversity.png'),
         author: 'Mateo Jiménez',
         date: '2026-03-08',
         tags: ['Wildlife', 'Biodiversity', 'Nature', 'Ecotourism', 'Conservation', 'Colombia'],

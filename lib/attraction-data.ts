@@ -15,7 +15,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A mountain that dominates the city center of Bogotá, rising to 3,152 meters above the sea level, where there is a church (built in the 17th century) with a shrine, devoted to 'El Señor Caído'.",
         latitude: "4.6058",
         longitude: "-74.0564",
-        images: ["/images/city-bogota.png"],
+        images: ["/images/cities/cundinamarca/bogota.png"],
         link: "/cities/167" // Bogotá
     },
     {
@@ -24,7 +24,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A fortress in the city of Cartagena, Colombia. The castle is located on the Hill of San Lázaro in a strategic location, dominating approaches to the city by land or sea.",
         latitude: "10.4225",
         longitude: "-75.5414",
-        images: ["/images/blog-cartagena.png"],
+        images: ["/images/blog/cartagena.png"],
         link: "/cities/210" // Cartagena
     },
     {
@@ -42,7 +42,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A theme park in the Quindío department, Colombia. The park features a museum, culture shows, a cable car, and several ecological trails.",
         latitude: "4.5401",
         longitude: "-75.7706",
-        images: ["/images/blog-coffee.png"],
+        images: ["/images/blog/coffee.png"],
         link: "/cities/891" // Montenegro
     },
     {
@@ -60,7 +60,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "The main square of the Colombian capital Bogotá. The square, previously known as Plaza Mayor, is located in the heart of the city's historical area.",
         latitude: "4.5981",
         longitude: "-74.0758",
-        images: ["/images/city-bogota.png"],
+        images: ["/images/cities/cundinamarca/bogota.png"],
         link: "/cities/167"
     },
     {
@@ -105,7 +105,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A protected area in the Colombian northern Caribbean region and within the jurisdiction of the Department of Magdalena and 34 kilometres from the city of Santa Marta.",
         latitude: "11.3125",
         longitude: "-74.0708",
-        images: ["/images/blog-tayrona.png"],
+        images: ["/images/blog/tayrona.png"],
         link: "/natural-parks/66" // Tayrona
     },
     {
@@ -114,7 +114,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A broad valley in the Cordillera Central of the Colombian Andes. It is the principal location of the national tree and symbol of Colombia, the Quindío wax palm.",
         latitude: "4.6400",
         longitude: "-75.5683",
-        images: ["/images/dept-coffee.png"],
+        images: ["/images/departments/coffee.png"],
         link: "/cities/885" // Armenia (Salento not in API?)
     },
     {
@@ -123,7 +123,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "Known as the 'River of Five Colors' or the 'Liquid Rainbow', is a Colombian river located in the Serrania de la Macarena province of Meta.",
         latitude: "2.2642",
         longitude: "-73.7944",
-        images: ["/images/blog-cano-cristales.png"],
+        images: ["/images/blog/cano-cristales.png"],
         link: "/natural-parks/426" // Sierra de la Macarena
     },
     {
@@ -141,7 +141,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "Once known as one of the most dangerous neighborhoods in Medellin, it has transformed into a vibrant hub of street art, music, and culture.",
         latitude: "6.2464",
         longitude: "-75.6022",
-        images: ["/images/city-medellin.png"],
+        images: ["/images/cities/antioquia/medellin.png"],
         link: "/cities/12" // Medellín
     },
     {
@@ -168,7 +168,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "An outside park in front of the Museum of Antioquia in Medellin that displays 23 sculptures donated by Colombian artist Fernando Botero.",
         latitude: "6.2522",
         longitude: "-75.5683",
-        images: ["/images/city-medellin.png"],
+        images: ["/images/cities/antioquia/medellin.png"],
         link: "/cities/12"
     },
     {
@@ -177,7 +177,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "The main city gate of the historic center of Cartagena de Indias, Colombia and the original entrance of the fortified city.",
         latitude: "10.4222",
         longitude: "-75.5483",
-        images: ["/images/blog-cartagena.png"],
+        images: ["/images/blog/cartagena.png"],
         link: "/cities/210"
     },
     {
@@ -204,7 +204,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A national park located in the south of the majestic Colombian Amazon rain forest. It provides an opportunity to see the rich wildlife of the Amazon.",
         latitude: "-3.4767",
         longitude: "-70.3000",
-        images: ["/images/landscape-amazon.png"],
+        images: ["/images/landscapes/amazon.png"],
         link: "/natural-parks/72"
     },
     {
@@ -213,7 +213,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A national natural park dealing with the Sierra Nevada de Güicán, Chita or Cocuy, a formation of more than 25 peaks covered with snow and ice.",
         latitude: "6.4167",
         longitude: "-72.3333",
-        images: ["/images/landscape-andes.png"],
+        images: ["/images/landscapes/andes.png"],
         link: "/natural-parks/263"
     },
     {
@@ -222,7 +222,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "Located in the Colombian Coffee-Growers Axis. The park is surrounded by snow-capped peaks, including Nevado del Ruiz, Nevado de Santa Isabel, and Nevado del Tolima.",
         latitude: "4.8833",
         longitude: "-75.3667",
-        images: ["/images/park-mountain.png"],
+        images: ["/images/parks/mountain.png"],
         link: "/natural-parks/18"
     },
     {
@@ -231,7 +231,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A UNESCO World Heritage Site and the world's largest tepui plateau, featuring ancient rock art with over 75,000 paintings. It is a biodiversity hotspot and sacred land for indigenous peoples.",
         latitude: "0.8667",
         longitude: "-72.6333",
-        images: ["/images/landscape-amazon.png"],
+        images: ["/images/landscapes/amazon.png"],
         link: "/natural-parks/450"
     },
     {
@@ -240,7 +240,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "Located northeast of Bogotá, Chingaza is a high-altitude páramo ecosystem that provides drinking water to millions of people. It is home to tapirs, spectacled bears, and the Andean condor.",
         latitude: "4.5167",
         longitude: "-73.7500",
-        images: ["/images/park-paramo.png"],
+        images: ["/images/parks/paramo.png"],
         link: "/natural-parks/204"
     },
     {
@@ -249,7 +249,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A remote island national park in the Pacific Ocean, formerly a prison colony. Today it is a sanctuary for humpback whales, sea turtles, sharks, and some of the most biodiverse coral reefs in the eastern Pacific.",
         latitude: "2.9667",
         longitude: "-78.1833",
-        images: ["/images/park-coast.png"],
+        images: ["/images/parks/coast.png"],
         link: "/natural-parks/149"
     },
     {
@@ -258,7 +258,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A stunning coastal park on the Pacific coast of Chocó, one of the world's most biodiverse regions. It protects lush jungle, mangroves, and turquoise coves where humpback whales come to breed.",
         latitude: "6.0167",
         longitude: "-77.3500",
-        images: ["/images/park-coast.png"],
+        images: ["/images/parks/coast.png"],
         link: "/natural-parks/115"
     },
     {
@@ -267,7 +267,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A volcanic landscape in the Colombian Andes featuring the active Puracé volcano, sulfur springs, waterfalls, and páramo ecosystems rich in frailejones and spectacled bears.",
         latitude: "2.3167",
         longitude: "-76.4000",
-        images: ["/images/park-mountain.png"],
+        images: ["/images/parks/mountain.png"],
         link: "/natural-parks/14"
     },
     {
@@ -276,7 +276,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A wildlife sanctuary on the Caribbean coast of La Guajira, protecting coastal lagoons, mangroves, and beaches. It is famous for its flamingo colonies and is a key stop on migratory bird routes.",
         latitude: "11.2500",
         longitude: "-73.4167",
-        images: ["/images/park-coast.png"],
+        images: ["/images/parks/coast.png"],
         link: "/natural-parks/107"
     },
     {
@@ -285,7 +285,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A biodiversity hotspot in the western Colombian Andes, protecting one of the world's greatest concentrations of orchid species alongside jaguar, ocelot, and an extraordinary array of birds.",
         latitude: "6.5833",
         longitude: "-76.2500",
-        images: ["/images/park-jungle.png"],
+        images: ["/images/parks/jungle.png"],
         link: "/natural-parks/73"
     },
     {
@@ -294,7 +294,7 @@ export const manualAttractions: ManualAttraction[] = [
         description: "A unique biological crossroads where the Andes, Orinoquía, and Amazon regions meet. Home to the legendary Caño Cristales river — the 'River of Five Colors' — and remarkable endemic species.",
         latitude: "3.3833",
         longitude: "-73.9167",
-        images: ["/images/blog-cano-cristales.png"],
+        images: ["/images/blog/cano-cristales.png"],
         link: "/natural-parks/426"
     }
 ];

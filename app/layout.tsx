@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: "Explore Colombia's vibrant culture, breathtaking nature, and friendly people.",
     images: [
       {
-        url: "/images/hero-home.png",
+        url: "/images/ui/hero-home.png",
         width: 1200,
         height: 630,
         alt: "Visit Colombia Hero Image",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Visit Colombia | Discover the Magic",
     description: "Explore Colombia's vibrant culture, breathtaking nature, and friendly people.",
-    images: ["/images/hero-home.png"],
+    images: ["/images/ui/hero-home.png"],
     creator: "@visitcolombia",
   },
   robots: {

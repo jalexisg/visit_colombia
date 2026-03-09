@@ -9,13 +9,13 @@ export const metadata = {
     openGraph: {
         title: 'Departments of Colombia | Visit Colombia',
         description: 'Explore the diverse departments of Colombia, from the Caribbean coast to the Amazon rainforest.',
-        images: ['/images/landscape-andes.png'],
+        images: ['/images/landscapes/andes.png'],
     },
     twitter: {
         card: "summary_large_image",
         title: "Departments of Colombia | Visit Colombia",
         description: "Explore the diverse departments of Colombia, from the Caribbean coast to the Amazon rainforest.",
-        images: ["/images/landscape-andes.png"],
+        images: ["/images/landscapes/andes.png"],
     },
 };
 
