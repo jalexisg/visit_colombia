@@ -725,6 +725,68 @@ export const blogPosts: BlogPost[] = [
         author: 'Nature Explorer',
         date: '2026-03-08',
         tags: ['Wildlife', 'Biodiversity', 'Nature', 'Ecotourism', 'Colombia'],
+    },
+    {
+        id: '22',
+        title: 'Handicrafts of Ráquira: The Clay Capital of Colombia',
+        slug: 'handicrafts-raquira-clay-capital',
+        excerpt: `Discover Ráquira, Colombia's renowned "Clay Capital," where vibrant pottery and traditional crafts come to life, embodying centuries of artistic heritage.`,
+        content: `
+            <p>Nestled in the department of Boyacá, the charming town of Ráquira proudly carries the title of "The Clay Capital of Colombia." For centuries, its inhabitants have dedicated themselves to the art of pottery, transforming the rich local earth into an astonishing array of utilitarian and decorative handicrafts.</p>
+
+            <h2>A World of Clay and Color</h2>
+            <p>Walking through the streets of Ráquira is like stepping into an open-air gallery. Every shop overflows with vibrant ceramics, from traditional cooking vessels and intricate figurines to colorful animal sculptures and elaborate home decor. The diversity of designs and the skill of the artisans are truly captivating.</p>
+
+            <p>The characteristic red, orange, and earthy tones of the clay are often adorned with bright blues, greens, and yellows, reflecting the cheerful spirit of Colombian folk art. You'll find everything from miniature pesebres (nativity scenes) to larger-than-life garden ornaments.</p>
+
+            <h2>Beyond Pottery: Textiles and More</h2>
+            <p>While clay is king in Ráquira, the town's craftsmanship extends to other traditional arts. Hand-woven textiles, including ponchos, blankets, and hats, showcase intricate patterns and natural dyes. Visitors can also find leather goods and wooden carvings, all made with meticulous attention to detail and a deep respect for ancestral techniques.</p>
+
+            <h2>The Artisan Experience</h2>
+            <p>One of the highlights of visiting Ráquira is the opportunity to see artisans at work. Many workshops are open to the public, allowing you to observe potters spinning clay on their wheels, meticulously painting intricate designs, or firing their creations in traditional kilns. It's a chance to understand the dedication and passion that goes into each piece.</p>
+            <p>Don't miss the central plaza, where artisans often display their wares and where you can find unique souvenirs and gifts directly from the makers. Engaging with the local community and learning about their craft is an enriching experience.</p>
+
+            <h2>A Cultural Treasure</h2>
+            <p>Ráquira is more than just a marketplace; it's a living testament to Colombia's rich cultural heritage. The town's vibrant handicrafts tell stories of its people, their connection to the land, and their enduring artistic traditions. A visit here offers a colorful and authentic glimpse into the heart of Colombian craftsmanship.</p>
+        `,
+        image: getAssetPath('/images/blog-raquira-clay.png'),
+        author: 'Elena "Potter" Ramirez',
+        date: '2026-03-08',
+        tags: ['Handicrafts', 'Art', 'Culture', 'Ráquira', 'Boyacá', 'Pottery'],
+    }
+
+    },
+    {
+        id: '23',
+        title: 'Colombia's Coffee Culture: Beyond the Bean',
+        slug: 'colombias-coffee-culture-beyond-the-bean',
+        excerpt: 'Delve into the rich history, social rituals, and scenic landscapes of Colombia's world-renowned coffee culture, a journey far beyond just a cup.',
+        content: `
+            <p>Colombian coffee is celebrated globally for its rich flavor and aromatic profile, but to truly experience it, one must immerse themselves in the deep-rooted coffee culture that permeates the country. This isn't just about drinking coffee; it's about tradition, community, and a way of life.</p>
+
+            <h2>The Coffee Axis (Eje Cafetero): A UNESCO Heritage Site</h2>
+            <p>The heart of Colombia's coffee production lies within the Coffee Cultural Landscape, a UNESCO World Heritage site comprising the departments of Caldas, Quindío, and Risaralda. Here, lush green mountains are carpeted with coffee plants, interspersed with charming towns like Salento, Filandia, and Pijao, each offering a unique glimpse into the coffee-growing process.</p>
+            <ul>
+                <li><strong>Salento:</strong> Famous for its colorful architecture and proximity to the Valle de Cocora, where the towering wax palms stand guard over coffee farms.</li>
+                <li><strong>Filandia:</strong> A less-crowded alternative with equally vibrant streets and stunning viewpoints.</li>
+                <li><strong>Pijao:</strong> Recognized as a "slow city" (Cittaslow), emphasizing sustainable tourism and local culture.</li>
+            </ul>
+
+            <h2>From Bean to Cup: The Coffee Process</h2>
+            <p>Visiting a coffee farm (finca cafetera) is an essential experience. Guides, often local farmers, walk you through the entire process: from cultivation and harvesting the ripe red cherries to depulping, fermenting, washing, drying, roasting, and finally, brewing that perfect cup. You'll learn to appreciate the meticulous care and effort involved in every stage.</p>
+
+            <h2>The Ritual of "Tintico"</h2>
+            <p>Coffee is more than a beverage in Colombia; it's a social lubricant. The "tintico," a small cup of black coffee, is offered as a sign of hospitality and is a constant companion throughout the day, whether in a business meeting, a casual chat with friends, or simply a moment of reflection. Embrace this ritual and connect with locals over a warm cup.</p>
+
+            <h2>Sustainability and Fair Trade</h2>
+            <p>Many Colombian coffee farms are transitioning to sustainable and fair trade practices, focusing on environmental conservation and improving the livelihoods of farmers. By choosing to visit and purchase from these farms, you contribute directly to responsible tourism and support the communities that make Colombian coffee so special.</p>
+
+            <p>So, next time you savor a cup of Colombian coffee, remember the journey it took and the rich culture it represents. It's an invitation to explore a country where every bean tells a story.</p>
+        `,
+        image: getAssetPath('/images/blog-coffee-culture.png'),
+        author: 'Elena Rodriguez',
+        date: '2026-03-09',
+        tags: ['Coffee', 'Culture', 'Gastronomy', 'Ecotourism', 'Travel Guide'],
     }
 ];
 
