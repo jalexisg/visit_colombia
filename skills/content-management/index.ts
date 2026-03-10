@@ -729,6 +729,33 @@ farmers) parade intricate floral arrangements on their backs, showcasing the reg
         author: 'Isabella Flores',
         date: '2026-03-09',
         tags: ['Flowers', 'Nature', 'Culture', 'Ecotourism', 'Horticulture', 'Medellin']
+    },
+    {
+        id: '30',
+        title: `Exploring the San Andrés and Providencia Archipelago: Colombia's Caribbean Paradise`,
+        slug: 'san-andres-providencia-archipelago',
+        excerpt: `Dive into the vibrant turquoise waters and rich cultural tapestry of Colombia's unique Caribbean island paradise.`,
+        content: `
+<p>Off the coast of Nicaragua, yet proudly Colombian, lies the San Andrés and Providencia Archipelago, a UNESCO Biosphere Reserve. This Caribbean gem offers an unparalleled mix of stunning natural beauty, rich cultural heritage, and a relaxed island vibe, making it a distinct highlight on Colombia’s tourism map.</p>
+
+<h2>The Sea of Seven Colors: San Andrés</h2>
+<p>San Andrés, the larger and more bustling of the two main islands, is famous for its ‘Sea of Seven Colors.’ This incredible phenomenon is due to the varying depths of the ocean and the diverse marine life within its coral reefs. Popular activities include snorkeling and diving in sites like El Acuario and Johnny Cay, where you can swim among colorful fish and stingrays. The island also offers duty-free shopping, a vibrant nightlife, and a mix of Creole, Colombian, and international cuisine.</p>
+
+<h2>Providencia: An Untouched Paradise</h2>
+<p>Just a short flight or catamaran ride from San Andrés, Providencia offers a tranquil escape. This smaller, less developed island is a haven for ecotourism and those seeking an authentic Caribbean experience away from the crowds. Its unspoiled coral reefs, part of the third-largest barrier reef in the world, are a diver’s dream. Must-do activities include hiking up ‘The Peak’ for panoramic views, exploring the quaint town of Santa Catalina, and relaxing on beaches like Manzanillo.</p>
+
+<h2>Cultural Fusion and Raizal Heritage</h2>
+<p>The islands boast a unique Raizal culture, a blend of African, English, Spanish, and indigenous influences. This is reflected in their Creole language, calypso music, and distinctive architecture. Engaging with the local community offers a deeper insight into the islands’ soul.</p>
+
+<h2>Conservation Efforts</h2>
+<p>Given its incredible biodiversity, particularly its coral reefs, conservation is paramount. Visitors are encouraged to practice responsible tourism, respecting marine life and supporting local, sustainable initiatives.</p>
+
+<p>Whether you’re seeking adventure beneath the waves, relaxation on pristine sands, or an immersion in a unique Caribbean culture, the San Andrés and Providencia Archipelago promises an unforgettable journey into Colombia's vibrant island paradise.</p>
+        `,
+        image: getAssetPath('getAssetPath('/images/blog/san-andres-providencia.png')'),
+        author: 'Isla Voyager',
+        date: '2026-03-10',
+        tags: ['Caribbean', 'Islands', 'Ecotourism', 'Culture', 'Diving']
     }
 ];
 
