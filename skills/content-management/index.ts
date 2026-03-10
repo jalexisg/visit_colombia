@@ -752,7 +752,7 @@ farmers) parade intricate floral arrangements on their backs, showcasing the reg
 
 <p>Whether you’re seeking adventure beneath the waves, relaxation on pristine sands, or an immersion in a unique Caribbean culture, the San Andrés and Providencia Archipelago promises an unforgettable journey into Colombia's vibrant island paradise.</p>
         `,
-        image: getAssetPath('getAssetPath('/images/blog/san-andres-providencia.png')'),
+        image: getAssetPath('/images/blog/san-andres-providencia.png'),
         author: 'Isla Voyager',
         date: '2026-03-10',
         tags: ['Caribbean', 'Islands', 'Ecotourism', 'Culture', 'Diving']
