@@ -1,6 +1,7 @@
 import { api } from '@/lib/api';
 import { getAssetPath } from '@/lib/utils';
 import { getCityImage, getCityOverview } from '@/lib/city-data';
+import { getCityThingsToDo } from '@/lib/city-activities-data';
 import AdUnit from '@/components/AdUnit';
 import ViatorWidget from '@/components/ViatorWidget';
 import Link from 'next/link';
@@ -66,6 +67,7 @@ export default async function CityDetailPage({ params }: PageProps) {
 
     const department = await api.getDepartment(city.departmentId);
     const overview = getCityOverview(city.name, city.description, department.name);
+    const thingsToDo = getCityThingsToDo(city.name, department.name);
 
     return (
         <div className="bg-background min-h-screen pb-12">
@@ -130,12 +132,9 @@ export default async function CityDetailPage({ params }: PageProps) {
                         <section className="bg-card rounded-xl p-8 shadow-sm border border-border">
                             <h2 className="text-2xl font-bold mb-4">Things to Do</h2>
                             <ul className="list-disc pl-5 space-y-2 text-muted-foreground text-lg">
-                                {/* Placeholders since API might not have this detailed info yet */}
-                                <li>Explore the historic city center and colonial architecture.</li>
-                                <li>Visit local museums and cultural centers.</li>
-                                <li>Enjoy traditional Colombian cuisine at local restaurants.</li>
-                                <li>Take a nature walk in nearby ecological parks.</li>
-                                <li>Experience the vibrant nightlife and local music scene.</li>
+                                {thingsToDo.map((activity, index) => (
+                                    <li key={index}>{activity}</li>
+                                ))}
                             </ul>
 
                             <div className="mt-8">
