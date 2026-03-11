@@ -1491,8 +1491,8 @@ export const cityImages: Record<string, string> = {
     'meta-puerto concordia': '/images/cities/meta/puerto-concordia.png',
     'meta-san carlos de guaroa': '/images/cities/meta/san-carlos-guaroa.png',
     'meta-san juan de arama': '/images/cities/meta/san-juan-arama.png',
-    'meta-castilla la nueva': '/images/departments/meta.png',
-    'meta-guamal': '/images/departments/meta.png',
+    'meta-castilla la nueva': '/images/cities/meta/castilla-la-nueva.png',
+    'meta-guamal': '/images/cities/meta/guamal.png',
     'meta-san juanito': '/images/cities/meta/san-juanito.png',
     'meta-restrepo': '/images/cities/meta/restrepo.png',
     'meta-mesetas': '/images/cities/meta/mesetas.png',
@@ -1523,8 +1523,8 @@ export const cityImages: Record<string, string> = {
     'san carlos de guaroa': '/images/cities/meta/san-carlos-guaroa.png',
     'san juan de arama': '/images/cities/meta/san-juan-arama.png',
     'san juanito': '/images/cities/meta/san-juanito.png',
-    'guamal-meta': '/images/departments/meta.png',
-    'castilla la nueva': '/images/departments/meta.png',
+    'guamal-meta': '/images/cities/meta/guamal.png',
+    'castilla la nueva': '/images/cities/meta/castilla-la-nueva.png',
 };
 
 export function getCityImage(cityName: string, departmentName?: string): string {
