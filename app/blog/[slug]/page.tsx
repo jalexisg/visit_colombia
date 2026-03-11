@@ -104,7 +104,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                         </div>
                         <div className="flex flex-wrap gap-2">
                             {post.tags.map(tag => (
-                                <span key={tag} className="px-3 py-1 bg-secondary/10 text-secondary-foreground rounded-full text-sm">
+                                <span key={tag} className="px-3 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-full text-sm">
                                     {tag}
                                 </span>
                             ))}

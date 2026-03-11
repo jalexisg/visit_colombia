@@ -108,7 +108,7 @@ export default async function BlogPage() {
                             <h3 className="font-bold text-lg mb-4">Popular Topics</h3>
                             <div className="flex flex-wrap gap-2">
                                 {['Beaches', 'Coffee', 'Safety', 'Nature', 'Cities', 'Culture', 'Food'].map(tag => (
-                                    <span key={tag} className="px-3 py-1 bg-secondary/10 text-secondary-foreground text-sm rounded-full hover:bg-secondary/20 cursor-pointer transition-colors">
+                                    <span key={tag} className="px-3 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 text-sm rounded-full hover:bg-amber-500/20 cursor-pointer transition-colors">
                                         {tag}
                                     </span>
                                 ))}

@@ -500,6 +500,48 @@ const cityThingsToDo: Record<string, string[]> = {
         'Explore outstanding colonial architecture and a vibrant university atmosphere.',
         'Visit the Museum of Arte Religioso for colonial art treasures.',
     ],
+    'ocaña': [
+        'Visit the spectacular Santuario de Agua de la Virgen, a major pilgrimage site.',
+        'Explore the historic San Francisco convent where the 1828 Great Convention was held.',
+        'Walk through the beautifully preserved colonial streets of this "Heroic City."',
+        'Try traditional Ocañero food: arepas de queso and sweet cocadas.',
+    ],
+    'ocana': [
+        'Visit the spectacular Santuario de Agua de la Virgen, a major pilgrimage site.',
+        'Explore the historic San Francisco convent where the 1828 Great Convention was held.',
+        'Walk through the beautifully preserved colonial streets of this "Heroic City."',
+        'Try traditional Ocañero food: arepas de queso and sweet cocadas.',
+    ],
+    'villa del rosario': [
+        'Visit the historic Casa Natal del General Santander.',
+        'Explore the beautifully restored Temple Ruins where the 1821 Constitution was signed.',
+        'Walk through the Gran Colombiano Park and learn about Colombia\'s founding.',
+    ],
+    'tibú': [
+        'Explore the tropical landscapes of the Catatumbo region.',
+        'Visit local rivers and swimming holes in the surrounding rainforest.',
+        'Experience the extraordinary Catatumbo lightning storms in the distance during the wet season.',
+    ],
+    'tibu': [
+        'Explore the tropical landscapes of the Catatumbo region.',
+        'Visit local rivers and swimming holes in the surrounding rainforest.',
+        'Experience the extraordinary Catatumbo lightning storms in the distance during the wet season.',
+    ],
+    'chinácota': [
+        'Enjoy the cool, pleasant mountain climate perfect for a weekend retreat.',
+        'Taste the famous local strawberries with cream and artisanal sweets.',
+        'Relax in traditional country estates and enjoy the Andean scenery.',
+    ],
+    'chinacota': [
+        'Enjoy the cool, pleasant mountain climate perfect for a weekend retreat.',
+        'Taste the famous local strawberries with cream and artisanal sweets.',
+        'Relax in traditional country estates and enjoy the Andean scenery.',
+    ],
+    'abrego': [
+        'Visit the beautiful Piedras Negras rock formations nearby.',
+        'Explore traditional coffee and panela farms in the surrounding valleys.',
+        'Hike in the lush Andean hills and enjoy the pristine mountain air.',
+    ],
     'la playa': [
         'Visit the spectacular La Playa de Belén stone formations — mushroom-shaped rock sculptures.',
         'Hike through the surrounding Andean mountain landscape.',
