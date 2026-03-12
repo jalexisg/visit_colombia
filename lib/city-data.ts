@@ -59,6 +59,9 @@ export const cityImages: Record<string, string> = {
     'norte-de-santander-toledo': '/images/cities/norte_de_santander/pamplona.png',
     'villa caro': '/images/cities/norte_de_santander/cucuta.png',
     'norte-de-santander-el-carmen': '/images/cities/norte_de_santander/cucuta.png',
+    'la playa de belén': '/images/cities/norte_de_santander/pamplona.png',
+    'la playa de belen': '/images/cities/norte_de_santander/pamplona.png',
+
     'ibagué': '/images/cities/tolima/ibague.png',
     'ibague': '/images/cities/tolima/ibague.png',
     'neiva': '/images/cities/huila/neiva.png',

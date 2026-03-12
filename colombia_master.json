@@ -15109,11 +15109,16 @@
       ],
       "ground_truth": {
         "Norte de Santander": {
-          "description": "A beautiful destination in Colombia.",
+          "description": "A favorite weekend retreat for Cúcuta locals, Chinácota is known as the 'City of Flowers' due to its lush gardens, vibrant murals, and cool mountain climate.",
           "recommended_food": [
-            "Local traditional dishes"
+            "Strawberries with cream",
+            "Local coffee",
+            "Traditional trout"
           ],
-          "warnings": [],
+          "warnings": [
+            "Popular on weekends, can be crowded.",
+            "Winding mountain roads."
+          ],
           "id": 853
         }
       }
@@ -15154,11 +15159,16 @@
       ],
       "ground_truth": {
         "Norte de Santander": {
-          "description": "A charming Colombian municipality rich in tradition, culture, and beautiful landscapes.",
+          "description": "The 'Pearl of the North' and a major border hub. Known for its lush tree-lined streets, the Malecón along the Pamplonita River, and its key role in the independence history.",
           "recommended_food": [
-            "Local traditional dishes"
+            "Mute Santandereano",
+            "Pasteles de Garbanzo",
+            "Rampuche"
           ],
-          "warnings": [],
+          "warnings": [
+            "Hot subtropical climate.",
+            "High commercial activity and border flow."
+          ],
           "id": 870
         }
       }
@@ -15303,11 +15313,16 @@
       ],
       "ground_truth": {
         "Norte de Santander": {
-          "description": "A beautiful destination in Colombia.",
+          "description": "Often called the most beautiful town in Norte de Santander, this 'Pueblo Patrimonio' is famous for its uniform white-washed walls, red-tiled roofs, and its location at the entrance of Los Estoraques.",
           "recommended_food": [
-            "Local traditional dishes"
+            "Ocañean Arepa",
+            "Local sweets",
+            "Goat meat dishes"
           ],
-          "warnings": []
+          "warnings": [
+            "Strict architectural conservation rules.",
+            "Proximity to protected natural areas."
+          ]
         }
       }
     },
@@ -15377,11 +15392,17 @@
       ],
       "ground_truth": {
         "Norte de Santander": {
-          "description": "A beautiful destination in Colombia.",
+          "description": "Known as the 'Ciudad de los Caros', Ocaña is a historical gem featuring colonial architecture, the iconic Complejo Histórico de San Francisco, and proximity to the unique Los Estoraques Natural Area.",
           "recommended_food": [
-            "Local traditional dishes"
+            "Arepa Ocañera",
+            "Barbatuscas",
+            "Cebollitas Ocañeras",
+            "Sopa de Rabadilla"
           ],
-          "warnings": [],
+          "warnings": [
+            "Warm tropical climate.",
+            "Historical site preservation focus."
+          ],
           "id": 861
         }
       }
@@ -15392,11 +15413,16 @@
       ],
       "ground_truth": {
         "Norte de Santander": {
-          "description": "A beautiful destination in Colombia.",
+          "description": "A prestigious university city and religious center known as the 'Ciudad Mitrada'. It boasts a cold Andean climate and some of the most famous Holy Week processions in the country.",
           "recommended_food": [
-            "Local traditional dishes"
+            "Traditional bread (Pamplonés)",
+            "Hot chocolate",
+            "Collations and sweets"
           ],
-          "warnings": [],
+          "warnings": [
+            "Cold mountain altitude.",
+            "Significant religious heritage."
+          ],
           "id": 868
         }
       }
@@ -15452,11 +15478,16 @@
       ],
       "ground_truth": {
         "Norte de Santander": {
-          "description": "A beautiful destination in Colombia.",
+          "description": "A picturesque town known for its abundant water sources, coffee plantations, and the Sanctuary of Our Lady of Belén. It offers a peaceful and traditional atmosphere.",
           "recommended_food": [
-            "Local traditional dishes"
+            "Coffee-based products",
+            "Local trout",
+            "Arepa de maíz"
           ],
-          "warnings": []
+          "warnings": [
+            "Coffee region culture.",
+            "Tranquil, slow-paced environment."
+          ]
         }
       }
     },
@@ -15579,11 +15610,16 @@
       ],
       "ground_truth": {
         "Norte de Santander": {
-          "description": "A beautiful destination in Colombia.",
+          "description": "The historical heart of Colombia, where the first Constitution was signed in 1821. It features the Temple of the Congress and the house of general Francisco de Paula Santander.",
           "recommended_food": [
-            "Local traditional dishes"
+            "Pasteles de Garbanzo",
+            "Mute",
+            "Cabrito"
           ],
-          "warnings": [],
+          "warnings": [
+            "High historical significance.",
+            "Close to the Venezuelan border."
+          ],
           "id": 856
         }
       }
