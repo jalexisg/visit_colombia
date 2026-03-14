@@ -13,7 +13,9 @@ export const cityImages: Record<string, string> = {
     'cucuta': '/images/cities/norte_de_santander/cucuta.png',
     // Norte de Santander - generated images
     'pamplona': '/images/cities/norte_de_santander/pamplona.png',
-    'pamplonita': '/images/cities/norte_de_santander/pamplona.png',
+    'pamplonita': '/images/cities/norte_de_santander/pamplonita.png',
+    'norte de santander-pamplonita': '/images/cities/norte_de_santander/pamplonita.png',
+    'norte-de-santander-pamplonita': '/images/cities/norte_de_santander/pamplonita.png',
     'ocaña': '/images/cities/norte_de_santander/ocana.png',
     'ocana': '/images/cities/norte_de_santander/ocana.png',
     'norte de santander-ocaña': '/images/cities/norte_de_santander/ocana.png',
@@ -31,11 +33,14 @@ export const cityImages: Record<string, string> = {
     'norte de santander-chinacota': '/images/cities/norte_de_santander/chinacota.png',
     'norte-de-santander-chinácota': '/images/cities/norte_de_santander/chinacota.png',
     'norte-de-santander-chinacota': '/images/cities/norte_de_santander/chinacota.png',
-    'chitagá': '/images/cities/norte_de_santander/pamplona.png',
-    'chitaga': '/images/cities/norte_de_santander/pamplona.png',
-    'abrego': '/images/cities/norte_de_santander/pamplona.png',
-    'convención': '/images/cities/norte_de_santander/cucuta.png',
-    'convencion': '/images/cities/norte_de_santander/cucuta.png',
+    'chitagá': '/images/cities/norte_de_santander/chitaga.png',
+    'chitaga': '/images/cities/norte_de_santander/chitaga.png',
+    'toledo': '/images/cities/norte_de_santander/toledo.png',
+    'norte de santander-toledo': '/images/cities/norte_de_santander/toledo.png',
+    'norte-de-santander-toledo': '/images/cities/norte_de_santander/toledo.png',
+    'abrego': '/images/cities/norte_de_santander/abrego.png',
+    'convención': '/images/cities/norte_de_santander/convencion.png',
+    'convencion': '/images/cities/norte_de_santander/convencion.png',
     'sardinata': '/images/cities/norte_de_santander/cucuta.png',
     'los patios': '/images/cities/norte_de_santander/cucuta.png',
     'el zulia': '/images/cities/norte_de_santander/cucuta.png',
@@ -61,12 +66,14 @@ export const cityImages: Record<string, string> = {
     'lourdes': '/images/cities/norte_de_santander/pamplona.png',
     'norte-de-santander-puerto-santander': '/images/cities/norte_de_santander/cucuta.png',
     'ragonvalia': '/images/cities/norte_de_santander/pamplona.png',
-    'salazar': '/images/cities/norte_de_santander/cucuta.png',
+    'salazar': '/images/cities/norte_de_santander/salazar.png',
+    'salazar de las palmas': '/images/cities/norte_de_santander/salazar.png',
+    'norte de santander-salazar': '/images/cities/norte_de_santander/salazar.png',
+    'norte-de-santander-salazar': '/images/cities/norte_de_santander/salazar.png',
     'san calixto': '/images/cities/norte_de_santander/cucuta.png',
     'norte-de-santander-san-cayetano': '/images/cities/norte_de_santander/cucuta.png',
     'norte-de-santander-santiago': '/images/cities/norte_de_santander/pamplona.png',
     'teorama': '/images/cities/norte_de_santander/cucuta.png',
-    'norte-de-santander-toledo': '/images/cities/norte_de_santander/pamplona.png',
     'villa caro': '/images/cities/norte_de_santander/cucuta.png',
     'norte-de-santander-el-carmen': '/images/cities/norte_de_santander/cucuta.png',
     'la playa de belén': '/images/cities/norte_de_santander/la_playa_belen.png',
@@ -1660,11 +1667,14 @@ export function getCityImage(cityName: string, departmentName?: string): string 
     // 2. Exact name match
     if (name in cityImages) return getAssetPath(cityImages[name]);
 
-    // 3. Fallback: Includes logic for variations (e.g., "Cartagena de Indias" matching "Cartagena")
-    // Note: We avoid matching department-prefixed keys here if possible by filtering them out or checking length
+    // 2.1 Normalized name match (remove accents)
+    const normalizedName = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    if (normalizedName in cityImages) return getAssetPath(cityImages[normalizedName]);
+
+    // 3. Fallback: Includes logic for variations
     for (const [key, value] of Object.entries(cityImages)) {
-        if (!key.includes('-')) { // Only match generic keys here
-            if (name === key || name.includes(key) || key.includes(name)) {
+        if (!key.includes('-')) {
+            if (name === key || name.includes(key) || key.includes(name) || normalizedName === key) {
                 return getAssetPath(value);
             }
         }

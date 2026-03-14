@@ -75,7 +75,7 @@ export default async function CityDetailPage({ params }: PageProps) {
             <div className="relative h-[60vh] min-h-[400px] w-full">
                 <div className="absolute inset-0 bg-black/40 z-10" />
                 <img
-                    src={getCityImage(city.name, city.department?.name)}
+                    src={getCityImage(city.name, department.name)}
                     alt={city.name}
                     className="w-full h-full object-cover"
                 />
