@@ -34,6 +34,17 @@ export const blogPosts: BlogPost[] = [
         author: 'Carlos Rodriguez',
         date: '2026-03-14',
         tags: ['Ecotourism', 'Natural Wonders', 'Conservation', 'Biodiversity', 'Off the Beaten Path']
+    },
+    {
+        id: '4',
+        title: `Rhythms of Colombia: A Musical Journey Through the Country's Diverse Sounds`,
+        slug: 'colombia-musical-diversity',
+        excerpt: `Explore the vibrant and diverse musical traditions that define Colombia's rich cultural landscape, from vallenato to cumbia and beyond.`,
+        content: `<p>Colombia is a country where music is not just an art form, but a way of life. Each region tells its story through unique rhythms, instruments, and dance styles that reflect the nation's complex cultural heritage.</p><h2>Vallenato: The Heartbeat of the Caribbean Coast</h2><p>Originating in the Caribbean region, vallenato is more than music—it's a narrative tradition. Typically performed with accordion, caja vallenata (a small drum), and guacharaca (a percussion instrument), vallenato songs often tell stories of love, heartbreak, and daily life.</p><h2>Cumbia: A Dance of Cultural Fusion</h2><p>Cumbia represents the perfect blend of African, Indigenous, and European influences. Born from the Caribbean coast, this rhythmic dance style symbolizes Colombia's multicultural identity. With its distinctive percussion and melodic accordion, cumbia has spread throughout Latin America and beyond.</p><h2>Salsa Caleña: The Dance Capital of the World</h2><p>Cali, known as the world's salsa capital, offers a unique style of salsa that is faster, more energetic, and more complex than other Latin dance styles. The city hosts international salsa festivals that attract dancers from around the globe, showcasing the passion and skill of Colombian dancers.</p><h2>Indigenous and Andean Sounds</h2><p>In the Andean regions, traditional instruments like the quena (a wooden flute) and panpipes tell stories of indigenous communities. These sounds, often accompanied by traditional dances, preserve ancestral traditions and connect modern Colombia with its deep cultural roots.</p><h2>Emerging Contemporary Scenes</h2><p>Today, Colombian musicians are fusing traditional sounds with contemporary genres like rock, electronic, and hip-hop. Artists like Bomba Estéreo blend traditional cumbia with electronic music, creating a global sound that represents modern Colombia's innovative spirit.</p><p>Music in Colombia is a living, breathing entity that continues to evolve while honoring its rich and diverse cultural heritage. From the coastal rhythms to the Andean melodies, each musical tradition tells a unique story of Colombia's identity.</p>`,
+        image: getAssetPath('/images/blog-header.png'),
+        author: 'Carlos Rodriguez',
+        date: '2026-03-14',
+        tags: ['Music', 'Culture', 'Traditional Arts', 'Dance', 'Colombian Heritage']
     }
 ];
 
