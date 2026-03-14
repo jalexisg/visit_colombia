@@ -23,6 +23,17 @@ export const blogPosts: BlogPost[] = [
         author: 'Maria Gutierrez',
         date: '2026-03-13',
         tags: ['Sustainable Tourism', 'Coffee Triangle', 'Community Development', 'Ecotourism', 'Culture']
+    },
+    {
+        id: '3',
+        title: `Hidden Natural Wonders: Colombia's Untouched Ecological Treasures`,
+        slug: 'colombia-hidden-natural-wonders',
+        excerpt: `Explore Colombia's most breathtaking and least-known ecological destinations that offer unparalleled natural beauty and biodiversity.`,
+        content: `<p>Beyond the well-trodden paths of Colombia's popular tourist destinations lies a world of incredible, virtually untouched natural wonders that showcase the country's remarkable ecological diversity.</p><h2>The Serranía de Chiribiquete: A Lost World</h2><p>Often called the 'Sistine Chapel of Nature', the Serranía de Chiribiquete National Park is a UNESCO World Heritage site that remains largely unexplored. This massive protected area spans over 2.7 million hectares and is home to indigenous rock art, pristine rainforests, and unique wildlife found nowhere else on Earth.</p><h2>Caño Cristales: The River of Five Colors</h2><p>Hidden in the Serranía de la Macarena National Natural Park, Caño Cristales transforms into a living painting during a short annual period. The riverbed explodes with vibrant red, yellow, green, blue, and black colors due to a unique aquatic plant called Macarenia clavigera. This phenomenon occurs typically between September and November, creating a surreal landscape that seems almost otherworldly.</p><h2>Los Nevados National Natural Park: Andean Wilderness</h2><p>Nestled in the heart of the Colombian Andes, Los Nevados offers a stark contrast to Colombia's tropical landscapes. This park features snow-capped volcanoes, high-altitude ecosystems, and unique páramo landscapes that are critical to water conservation. Visitors can explore glacial lakes, observe endemic species like the spectacled bear, and witness the incredible biodiversity of high-altitude environments.</p><h2>Gorgona Island: A Biological Treasure</h2><p>Once a notorious prison island, Gorgona is now a pristine biological reserve off Colombia's Pacific coast. The island offers an extraordinary ecosystem with dense rainforests, diverse marine life, and numerous endemic species. Humpback whales, sea turtles, and diverse bird populations make this a crucial conservation area.</p><p>These hidden natural wonders represent more than just beautiful landscapes. They are critical ecosystems that showcase Colombia's incredible biodiversity and the importance of conservation efforts. For the adventurous traveler seeking authentic, unspoiled experiences, these destinations offer a glimpse into Colombia's most extraordinary natural environments.</p>`,
+        image: getAssetPath('/images/blog/hidden-natural-wonders.png'),
+        author: 'Carlos Rodriguez',
+        date: '2026-03-14',
+        tags: ['Ecotourism', 'Natural Wonders', 'Conservation', 'Biodiversity', 'Off the Beaten Path']
     }
 ];
 
