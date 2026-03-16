@@ -767,6 +767,27 @@ farmers) parade intricate floral arrangements on their backs, showcasing the reg
         author: 'Elena Rodriguez',
         date: '2026-03-12',
         tags: ['Indigenous Culture', 'Amazon', 'Conservation', 'Anthropology', 'Environment']
+    },
+    {
+        id: '32',
+        title: `10 Hidden Gems in Colombia Every Traveler Must Discover`,
+        slug: 'colombia-hidden-gems',
+        excerpt: ``,
+        content: `Beyond the well-trodden paths of Cartagena and Medellín, Colombia harbors breathtaking destinations that remain largely unexplored by mainstream tourism. In this guide, we'll unveil ten extraordinary locations that promise unforgettable experiences for the adventurous traveler.
+
+Caño Cristales: The River of Five Colors
+
+Nestled in the Serranía de la Macarena National Park, this mesmerizing river transforms into a vibrant palette of red, yellow, green, blue, and black during certain months, creating a natural wonder that seems almost too beautiful to be real.
+
+Providencia Island: Caribbean Paradise Untouched
+
+A UNESCO Biosphere Reserve, this small island offers pristine coral reefs, Raizal culture, and a laid-back atmosphere far from the crowded tourist hotspots. With strict preservation laws, it remains an unspoiled Caribbean treasure.
+
+Colombia's hidden gems prove that true adventure lies not in popular destinations, but in the unexpected, the untouched, and the authentically local experiences waiting to be discovered.`,
+        image: getAssetPath('/images/blog/header.png'),
+        author: 'Visit Colombia Team',
+        date: '2026-03-16',
+        tags: []
     }
 ];
 
