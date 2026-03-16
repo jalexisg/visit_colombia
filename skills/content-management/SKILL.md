@@ -19,6 +19,9 @@ const posts = await getBlogPosts();
 const post = await getBlogPost('slug');
 ```
 
+## Guidelines
+For creating new blog posts or modifying existing content, you MUST follow the **[Editorial Guidelines](./EDITORIAL_GUIDELINES.md)**. This ensures consistency in structure (History, Culture, Nature, Gastronomy), HTML formatting, and image quality.
+
 ## Tools
 - `getBlogPosts()`: Returns all blog posts.
 - `getBlogPost(slug)`: Returns a specific blog post by slug.

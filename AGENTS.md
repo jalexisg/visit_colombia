@@ -8,7 +8,7 @@ Everything you need to work on this project is organized into **Skills**.
 
 - **[api-client](./skills/api-client/SKILL.md)**: interact with the Open Data Colombia API.
 - **[ai-assistant](./skills/ai-assistant/SKILL.md)**: Manage the Travel Expert assistant and navigation bridge.
-- **[content-management](./skills/content-management/SKILL.md)**: Manage blog posts and static content.
+- **[content-management](./skills/content-management/SKILL.md)**: Manage blog posts and static content (see **[Editorial Guidelines](./skills/content-management/EDITORIAL_GUIDELINES.md)**).
 - **[deployment](./skills/deployment/SKILL.md)**: Build and deploy the application.
 
 ## Development Guidelines
