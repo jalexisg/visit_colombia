@@ -771,7 +771,7 @@ farmers) parade intricate floral arrangements on their backs, showcasing the reg
     {
         id: '32',
         title: `Exploring the Hidden Gems of Norte de Santander: A Traveler's Paradise`,
-        slug: 'undefined',
+        slug: 'norte-de-santander-hidden-gems',
         excerpt: `Discover the breathtaking landscapes and rich cultural heritage of Norte de Santander, a Colombian region that remains largely unexplored by mainstream tourists.`,
         content: `Nestled in the northeastern part of Colombia, Norte de Santander is a treasure trove of natural beauty and cultural richness that remains largely undiscovered by international travelers. This region offers a unique blend of stunning landscapes, historical significance, and authentic Colombian experiences.
 
@@ -782,7 +782,7 @@ Nature lovers will be captivated by the region's national parks and ecological r
 Traditional cuisine in Norte de Santander reflects the region's agricultural heritage. Dishes like 'cabrito' (roasted goat) and various preparations of corn and beans showcase the local culinary traditions that have been preserved for generations.
 
 Travelers seeking an off-the-beaten-path experience will find Norte de Santander to be a revelation. From the charming mountain towns to the warm hospitality of its people, this region embodies the spirit of authentic Colombian travel.`,
-        image: getAssetPath('/images/blog/header.png'),
+        image: getAssetPath('/images/blog/norte-de-santander.png'),
         author: 'Colombia Travel Insights',
         date: '2026-03-15',
         tags: ['travel', 'colombia', 'norte de santander', 'off-the-beaten-path', 'cultural tourism']
