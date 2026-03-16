@@ -9,7 +9,8 @@ To maintain the quality, depth, and beauty of the "Visit Colombia" project, all 
 - **Engaging Excerpt**: Provide a 2-3 sentence teaser that encourages readers to click.
 
 ## Aesthetic & Content
-- **Professional Photography**: Every post MUST have a high-quality, professional-grade image. If one doesn't exist, use the `generate_image` tool with a detailed "golden hour/premium" prompt.
+- **Image Reuse (Priority)**: Instead of generating new images, the agent should first look for relevant high-quality images already available in the project's asset directories (e.g., `/public/images/blog/` or `/public/images/departments/`).
+- **Professional Photography**: If no suitable existing image is found, a high-quality, professional-grade image must be used. Only generate a new one using the `generate_image` tool if absolutely necessary, using a detailed "golden hour/premium" prompt.
 - **Regional Authenticity**: Use local names, cite specific landmarks, and mention regional dishes to provide an authentic "traveler's paradise" feel.
 - **SEO-Friendly Slugs**: Always use descriptive, lowercase slugs (e.g., `norte-de-santander-hidden-gems` instead of just `norte-santander` or `undefined`).
 
