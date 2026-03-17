@@ -803,6 +803,17 @@ farmers) parade intricate floral arrangements on their backs, showcasing the reg
         author: 'Colombia Travel Insights',
         date: '2026-03-15',
         tags: ['travel', 'colombia', 'norte de santander', 'off-the-beaten-path', 'cultural tourism']
+    },
+    {
+        id: '33',
+        title: `Guatapé: Colombia's Most Colorful Town You Can't Miss`,
+        slug: 'guatape-magic-colombias-most-colorful-town',
+        excerpt: `Nestled in Antioquia, Guatapé is a vibrant town where every building tells a story through its intricate zócalos. Discover a place where color, history, and natural beauty collide in the most spectacular way.`,
+        content: `<p>Deep in the heart of Antioquia, Colombia, lies a town that seems to have been painted by an artist who ran out of muted colors. Guatapé is not just a destination; it's a living, breathing canvas where architecture, culture, and landscape merge into an explosion of chromatic wonder.</p><h2>The Zócalo Magic: A Living Art Gallery</h2><p>What sets Guatapé apart are its legendary zócalos - intricate bas-relief decorations adorning the lower part of each building. Each facade tells a unique story, depicting everything from local agricultural life to personal family histories. Walking down the streets feels like wandering through an open-air museum where every wall whispers tales of Colombian creativity.</p><h2>El Peñol: The Rock That Defines the Landscape</h2><p>Overlooking the town is the massive El Peñol, a monolithic rock formation that rises dramatically from the landscape. Climbing its 740 steps rewards visitors with a breathtaking panorama of the surrounding lakes and islands - a vista that has made Guatapé famous among travelers and photographers worldwide.</p><h2>Culinary Delights in a Colorful Setting</h2><p>The town's gastronomic scene is as vibrant as its architecture. Local restaurants serve traditional Antioquian dishes like bandeja paisa, empanadas, and fresh tropical fruits. Each meal becomes an experience, enjoyed against the backdrop of the town's kaleidoscopic buildings.</p><h2>Beyond Tourism: A Community's Pride</h2><p>More than a tourist destination, Guatapé represents the resilience and creativity of Colombian communities. The town's residents have transformed their architectural heritage into a source of pride and economic opportunity, welcoming visitors while preserving their unique cultural identity.</p><p>Guatapé is more than a place you visit - it's an experience that colors your perception of Colombia, one vibrant building at a time.</p>`,
+        image: getAssetPath('/public/images/departments/antioquia/guatape-zocalos.jpg'),
+        author: 'Visit Colombia Editorial Team',
+        date: '2026-03-17',
+        tags: ['travel', 'culture', 'antioquia', 'architecture', 'hidden-gems']
     }
 ];
 
