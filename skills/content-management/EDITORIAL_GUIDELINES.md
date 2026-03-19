@@ -1,19 +1,70 @@
-# Editorial Guidelines for Visit Colombia Blog Posts
+# Visit Colombia Blog - Editorial Guidelines
 
-To maintain the quality, depth, and beauty of the "Visit Colombia" project, all blog posts should follow these guidelines:
+## Content Structure
 
-## Structure & Length
-- **Comprehensive Coverage**: Posts should be detailed (usually 600-1000 words) and cover multiple aspects of the topic (e.g., History, Culture, Nature, Gastronomy).
-- **Logical Flow**: Use a clear introduction, 3-5 themed sections with descriptive `<h2>` headers, and a conclusive summary.
-- **Semantic HTML**: Use standard HTML tags within the content string (`<p>`, `<h2>`, `<ul>`, `<li>`, `<strong>`) for proper rendering and SEO.
-- **Engaging Excerpt**: Provide a 2-3 sentence teaser that encourages readers to click.
+Each blog post MUST follow a standardized four-section structure:
 
-## Aesthetic & Content
-- **Image Reuse (Priority)**: Instead of generating new images, the agent should first look for relevant high-quality images already available in the project's asset directories (e.g., `/public/images/blog/` or `/public/images/departments/`).
-- **Professional Photography**: If no suitable existing image is found, a high-quality, professional-grade image must be used. Only generate a new one using the `generate_image` tool if absolutely necessary, using a detailed "golden hour/premium" prompt.
-- **Regional Authenticity**: Use local names, cite specific landmarks, and mention regional dishes to provide an authentic "traveler's paradise" feel.
-- **SEO-Friendly Slugs**: Always use descriptive, lowercase slugs (e.g., `norte-de-santander-hidden-gems` instead of just `norte-santander` or `undefined`).
+1. **History**: 
+   - Provide historical context
+   - Highlight significant events or periods
+   - Maximum 300 words
 
-## Code Integration
-- **Correct Mapping**: Add the post to the `blogPosts` array in `skills/content-management/index.ts`.
-- **Proper Metadata**: Ensure `id`, `author`, `date` (YYYY-MM-DD), and relevant tags are included.
+2. **Culture**:
+   - Discuss local traditions, customs
+   - Showcase unique cultural aspects
+   - Include festivals, arts, social practices
+   - Maximum 300 words
+
+3. **Nature**:
+   - Describe geographical features
+   - Highlight natural attractions
+   - Include biodiversity information
+   - Maximum 300 words
+
+4. **Gastronomy**:
+   - Showcase local cuisine
+   - Describe traditional dishes
+   - Mention ingredients, cooking styles
+   - Maximum 250 words
+
+## Technical Requirements
+
+### Metadata
+- Title: Descriptive, SEO-friendly (max 70 characters)
+- Slug: Lowercase, hyphen-separated
+- Author: Always credit source
+- Date: Current date in ISO format
+- Estimated Reading Time: Auto-calculate
+
+### Image Guidelines
+- High-resolution (min 1200px wide)
+- Compress images for web performance
+- Provide alt text describing image content
+- Use images from `public/images/` directory
+- Recommended image formats: PNG, WebP
+
+### Formatting
+- Use semantic HTML5 tags
+- Headings: H2 for section titles, H3 for subsections
+- Paragraphs: Short, readable (3-5 sentences)
+- Bullet points for lists
+- Hyperlink relevant external sources
+
+## Writing Style
+- First-person plural ("we") or informative third-person
+- Engaging, conversational tone
+- Factual and objective
+- Avoid jargon
+- Proofread for grammar and clarity
+
+## SEO Best Practices
+- Use primary keyword in title, first paragraph
+- Include 3-5 related keywords naturally
+- Meta description (155 characters max)
+- Internal links to related content
+
+## Compliance
+- Verify all facts from reliable sources
+- Respect cultural sensitivities
+- No plagiarism
+- Obtain necessary permissions for content

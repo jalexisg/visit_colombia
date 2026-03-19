@@ -803,6 +803,17 @@ farmers) parade intricate floral arrangements on their backs, showcasing the reg
         author: 'Colombia Travel Insights',
         date: '2026-03-15',
         tags: ['travel', 'colombia', 'norte de santander', 'off-the-beaten-path', 'cultural tourism']
+    },
+    {
+        id: '33',
+        title: `Colombia in 2026: A Safe and Welcoming Destination for Travelers`,
+        slug: 'colombia-safety-travel-2026',
+        excerpt: ``,
+        content: ``,
+        image: getAssetPath('/images/blog/security-2026.png'),
+        author: 'Visit Colombia Editorial Team',
+        date: '2026-03-19',
+        tags: []
     }
 ];
 
