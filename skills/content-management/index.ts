@@ -803,6 +803,17 @@ farmers) parade intricate floral arrangements on their backs, showcasing the reg
         author: 'Colombia Travel Insights',
         date: '2026-03-15',
         tags: ['travel', 'colombia', 'norte de santander', 'off-the-beaten-path', 'cultural tourism']
+    },
+    {
+        id: '33',
+        title: `Norte de Santander: Colombia's Undiscovered Andean Paradise`,
+        slug: 'undefined',
+        excerpt: `Nestled in Colombia's northeastern mountains, Norte de Santander offers travelers a breathtaking blend of colonial history, natural wonders, and vibrant culture far from typical tourist paths.`,
+        content: `<p>Tucked away in the northeastern reaches of Colombia, Norte de Santander is a region that remains gloriously off the beaten path. This Andean department is a treasure trove of experiences waiting to be discovered by intrepid travelers seeking authentic Colombian adventures.</p><h2>Historical Heartland: Cúcuta and Beyond</h2><p>The regional capital, Cúcuta, stands as a testament to Colombia's rich border culture. Situated near the Venezuelan border, the city pulses with a unique energy, blending Colombian warmth with cross-border dynamism. Visitors can explore the <strong>Casa de Cultura Luis A. Calvo</strong>, which offers insights into the region's musical and artistic heritage.</p><h2>Natural Splendors: Landscapes That Take Your Breath Away</h2><p>Norte de Santander isn't just about urban experiences. The <strong>Serranía de los Motilones</strong> mountain range provides stunning hiking opportunities, with trails that wind through cloud forests and offer panoramic views of the Andes. Adventure seekers will find paradise in destinations like the <strong>Cascada de Juan Curí</strong>, a spectacular waterfall hidden in lush subtropical terrain.</p><h2>Gastronomic Delights: Flavors of the North</h2><p>The region's cuisine reflects its geographical diversity. Don't miss trying <em>cabrito</em> (roasted goat), a local delicacy, or sampling the renowned <strong>arepa santandereana</strong>, a corn cake that differs subtly but significantly from its national counterparts. Street markets in Cúcuta and smaller towns like Pamplona offer culinary adventures that connect travelers directly with local traditions.</p><h2>Cultural Tapestry: Living Traditions</h2><p>Norte de Santander preserves indigenous and colonial traditions with remarkable authenticity. The town of Pamplona, with its well-preserved colonial architecture, offers a journey through time. Annual festivals like the <strong>Feria de Pamplona</strong> showcase traditional music, dance, and crafts that have been passed down through generations.</p><p>While often overlooked by international tourists, Norte de Santander represents the Colombia that exists beyond postcard images—a region of profound beauty, complex history, and genuine hospitality. For travelers willing to venture off standard routes, this department promises unforgettable experiences that reveal the true heart of Colombian diversity.</p>`,
+        image: getAssetPath('/images/blog/header.png'),
+        author: 'Visit Colombia Travel Team',
+        date: '2026-03-21',
+        tags: ['adventure', 'culture', 'nature', 'andean-region']
     }
 ];
 
