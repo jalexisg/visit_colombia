@@ -803,6 +803,17 @@ farmers) parade intricate floral arrangements on their backs, showcasing the reg
         author: 'Colombia Travel Insights',
         date: '2026-03-15',
         tags: ['travel', 'colombia', 'norte de santander', 'off-the-beaten-path', 'cultural tourism']
+    },
+    {
+        id: '33',
+        title: `Exploring the Untouched Beauty of Colombia's Pacific Coast`,
+        slug: 'colombia-pacific-coast-adventure',
+        excerpt: `Discover the pristine, wild landscapes of Colombia's lesser-known Pacific coastline, where biodiversity, indigenous culture, and raw natural beauty converge in an unforgettable journey.`,
+        content: `<p>Nestled between the roaring Pacific Ocean and the dense, emerald Chocó rainforest, Colombia's Pacific Coast represents one of South America's most extraordinary and least explored regions. This remote paradise offers travelers an immersive experience far from the typical tourist trails.</p><h2>Biodiversity Wonderland</h2><p>The Pacific Coast is a UNESCO-recognized biodiversity hotspot. Here, humpback whales migrate annually, creating breathtaking spectacles for lucky observers. The region hosts over 10,000 plant species and countless endemic animals, making it a dream destination for nature enthusiasts and wildlife photographers.</p><h2>Indigenous Heritage</h2><p>The coast is home to vibrant Afro-Colombian and Indigenous communities, such as the Emberá and Wounaan. Their ancestral knowledge of the forest and sea offers travelers profound cultural insights rarely found in conventional travel experiences.</p><h2>Sustainable Eco-Tourism</h2><p>Unlike mass-tourism destinations, the Pacific Coast prioritizes ecological preservation. Small, community-run eco-lodges provide sustainable accommodations that directly support local conservation efforts and indigenous economies.</p><h2>Adventure Awaits</h2><p>From whale watching in Nuquí to trekking through pristine rainforests in Bahía Solano, the Pacific Coast offers adventures that challenge and inspire. Surfing, birdwatching, and traditional fishing provide immersive ways to connect with this extraordinary landscape.</p><p>The Colombian Pacific is not just a destination—it's a transformative journey into one of the planet's most remarkable and least understood ecosystems.</p>`,
+        image: getAssetPath('/images/blog/colombia-pacific-coast.jpg'),
+        author: 'Maria Rodriguez',
+        date: '2026-03-22',
+        tags: ['eco-tourism', 'wildlife', 'pacific-coast', 'colombia-nature', 'sustainable-travel']
     }
 ];
 
